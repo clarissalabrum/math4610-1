@@ -2,14 +2,24 @@
 This is a template file for building an entry in the student software manual project. You should use the formatting below to
 define an entry in your software manual.
 
-**Routine Name:** smaceps()
+**Routine Name:**           smaceps
 
 **Author:** Joe Koebbe
 
-**Language:** Fortran. The code can be compiled using the GNU Fortran compiler.
+**Language:** Fortran. The code can be compiled using the GNU Fortran compiler (gfortran).
 
-**Description:** This routine will compute the single precision value for the machine epsilon or the number of digits in the
-representation of real numbers in single precision.
+For example,
+
+    gfortran smaceps.f
+
+will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
+better
+
+    gfortran -o smaceps smaceps.f
+
+**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
+in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
+usually will need to be run one time for each computer.
 
 **Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
 return values in those variables.
