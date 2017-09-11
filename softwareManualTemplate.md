@@ -13,8 +13,6 @@ Java
 ### Description:
 This routine will compute the value of a polynomial
 
-### Implementation/Code:
-
 ### Input:
 
 ### Output:
@@ -22,3 +20,5 @@ This routine will compute the value of a polynomial
 ### Usage/Example:
 
 The routine 
+
+### Implementation/Code:
