@@ -6,4 +6,4 @@ materials used in the course.
 
 ### Some links to material.
 
-A [software manual template](https://jvkoebbe.github.com/math4610) has been created for students to use. 
+A [software manual template](https://jvkoebbe.github.com/math4610/softwareManualTemplate.md) has been created for students to use. 
