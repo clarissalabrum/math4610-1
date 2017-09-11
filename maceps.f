@@ -31,8 +31,6 @@ c ---------------------
 c
       call smaceps(sval, ipow)
       print *, ipow, sval
-      call dmaceps(dval, ipow)
-      print *, ipow, dval
 c
 c done
 c ----
