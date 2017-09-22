@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io)
+1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io/math4610/Examples)
 2. Sources of Error
-  * Measurement Errors
+  * [Measurement Errors](https://jvkoebbe.github.io/math4610/MeasurementErrors)
   * Truncation Error
   * Roundoff Error
   * Absolute Error
