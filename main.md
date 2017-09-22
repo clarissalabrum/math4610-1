@@ -41,3 +41,10 @@
 8. Finite Difference Approximations of Derivatives
 9. Numerical Integration/Quadrature
 10. The Fast Fourier Transform (FFT)
+11. Least Squares Solutions
+  * The Normal Equations/Minimization of Error
+  * QR Factorization and Linear Least Squares Solutions
+12. Computation of Eigenvalues and Eigenvectors
+  * The Power Method
+  * Shifting and the Power Method
+  * The QR Algorithm
