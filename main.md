@@ -2,8 +2,8 @@
 
 ## Development of Math 4610
 
-This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at Utah State University
-([USU](http://www.usu.edu)) in the [Department of Mathematics and Statistics](http://www.math.usu.edu/). The course is
+This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at [Utah State University](http://www.usu.edu)
+in the [Department of Mathematics and Statistics](http://www.math.usu.edu/). The course is
 intended for students in the [College of Science](https://www.usu.edu/science), the College of Engineering, and any other
 students who have completed a basic course in linear algebra (e.g, Math 2270 Linear Algebra) AND ordinary differential
 equations (e.g, Math 2280 Ordinary Differential Equations). Students who have completed the combined course Math 2250
