@@ -2,6 +2,8 @@
 
 ## Course Syllabus
 
+[Course Syllabus](https://jvkoebbe.github.io/math4610/syllabus.pdf)
+
 ## Table of Contents
 1. Examples of Scientific Computing and Numerical Analysis
 2. Sources of Error
