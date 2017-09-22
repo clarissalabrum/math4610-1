@@ -1,9 +1,8 @@
-## Math 4610 Course Site
+## Math 4610 README.md File
 
-Students in Math 4610 Fundamentals of Computational Mathematics will find course materials and other content that will be used during
-the course. This page is accessible to the world. However, students will need to get an account on github to fully take advantage of the
-materials used in the course.
+The repository that you are looking at is related to a course taught at Utah State University (USU). The course introduces
+students to topics and content in computational mathematics.
 
-### Some links to material.
+### Main Page Link
 
-A [software manual template](https://jvkoebbe.github.io/math4610/softwareManualTemplate) has been created for students to use. 
+[Main Course Content](https://jvkoebbe.github.io/math4610/main)
