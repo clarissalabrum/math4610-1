@@ -22,3 +22,22 @@
   7. Convergence of the Methods
     * Linear, Superlinear, Quadratic Convergence
     * Computational Convergence Rates
+4. Matrix Operations
+  * The dot product
+  * The cross product
+  * Matrix-vector products
+  * Matrix-matrix products
+5. Direct Methods of Solutions of Linear Systems of Equations
+  * Gaussian elimination and Backsubstitution
+  * LU Factorization, Forward Substitution, and BackSubstitution
+  * Cholesky Factorization
+  * QR-Factorization
+  * Pivoting Strategies
+6. Iterative Solution of Linear Systems of Equations
+  * Jacobi Iteration
+  * Gauss-Seidel Iteration
+  * SOR Iteration
+7. Polynomial Interpolation
+8. Finite Difference Approximations of Derivatives
+9. Numerical Integration/Quadrature
+10. The Fast Fourier Transform (FFT)
