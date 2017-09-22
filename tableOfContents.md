@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. Examples of Scientific Computing and Numerical Analysis
+1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io)
 2. Sources of Error
   * Measurement Errors
   * Truncation Error
