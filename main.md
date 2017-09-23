@@ -15,7 +15,7 @@ Math 5610 and Math 6610) treat analysis of the methods at a more advanced level.
 ## Course Syllabus
 
 [Course Syllabus](https://jvkoebbe.github.io/math4610/syllabus.pdf): This is a pdf file that contains a current incarnation
-of the syllabus for the course.
+of the syllabus for the course as taught at Utah State University.
 
 ## Introduction to the Course
 
