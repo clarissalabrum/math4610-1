@@ -32,3 +32,5 @@ than one way to skin a cat. Innovations in Graphics Processing Units (GPUs) and 
 implement parallel versions of algorithms if the algorithm lends itself to parallelism. Over the past couple of decades, multicore 
 computers have been made available and the GPU technology for fast refresh rates on computer screens has spawned many efforts to 
 use the extra resources.....
+
+[Back to Main Page](https://jvkoebbe.github.io/math4610/main)
