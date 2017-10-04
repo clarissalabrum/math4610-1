@@ -34,4 +34,4 @@ computers have been made available and the GPU technology for fast refresh rates
 use the extra resources.....
 
 [Back to Main Page](https://jvkoebbe.github.io/math4610/main) | 
-  [Back to Table of Contents](https://jvkoebbe.github.io/math4610/tableofcontents)
+  [Back to Table of Contents](https://jvkoebbe.github.io/math4610/tableOfContents)
