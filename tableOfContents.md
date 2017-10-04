@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io/math4610/Examples)
-2. Sources of Error
+2. [Sources of Error](https://jvkoebbe.github.io/math4610/sourcesOfError)
   * [Measurement Errors](https://jvkoebbe.github.io/math4610/MeasurementErrors)
   * Truncation Error
   * Roundoff Error
