@@ -3,12 +3,12 @@
 ## Table of Contents
 
 1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io/math4610/Examples)
-2. [Sources of Error](https://jvkoebbe.github.io/math4610/sourcesOfError)
-  * [Measurement Errors](https://jvkoebbe.github.io/math4610/measurementError)
-  * [Truncation Error](https://jvkoebbe.github.io/math4610/truncationError)
-  * [Roundoff Error](https://jvkoebbe.github.io/math4610/roundoffError)
-  * [Absolute Error](https://jvkoebbe.github.io/math4610/absoluteError)
-  * [Relative Error](https://jvkoebbe.github.io/math4610/relativeError)
+2. [Sources of Error:](https://jvkoebbe.github.io/math4610/sourcesOfError)
+  * [Measurement Error:](https://jvkoebbe.github.io/math4610/measurementError)
+  * [Truncation Error:](https://jvkoebbe.github.io/math4610/truncationError)
+  * [Roundoff Error:](https://jvkoebbe.github.io/math4610/roundoffError)
+  * [Absolute Error:](https://jvkoebbe.github.io/math4610/absoluteError)
+  * [Relative Error:](https://jvkoebbe.github.io/math4610/relativeError)
 3. Algorithms for Root Finding
   1. Functional Iteration and Fixed Point Methods
   2. The Bisection Method
