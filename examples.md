@@ -23,7 +23,13 @@ equation, the algorithm is not likely to be very useful. The goal should be solv
 results in a robust algorithm. This means that a user will be able to solve many different initial value problems with the same 
 code.
 
-4. **Stability of Algorithms Developed:**
+4. **Stability of Algorithms Developed:** An important problem in scientific computing is the stability of the implementations
+of the algorithms one needs in the approximate solution of mathematical problems. There are many uses of the term "stability" in
+mathematics. The main use of the term stability for the purposes of this text is related to small changes in the inputs to the
+computer code used. If small changes in the input to an implementation of an algorithm (e.g, Newton's Method), the algorithm
+is stable - at least heuristically. Small perturbations to the input to a computer code come from a variety of things from
+measurement error to finite representation of numbers on computers to truncation errors. If an implementation is unstable, any
+of these sources of initial error may lead to erroneous results when the code is applied to some problems.
 
 5. **Implementation of Computer Code in High Performance Computing:** In recent years, the evolution of faster CPU technology has 
 been stunted by limitations in the physics of semiconductors. The days of doubling the performance of process (Moore's law) have, 
