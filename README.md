@@ -6,5 +6,3 @@ students to topics and content in computational mathematics.
 ### Main Repository Link
 
 [Math 4610 Fundamentals of Computational Mathematics](https://jvkoebbe.github.io/math4610/main)
-
-[Test This](https://jvkoebbe.github.io/math4610/example)
