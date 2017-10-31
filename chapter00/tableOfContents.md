@@ -54,16 +54,19 @@
   
 ## Appendices
 
-### Apendix 1: Coding Examples
+### Appendix 1: Coding Examples
 
   1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix01/maceps)
 
-### Apendix 2: Software Manual Entries
+### Appendix 2: Software Manual Entries
 
  1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
  
- ### Apendix 3: How to Create a Shared Library
+### Appendix 3: How to Create a Shared Library
  
  1. [Creating a Shared Library for Windows Applications](https://jvkoebbe.github.io/math4610/appendix03/win10SharedLibrary)
  2. [Creating a Shared Library for Linux Applications](https://jvkoebbe.github.io/math4610/appendix03/linuxSharedLibrary)
  
+### Appendix 4: OpenMP Tutorial for Parallelism
+
+### Appendix 5: OpenACC Tutorial for Parallelism
