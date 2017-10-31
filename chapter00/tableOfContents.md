@@ -2,7 +2,7 @@
 
 ## Preface
 
-1. [Preface for the Book/Repositry](https://jvkoebbe.github.io/math4610/chapter00/preface.md)
+1. [Preface for the Book/Repository](https://jvkoebbe.github.io/math4610/chapter00/preface.md)
 
 ## Table of Contents
 
