@@ -59,3 +59,5 @@
   1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix01/maceps)
 
 ### Apendix 2: Software Manual Entries
+
+ 1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
