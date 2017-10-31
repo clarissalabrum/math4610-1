@@ -61,3 +61,9 @@
 ### Apendix 2: Software Manual Entries
 
  1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
+ 
+ ### Apendix 3: How to Create a Shared Library
+ 
+ 1. [Creating a Shared Library for Windows Applications](https://jvkoebbe.github.io/math4610/appendix03/win10SharedLibrary)
+ 2. [Creating a Shared Library for Linux Applications](https://jvkoebbe.github.io/math4610/appendix03/linuxSharedLibrary)
+ 
