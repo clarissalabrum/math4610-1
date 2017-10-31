@@ -27,8 +27,8 @@ manual, and (5) implement efficient versions of algorithms using parallel progra
 
 ## Table of Contents
 
-[Course Contents](https://jvkoebbe.github.io/math4610/tableOfContents): This is a Markdown (.md) file that contains a the table
-of contents for the course.
+[Course Contents](https://jvkoebbe.github.io/math4610/chapter00/tableOfContents): This is a Markdown (.md) file that contains
+a the table of contents for the course.
 
 ## Software Manual Description and Template
 
