@@ -4,7 +4,7 @@
 
 1. [Preface for the Book/Repository](https://jvkoebbe.github.io/math4610/chapter00/preface)
 
-## Table of Contents
+## Chapter Contents
 
 1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io/math4610/chapter01/examples)
 2. [Sources of Error:](https://jvkoebbe.github.io/math4610/chapter02/sourcesOfError)
@@ -51,3 +51,11 @@
   * The Power Method
   * Shifting and the Power Method
   * The QR Algorithm
+  
+## Appendices
+
+### Apendix 1: Coding Examples
+
+  1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix01/maceps)
+
+### Apendix 2: Software Manual Entries
