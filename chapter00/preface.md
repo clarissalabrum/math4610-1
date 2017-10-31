@@ -15,3 +15,6 @@ in Seattle, WA.
 All are welcome to use this repository for learning an teaching topics commonly used in computational mathematics. There are
 loads of algorithms and other computational ideas. Some of the material is based on current hardware and software. As things
 change it is hoped that the material in the repository will keep up with newer methods and technologies.
+
+If you find errors in the materials or typos, please send e-mail to the author at joe.koebbe@usu.edu. I will try to get to the
+comments and errors as fast as I can take care of them. In other words, be a bit patient with corrections.
