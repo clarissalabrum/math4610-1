@@ -1,5 +1,9 @@
 # Math 4610 Fundamentals of Computational Mathematics
 
+## Preface
+
+1. [Preface for the Book/Repositry](https://jvkoebbe.github.io/math4610/chapter00/preface.md)
+
 ## Table of Contents
 
 1. [Examples of Scientific Computing and Numerical Analysis](https://jvkoebbe.github.io/math4610/examples)
