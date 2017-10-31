@@ -56,6 +56,6 @@
 
 ### Apendix 1: Coding Examples
 
-  1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix01/maceps)
+  1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix01/maceps.f)
 
 ### Apendix 2: Software Manual Entries
