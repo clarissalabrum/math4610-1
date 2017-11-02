@@ -109,4 +109,4 @@ will help remind you of what the code is doing and how the code can be used to s
 difficult to understand your code after a few days. So, students in this course are encouraged to document code thoroughly.
 In addition, a term project that involves documentation of code, is to write a software manual to document all the codes that
 are written by the student. An example of an entry for a software manual is included in
-[Appendix 1](https://jvkoebbe.github.io/math4610/appendix01)
+[Appendix 1](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
