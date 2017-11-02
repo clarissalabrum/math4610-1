@@ -43,4 +43,4 @@ presented in the course.
 
 The links below will take you to a software manual template in in a Markdown file for use by students in Math 4610.
 
-[Software Manual Template](https://jvkoebbe.github.io/math4610/softwareManualTemplate)
+[Software Manual Template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
