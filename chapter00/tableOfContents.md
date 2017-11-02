@@ -22,6 +22,8 @@
     1. Multiple Roots
     2. Minimization Problems
   * Hybrid Methods
+    1. Combining the Bisection Method with Newton's Method
+    2. Combining the Bisection Method with the Secant Method
   * Convergence of the Methods
     1. Linear, Superlinear, Quadratic Convergence
     2. Computational Convergence Rates
