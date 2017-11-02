@@ -1,9 +1,14 @@
 ### Code to Determine Machine Precision
 
-It is always a good idea to understand the precision with which any real number can be represented. To do this, one can write a
-very little bit of computer code that will test to see how close one can get to the number 1 before precision is lost. An example
-code is included in this appendix. The code is in Fortran, but can easily be translated into a C/C++, Python, or Java code. The
-main reason for including the code is to make sure students get started very quickly in writing and using codes.
+It is always a good idea to understand the precision with which any real number can be represented. Coming up with a way to
+compute the machine precision can help with understanding how errors can accumulate as floating point operations are
+performed in a computer code or simulation. To compute an estimate of the machine precision on your computer, you can write a
+very little bit of computer code that will test to see how close one can get to the number 1 before precision is lost. An
+example code is included in this appendix. The code is in Fortran, but can easily be translated into a C/C++, Python, or Java
+code. The main reason for including the code is to make sure students get started very quickly in writing and using codes. In
+addition, most computer literate students program in other languages (e.g, C, C++, Java, Python, etc.) So, providing a code in
+fortran will likely cause students to take on the challenge of translating the code included below into another language. Note
+that translation of code from one programming language to another is a useful skill to have.
 
     c
     c coding language:    Fortran 77
@@ -94,3 +99,14 @@ main reason for including the code is to make sure students get started very qui
     c
     return
     end
+
+### Documentation of Software
+
+There are no shortage of reasons for the documentation of code that you write. One of the most important reasons to document
+your own code is to make sure that the code you write is reusable in your future. Writing 10's or 100's of lines with no
+documentation may work in the short term. However, after a few weeks or months the documentation you write into your codes
+will help remind you of what the code is doing and how the code can be used to solve problems. In some cases, it might be
+difficult to understand your code after a few days. So, students in this course are encouraged to document code thoroughly.
+In addition, a term project that involves documentation of code, is to write a software manual to document all the codes that
+are written by the student. An example of an entry for a software manual is included in
+[Appendix 1](https://jvkoebbe.github.io/math4610/appendix01)
