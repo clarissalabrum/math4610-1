@@ -21,10 +21,10 @@
   * Variants of Newton's Method
     1. Multiple Roots
     2. Minimization Problems
-  6. Hybrid Methods
-  7. Convergence of the Methods
-    * Linear, Superlinear, Quadratic Convergence
-    * Computational Convergence Rates
+  * Hybrid Methods
+  * Convergence of the Methods
+    1. Linear, Superlinear, Quadratic Convergence
+    2. Computational Convergence Rates
 4. Matrix Operations
   * The dot product
   * The cross product
