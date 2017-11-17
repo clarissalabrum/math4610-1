@@ -1,5 +1,7 @@
 # Math 4610 Main Web Page
 
+[test file](https://jvkoebbe.github.io/math4610/chapter00/test.html):
+
 ## Development of Math 4610
 
 This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at [Utah State University](http://www.usu.edu)
@@ -45,4 +47,3 @@ The links below will take you to a software manual template in in a Markdown fil
 
 [Software Manual Template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
 
-[Course Contents](https://jvkoebbe.github.io/math4610/chapter00/test.html):
