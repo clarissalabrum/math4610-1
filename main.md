@@ -1,6 +1,6 @@
 # Math 4610 Main Web Page
 
-[test file](https://jvkoebbe.github.io/math4610/chapter00/test.html):
+[test file](https://jvkoebbe.github.io/math4610/test.html):
 
 ## Development of Math 4610
 
