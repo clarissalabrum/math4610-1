@@ -1,7 +1,5 @@
 # Math 4610 Main Web Page
 
-[test file](https://jvkoebbe.github.io/math4610/test.html):
-
 ## Development of Math 4610
 
 This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at [Utah State University](http://www.usu.edu)
