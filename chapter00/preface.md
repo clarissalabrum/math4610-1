@@ -25,4 +25,4 @@ in a web page: [MathJax Test](https://jvkoebbe.github.io/math4610/chapter00/math
 are in GIF image files/format. A test case for this is available at this link:
 [graphics test](https://jvkoebbe.github.io/math4610/images/test.gif).
 
-<a href="https://jvkoebbe.github.io/math4610/images/test.gif", target="_blank"> picky </a>.
+<a href="https://jvkoebbe.github.io/math4610/images/test.gif" target="_blank"> picky </a>.
