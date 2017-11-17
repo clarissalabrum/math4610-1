@@ -18,3 +18,6 @@ change it is hoped that the material in the repository will keep up with newer m
 
 If you find errors in the materials or typos, please send e-mail to the author at joe.koebbe@usu.edu. I will try to get to the
 comments and errors as fast as I can take care of them. In other words, be a bit patient with corrections.
+
+Mathematics in this repository is displayed using [MathJax](http://docs.mathjax.org/en/latest/index.html) and regular html files
+that contain bits of mathematics embedded in the html. For example, the following is such an example.
