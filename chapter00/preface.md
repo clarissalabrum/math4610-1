@@ -21,6 +21,6 @@ comments and errors as fast as I can take care of them. In other words, be a bit
 
 Mathematics in this repository is displayed using [MathJax](http://docs.mathjax.org/en/latest/index.html) and regular html files
 that contain bits of mathematics embedded in the html. For example, click on the following link to see what this might look like
-in a web page: [MathJax Test Page](https://jvkoebbe.github.io/math4610/chapter00/mathjaxTest.html). Also, graphics displayed in
-the text are in GIF image files/format. A test case for this is available at this link:
-[Graphics Test Page](https://jvkoebbe.github.io/math4610/images/test.gif)
+in a web page: [MathJax Test](https://jvkoebbe.github.io/math4610/chapter00/mathjaxTest.html). Also, graphics displayed in the text 
+are in GIF image files/format. A test case for this is available at this link:
+[graphics test](https://jvkoebbe.github.io/math4610/images/test.gif).
