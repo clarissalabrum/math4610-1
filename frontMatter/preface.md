@@ -5,7 +5,7 @@ work. First the students in this course help teach the author more and better co
 students tend to keep up on new and better computational toys than one aging professor. In addtion, it is expected that other
 instructors of Math 4610 at Utah State University will embrace this material. The expectation is to create a set of freely
 available materials students can use during the course and after completing the course for as long as this repository is
-maintained or Github continues to be so darned easy to use.
+maintained and/or Github continues to be so darned easy to use.
 
 The initial version of this repository was created and maintained by [Joe Koebbe](http://www.math.usu.edu/~koebbe). The author
 has over 35 years of experience writing code for simulation of black oil reservoirs with an internship with Chevron Oil Field
