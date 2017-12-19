@@ -39,5 +39,5 @@ implement parallel versions of algorithms if the algorithm lends itself to paral
 computers have been made available and the GPU technology for fast refresh rates on computer screens has spawned many efforts to 
 use the extra resources.....
 
-[Back to Main Page](https://jvkoebbe.github.io/math4610/Readme) | 
+[Back to Main Page](https://jvkoebbe.github.io/math4610/main) | 
   [Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
