@@ -1,4 +1,4 @@
-### Examples in Computational Mathematics and Scientific Computing
+### Examples of the Importance of Computational Mathematics and Scientific Computing
 
 The information on this page details some examples of the use of methods from computational mathematics and/or scientific
 computing. There are at least 3 or 4 types of problems that a computational mathematician addresses in the development of
