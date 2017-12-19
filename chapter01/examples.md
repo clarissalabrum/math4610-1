@@ -1,15 +1,19 @@
 ### Examples of the Importance of Computational Mathematics and Scientific Computing
 
-The information on this page details some examples of the use of methods from computational mathematics and/or scientific
-computing. There are at least 3 or 4 types of problems that a computational mathematician addresses in the development of
-algorithms for computing approximate solutions of different problems. Some of the basic problems that need to be overcome
-are contained in the following list.
+The information on this page details some examples of the use of methods and tools from computational mathematics and/or
+scientific computing. In the following examples, one can think of the following. What does a computational mathematician do? 
+There are at least 3 or 4 types of problems that a computational mathematician addresses in the development of algorithms for 
+computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
+following list of examples.
 
 1. **Accuracy of an Approximation:**  Most of the algorithms that end up being translated into computer code, compiled in some 
-language (for example, C or C++), and run on various computers will produce an approximate solution to a mathematical problem. For 
-example, using a finite difference method to discretize derivatives in a differential equation will, at best, result in an 
-approximation of the solution of the original differntial equation. If an algorithm is unable to produce an accurate approximation, 
-the results may be of no use to colleagues that want to answer questions about a real problem.
+language (for example, C or C++), and run on various computers will produce an approximate solution to a mathematical problem.
+For example, using a finite difference method to discretize derivatives in a differential equation will, at best, result in an 
+approximation of the solution of the original differntial equation. If an algorithm is unable to produce an accurate 
+approximation, the results may be of no use to colleagues that want to answer questions about a real problem.
+
+Your boss might ask you the question of how accurate the results of your simulations are. It is not enough to build a program
+that....
 
 2. **Efficiency of the Computer Code:**  The implementation of any algorithm must necessarily be concerned with how fast results 
 can be obtained once the algorithm has been successfully been coded and all bugs (errors) in the code have been corrected. 
