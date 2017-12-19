@@ -6,7 +6,8 @@ There are at least 3 or 4 types of problems that a computational mathematician a
 computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
 following list of examples.
 
-1. **Accuracy of an Approximation:**  Most of the algorithms that end up being translated into computer code, written and 
+1. **Accuracy of an Approximation: Question from the Boss - "Does your code work?"**  Most of the algorithms that end up being 
+translated into computer code, written and 
 compiled into an executable/binary file (for example, C, C++, or Fortran), and run on various computers will produce an
 approximate solution to an underlying mathematical problem. For example, using a finite difference method to discretize 
 derivatives in a differential equation will, at best, result in an approximation of the solution of the original differential 
@@ -16,8 +17,6 @@ computer program will produce an accurate approximate solution. A more general q
 for which the algorithm produces an accurate approximate solution. It should be noted that it is not good enough to get a
 computer program running. If the program does not produce accurate results related to the original problem, the program really
 is note worth much.
-
-Question from the Boss: "Does your code work?"
 
 2. **Efficiency of the Computer Code:**  The implementation of any algorithm must necessarily be concerned with how fast results 
 can be obtained once the algorithm has been successfully been encoded and all bugs (errors) in the code have been corrected. 
