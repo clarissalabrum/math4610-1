@@ -26,3 +26,9 @@ Github allows users to include code blocks in a variety of programming languages
 encounter a code block, you will be able to cut an paste code into text files. This will allow you to get code running easily.
 A lot of the Exercises in this repository will require that you modify example codes which will require getting the example
 codes to work correctly.
+
+    subroutine maceps()
+    real*8 eps
+    eps = 1.d0
+    return
+    end
