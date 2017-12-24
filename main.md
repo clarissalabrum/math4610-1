@@ -75,8 +75,17 @@ the class so that students get used to the work it takes.
 
 The last skill set listed above is using the full capabilities of modern computing hardware. Almost all computers now come with
 multiple cores (multiple CPUs) and Graphics Computing Units (GPUs) that provide a wealth of additional computational horsepower.
-
-Something about error correcting memory......
+In recent years, limitations of a single CPU have stopped the every advancing performance of computers. To aid in the
+performance of hardware, computer vendors have started producing more performance through the addition of multiple cores and
+GPUs for enhancing graphcial displays. These resources can be used by computational mathematicians to improve the computational
+efficiency of the software they develop. In the past few years language extensions, such as OpenMP and OpenACC, have been
+developed to take advantage of these hardware resources. The content in this course touches on these two language extensions in
+the implementation of algorithms for the approximate solution of mathematical problems. The reader should note that there are a
+number of gotchas in using these extensions. These occur on both the hardware and software ends of the implementation. For
+example, most GPUs that ship with desktops are geared for graphical displays. This means that errors can occur in computations
+that are not corrected. This is fine for graphical displays, but can cause problems in scientific computing. However, one can
+purchase standalone GPUs that have error correcting memory that can be used in scientific computing. More will be covered as
+these topics arise in presentation of content in the course.
 
 ## Table of Contents
 
