@@ -27,15 +27,15 @@ eigenvalues and eigenvectors), and (3) build shared libraries based on the code 
 Windows), (4) document the work done in a software manual, and (5) implement efficient versions of algorithms using parallel
 programming techniques (e.g, OpenMP and OpenACC).
 
-Each of these items is viewed as an important part of being a computational mathematics/scientific computing expert. There are
-also real reasons why it is important that students are well prepared in each of these skill sets. It is ultimately important
-that any student in this course is able to implement simple algorithms in a native coding language (say C or Java). There are
-some in these areas that would say that implementation of algorithms using a computational platform like Matlab is a better way
-to teach algorithm implementation. However, if a student is hired into a software development company or a position within a
-large company to write software, Matlab is usually too expensive to use. In an academic setting Matlab is usually a great way to
-prototype ideas. The built in functionality and graphical interfaces are great for testing ideas in many areas of mathematics
-and sience. However, incorporating Matlab and any other of these platforms requires a larger financial committment. More
-importantly, computational mathematicians are constantly faced with problems where it is important to be able to debug and
+Each of the items just listed is viewed as an important part of being a computational mathematics/scientific computing expert.
+There are also real reasons why it is important that students are well prepared in each of these skill sets. It is ultimately
+important that any student in this course is able to implement simple algorithms in a native coding language (say C or Java). 
+There are some in these areas that would say that implementation of algorithms using a computational platform like Matlab is a 
+better way to teach algorithm implementation. However, if a student is hired into a software development company or a position 
+within a large company to write software, Matlab is usually too expensive to use. In an academic setting Matlab is usually a 
+great way to prototype ideas. The built in functionality and graphical interfaces are great for testing ideas in many areas of 
+mathematics and sience. However, incorporating Matlab and any other of these platforms requires a larger financial committment. 
+More importantly, computational mathematicians are constantly faced with problems where it is important to be able to debug and
 write new code that modifies an existing piece of software. For example, it might be important to rewrite code to work on
 multiple cores on a desktop. This may mean digging into existing code and rewriting the code. This is a skill set that all
 computational mathematics professionals must have. Using simple algorithms as a means to present these ideas is the best
@@ -66,6 +66,13 @@ software manual has been placed on Github using markdown language. From the poin
 platform to create a software manual also gives coding nerds experience with a social media application that can be used to
 contact other computer programmers that ....
 
+When a computational mathematician is hired into a software development job, it is likely the case that a format for the 
+documentation of software already exists. So, adapting to the documentation format will be required. In terms of grading for
+a course like the one described in this repository, it is important to create a standard way of documenting the software
+written. A software manual is provided to students. The format is given later in this introduction. Using Github and markdown
+language makes this assignment a lot easier to complete. Students are asked to start the software manual in the first week of
+the class so that students get used to the work it takes.
+
 The last skill set listed above is using the full capabilities of modern computing hardware. Almost all computers now come with
 multiple cores (multiple CPUs) and Graphics Computing Units (GPUs) that provide a wealth of additional computational horsepower.
 
@@ -73,8 +80,9 @@ Something about error correcting memory......
 
 ## Table of Contents
 
-[Course Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents): This is a Markdown (.md) file that contains
-a the table of contents for the course.
+[Course Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents): The previous link will take you to a
+Markdown (.md) file that contains a the table of contents for the course. For a one semester course, there may be more content
+than can be covered. The content can be used to give instructors/readers plenty to do.
 
 ## Software Manual Description and Template
 
