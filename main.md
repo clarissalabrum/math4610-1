@@ -64,7 +64,7 @@ Documentation of work is fundamental to any scientific endeavor. So, students at
 the code they write. The intent of this project is to get students to effectively communicate their work from the course. The
 software manual has been placed on Github using markdown language. From the point of view of a skill set, using Github as a
 platform to create a software manual also gives coding nerds experience with a social media application that can be used to
-contact other computer programmers that ....
+contact other computer programmers who are interested in the same types of problems.
 
 When a computational mathematician is hired into a software development job, it is likely the case that a format for the 
 documentation of software already exists. So, adapting to the documentation format will be required. In terms of grading for
