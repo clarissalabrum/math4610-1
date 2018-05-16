@@ -1,6 +1,6 @@
 # Math 4610 Fundamentals of Computational Mathematics
 
-## Preface
+## Preface/Mathematical Notation
 
 1. [Preface for the Book/Repository](https://jvkoebbe.github.io/math4610/frontMatter/preface)
 2. [Notation used in the Book/Repository](https://jvkoebbe.github.io/math4610/frontMatter/notation)
