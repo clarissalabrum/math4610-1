@@ -1,6 +1,6 @@
 ## Preface for Math 4610 Fundamentals of Computational Mathematics
 
-The content in this repository is a work in progress at Utah State University. There will be (are) several contributors to this
+The content in this repository is a work in progress at Utah State University (USU). There will be (are) several contributors to this
 work. First the students in this course have taught the author more and better computing tricks. This is due to the fact that
 students tend to keep up on new and better computational toys than one aging professor. The author has learned and forgotten
 enumerable coding languages and tricks over a number decades. It is expected that other instructors of Math 4610 at Utah State
