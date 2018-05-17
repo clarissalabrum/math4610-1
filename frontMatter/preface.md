@@ -33,3 +33,6 @@ text are in GIF image files/format. A test case for the following image
 is available at this link:
 
 <a href="https://jvkoebbe.github.io/math4610/images/test.gif" target ="_blank"> test.gif </a>
+
+Note that you should be able to look at the .md file for this preface. The html/img tags and such can be copied directly from 
+the file, preface.md.
