@@ -27,5 +27,5 @@ Mathematics in this repository is displayed using [MathJax](http://docs.mathjax.
 that contain bits of mathematics embedded in the html. For example, click on the following link to see what this might look like
 in a web page: [MathJax Test](https://jvkoebbe.github.io/math4610/frontMatter/mathjaxTest.html). Also, graphics displayed in the
 text are in GIF image files/format. A test case for this is available at this link:
-<img href="https://jvkoebbe.github.io/math4610/images/test.gif" target ="_blank"> test.gif </a>
+<img src="https://jvkoebbe.github.io/math4610/images/test.gif" alt="Test.gif not found" height="120" width="120">
 <a href="https://jvkoebbe.github.io/math4610/images/test.gif" target ="_blank"> test.gif </a>
