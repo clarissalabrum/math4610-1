@@ -16,6 +16,8 @@ Research Company (when it was called that) to Fishery Simulators written in Java
 in Seattle, WA. Many of the projects in the repository have been studied and worked on by the author and a number of 
 undergraduate and graduate students.
 
+### Warantees and Disclosures
+
 All, including anyone out on the internet are welcome to use this repository for learning and teaching topics commonly used in 
 computational mathematics. There are loads of algorithms and other computational ideas that have and will be included in this 
 repository. Some of the material is based on current hardware and software. As things change it is hoped that the material in 
@@ -23,12 +25,17 @@ the repository will keep up with newer methods and technologies.
 
 If you find errors in the materials or typos, please send e-mail to the author at joe.koebbe@usu.edu. I will try to get to the
 comments and errors as fast as I can take care of them. In other words, be a bit patient with corrections and modifications to 
-the material.
+the material. The material in this repository comes as is with the usual caveats for misuse and the like.
+
+### MathJax and Notation
 
 Mathematics in this repository is displayed using [MathJax](http://docs.mathjax.org/en/latest/index.html) and regular html files
 that contain bits of mathematics embedded in the html. For example, click on the following link to see what this might look like
-in a web page: [MathJax Test](https://jvkoebbe.github.io/math4610/frontMatter/mathjaxTest.html). Also, graphics displayed in the
-text are in GIF image files/format. A test case for the following image
+in a web page: [MathJax Test](https://jvkoebbe.github.io/math4610/frontMatter/mathjaxTest.html).
+
+### Graphics Formatting in the Text
+
+Also, graphics displayed in the text are in GIF image files/format. A test case for the following image
 
 <img src="https://jvkoebbe.github.io/math4610/images/test.gif" alt="Test.gif not found" height="120" width="120">
 
