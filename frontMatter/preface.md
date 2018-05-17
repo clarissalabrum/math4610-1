@@ -1,12 +1,14 @@
 ## Preface for Math 4610 Fundamentals of Computational Mathematics
 
-The content in this repository is a work in progress at Utah State University (USU). There will be (are) several contributors to this
-work. First, the students who have this (and other) course(s) have taught the author more and better computing tricks and should be
-given credit for these contributions. This is due to the fact that students tend to keep up on new and better computational toys than one 
-aging professor. The author has learned and forgotten enumerable coding languages and computational tricks over a number decades. It is 
-expected that other instructors of Math 4610 at USU will embrace this material. The expectation is that this repository will evolve into a
-set of freely available materials that students can use during the course and after completing the course for as long as this repository
-is maintained and/or Github continues to be so darned easy to use.
+The content in this repository is a work in progress at Utah State University (USU). There will be (are) several contributors to
+this work. First, the students who have this (and other) course(s) have taught the author more and better computing tricks and 
+should be given credit for these contributions. This is due to the fact that students tend to keep up on new and better 
+computational toys than one aging professor
+([There is a joke in there somewhere!](http://www.math.utah.edu/~cherk/mathjokes.html)).
+The author has learned and forgotten enumerable coding languages and computational tricks over a number decades. It is expected 
+that other instructors of Math 4610 at USU will embrace this material. The expectation is that this repository will evolve into 
+a set of freely available materials that students can use during the course and after completing the course for as long as this 
+repository is maintained and/or Github continues to be so darned easy to use.
 
 The initial version of this repository was created and maintained by [Joe Koebbe](http://www.math.usu.edu/~koebbe). The author
 has over 35 years of experience writing code for simulation of black oil reservoirs with an internship with Chevron Oil Field
