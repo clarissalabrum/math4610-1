@@ -6,7 +6,7 @@
 
 ## Mathematical Notation and Basic Definitions
 
-1. [Notation used in the Book/Repository](https://jvkoebbe.github.io/math4610/frontMatter/notation)
+1. [Notation used in the Book/Repository](https://jvkoebbe.github.io/math4610/basicReview/notation)
 
 ## Chapter Contents
 
