@@ -1,1 +1,1 @@
-### Trigonometry Review
+### Trigonometry Review and Notation
