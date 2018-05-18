@@ -20,7 +20,7 @@ approximate solution of the problem.
 1. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/frontMatter/algebra.md)
 2. [Basic Review/Notation For Trigonometry](https//jvkoebbe.github.io/math4610/frontMatter/trigonometry.md)
 3. [Basic Review/Notation For Calculus](https//jvkoebbe.github.io/math4610/frontMatter/calculus.md)
-4. [Basic Review/Notation For Linear Algebra](https//jvkoebbe.github.io/math4610/frontMatter/linearAlgebra.md)
+4. [Basic Review/Notation For Linear Algebra](https//jvkoebbe.github.io/math4610/frontMatter/linalg.md)
 5. [Basic Review/Notation For Ordinary Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/ode.md)
 6. [Basic Review/Notation For Partial Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/pde.md)
 
