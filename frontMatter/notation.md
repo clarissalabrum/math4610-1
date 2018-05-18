@@ -18,12 +18,12 @@ mathematical problem is that a solution exists. Once we know a solution exists, 
 approximate solution of the problem.
 
 1. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/frontMatter/algebra)
-2. [Basic Review/Notation For Trigonometry](https//jvkoebbe.github.io/math4610/frontMatter/trigonometry)
-3. [Basic Review/Notation For Calculus](https//jvkoebbe.github.io/math4610/frontMatter/calculus)
-4. [Basic Review/Notation For Linear Algebra](https//jvkoebbe.github.io/math4610/frontMatter/linalg)
-5. [Basic Review/Notation For Ordinary Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/ode)
-6. [Basic Review/Notation For Partial Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/pde)
-7. [Basic Review/Notation For Discrete Mathematics](https//jvkoebbe.github.io/math4610/frontMatter/discrete)
+2. [Basic Review/Notation For Trigonometry](https://jvkoebbe.github.io/math4610/frontMatter/trigonometry)
+3. [Basic Review/Notation For Calculus](https://jvkoebbe.github.io/math4610/frontMatter/calculus)
+4. [Basic Review/Notation For Linear Algebra](https://jvkoebbe.github.io/math4610/frontMatter/linalg)
+5. [Basic Review/Notation For Ordinary Differential Equations](https://jvkoebbe.github.io/math4610/frontMatter/ode)
+6. [Basic Review/Notation For Partial Differential Equations](https://jvkoebbe.github.io/math4610/frontMatter/pde)
+7. [Basic Review/Notation For Discrete Mathematics](https://jvkoebbe.github.io/math4610/frontMatter/discrete)
 
 For more thorough information students should be find a textbook in the area and review or take a course that will better
 prepare the reader in these areas.
