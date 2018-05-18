@@ -21,7 +21,7 @@ approximate solution of the problem.
 2. [Basic Review/Notation For Trigonometry](https//jvkoebbe.github.io/math4610/frontMatter/trigonometry.md)
 3. [Basic Review/Notation For Calculus](https//jvkoebbe.github.io/math4610/frontMatter/calculus.md)
 4. [Basic Review/Notation For Linear Algebra](https//jvkoebbe.github.io/math4610/frontMatter/linearAlgebra.md)
-5. [Basic Review/Notation For Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/ode.md)
+5. [Basic Review/Notation For Ordinary Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/ode.md)
 6. [Basic Review/Notation For Partial Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/pde.md)
 
 For more thorough information students should be find a textbook in the area and review or take a course that will better
