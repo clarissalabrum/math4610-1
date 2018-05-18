@@ -23,6 +23,7 @@ approximate solution of the problem.
 4. [Basic Review/Notation For Linear Algebra](https//jvkoebbe.github.io/math4610/frontMatter/linalg.md)
 5. [Basic Review/Notation For Ordinary Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/ode.md)
 6. [Basic Review/Notation For Partial Differential Equations](https//jvkoebbe.github.io/math4610/frontMatter/pde.md)
+7. [Basic Review/Notation For Discrete Mathematics](https//jvkoebbe.github.io/math4610/frontMatter/discrete.md)
 
 For more thorough information students should be find a textbook in the area and review or take a course that will better
 prepare the reader in these areas.
