@@ -72,4 +72,5 @@ complex numbers in the definition of solutions as a part of the modeling process
 
 #### Addition, Subtraction, Multiplication, and Division
 
-The reason that 
+The reason that programmers should be interested in the simple arithmetic operations is in the amount of error that may occur
+in these binary opertations due to finite representation of numbers. For example,...
