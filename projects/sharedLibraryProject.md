@@ -206,6 +206,22 @@ in the following script for creating any number of shared libraries.
     echo >> $APPLOGFILENAME
     exit(2)
 
+The script given above is rather complicated looking. However, the script can be broken down into chunks of shell script. The
+part that we are interested in is the the part where the shared library is created. That is the line:
+
+    ar rcv $APPLIBFILENAME *.o >> $APPLOGFILENAME
+
+The variables APPLIBFILENAME and APPLOGFILENAME contain the actual name of the library being create and the log file where any
+errors messages are copied to. The main thing we need is the following:
+
+    ar rcv libname *.o
+    
+The command creates an archive with options "r", "c", and "v" specified. The argument:
+
+    *.o
+
+means put all files in that have the "o" extension.
+
 ### Dynamic Linked Library (DLL) Instructions
 
 The information in this part of the project involves the creation of a Dynamic Linked Library (DLL) for use with codes written
