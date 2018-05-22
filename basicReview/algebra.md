@@ -16,7 +16,7 @@ It may seem a bit trivial for this review to include basic binary operations. Ho
 operations must be done with care in some circumstances. Due to finite precision of arithmetic when computers, graphing
 calculators, and any other digital device, errors will be generated when numerical operations are applied.
 
-#### Addition, Subtraction, Multiplication, and Division
+#### Sets of Numbers
 
 As a starting point, we should define sets of numbers that will be used in this text. There are several sets of numbers that
 are important in this course. First, the set of natural numbers is important in developing algorithms that require iterations
@@ -30,3 +30,16 @@ method will at best produce an approximation of the root.
 
 The takeaway from the example above, is that since we will only have a finite amount of time to produce a solution to any
 mathematical problem, the set of natural numbers is larger than can be used for practial purposes.
+
+The next set of numbers that will be used in algorithms is the set of rational numbers...
+
+The solution of most mathematical problems requires working in the set of real numbers...
+
+Occasionally, algorithms will produce complex numbers. For example, the eigenvalue problem in linear algebra requires
+finding all roots of the characteristic polynomial associated with a square matrix. All polynomials can be factored into
+linear factors or quadratic factors that cannot be factored over the real numbers. The result is that the quadratic factors
+produce complex conjugate pairs of eigenvalues. Another example involves the computation of solutions of constant
+coefficient, linear, ordinary differential equations. Finally, applications such as nonlinear optics require the use of
+complex numbers in the definition of solutions as a part of the modeling process.
+
+#### Addition, Subtraction, Multiplication, and Division
