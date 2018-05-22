@@ -22,7 +22,7 @@ in the following script for creating any number of shared libraries.
 
     #
     # script name: jvklib
-    # written by:  jvkII
+    # written by:  Joe Koebbe
     # purpose:     This routine will create a library from individual files
     #              containing fortran (or c) routines in separate files in a
     #              specified directory.
