@@ -23,4 +23,10 @@ are important in this course. First, the set of natural numbers is important in 
 in a basic computation. For example, Newton's method requires a loop over computing linear approximations to roots of nonlinear
 functions. One formula for the application of Newton's method is:
 
-Note that the subscript, k, is chosen to be in the sequence of natural numbers, k=1, 2, 3, ...
+Note that the subscript, k, is chosen to be in the sequence of natural numbers, k=1, 2, 3, ... The reader should be aware that
+the application of Newton's method could go on forever. As a thought experiment, if Newton's method is started from a rational
+number and the root we are trying to find is an irrational number, Newton's method will never produce an exact value. Newton's
+method will at best produce an approximation of the root.
+
+The takeaway from the example above, is that since we will only have a finite amount of time to produce a solution to any
+mathematical problem, the set of natural numbers is larger than can be used for practial purposes.
