@@ -68,10 +68,17 @@
 
  1. [Machine Epsilon Example: Fortran](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
  
-### Appendix 3: How to Create a Shared Library
+### Appendix 3: Computational Projects
+
+The links below will take students to the projects designed for Math 4610. The link:
+
+[Project Index](https://jvkoebbe.github.io/math4610/projects/indexOfProjects)
+
+will take you to a list of links to the various projects that have been created for the course Math 4610 at USU. The liks of
+links below will take you to individual projects that may change in time or as the instructor sees fit.
  
- 1. [Creating a Shared Library for Windows Applications](https://jvkoebbe.github.io/math4610/appendix03/win10SharedLibrary)
- 2. [Creating a Shared Library for Linux Applications](https://jvkoebbe.github.io/math4610/appendix03/linuxSharedLibrary)
+ 1. [Creating a Shared Library](https://jvkoebbe.github.io/math4610/projects/sharedLibraryProject)
+ 2. [Hello World Application in OpenMP](https://jvkoebbe.github.io/math4610/projects/helloWorldOpenmpProject)
  
 ### Appendix 4: OpenMP Tutorial for Parallelism
 
