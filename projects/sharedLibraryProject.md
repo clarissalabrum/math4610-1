@@ -15,7 +15,7 @@ in a bash/csh shell is:
 with appropriate flags specified for various coding languages and options. Most of the material used to create this part of the
 project can be found at the site:
 
-    http://cygwin.org
+http://cygwin.org
 
 As an example of how one can create a script that automatically creates a shared library, the author implemented the ar command
 in the following script for creating any number of shared libraries.
