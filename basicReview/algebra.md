@@ -93,9 +93,9 @@ mathematical problem, the set of natural numbers is larger than can be used for 
 
 Something about computer languages all have basic types.
 
-'''C
- int m, n, q;
-'''
+```C
+int m, n, q;
+```
 
 in C, C++, Java, Python and other languages specifies that m, n, and q are integers. In fortran the syntax is:
 
