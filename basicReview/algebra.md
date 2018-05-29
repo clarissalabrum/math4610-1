@@ -21,7 +21,7 @@ see functions in the form of polynomials, rational functions of polynomials, roo
 and combinations of these functions. These types of functions are sometimes called elementary functions. A basicdefinition of a 
 function is the following:
 
-**Definition** Given a set of numbers, _S_, a function, f, is a rule that assigns to each number x in _S_ a unique number in 
+**Definition:**   Given a set of numbers, _S_, a function, f, is a rule that assigns to each number x in _S_ a unique number in 
 another set _T_ of numbers. The set _S_ is called the domain of the function and the set _T_ is called the range or image of the 
 function.
 
