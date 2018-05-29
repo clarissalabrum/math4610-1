@@ -46,7 +46,7 @@ domain refers to the set of numbers that is implied by the problem being solved.
 
 The difference between an implied and natural domain can be explained as follows. Many problems in applied mathematics and
 engineering involve the solution of evolution problems where an ordinary differential equation or
-[ode](https://jvkoebbe/math4610/
+[ode](https://jvkoebbe/math4610/chapter_14/ode).
 
 ### Inverse Functions
 
