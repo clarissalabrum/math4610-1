@@ -9,7 +9,7 @@ tools like LaTeX to write up work being done as students work through this mater
 ### Definition of Relations and Functions
 
 One of the first things students see in any basic algebra course is the definition of a function. In particular, students will
-see functions in the form of polynomials, [trig functions](https://jvkoebbe.github.io/math4610/basicReview/trigonometryReview),
+see functions in the form of polynomials, [trig functions](https://jvkoebbe.github.io/math4610/basicReview/trigonometry),
 exponential and logarithmic functions.
 
 ### Inverse Functions
