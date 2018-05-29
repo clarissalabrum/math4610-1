@@ -28,6 +28,25 @@ in another set _T_ of numbers. The set _S_ is called the **domain** or (preimage
 In this repository, the terms domain and range will be used throughout. The notation for a function in this repository is:
 
     y = f(x)
+    
+where x is in the domain of the function and y is in the range of the function. A few examples are included so that the reader
+can see how the notation will be used in the text.
+
+** Example 1:** A linear polynomial can be written in the form
+
+    y = f(x) = a + b * x
+
+where a and b are constant numbers and x is a variable.
+
+There a couple of types of domains that are important in determining the solution of problems. The first is the natural domain
+of the function and the other is an implied domain for the function. The following gives a definition of these sets of numbers.
+
+**Definition:** The natural domain of a function, f, is the largest set of numbers where the function is defined. The implied
+domain refers to the set of numbers that is implied by the problem being solved.
+
+The difference between an implied and natural domain can be explained as follows. Many problems in applied mathematics and
+engineering involve the solution of evolution problems where an ordinary differential equation or
+[ode](https://jvkoebbe/math4610/
 
 ### Inverse Functions
 
