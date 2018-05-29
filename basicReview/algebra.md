@@ -1,6 +1,16 @@
 ## Algebra Review and Notation
 
+The reason for including a brief review of algebra is to make sure students are on the same wavelength in terms of mathematical
+notation that will be used in this material. There are also a number of examples of how to use LaTeX and other mathematical
+tools for presenting solutions to the problems in the text. Students do not need to use LaTeX to complete problems. However,
+with the increasing use of technology in education and further into industry, it is a good idea to start using type setting
+tools like LaTeX to write up work being done as students work through this material.
+
 ### Definition of Relations and Functions
+
+One of the first things students see in any basic algebra course is the definition of a function. In particular, students will
+see functions in the form of polynomials, [trig functions](https://jvkoebbe.github.io/math4610/basicReview/trigonometryReview),
+exponential and logarithmic functions.
 
 ### Inverse Functions
 
