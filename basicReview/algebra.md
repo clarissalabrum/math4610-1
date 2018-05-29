@@ -41,12 +41,19 @@ where a and b are constant numbers and x is a variable.
 There a couple of types of domains that are important in determining the solution of problems. The first is the natural domain
 of the function and the other is an implied domain for the function. The following gives a definition of these sets of numbers.
 
-**Definition:** The natural domain of a function, f, is the largest set of numbers where the function is defined. The implied
-domain refers to the set of numbers that is implied by the problem being solved.
+**Definition:** The **natural domain** of a function, f, is the largest set of numbers where the function is defined. The 
+**implied domain** refers to the set of numbers that is implied by the problem being solved.
 
 The difference between an implied and natural domain can be explained as follows. Many problems in applied mathematics and
 engineering involve the solution of evolution problems where an ordinary differential equation or
-[ode](https://jvkoebbe/math4610/chapter_14/ode).
+[ode](https://jvkoebbe/math4610/chapter_14/ode). The solution of the differential equation in a problem may be defined for all
+real numbers. This defines the natural domain of the solution of the differential equations. In many cases, the solution is
+only needed for input values starting at some time, _t_, and moving along the positive axis in time. So the implied domain will
+be a portion a subset of the natural domain of the solution.
+
+In computational mathematics the set of numbers that can be represented is finite. This is due to
+[errors](https://jvkoebbe.github.io/math4610/maceps) including machine resolution and roundoff error due to arithmetic
+operations using digital devices. This will be discussed early in this text.
 
 ### Inverse Functions
 
