@@ -51,9 +51,12 @@ real numbers. This defines the natural domain of the solution of the differentia
 only needed for input values starting at some time, _t_, and moving along the positive axis in time. So the implied domain will
 be a portion a subset of the natural domain of the solution.
 
-In computational mathematics the set of numbers that can be represented is finite. This is due to
-[errors](https://jvkoebbe.github.io/math4610/maceps) including machine resolution and roundoff error due to arithmetic
-operations using digital devices. This will be discussed early in this text.
+In computational mathematics the set of numbers that can be represented is finite. This is due to 
+[finite representation](https://jvkoebbe.github.io/math4610/machinePrecision) of numbers
+[errors](https://jvkoebbe.github.io/math4610/chapter_02/roundoffError) including machine resolution and roundoff error due to 
+arithmetic operations using digital devices. In an algebra course, the sets of numbers are assumed to be infinite which makes 
+defining operations and functions much easier. On a computer, finite representations must be treated with care to avoid the
+accumulation of errors. This will be discussed early in this repository/text.
 
 ### Inverse Functions
 
