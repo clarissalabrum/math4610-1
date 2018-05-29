@@ -32,7 +32,7 @@ In this repository, the terms domain and range will be used throughout. The nota
 where x is in the domain of the function and y is in the range of the function. A few examples are included so that the reader
 can see how the notation will be used in the text.
 
-** Example 1:** A linear polynomial can be written in the form
+**Example 1:** A linear polynomial can be written in the form
 
     y = f(x) = a + b * x
 
