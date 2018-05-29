@@ -16,9 +16,10 @@ Now to a very brief review of algebra.
 ### Definition of Relations and Functions
 
 One of the first things students see in any basic algebra course is the definition of a function. In particular, students will
-see functions in the form of polynomials, [trigonometric](https://jvkoebbe.github.io/math4610/basicReview/trigonometry)
-functions, exponential and logarithmic functions. These types of functions are sometimes called elementary functions. A basic
-definition of a function is the following:
+see functions in the form of polynomials, rational functions of polynomials, root and power functions,
+[trigonometric](https://jvkoebbe.github.io/math4610/basicReview/trigonometry) functions, exponential and logarithmic functions,
+and combinations of these functions. These types of functions are sometimes called elementary functions. A basicdefinition of a 
+function is the following:
 
 
 ### Inverse Functions
