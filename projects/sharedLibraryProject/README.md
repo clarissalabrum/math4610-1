@@ -49,7 +49,7 @@ will involve the following operations:
    library.
 4. Finally, you will need to be able to load and link the libraries to code that you write.
 
-Each of the following links will allow you to see an example of how to achieve the points above.
+Each of the following links will allow you to see an example of how to achieve the operations mentioned above.
 
 1. 
 
@@ -62,3 +62,10 @@ the semester. Most of the material for this project can be accessed by clicking 
 https://cygwin.com/cygwin-ug-net/dll.html
 
 So, let's start the process of building a DLL.
+
+### Project Exercises
+
+Question 1: Download the following codes for creation of a shared library.
+
+1. [helloworld.c](https://jvkoebbe/math4610/projects/helloWorld.c)
+2.
