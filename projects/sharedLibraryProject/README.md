@@ -65,7 +65,7 @@ So, let's start the process of building a DLL.
 
 ### Project Exercises
 
-Question 1: Download the following codes for creation of a shared library.
+Question 1: Creating a Shared Library: Download the following codes for creation of a shared library.
 
-1. [helloworld.c](https://jvkoebbe/math4610/projects/helloWorld.c)
-2.
+1. [helloworld.c](https://jvkoebbe/math4610/projects/sharedLibraryProbject/helloWorld.c)
+2. [annoyingHelloWorld.c](https://jvkoebbe/math4610/projects/sharedLibraryProject/annoyingHelloWorld.c)
