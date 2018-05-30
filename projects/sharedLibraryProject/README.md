@@ -65,7 +65,30 @@ So, let's start the process of building a DLL.
 
 ### Project Exercises
 
-Question 1: Creating a Shared Library: Download the following codes for creation of a shared library.
+**Question 1: Creating a Shared Library:** Download the following codes for creation of a shared library.
 
 1. [helloworld.c](https://jvkoebbe/math4610/projects/sharedLibraryProbject/helloWorld.c)
 2. [annoyingHelloWorld.c](https://jvkoebbe/math4610/projects/sharedLibraryProject/annoyingHelloWorld.c)
+
+Next, compile the routines that you have downloaded into object modules using the following:
+
+    gcc -c *.c
+
+This will produce two files with a .o extension. The last step in the process is to create a library using the following
+command:
+
+    ar cvf mylib.a
+
+The result is an archive file that programs can link to and use the modules within.
+
+**Question 2: Link/Run a Program to a Shared Library**
+
+**Question 3: Add a New Module to a Shared Library**
+
+**Question 4: Delete a Module**
+
+**Question 5: Using Freely Available Libraries**
+
+Using programming languages like Python, programmers bump into toolboxes, packages, libraries, and so on. In this part of the
+project, the numpy package associated with Python will be used to see how to load freely available packages programmers use
+to reuse well tested codes.
