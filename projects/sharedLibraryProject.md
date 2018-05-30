@@ -20,12 +20,12 @@ http://cygwin.org
 As an example of how one can create a script that automatically creates a shared library, the author implemented the ar command
 in the a script for creating a general shared libraries, including the name of the library, location of the library, and other
 parameters for the library. The following provides a link to the script. Note that the script is a bit long, but that is what
-happens in the development of code.
+happens in the development of code:
 
-[script link](https://jvkoebbe.github.io/math4610/projects/jvklib)
+[jvklib](https://jvkoebbe.github.io/math4610/projects/jvklib) link
     
-The script given above is rather complicated looking. However, the script can be broken down into chunks of shell script. The
-part that we are interested in is the the part where the shared library is created. That is the line:
+The script given above is rather complicated looking. However, the script can be broken down into chunks of shell (in fact,
+tcsh) script. The part that we are interested in is the the part where the shared library is created. That is the line:
 
     ar rcv $APPLIBFILENAME *.o >> $APPLOGFILENAME
 
@@ -39,6 +39,19 @@ The command creates an archive with options "r", "c", and "v" specified. The arg
     *.o
 
 means put all files in that have the "o" extension.
+
+In addition to creating a shared library, it is important to be able to maintain the library. The maintenance of the library
+will involve the following operations:
+
+1. You will need to be able to add routines and object files to an existing library.
+2. You will need to be able to remove routines from the library that are no longer needed.
+3. You will need to be able to swap out objects when modifications have been made to any routine that is included in the
+   library.
+4. Finally, you will need to be able to load and link the libraries to code that you write.
+
+Each of the following links will allow you to see an example of how to achieve the points above.
+
+1. 
 
 ### Dynamic Linked Library (DLL) Instructions
 
