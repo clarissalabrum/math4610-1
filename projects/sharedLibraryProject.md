@@ -22,7 +22,7 @@ in the a script for creating a general shared libraries, including the name of t
 parameters for the library. The following provides a link to the script. Note that the script is a bit long, but that is what
 happens in the development of code.
 
-    [script link](https://jvkoebbe.github.io/math4610/projects/jvklib)
+[script link](https://jvkoebbe.github.io/math4610/projects/jvklib)
     
 The script given above is rather complicated looking. However, the script can be broken down into chunks of shell script. The
 part that we are interested in is the the part where the shared library is created. That is the line:
