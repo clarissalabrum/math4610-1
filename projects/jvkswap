@@ -1,0 +1,169 @@
+#
+# this script will compile an existing file containing a fortran module and
+# insert the compiled ode into an archive specified by the user. the result
+# should be a new version of the library/archive with the new module inserted.
+#
+# alias the change directory (cd), copy (cp), move (mv), remove (rm) commands to
+# get rid of the object modules without being prompted by the command - this is
+# a local declaration and does not effect the commands in other scripts or
+# windows
+#
+alias cd cd
+alias cp cp
+alias mv mv
+alias rm rm
+#
+# set the application folder location - for example, $HOME/research/prs3d
+#
+if($1 == '') then
+  echo 'Enter the folder name where the application resides:'
+  set APPFOLDER = ($<) 
+else
+  set APPFOLDER = $1
+endif
+#
+# set the application name - for example, prs3d
+#
+if($2 == '') then
+  echo 'Enter the application name - this is usually the folder name:'
+  set APPNAME = ($<) 
+else
+  set APPNAME = $2
+endif
+#
+if($3 == '') then
+  echo 'Enter the name of the module to replace:'
+  set APPFILENAME = ($<)
+else
+  set APPFILENAME = $3
+endif
+#
+# test the location of the application folder to make sure there is something
+# to work on
+#
+if(-e $APPFOLDER) then
+#
+# in the next line, the location of the library is set. the assumption is that
+# the library will be placed in a subfolder in the application folder that is
+# named 'lib'
+#
+  set APPLIBFOLDER = $APPFOLDER/lib
+#
+# test to see if the lib folder exists
+#
+  if(-e $APPLIBFOLDER) then
+    set APPLIBFILENAME = $APPNAME.a
+  else
+    echo 'cannot find application library folder ' $APPLIBFOLDER 
+    exit(1)
+  endif
+#
+# in the next line, the location of the source folder is set. the assumption is
+# that the library will be placed in a subfolder in the application folder that
+# is named 'src'
+#
+  set APPSRCFOLDER = $APPFOLDER/src
+#
+# test to see if the lib folder exists
+#
+  if(-e $APPSRCFOLDER) then
+  else
+    echo 'cannot find application source folder ' $APPSRCFOLDER 
+    exit(1)
+  endif
+#
+# next, test for a log file for tracking errors in the compilation process and
+# other parts of the script.
+#
+  set APPLOGFOLDER = $APPFOLDER/log
+  if(-e $APPLOGFOLDER) then
+    set APPLOGFILENAME = $APPNAME'swap'.log
+  else
+    echo 'cannot find application log folder ' $APPLOGFOLDER 
+    exit(1)
+  endif
+#
+# if the folder does not exist echo out a message
+#
+else
+  echo 'cannot find application folder ' $APPFOLDER 
+  exit(0)
+endif
+#
+# set an interrupt break
+#
+onintr user_break
+#
+# get into the source folder where the fortran module should be located and
+# compiled individually
+#
+cd $APPSRCFOLDER
+#
+# set up a log file to keep track of the results
+#
+if(-e $APPLOGFILENAME) rm $APPLOGFILENAME
+touch $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+echo ' ***** Error messages from compilation *****' >> $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+echo ' ***** Error messages from file swap *****' >> $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+#
+# set the fortran command
+#
+set FORTYP = 'gfortran'
+set OPTS = ' -g -C'
+#
+# compile the module file
+#
+if(-e $APPFILENAME) then
+  echo 'compiling ...' $APPFILENAME >> $APPLOGFILENAME
+  $FORTYP $OPTS -c $APPFILENAME
+else
+  echo 'cannot find file name ' $APPFILENAME ' in src folder ' $APPFOLDER 
+  exit(1)
+endif
+#
+# check for the object file to see if the compilation worked
+#
+set onam = `basename $APPFILENAME .f`.o
+if(-e $onam) then
+#
+# replace the appropriate file in the archive
+#
+  if(-e ../lib/$APPLIBFILENAME) then
+    echo 'replacing object file...'$onam' in the archive ...' >> $APPLOGFILENAME
+    ar rv ../lib/$APPLIBFILENAME $onam >> $APPLOGFILENAME
+    echo ' ..... full list of swapped file .....' >> $APPLOGFILENAME
+    ar -tv ../lib/$APPLIBFILENAME | grep $onam >> $APPLOGFILENAME
+  else
+    echo 'no library in ..'$APPNAME'/lib ...' >>  $APPLOGFILENAME
+    exit(1)
+  endif
+#
+# remove the object module
+#
+  echo 'removing old object module...' $onam >> $APPLOGFILENAME
+  rm $onam >> $APPLOGFILENAME
+#
+# normal exit to the routine
+#
+  echo 'object module replaced...' >> $APPLOGFILENAME
+  mv $APPLOGFILENAME $APPLOGFOLDER
+  exit(1)
+#
+else
+#
+# print a message that there was no modulw
+#
+  echo 'no module to replace...' >> $APPLOGFILENAME
+#
+endif
+#
+# user interrupt
+#
+user_break:
+if(-e $onam) rm $onam
+echo 'job interrupted by user... ' >> $APPLOGFILENAME
+mv $APPLOGFILENAME $APPLOGFOLDER
+exit(2)

@@ -1,0 +1,225 @@
+#
+# script name :jvklink
+# written by  :jvkII
+# purpose     :this script will create an executable from an existing fortran
+#             :file and archives specified by the user. the result should be a
+#             :compiled executable that can be run as a standalone process.
+#
+#-------------------------------------------------------------------------------
+# the next block of code sets some basic unix commands so that the work is not
+# interrupted by -i options and the like
+#-------------------------------------------------------------------------------
+# alias the change directory (cd), copy (cp), move (mv), remove (rm) commands to
+# get rid of the object modules without being prompted by the command - this is
+# a local declaration and does not effect the commands in other scripts or
+# windows
+#
+alias cd cd
+alias cp cp
+alias mv mv
+alias rm rm
+#
+# set an interrupt break
+#
+onintr user_break
+#
+# set the type of fortran command and options within the fortran compiler
+#
+set FORTYP = 'gfortran'
+set OPTS = ' -g -C'
+set LIBS = ' '
+#
+#-------------------------------------------------------------------------------
+# the next block grabs the arguments in order to set the location of the
+# application being worked on or asks the user to set the arguments if not
+# specified
+#-------------------------------------------------------------------------------
+# set the application folder location - for example, $HOME/research/prs3d
+#
+if($1 == '') then
+  echo 'Enter the folder name where the application resides:'
+  set APPFOLDER = ($<) 
+else
+  set APPFOLDER = $1
+endif
+#
+# set the application name - for example, prs3d
+#
+if($2 == '') then
+  echo 'Enter the application name - this should be the folder name:'
+  set APPNAME = ($<) 
+else
+  set APPNAME = $2
+endif
+#
+# set the name of the driver to compile on this pass through the sript
+#
+if($3 == '') then
+  echo 'Enter the name of the driver to compile and link:'
+  set APPDRIVERFILENAME = ($<)
+else
+  set APPDRIVERFILENAME = $3
+endif
+#
+#-------------------------------------------------------------------------------
+# in this section the input to this script is tested to see if the locations
+# actually exist
+#-------------------------------------------------------------------------------
+# test the location of the application folder to make sure there is something
+# to work on
+#
+if(-e $APPFOLDER) then
+#
+# next, test for the for the driver folder where the script should look for the
+# fortran modules
+#
+  set APPDRIVERFOLDER = $APPFOLDER/drivers
+  if(-e $APPDRIVERFOLDER) then
+#
+# test for the application driver filename to make sure the file exsts
+#
+    cd $APPDRIVERFOLDER
+    if(-e $APPDRIVERFILENAME) then
+      cd $APPFOLDER
+    else
+      echo 'cannot find application driver file: ' $APPDRIVERFILENAME
+      exit(1)
+    endif
+#
+# the next part is in the case that the driver folder does not exist
+#
+  else
+    echo 'cannot find application driver program folder ' $APPDRIVERFOLDER 
+    exit(1)
+  endif
+#
+# next, test for a log file for tracking errors in the compilation process and
+# other parts of the script.
+#
+  set APPLOGFOLDER = $APPFOLDER/log
+  if(-e $APPLOGFOLDER) then
+    cd $APPLOGFOLDER
+    set APPLOGFILENAME = $APPLOGFOLDER/$APPNAME'link'.log
+  else
+    mkdir APPLOGFOLDER
+    cd $APPLOGFOLDER
+    set APPLOGFILENAME = $APPLOGFOLDER/$APPNAME'link'.log
+  endif
+#
+# if the folder does not exist echo out a message
+#
+else
+  echo 'cannot find application folder ' $APPFOLDER 
+  exit(0)
+endif
+#
+#-------------------------------------------------------------------------------
+# the next block of the script performs the actual work to compile code and
+# create libraries and the like
+#-------------------------------------------------------------------------------
+# if the log file already exists, remove and retouch the logfile for this run
+#
+if(-e $APPLOGFILENAME) rm $APPLOGFILENAME
+touch $APPLOGFILENAME
+#
+echo ' ' >> $APPLOGFILENAME
+echo '***** Error messages from link and load *****' >> $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+#
+# in the next line, the location of the library is set. the assumption is that
+# the library will be placed in a subfolder in the application folder that is
+# named 'lib'
+#
+  set APPLIBFOLDER = $APPFOLDER/lib
+#
+# test to see if the /lib folder exists
+#
+  if(-e $APPLIBFOLDER) then
+#
+# move into the application library folder
+#
+    cd $APPLIBFOLDER
+#
+# check for the application shared libraries to link against - there are 3
+# possible extenstions for each application
+#   1. _f.a for fortran modules
+#   2. _c.a for C modules
+#   3. _cpp.a for c++ modules
+# more may be added later on, but there will need to be written (e.g, CUDA)
+#
+    if(-e $APPNAME'_f.a') set LIBS = ../lib/$APPNAME'_f.a'
+    if(-e $APPNAME'_c.a') set LIBS = $LIBS' '../lib/$APPNAME'_c.a'
+    if(-e $APPNAME'_cpp.a') set LIBS = $LIBS' '../lib/$APPNAME'_cpp.a'
+    foreach filename (*.a)
+      if($filename == $APPNAME'_f.a') then
+        echo '.....lib already included' $APPNAME'_f.a' >> $APPLOGFILENAME
+      else if($filename == $APPNAME'_c.a') then
+        echo '.....lib already included' $APPNAME'_c.a' >> $APPLOGFILENAME
+      else if($filename == $APPNAME'_cpp.a') then
+        echo '.....lib already included' $APPNAME'_cpp.a' >> $APPLOGFILENAME
+      else
+        set LIBS = $LIBS' '../lib/$filename
+      endif
+    end
+    cd $APPFOLDER
+  else
+    echo 'cannot find application library folder: ' $APPLIBFOLDER
+    exit(1)
+  endif
+#
+# build the list of libraries to link to - the options are:
+# 1. given a compilation extension, just look for the one library to include
+# 2. an extension of none means add whatever is in there
+# move into the library folder to determine the folders available
+cd $APPLIBFOLDER
+#
+# set up the name of the libraries and extra libraries that the driver may
+# depend on
+#
+#if($APPLANGUAGEFILEEXTENSION != 'none') then
+#  set APPLIBFILENAME = $APPLIBFOLDER/$APPNAME'_'$APPLANGUAGEFILEEXTENSION'.a'
+#  set LIBS = $LIBS' '$APPLIBFOLDER/$APPNAME'_'$APPLANGUAGEFILEEXTENSION'.a'
+#else
+#  foreach filename (*.a)
+#    echo '***** adding load library: ' $filename >> $APPLOGFILENAME
+#    set LIBS = $LIBS' '$APPLIBFOLDER/$filename
+#echo $LIBS
+#  end
+#endif
+#
+# switch to the driver folder to find compile and link the driver
+#
+cd $APPDRIVERFOLDER
+#
+# figure out where the binary image is to reside
+#
+  set APPBINFOLDER = $APPFOLDER/bin
+  if(-e $APPBINFOLDER) then
+  else
+    set APPBINFOLDER = $APPDRIVERFOLDER
+  endif
+#
+# build an executable name for the compilation and linked version of things
+#
+#if($APPLANGUAGEFILEEXTENSION == 'none') then
+#  set defaultEXT = '.f'
+#else
+#  set defaultEXT = '.'$APPLANGUAGEFILEEXTENSION
+#endif
+set enam = $APPBINFOLDER/`basename $APPDRIVERFILENAME .f` >> $APPLOGFILENAME
+#
+# compile the program
+#
+echo 'compiling and linking program...' $APPDRIVERFILENAME >> $APPLOGFILENAME
+$FORTYP $OPTS -o $enam $APPDRIVERFILENAME $LIBS >> $APPLOGFILENAME
+#
+# normal exit
+#
+echo 'program compiled and linked with no issues...' >> $APPLOGFILENAME
+exit(1)
+#
+# user break
+#
+user_break:
+echo 'user interrupt...' >> $APPLOGFILENAME
+exit(2)

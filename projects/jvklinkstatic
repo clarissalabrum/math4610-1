@@ -1,0 +1,145 @@
+#
+# this script will create an executable from an existing fortran file and
+# archives specified by the user. the result should be a compiled executable
+# that can be run as a standalone process.
+#
+# alias the change directory (cd), copy (cp), move (mv), remove (rm) commands to
+# get rid of the object modules without being prompted by the command - this is
+# a local declaration and does not effect the commands in other scripts or
+# windows
+#
+alias cd cd
+alias cp cp
+alias mv mv
+alias rm rm
+#
+# set the application folder location - for example, $HOME/research/prs3d
+#
+if($1 == '') then
+  echo 'Enter the folder name where the application resides:'
+  set APPFOLDER = ($<) 
+else
+  set APPFOLDER = $1
+endif
+#
+# set the application name - for example, prs3d
+#
+if($2 == '') then
+  echo 'Enter the application name - this should be the folder name:'
+  set APPNAME = ($<) 
+else
+  set APPNAME = $2
+endif
+#
+if($3 == '') then
+  echo 'Enter the name of the driver to compile and link:'
+  set APPDRIVERFILENAME = ($<)
+else
+  set APPDRIVERFILENAME = $3
+endif
+#
+# test the location of the application folder to make sure there is something
+# to work on
+#
+if(-e $APPFOLDER) then
+#
+# in the next line, the location of the library is set. the assumption is that
+# the library will be placed in a subfolder in the application folder that is
+# named 'lib'
+#
+  set APPLIBFOLDER = $APPFOLDER/lib
+#
+# test to see if the lib folder exists
+#
+  if(-e $APPLIBFOLDER) then
+    set APPLIBFILENAME = $APPNAME.a
+  else
+    echo 'cannot find application library folder ' $APPLIBFOLDER 
+    exit(1)
+  endif
+#
+# in the next line, the location of the driver folder is set. the assumption is
+# that the library will be placed in a subfolder in the application folder that
+# is named 'drivers'
+#
+  set APPDRIVERFOLDER = $APPFOLDER/drivers
+  if(-e $APPDRIVERFOLDER) then
+  else
+    echo 'cannot find application driver program folder ' $APPDRIVERFOLDER 
+    exit(1)
+  endif
+#
+# next, test for a log file for tracking errors in the compilation process and
+# other parts of the script.
+#
+  set APPLOGFOLDER = $APPFOLDER/log
+  if(-e $APPLOGFOLDER) then
+    set APPLOGFILENAME = $APPNAME'link'.log
+  else
+    echo 'cannot find application log folder ' $APPLOGFOLDER 
+    exit(1)
+  endif
+#
+# if the folder does not exist echo out a message
+#
+else
+  echo 'cannot find application folder ' $APPFOLDER 
+  exit(0)
+endif
+#
+# set an interrupt break
+#
+onintr user_break
+#
+# get into the drivers folder where the fortran programs should be located and
+# compiled individually
+#
+cd $APPDRIVERFOLDER
+#
+# if the log file exists, remove the logfile
+#
+if(-e $APPLOGFILENAME) rm $APPLOGFILENAME
+#
+# touch the file to make sure that there is a file name created as the script
+# roles on
+#
+touch $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+echo ' ***** Error messages from compilation *****' >> $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+echo ' ***** Error messages from driver link *****' >> $APPLOGFILENAME
+echo ' ' >> $APPLOGFILENAME
+#
+# set the type of fortran command and options within the fortran compiler
+#
+set FORTYP = 'gfortran'
+set OPTS = ' -g -C -Bstatic'
+#
+# set library names for the link and load - these will need to be hand set to
+# appropriate library files and locations.
+#
+set prslib = '../lib/prs3d.a'
+set prmlib = '../../prm3d/lib/prm3d.a'
+#
+# determine the driver program to do up. pick off the object name and executable
+# name
+#
+set enam = `basename $APPDRIVERFILENAME .f`tatic>> $APPLOGFILENAME
+#
+# compile the program
+#
+echo 'compiling and linking program...' $APPDRIVERFILENAME >> $APPLOGFILENAME
+$FORTYP $OPTS -o $enam $APPDRIVERFILENAME $prslib $prmlib >> $APPLOGFILENAME
+#
+mv $enam ../bin >> $APPLOGFILENAME
+#
+# normal exit
+#
+echo 'program compiled and linked...' >> $APPLOGFILENAME
+exit(1)
+#
+# user break
+#
+user_break:
+echo 'user interrupt...' >> $APPLOGFILENAME
+exit(2)
