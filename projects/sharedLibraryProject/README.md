@@ -3,7 +3,13 @@
 The code you write as you work through the homework for approximately solving mathematical problems should be reusable. At
 least you should make a strong effort to make your code reusable. Once the code you write is debugged and can be used in
 other applications, it makes sense that the code be put into a repository or some other form that allows repeated access to
-the codes.
+the codes and in particular an executable file - like an android app or as a contribution to open source simulation packages 
+like OpenFOAM. In testing your reusable code, it is a good idea to put the compiled versions of your functions or methods into
+a shared library or Dynamic Linked Library (DLL). This project will allow you to work through both of these options.
+
+This project is used in Math 4610 Fundamentals of Computational Mathematics as a means of increasing the breadth and depth of
+students computational skills. So, the project requires students exercises for building both shared libraries in both a Windows
+environment and a Linux/Unix environment. Note that this project uses cygwin to emulate a UNIX working environment.
 
 ### Building a Shared Library for Unix/Linux Environments
 
