@@ -11,15 +11,23 @@ This project is used in Math 4610 Fundamentals of Computational Mathematics as a
 students computational skills. So, the project requires students exercises for building both shared libraries in both a Windows
 environment and a Linux/Unix environment. Note that this project uses cygwin to emulate a UNIX working environment.
 
+Note that a generic command prompt is given as a part of each of the commands given. So, in a UNIX application, the prompt is
+the "%" character. You will not need to type this character to execute the command. To build a DLL the prompt would be something
+like ">".
+
 ### Building a Shared Library for Unix/Linux Environments
 
-In this section students will put together a shared library using the Unix/Linux archive utility the command that we will use
-in a bash/csh shell is:
+In this section students will put together a shared library using the Linux/UNIX archive utility to create a shared library.
+The command that we will use in a bash/csh shell or terminal is:
 
     ar()
 
-with appropriate flags specified for various coding languages and options. Most of the material used to create this part of the
-project can be found at the site:
+with appropriate flags specified for various coding languages and options. To find out more about the ar() command in a shell
+you can type the following:
+
+    % man ar
+
+Most of the material used to create this part of the project can be found at the site:
 
 http://cygwin.org
 
@@ -33,12 +41,12 @@ happens in the development of code:
 The script given above is rather complicated looking. However, the script can be broken down into chunks of shell (in fact,
 tcsh) script. The part that we are interested in is the the part where the shared library is created. That is the line:
 
-    ar rcv $APPLIBFILENAME *.o >> $APPLOGFILENAME
+    % ar rcv $APPLIBFILENAME *.o >> $APPLOGFILENAME
 
 The variables APPLIBFILENAME and APPLOGFILENAME contain the actual name of the library being create and the log file where any
 errors messages are copied to. The main thing we need is the following:
 
-    ar rcv libname *.o
+    % ar rcv libname *.o
     
 The command creates an archive with options "r", "c", and "v" specified. The argument:
 
