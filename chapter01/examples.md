@@ -14,9 +14,21 @@ There are at least 3 or 4 types of problems that a computational mathematician a
 computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
 following list of examples.
 
-Example 1. **Question from the Boss - "Can you write a code to solve the problem?"**
+Example **Question from the Boss - "Can you write a code to solve the problem?"**
 
-Something about the tractabiliy of the problem.... Resource limitations and cost of the equipment to run the code...
+The first step in trying to write a code to solve a mathematical problem is to determine if this is even possible. There are a
+number of issues that come up in the process of translating the problem into computer code.
+
+1. From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the 
+   mathematical problem is a differential equation modeling fluid flow in a river system. If a theorem exists that guarantees a 
+   unique solution exists, the goal of writing a code is to end up with results that match or approximate the exact solution to
+   the problem. In most cases, even when it is known a solution exists, it may be impossible to write the solution out easily.     
+   One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential 
+   equations. In many cases, theorems can be provided to guarantee the existence and uniqueness of solutions, but a method for  
+   constructing solutions may not be available. So, it might be necessary to settle for an approximate solution determined by a 
+   computer code.
+2. Something about the tractabiliy of the problem.... Resource limitations and cost of the equipment to run the code...
+3. Something about errors in code that make the approximation unreliable... numerical analysis versus coding....
 
 Example 2. **Question from the Boss - "Are you sure your code works?"**
 
