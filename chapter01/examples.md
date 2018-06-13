@@ -1,7 +1,15 @@
 ### Examples of the Importance of Computational Mathematics and Scientific Computing
 
-The information on this page details some examples of the use of methods and tools from computational mathematics and/or
-scientific computing. In the following examples, one can think of the following. What does a computational mathematician do? 
+The information in this chapter details some examples of the use of methods and tools from computational mathematics and/or
+scientific computing. For the examples presented, one should think of the following question.
+
+**What does a computational mathematician do?**
+
+The simplest of answers is that a computational mathematician translates mathematical problems into computer code. This means
+that once a mathematical problem has been formulated, it is the job of a computational mathematican to write a computer code
+that produces an accurate description of the mathematical problem and will produce at least an approximate solution for the
+mathematical problem.
+
 There are at least 3 or 4 types of problems that a computational mathematician addresses in the development of algorithms for 
 computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
 following list of examples.
@@ -18,14 +26,14 @@ for which the algorithm produces an accurate approximate solution. It should be 
 computer program running. If the program does not produce accurate results related to the original problem, the program really
 is note worth much.
 
-2. **Efficiency of the Computer Code:**  The implementation of any algorithm must necessarily be concerned with how fast results 
-can be obtained once the algorithm has been successfully been encoded and all bugs (errors) in the code have been corrected. 
-Different methods/algorithms may produce the same result, but one method may require more computer time than the other. As an 
-example of this concept, there are a number of algorithms for computing approximate solutions of linear systems of equations. 
-There are a variety of algorithms that can be used to compute solutions of linear systems of equations. If two methods for
-approximate solution of some problem are proposed and both produce an accurate approximate solution, the next question is which
-method completes the task in the shortest amount of time. Most scientists want the results as quickly as possible so that 
-decisions may be made from the output.
+2. **Efficiency of the Computer Code: Question from the Boss - "Do you have an answer yet?"**  The implementation of any 
+algorithm must necessarily be concerned with how fast results can be obtained once the algorithm has been successfully been 
+encoded and all bugs (errors) in the code have been corrected. Different methods/algorithms may produce the same result, but one 
+method may require more computer time than the other. As an example of this concept, there are a number of algorithms for 
+computing approximate solutions of linear systems of equations. There are a variety of algorithms that can be used to compute 
+solutions of linear systems of equations. If two methods for approximate solution of some problem are proposed and both produce 
+an accurate approximate solution, the next question is which method completes the task in the shortest amount of time. Most 
+scientists want the results as quickly as possible so that decisions may be made from the output.
 
 Question from the Boss: "How fast can you produce an answer for me?"
 
@@ -64,4 +72,4 @@ best way to display results of a simulation.
 Question from the Boss: I don't get what this means? Can you show me a picture of what the numbers mean?
 
 [Back to Main Page](https://jvkoebbe.github.io/math4610/main) | 
-  [Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
+[Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
