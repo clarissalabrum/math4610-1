@@ -14,11 +14,29 @@ There are at least 3 or 4 types of problems that a computational mathematician a
 computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
 following list of examples.
 
-1. **Accuracy of an Approximation: Question from the Boss - "Does your code work?"**
+Example 1. **Question from the Boss - "Can you write a code to solve the problem?"**
 
-Most of the algorithms that end up being translated into computer code, written and 
-compiled into an executable/binary file (for example, C, C++, or Fortran), and run on various computers will produce an
-approximate solution to an underlying mathematical problem. For example, using a finite difference method to discretize 
+Something about the tractabiliy of the problem.... Resource limitations and cost of the equipment to run the code...
+
+Example 2. **Question from the Boss - "Are you sure your code works?"**
+
+Something about verification of the results produced by the code.....
+
+Example 3. **Question from the Boss - "When will the code produce a solution of the mathematical problem?"**
+
+Writing a code is not enough.....make sure it runs in a finite amount of time....
+
+Example 4. **Question from the Boss - "Can the code produce solutions for similar problems of interest to the bottom line?"**
+
+Something about classes of problems solved by the code....
+
+Example 5. **Question from the Boss - "Can you get the code to run faste and work on bigger problems?"**
+
+Example 6. **Question from the Boss - "How easy is the code to use, modify and maintain?"**
+
+Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
+example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
+problem. For example, using a finite difference method to discretize 
 derivatives in a differential equation will, at best, result in an approximation of the solution of the original differential 
 equation. If an algorithm is unable to produce an accurate approximation, the results may be of no use to colleagues that want 
 to answer questions about a real problem. One question that computational scientists must be able to answer is whether or not a
