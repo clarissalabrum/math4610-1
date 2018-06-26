@@ -7,4 +7,4 @@ students to topics and content in computational mathematics.
 
 [Math 4610 Fundamentals of Computational Mathematics](https://jvkoebbe.github.io/math4610/main)
 | [Table of Contents for Math 4610](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
-| [Links to Homework and Problems](https://jvkoebbe.github.io/math4610/projects/)
+| [Links to Homework and Problems](https://jvkoebbe.github.io/math4610/projects/indexOfProjects)
