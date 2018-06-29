@@ -10,4 +10,4 @@ students to topics and content in computational mathematics.
 3. [Links to Projects](https://jvkoebbe.github.io/math4610/projects/indexOfProjects)
 4. [Links to Homework Sets](https://jvkoebbe.github.io/math4610/homework/indexOfHomeworkSets)
 
-Typora Link [pdf test](https://jvkoebbe.github.io/math4610/FunDeal.md)
+Typora Link [pdf test](https://jvkoebbe.github.io/math4610/FunDeal)
