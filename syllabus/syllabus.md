@@ -1,3 +1,3 @@
-**Math 4610 Fundamentals of Computational Mathematics
+##Math 4610 Fundamentals of Computational Mathematics
 
-*** More on this
+###More on this
