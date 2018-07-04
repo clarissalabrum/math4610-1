@@ -5,4 +5,7 @@
 ## Instructor Information:
 
 **Instructor:**  Joe Koebbe
+
 **Office:** ANSC 209
+
+**email:** [joe.koebbe@usu.edu](mailto:joe.koebbe@usu.edu)
