@@ -1,3 +1,8 @@
-## Math 4610 Fundamentals of Computational Mathematics
+# Syllabus: Fall 2018
 
-### More on this
+**Math 4610 Fundamentals of Computational Mathematics**
+
+## Instructor Information:
+
+**Instructor:**  Joe Koebbe
+**Office:** ANSC 209
