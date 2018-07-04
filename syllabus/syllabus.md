@@ -18,3 +18,9 @@ contacting your instructor. If you call the number above, you may end up on the 
 the campus phone system are also forwarded to instructor email accounts with (possibly) a text translation. You should get used
 to using the contact information above to set up appointments outside office hours and to ask questions about content in the
 course.
+
+## Course Description
+
+The following is a current version of the course description for 
+[Math 4610 Fundamentals of Computational Mathematics](https://jvkoebbe.github.io/math4610/main). The description will likely
+change from time to time and this information may change. The current description is from the course as of Fall Semester 2018.
