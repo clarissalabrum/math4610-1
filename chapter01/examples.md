@@ -19,11 +19,11 @@ Example **Question from the Boss - "Can you write a code to solve the problem?"*
 The first step in trying to write a code to solve a mathematical problem is to determine if this is even possible. There are a
 number of issues that come up in the process of translating the problem into computer code.
 
-1. From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the 
+1. From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the
    mathematical problem is a differential equation modeling fluid flow in a river system. If a theorem exists that guarantees a 
    unique solution exists, the goal of writing a code is to end up with results that match or approximate the exact solution to
    the problem. In most cases, even when it is known a solution exists, it may be impossible to write the solution out easily.     
-   One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential 
+   One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential
    equations. In many cases, theorems can be provided to guarantee the existence and uniqueness of solutions, but a method for  
    constructing solutions may not be available. So, it might be necessary to settle for an approximate solution determined by a 
    computer code.
