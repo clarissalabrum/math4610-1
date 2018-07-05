@@ -25,7 +25,7 @@ number of issues that come up in the process of translating the problem into com
    the problem. In most cases, even when it is known a solution exists, it may be impossible to write the solution out easily.
    One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential
    equations. In many cases, theorems can be provided to guarantee the existence and uniqueness of solutions, but a method for  
-   constructing solutions may not be available. So, it might be necessary to settle for an approximate solution determined by a 
+   constructing solutions may not be available. So, it might be necessary to settle for an approximate solution determined by a
    computer code.
 2. Something about the tractabiliy of the problem.... Resource limitations and cost of the equipment to run the code...
 3. Something about errors in code that make the approximation unreliable... numerical analysis versus coding....
