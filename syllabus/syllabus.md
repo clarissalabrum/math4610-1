@@ -24,3 +24,9 @@ course.
 The following is a current version of the course description for 
 [Math 4610 Fundamentals of Computational Mathematics](https://jvkoebbe.github.io/math4610/main). The description will likely
 change from time to time and this information may change. The current description is from the course as of Fall Semester 2018.
+
+>> MATH 4610 - Fundamentals of Computational Mathematics 3 credits Course presents fundamental topics common in computational
+>> mathematics and problem solving, including: truncation and round-o error, algorithms to nd solutions of nonlinear equations,
+>> numerical solution of linear systems by direct and iterative approaches, interpolation methods, numerical dierentiation and
+>> quadrature rules. Prerequisite/Restriction: MATH 1220, MATH 2250, or MATH 2270 with a C- or better. Ability to program with a
+>> high-level computer language (C/C++, Python, Fortran) Semester(s) Traditionally Offered: F
