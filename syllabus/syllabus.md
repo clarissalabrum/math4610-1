@@ -47,9 +47,9 @@ The book can be found at [SIAM](https://www.siam.org). You can search for the ti
 This course covers the development and implementation of fundamental algorithms in computational mathematics. The methods
 and algorithms presented in the course are not in and of themselves used to approximately solve complicated mathematical 
 problems. The algorithms comprise building blocks for complex algorithms that can be used to approximate many mathematical
-and physical systems. The algorithms that will be covered include basic root nding methods, direct methods for approximate 
+and physical systems. The algorithms that will be covered include basic root finding methods, direct methods for approximate 
 solution of linear systems of equations, matrix operations, eigenvalue and eigenvector computations, polynomial interpolation, 
-numerical dierentiation formulas, numerical integration formulas, the Fast Fourier Transform (FFT), along with other concepts 
+numerical differentiation formulas, numerical integration formulas, the Fast Fourier Transform (FFT), along with other concepts 
 related to computational mathematics. The lion's share of the work in this course will involve the implementation of algorithms 
 using some higher level language (C, C++, Python, Fortran, Java, etc.) along with some analysis. Students will need to know how 
 to apply theorems from a standard calculus course. The theorems will be presented without proof in this course. The main 
