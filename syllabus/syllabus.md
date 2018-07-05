@@ -40,8 +40,6 @@ The textbook for the course for Fall Semester 2018 is the following:
 
 The book can be found at [SIAM](https://www.siam.org). You can search for the title or authors and then go from there.
 
-
-
 ### General Comments/Policies for Math 4610:
 
 This course covers the development and implementation of fundamental algorithms in computational mathematics. The methods
@@ -87,13 +85,16 @@ Your grade in the course will be determined by the following:
    rule is for a family emergency. Also, codes must be carefully documented. An example of a well documented code will be 
    discussed in class and a version will be posted on line.
 2. Two midterms will be given. Each will cover about one half of the content of the course. Each of these midterms will account
-   for 20% or 40% of the grade earned in the course.
-3. A portfolio of routines will be required of each student. The portfolio of routines must be written in the form of a software 
-   manual. The exact form of the portfolio will be discussed in class. Based on past experience the formatting will be strict in    
-   the sense that the entries in the manual will be limited to two pages. The actual format will also be restricted. Software
-   manuals that do not meet the formatting requirements will not be graded. Part of the reason for putting strict requirements 
-   for formatting is due to the idea that in a job, you will need to follow the company formatting to have your algorithms 
-   included in bigger projects.
+   for 20% or 40% of the grade earned in the course. Note that the midterms will be comprised of about 5 or 6 short answer
+   questions. The questions will be taken out of the textbook. There is a set of questions at the end of each chapter that will
+   be used in determining the questions for the exam. The idea is that a number of these questions will be identified as
+   possible exam questions. A subset of these questions will appear on the two midterms.
+3. A _portfolio_ of routines will be required of each student. The portfolio of routines must be written in the form of a
+   software manual. The exact form of the portfolio will be discussed in class. Based on past experience the formatting will be 
+   strict in the sense that the entries in the manual will be limited to two pages. The actual format will also be restricted. 
+   Software manuals that do not meet the formatting requirements will not be graded. Part of the reason for putting strict 
+   requirements for formatting is due to the idea that in a job, you will need to follow the company formatting to have your
+   algorithms included in bigger projects.
    
 If students have questions about assignments and midterms, please contact me. One of the assignments will be to meet with me at 
 least once every two weeks to discuss progress in the course. This means that 2 times each month during the semester you will 
