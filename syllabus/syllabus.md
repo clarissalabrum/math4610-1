@@ -1,6 +1,6 @@
-# Syllabus: Math 4610 Fundamentals of Computational Mathematics
+# Math 4610 Fundamentals of Computational Mathematics
 
-**Fall 2018**
+**Fall Semester 2018 Syllabus**
 
 **Math 4610 Fundamentals of Computational Mathematics**
 
