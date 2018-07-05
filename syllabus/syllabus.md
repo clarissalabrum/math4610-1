@@ -24,6 +24,7 @@ course.
 The following is a current version of the course description for 
 [Math 4610 Fundamentals of Computational Mathematics](https://jvkoebbe.github.io/math4610/main). The description will likely
 change from time to time and this information may change. The current description is from the course as of Fall Semester 2018.
+The official course description can be found on the [USU](http://www.usu.edu/) Course Catalog page.
 
 >> MATH 4610 - Fundamentals of Computational Mathematics 3 credits Course presents fundamental topics common in computational
 >> mathematics and problem solving, including: truncation and round-off error, algorithms to find solutions of nonlinear equations,
