@@ -2,7 +2,7 @@
 
 **Fall Semester 2018 Syllabus**
 
-## Contact Info:
+### Contact Info:
 
 **Contact Info** | Info
 ---------------- | ----
@@ -19,7 +19,7 @@ the campus phone system are also forwarded to instructor email accounts with (po
 to using the contact information above to set up appointments outside office hours and to ask questions about content in the
 course.
 
-## Course Description
+### Course Description
 
 The following is a current version of the course description for 
 [Math 4610 Fundamentals of Computational Mathematics](https://jvkoebbe.github.io/math4610/main). The description will likely
@@ -32,7 +32,7 @@ The official course description can be found on the [USU](http://www.usu.edu/) C
 >> quadrature rules. Prerequisite/Restriction: MATH 1220, MATH 2250, or MATH 2270 with a C- or better. Ability to program with a
 >> high-level computer language (C/C++, Python, Fortran) Semester(s) Traditionally Offered: Fall
 
-## Textbook:
+### Textbook:
 
 The textbook for the course for Fall Semester 2018 is the following:
 
