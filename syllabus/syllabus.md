@@ -58,3 +58,14 @@ reduction, and results for eigenvalue and eigenvector calculations. It will be u
 everything when these results are presented. However, you should be able to review the topics from calculus, linear algebra, and 
 other courses when needed. If, in the end, you are still having problems understanding the basic theorems, it will be important 
 for you to talk over the theorems used in the class with me.
+
+The course will involve significant computer programming assignments. Students must know how to write computer code in a high
+level programming language (e.g; Fortran, C, C++, Java, and others) or work in a computational platform like Matlab or Maple.
+If you choose to use Matlab or Maple, you will be required to implement your own versions of the algorithms discussed in class.
+You can use the intrinsic routines to verify your code. For example, in Matlab there are simple expressions that will prompt the 
+software within Matlab to compute an approximate solution of a linear system of equations. The nuts and bolts are buried deep in 
+the software that Matlab provides. The point of this course is for each student to be able to fully implement algorithms. Using 
+the software provided in Matlab does not allow this. There is another reason why students need to learn all the nuts and bolts 
+that software like Matlab, Mathematica, and Maple cloak. When you are working in a job and need to ship software to your 
+clients, Matlab, Mathematica, and Maple require expensive licensing for their part of the software. These packages are too 
+expensive in most cases. So, you will need to write your own code.
