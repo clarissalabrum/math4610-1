@@ -1,23 +1,27 @@
 ### Examples of the Importance of Computational Mathematics and Scientific Computing
 
-The information in this chapter details some examples of the use of methods and tools from computational mathematics and/or
-scientific computing. For the examples presented, one should think of the following question.
+If you are reading the content in this repository, you are probably interested in mathematics, computer programming, and a
+number of other computer related skill set. So, it makes sense to understand what computational mathematics is and what
+computational mathematics is not. The information in this chapter details some examples of the use of methods and tools from 
+computational mathematics and/or scientific computing. For the examples presented, one should think of the following question.
 
 **What does a computational mathematician do?**
 
 The simplest of answers is that a computational mathematician translates mathematical problems into computer code. This means
 that once a mathematical problem has been formulated, it is the job of a computational mathematican to write a computer code
 that produces an accurate description of the mathematical problem and will produce at least an approximate solution for the
-mathematical problem.
+mathematical problem. In addition, the computer code produced should be (1) efficient, (2) accurate, and (3) robust.
 
 There are at least 3 or 4 types of problems that a computational mathematician addresses in the development of algorithms for 
 computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
 following list of examples.
 
-Example **Question from the Boss - "Can you write a code to solve the problem?"**
+Example **Question from the Boss - "Can you write a code to solve this problem?"**
 
 The first step in trying to write a code to solve a mathematical problem is to determine if this is even possible. There are a
-number of issues that come up in the process of translating the problem into computer code.
+number of issues that come up in the process of translating the problem into computer code. The first issue involves the
+mathematical problem. Before any code is written, it is important that the problem have at least one solution. If no solution
+exists, then there is really no reason to write a code to compute the nonexistent solution.
 
 1. From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the
    mathematical problem is a differential equation modeling fluid flow in a river system. If a theorem exists that guarantees a 
