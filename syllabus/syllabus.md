@@ -91,7 +91,7 @@ Your grade in the course will be determined by the following:
    possible exam questions. A subset of these questions will appear on the two midterms.
 3. A _portfolio_ of routines will be required of each student. The portfolio of routines must be written in the form of a
    software manual. The exact form of the portfolio will be discussed in class. Based on past experience the formatting will be 
-   strict in that the entries in the manual must be formatted using the [template](https://jvkoebbe.github.io/math4610/appendix02/software_manual_template)
+   strict in that the entries in the manual must be formatted using the [template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
    included in the [Math 4610 repository](https://jvkoebbe.github.io/math4610/main). **There are absolutely no exceptions!**. 
    Assignments that do not meet the formatting requirements will not be graded. Part of the reason for putting strict is due to 
    the idea that in a job, you will need to follow the company formatting to have your algorithms included in bigger projects.
