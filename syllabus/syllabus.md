@@ -97,4 +97,4 @@ Your grade in the course will be determined by the following:
    
 If students have questions about assignments and midterms, please contact me. One of the assignments will be to meet with me at 
 least once every two weeks to discuss progress in the course. This means that 2 times each month during the semester you will 
-need to show up at oce hours or make an appointment to see me. You will need to do this 8 times during the semester.
+need to show up at offce hours or make an appointment to see me. You will need to do this 8 times during the semester.
