@@ -69,3 +69,12 @@ the software provided in Matlab does not allow this. There is another reason why
 that software like Matlab, Mathematica, and Maple cloak. When you are working in a job and need to ship software to your 
 clients, Matlab, Mathematica, and Maple require expensive licensing for their part of the software. These packages are too 
 expensive in most cases. So, you will need to write your own code.
+
+Parallel algorithms for solving problems have been around for a long time. At first, these algorithms were interesting, but 
+maintaining parallel codes can be diffcult. In the past decade, the limitations of the physics associated with computing have 
+put limitations on the speed and capacity of a single CPU. Computer companies have started to put more processors into their 
+computers with the idea of improving performance. GPUs have been included to off load the work needed for displaying graphics 
+and the like onto a specialized parallel processing card. Ways to take advantage of multiple cores and CPUs and the GPU onboard 
+your computer have been developed. Students in this course will gain some knowledge of how to use these tools. In particular, 
+concepts from the directive based languages, OpenMP and OpenACC, will be presented to show students the benefits of multicore
+processing the GPU processing.
