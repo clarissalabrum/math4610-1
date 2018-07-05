@@ -86,7 +86,7 @@ Your grade in the course will be determined by the following:
    under any circumstances. If you must be gone, any homework must be turned in before the due date. The only exception to this 
    rule is for a family emergency. Also, codes must be carefully documented. An example of a well documented code will be 
    discussed in class and a version will be posted on line.
-2. Two midterms will be given. Each will cover about one half of the content of the course. Each of these midterms will account  
+2. Two midterms will be given. Each will cover about one half of the content of the course. Each of these midterms will account
    for 20% or 40% of the grade earned in the course.
 3. A portfolio of routines will be required of each student. The portfolio of routines must be written in the form of a software 
    manual. The exact form of the portfolio will be discussed in class. Based on past experience the formatting will be strict in    
