@@ -38,4 +38,4 @@ The textbook for the course for Fall Semester 2018 is the following:
 
 >> A First Course in Numerical in Numerical Methods. by Uri Ascher and Chen Greif
 
-The book can be found at [SIAM](www.siam.org). You can search for the title or authors and then go from there.
+The book can be found at [SIAM](https://www.siam.org). You can search for the title or authors and then go from there.
