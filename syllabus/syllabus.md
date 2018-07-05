@@ -30,4 +30,4 @@ The official course description can be found on the [USU](http://www.usu.edu/) C
 >> mathematics and problem solving, including: truncation and round-off error, algorithms to find solutions of nonlinear equations,
 >> numerical solution of linear systems by direct and iterative approaches, interpolation methods, numerical differentiation and
 >> quadrature rules. Prerequisite/Restriction: MATH 1220, MATH 2250, or MATH 2270 with a C- or better. Ability to program with a
->> high-level computer language (C/C++, Python, Fortran) Semester(s) Traditionally Offered: F
+>> high-level computer language (C/C++, Python, Fortran) Semester(s) Traditionally Offered: Fall
