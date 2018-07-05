@@ -22,7 +22,7 @@ number of issues that come up in the process of translating the problem into com
 1. From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the
    mathematical problem is a differential equation modeling fluid flow in a river system. If a theorem exists that guarantees a 
    unique solution exists, the goal of writing a code is to end up with results that match or approximate the exact solution to
-   the problem. In most cases, even when it is known a solution exists, it may be impossible to write the solution out easily.     
+   the problem. In most cases, even when it is known a solution exists, it may be impossible to write the solution out easily.
    One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential
    equations. In many cases, theorems can be provided to guarantee the existence and uniqueness of solutions, but a method for  
    constructing solutions may not be available. So, it might be necessary to settle for an approximate solution determined by a 
