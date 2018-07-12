@@ -1,54 +1,97 @@
 ### Examples of the Importance of Computational Mathematics and Scientific Computing
 
 If you are reading the content in this repository, you are probably interested in mathematics, computer programming, and a
-number of other computer related skill set. So, it makes sense to understand what computational mathematics is and what
-computational mathematics is not. The information in this chapter details some examples of the use of methods and tools from 
-computational mathematics and/or scientific computing. For the examples presented, one should think of the following question.
+number of other computer related skill set. In addition, if you are reading this you are likely interested in how to solve
+real problems with a computer - not just use someone else's program to play a game or stream a video. So, it makes sense to 
+understand what computational mathematics is and what computational mathematics is not. The information in this chapter details 
+some examples of the use of methods and tools from computational mathematics and/or scientific computing. For the examples 
+presented, one should think of the following question.
 
 **What does a computational mathematician do?**
 
 The simplest of answers is that a computational mathematician translates mathematical problems into computer code. This means
 that once a mathematical problem has been formulated, it is the job of a computational mathematican to write a computer code
 that produces an accurate description of the mathematical problem and will produce at least an approximate solution for the
-mathematical problem. In addition, the computer code produced should be (1) efficient, (2) accurate, and (3) robust.
+mathematical problem. In addition, the computer code produced should be (1) as efficient as possible, (2) produce as accurate
+a result as possible, and (3) be robust in the sense that the computer code can be used to solve the largest number of problems
+possible meaning the code can be reused in other settings.
 
 There are at least 3 or 4 types of problems that a computational mathematician addresses in the development of algorithms for 
 computing approximate solutions of different problems. Some of the basic problems that need to be overcome are contained in the
-following list of examples.
+following list of examples. The examples are introduced as a question that might be asked of a computational mathematician in
+a job setting.
 
-Example **Question from the Boss - "Can you write a code to solve this problem?"**
+**Question from your Boss - "Can you write a code to solve this problem?"**
+
+This question has more to do with computational skills than anything else. The question boils down to the level of competence
+one has with one or more computer programming languages. Does the boss want to see code written in Python, C, C++, Java, or any
+of the dozens of languages that are out there? Maybe the computational problem requires a combination of Java and Python to
+make progress. Maybe the problem requires the use of data base software like MySQL or Oracle's products. Another possibility
+is that your Boss wants to prototype an idea using platforms like Matlab, Maple, Mathematica, or other computational platforms
+before starting a massive effort to more thoroughly answer questions about the mathematical problem in question.
+
+Another possible area of interest might include the use of parallel algorithms using OpenMP or OpenACC using multiple cores and
+GPUs, respectively. The use of parallel programming strategies in data science and high resolution simulations has become more
+and more important over the past decade. There are no new advances in processor speed that will continue to double the
+performance of computer hardware due limitations in getting energy to a CPU while extracting heat. Using multiple processors
+is now part of the bag of tricks a computational mathematician must know.
+
+**Question from your Boss - "Will your code produce the correct solution for the problem?"**
 
 The first step in trying to write a code to solve a mathematical problem is to determine if this is even possible. There are a
-number of issues that come up in the process of translating the problem into computer code. The first issue involves the
-mathematical problem. Before any code is written, it is important that the problem have at least one solution. If no solution
-exists, then there is really no reason to write a code to compute the nonexistent solution.
+number of issues that come up in the process of translating a mathematical problem into a computer code. The first issue 
+involves the mathematical problem itself. Before any code is written, it is important that the mathematical problem have at 
+least one  solution. If no solution exists for the mathematical problem, then there is really no reason to write a code to 
+compute the nonexistent solution. In addition to the existence of a solution, it would be best to make sure that the 
+mathematical problem has a unique solution. Once an algorithm is created for the solution of a problem with multiple solutions
+the question would be which solution is being determined by the algorithm.
 
-1. From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the
-   mathematical problem is a differential equation modeling fluid flow in a river system. If a theorem exists that guarantees a 
-   unique solution exists, the goal of writing a code is to end up with results that match or approximate the exact solution to
-   the problem. In most cases, even when it is known a solution exists, it may be impossible to write the solution out easily.
-   One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential
-   equations. In many cases, theorems can be provided to guarantee the existence and uniqueness of solutions, but a method for
-   constructing solutions may not be available. So, it might be necessary to settle for an approximate solution determined by a
-   computer code.
-2. Something about the tractabiliy of the problem.... Resource limitations and cost of the equipment to run the code...
-3. Something about errors in code that make the approximation unreliable... numerical analysis versus coding....
+From a mathematical point of view, does the mathematical problem have an analytic solution. For example, suppose the
+mathematical problem is a differential equation modeling fluid flow in a river system. If a theorem exists that guarantees a
+unique solution exists, the goal of writing a code is to end up with results that match or approximate the exact solution to
+the problem. In most cases, even when it can be guaranteed a solution exists, it may be impossible to write the solution out 
+easily. One example is in the solution of the nonlinear conservation laws that are modeled by nonlinear partial differential
+equations. In many cases, theorems can be provided to guarantee the existence and uniqueness of solutions, but a method for
+constructing exact solutions may not be available. So, it might be necessary to settle for an approximate solution determined
+by a computer code.
 
-Example 2. **Question from the Boss - "Are you sure your code works?"**
+Another problem that a computational mathematician is faced with is the following. Suppose the mathematical problem has a
+unique solution and that a computer code can be written that in the best of worlds could compute approximate solutions for
+the mathematical problem. If the code is compiled and it does not fit on any known computer, then the code will not be able
+to produce a solution. A problem that fits in this category is called __computationally intractable__ and alternate approaches
+must be explored. In some cases, the problem can be restructured and in other cases it may mean going back to the drawing
+board to find a different approach. Note that resource limitations such as memory and CPU speed are serious problems in coding
+up algorithms to solve real world problems. Using parallel programming techniques and lots of hardware can be used to help
+in these cases.
 
-Something about verification of the results produced by the code.....
+All digital devices have limitations in the accuracy of number representation. Every computer has a limited number of digits
+that can be stored in the representation of numbers. This means that a number like __e__ the natural exponential base cannot
+be represented exactly. In addition, as binary operations (addition, subtraction, multiplication, and division) cannot be done
+exactly. This means that solving mathematical problems with computers starts with errors in the numbers and any calculations
+done. One of the main skills a computational mathematician must be able to deal with __machine precision__ in any coding
+exercise. In one of the first projects in this repository, you will be asked to determine the __machine epsilon__ for any
+computer you will be using. We will leave that for later.
 
-Example 3. **Question from the Boss - "When will the code produce a solution of the mathematical problem?"**
+**Question from the Boss - "Are you sure your code works?"**
 
-Writing a code is not enough.....make sure it runs in a finite amount of time....
+In a job setting, writing a code is not enough. You will need to be able to verify that the code you have written produces a
+correct result. It is always to have a set of problems where the solution is known. These can be used as a sanity test to make
+sure the code produces correct answers in known settings. A few techniques on how to generate these problems are given in this
+repository. In addition, every programmer in the world knows that writing code is an endless cycle of improving and debugging
+the code you have written. Once a code has been verified as working and producing results, someone in the crowd will change the
+target. This might mean adding more resolution to a simulation or adding in more complicated physics in a plasma simulation.
 
-Example 4. **Question from the Boss - "Can the code produce solutions for similar problems of interest to the bottom line?"**
+**Question from the Boss - "When will the code produce answers to the questions I have about the problem?"**
+
+If your boss has to wait too long for results, that may mean the end of the project.
+
+**Question from the Boss - "Can the code produce solutions for similar problems of interest to the bottom line?"**
 
 Something about classes of problems solved by the code....
 
-Example 5. **Question from the Boss - "Can you get the code to run faste and work on bigger problems?"**
+**Question from the Boss - "Can you get the code to run faster and work on bigger problems?"**
 
-Example 6. **Question from the Boss - "How easy is the code to use, modify and maintain?"**
+**Question from the Boss - "How easy is the code to use, modify and maintain?"**
 
 Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
 example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
