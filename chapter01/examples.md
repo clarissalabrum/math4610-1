@@ -137,8 +137,9 @@ world.
 Another feature that is emphasized in this repository (for obvious reasons) is the use of the social network for computational
 nerds, Github, as a platform for sharing computer coding efforts. The use of Github as a computational mathematics is essential
 in this day and age. To connect this idea to the question above, if your code is resuable, modular, and can easily be modified
-by others, Github is a great platform to test ideas. There are other efforts being made by Stack Overflow, but for now these
-materials will be developed within the [Github](https://github.com) framework.
+by others, Github is a great platform to test ideas. There are other efforts being made by
+[Stack Overflow](https://stackoverflow.com), but for now these materials will be developed within the
+[Github](https://github.com) framework.
 
 **Question from the Boss: I don't get what this means? Can you show me a picture of what the numbers mean?**
 
