@@ -80,29 +80,52 @@ sure the code produces correct answers in known settings. A few techniques on ho
 repository. In addition, every programmer in the world knows that writing code is an endless cycle of improving and debugging
 the code you have written. Once a code has been verified as working and producing results, someone in the crowd will change the
 target. This might mean adding more resolution to a simulation or adding in more complicated physics in a plasma simulation.
+A good computational mathematician should be able to see ways to modify code to incorporate changes needed to include the new
+constraints and/or extensions to the mathematical problem.
 
 **Question from the Boss - "When will the code produce answers to the questions I have about the problem?"**
 
-If your boss has to wait too long for results, that may mean the end of the project.
+If your boss has to wait too long for results, that may mean the end of the project and possibly your position with the
+company. So, it is important to be able to estimate how long it will take to run a simulation or database inquiry and analyze
+the results of your work. This may mean doing more optimization of the computer code or possibly reducing storage requirements.
+This may be the most difficult part of any computational mathematician's day.
 
 **Question from the Boss - "Can the code produce solutions for similar problems of interest to the bottom line?"**
 
-Something about classes of problems solved by the code....
+The question in this case, implies that solving a class of problems using the computer code you have written is important. In
+some codes physical parameters may be hardwired to constant values. However, the physics may call for a functional relationship
+between some of these parameters. Modifiying the code to handle a more general class of problems where constituitive
+relationships are defined will be a job that computational mathematicians must resolve. Writing code that is general at the
+beginning of the process may be difficult. However, trying to think through possible extensions before needed can be a huge
+benefit to the bottom line for any coding effort. As an example, in working for Chevron Oil Field Research Company located in
+LaHabra California (at least in 1985-6) the management of the research group planned on spending $500K to rewrite a black-oil
+simulator to rewrite the code in C from Fortran. At the time, this was a huge commitment for the company. In the end, the goal
+was to modernize the programming language while embedding more physics and mathematics in the code.
 
 **Question from the Boss - "Can you get the code to run faster and work on bigger problems?"**
+
+Running a simulation on bigger problems and doing this efficiently is something that may seem easy, but it may be a tough
+issue to make progress on. Bigger and more complicated problems can easily out-strip computer resources. As an example, a
+graduate student who was working on simulation of fluids flowing through an aquifer (water or contaminated flow) found that
+in order to compute accurate simulations in three dimensional problems, the number of mesh blocks needed was larger than
+Avagadro's number which will still swamp any computer in production today. A partial solution for the problem involved coming
+up with ways of averaging parameters in the problem. Another graduate student at USU was involved with a project with the
+Alaska Fishery Science Center (AFSC) to produce an experimental design for determining whether or not fishing boats were
+accurately measuring the catch in a cod fishery. The suggest minimal experiment was estimated to cost more than $2,000,000.
+At first, both sides refused the design due to the cost. However, a couple of years later, the study was done due to the
+problems of fishery management that still existed.
 
 **Question from the Boss - "How easy is the code to use, modify and maintain?"**
 
 Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
 example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
-problem. For example, using a finite difference method to discretize 
-derivatives in a differential equation will, at best, result in an approximation of the solution of the original differential 
-equation. If an algorithm is unable to produce an accurate approximation, the results may be of no use to colleagues that want 
-to answer questions about a real problem. One question that computational scientists must be able to answer is whether or not a
-computer program will produce an accurate approximate solution. A more general question is what is the largest set of problems 
-for which the algorithm produces an accurate approximate solution. It should be noted that it is not good enough to get a
-computer program running. If the program does not produce accurate results related to the original problem, the program really
-is note worth much.
+problem. For example, using a finite difference method to discretize derivatives in a differential equation will, at best, 
+result in an approximation of the solution of the original differential equation. If an algorithm is unable to produce an 
+accurate approximation, the results may be of no use to colleagues that want to answer questions about a real problem. One 
+question that computational scientists must be able to answer is whether or not a computer program will produce an accurate 
+approximate solution. A more general question is what is the largest set of problems for which the algorithm produces an 
+accurate approximate solution. It should be noted that it is not good enough to get a computer program running. If the program 
+does not produce accurate results related to the original problem, the program really is note worth much.
 
 2. **Efficiency of the Computer Code: Question from the Boss - "Do you have an answer yet?"**  The implementation of any 
 algorithm must necessarily be concerned with how fast results can be obtained once the algorithm has been successfully been 
@@ -151,4 +174,4 @@ Question from the Boss: I don't get what this means? Can you show me a picture o
 
 [Back to Main Page](https://jvkoebbe.github.io/math4610/main) | 
 [Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents) |
-[Next](https://jvkoebbe.github.io/math4610/chapter02/main)
+[Next](https://jvkoebbe.github.io/math4610/chapter02/intro)
