@@ -129,12 +129,19 @@ based on reusable code. Students in Math 4610 complete this project which requir
 Unix/Linux environment and DLLs in a Windows OS. Students are asked to create these libraries as a basic part of being a
 computational mathematician. Another project all students must complete is the development of a software manual for all of the
 modular codes that are written during the course. Students are required to use a specific
-[template](https://jvkoebbe.github.io/math4610/softwareManualTemplate) for each and every entry in the software manual. The
-reasons for forcing this issue of using a preconfigured template are (1) it is much easier to grade at the end of the
-semester and (2) this is likely what will need to be done when you are working as a computational mathematician in the real
+[template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate) for each and every entry in the software 
+manual. The reasons for forcing this issue of using a preconfigured template are (1) it is much easier to grade at the end of 
+the semester and (2) this is likely what will need to be done when you are working as a computational mathematician in the real
 world.
 
-Something about Github....
+Another feature that is emphasized in this repository (for obvious reasons) is the use of the social network for computational
+nerds, Github, as a platform for sharing computer coding efforts. The use of Github as a computational mathematics is essential
+in this day and age. To connect this idea to the question above, if your code is resuable, modular, and can easily be modified
+by others, Github is a great platform to test ideas. There are other efforts being made by Stack Overflow, but for now these
+materials will be developed within the Github framework.
+
+
+
 
 Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
 example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
