@@ -159,14 +159,14 @@ effective manner.
 1. **Accuracy of the Code:**
 
 Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
-example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
-problem. For example, using a finite difference method to discretize derivatives in a differential equation will, at best, 
-result in an approximation of the solution of the original differential equation. If an algorithm is unable to produce an 
-accurate approximation, the results may be of no use to colleagues that want to answer questions about a real problem. One 
-question that computational scientists must be able to answer is whether or not a computer program will produce an accurate 
-approximate solution. A more general question is what is the largest set of problems for which the algorithm produces an 
-accurate approximate solution. It should be noted that it is not good enough to get a computer program running. If the program 
-does not produce accurate results related to the original problem, the program really is note worth much.
+example, C, C++, or Fortran), and run on various computers, at best, produce an approximate solution to an underlying 
+mathematical problem. For example, using a finite difference method to discretize derivatives in a differential equation will, 
+at best, result in an approximation of the solution of the original differential equation. If an algorithm is unable to produce 
+an accurate approximation, the results may be of no use to colleagues that want to answer questions about a real problem. A
+more general question is what is the largest set of problems for which the algorithm produces an accurate approximate solution. 
+To understand the accuracy of any results produced by a computer program we need to understand where errors come from. There
+are errors in measurement, errors in number representation, and other errors that need to be addressed. This will be covered in
+the [next chapter](https://jvkoebbe.github.io/math4610/chapter2/intro).
 
 2. **Efficiency of the Computer Code:** 
 
