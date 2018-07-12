@@ -10,12 +10,20 @@ computer program produces.
 
 The following is a list of sources of error that must be addressed in this process.
 
-1. [Finite Representation of non-binary numbers:](https//jvkoebbe.git.io/math4610/numberRepresentation) Computers store numerical
+1. [Measurement Errors:](https://jvkoebbe.github.io/chapter02/measurementError) This section will give a brief discussion of how
+   errors that occur in the course of doing physical measurements. For example, if measurements of the depth of a river system are
+   needed in simulations of river flow, one should expect that the measurements are as accurate as the device measuring the depth.
+   Computational mathematicians cannot control measurement errors. However, measurement errors must be accounted for in any
+   computer code written to solve real world problems.
+2. [Finite Representation of non-binary numbers:](https//jvkoebbe.git.io/math4610/numberRepresentation) Computers store numerical
 data in binary, octal, or hexidecimal forms. The decimal values we see on a monitor or a printed version of output are
 translations from binary values to decimal values. For example, the number 1/3 requires an infinite number of digits in a
 binary representation. The actual value can be written as: (1/3)_2 = 0.01010101010..... where the "...." means the pattern
 repeats forever.
 
-2. [Loss of Significant Digits:](https://jvkoebbe.git.io/math4610/floatingPointOps)
+3. [Loss of Significant Digits:](https://jvkoebbe.git.io/math4610/floatingPointOps)
 
-3. [Truncation Error:](https://jvkoebbe.git.io/math4610/truncationError)
+4. [Truncation Error:](https://jvkoebbe.git.io/math4610/truncationError)
+
+[previous](https://jvkoebbe.github.io/math4610/chapter01/intro) |
+[next](https://jvkoebbe.github.io/math4610/chapter02/measurementError)
