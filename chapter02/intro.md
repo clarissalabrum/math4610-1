@@ -7,4 +7,5 @@ chapter.
 
 **Content of this Chapter**
 
-1. 
+1. [Sources of Error](https://jvkoebbe.github.io/math4610/chapter02/sourcesOfError)
+1. [Sources of Error](https://jvkoebbe.github.io/math4610/chapter02/sourcesOfError)
