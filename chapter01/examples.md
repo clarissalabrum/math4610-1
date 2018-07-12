@@ -138,10 +138,20 @@ Another feature that is emphasized in this repository (for obvious reasons) is t
 nerds, Github, as a platform for sharing computer coding efforts. The use of Github as a computational mathematics is essential
 in this day and age. To connect this idea to the question above, if your code is resuable, modular, and can easily be modified
 by others, Github is a great platform to test ideas. There are other efforts being made by Stack Overflow, but for now these
-materials will be developed within the Github framework.
+materials will be developed within the [Github](https://github.com) framework.
 
+**Question from the Boss: I don't get what this means? Can you show me a picture of what the numbers mean?**
 
+Once a code is working, it is likely that your boss will want to see some pictures that can be used to determine the
+efficacy of your code. So, it should be clear that another important skill set involves visualization of the results of running 
+a program. What is the best way to display results of a simulation? This is a skill set that requires a lot of time and effort
+to get it right. Computer animations and imaging are a whole bag of tricks that takes some time to develop. Depending on the
+industry you may need to use different types of approaches to visualize your results. In addition, the graphics need to convey
+the correct information quickly and efficiently.
 
+**Summary of Ideas in this Chapter**
+
+1. **Accuracy of the Code:**
 
 Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
 example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
@@ -153,16 +163,15 @@ approximate solution. A more general question is what is the largest set of prob
 accurate approximate solution. It should be noted that it is not good enough to get a computer program running. If the program 
 does not produce accurate results related to the original problem, the program really is note worth much.
 
-2. **Efficiency of the Computer Code: Question from the Boss - "Do you have an answer yet?"**  The implementation of any 
-algorithm must necessarily be concerned with how fast results can be obtained once the algorithm has been successfully been 
-encoded and all bugs (errors) in the code have been corrected. Different methods/algorithms may produce the same result, but one 
-method may require more computer time than the other. As an example of this concept, there are a number of algorithms for 
-computing approximate solutions of linear systems of equations. There are a variety of algorithms that can be used to compute 
-solutions of linear systems of equations. If two methods for approximate solution of some problem are proposed and both produce 
-an accurate approximate solution, the next question is which method completes the task in the shortest amount of time. Most 
-scientists want the results as quickly as possible so that decisions may be made from the output.
+2. **Efficiency of the Computer Code: Question from the Boss - "Do you have an answer yet?"** 
 
-Question from the Boss: "How fast can you produce an answer for me?"
+The implementation of any algorithm must necessarily be concerned with how fast results can be obtained once the algorithm has 
+been successfully been encoded and all bugs (errors) in the code have been corrected. Different methods/algorithms may produce 
+the same result, but one method may require more computer time than the other. As an example of this concept, there are a number 
+of algorithms for computing approximate solutions of linear systems of equations. There are a variety of algorithms that can be 
+used to compute solutions of linear systems of equations. If two methods for approximate solution of some problem are proposed 
+and both produce an accurate approximate solution, the next question is which method completes the task in the shortest amount 
+of time. Most scientists want the results as quickly as possible so that decisions may be made from the output.
 
 3. **Robustness of the Algorithm:** Computational mathematicians try to build computer codes from algorithms with the idea of 
 solving the largest possible class of mathematical problems. For example, numerical methods for approximating solutions of 
@@ -170,8 +179,6 @@ initial value problems are heavily used in real applications. If the algorithm i
 differential equation, the algorithm is not likely to be very useful. The goal should be solve as many initial value problems as 
 possible which results in a robust algorithm. This means that a user will be able to solve many different initial value problems 
 with the same code.
-
-Question from the Boss: "Hey I have this problem that is almost the same. Can you produce the same result for this other deal?
 
 4. **Stability of Algorithms Developed:** An important problem in scientific computing is the stability of the implementations
 of the algorithms one needs in the approximate solution of mathematical problems. There are many uses of the term "stability" in
@@ -181,8 +188,6 @@ is stable - at least heuristically. Small perturbations to the input to a comput
 measurement error to finite representation of numbers on computers to truncation errors. If an implementation is unstable, any
 of these sources of initial error may lead to erroneous results when the code is applied to some problems.
 
-Question from the Boss: Is there any way we can get results faster?
-
 5. **Implementation of Computer Code in High Performance Computing:** In recent years, the evolution of faster CPU technology 
 has been stunted by limitations in the physics of semiconductors. The days of doubling the performance of process (Moore's law) 
 have, infortunately faded to black due to the physical limits on the materials used to create CPUs for computers. However, there 
@@ -191,12 +196,7 @@ developers to implement parallel versions of algorithms if the algorithm lends i
 decades, multicore computers have been made available and the GPU technology for fast refresh rates on computer screens has 
 spawned many efforts to use the extra resources.....
 
-Question from the Boss: Is there any way we can get results faster?
-
-6. **Computer Graphics:** Another important skill set involves visualization of the results of running a program. What is the
-best way to display results of a simulation.
-
-Question from the Boss: I don't get what this means? Can you show me a picture of what the numbers mean?
+6. **Visualization of Results:**
 
 [Back to Main Page](https://jvkoebbe.github.io/math4610/main) | 
 [Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents) |
