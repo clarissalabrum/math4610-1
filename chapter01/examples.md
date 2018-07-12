@@ -113,9 +113,28 @@ up with ways of averaging parameters in the problem. Another graduate student at
 Alaska Fishery Science Center (AFSC) to produce an experimental design for determining whether or not fishing boats were
 accurately measuring the catch in a cod fishery. The suggest minimal experiment was estimated to cost more than $2,000,000.
 At first, both sides refused the design due to the cost. However, a couple of years later, the study was done due to the
-problems of fishery management that still existed.
+problems within the fishery that still existed.
 
 **Question from the Boss - "How easy is the code to use, modify and maintain?"**
+
+Writing a code that works is one thing. However, writing a code that can be used by others to produce is also important. One
+aspect of this type of work involves the reuse of code you have written. Can the code you have written be modified and 
+maintained by others. There are a few issues that can help with this. The first is documentation within the code that you have
+written. It is important to document the bits and pieces of the algorithm you have coded to solve any mathematical problem.
+The second thing that might help others work with your code is the development of a coding style that is easy to read and is
+clean. This means take out debugging commands and statements.
+
+Writing modular code is important if you are developing libraries of basic routines. This repository has a couple of projects
+based on reusable code. Students in Math 4610 complete this project which requires the development of a shared library in a
+Unix/Linux environment and DLLs in a Windows OS. Students are asked to create these libraries as a basic part of being a
+computational mathematician. Another project all students must complete is the development of a software manual for all of the
+modular codes that are written during the course. Students are required to use a specific
+[template](https://jvkoebbe.github.io/math4610/softwareManualTemplate) for each and every entry in the software manual. The
+reasons for forcing this issue of using a preconfigured template are (1) it is much easier to grade at the end of the
+semester and (2) this is likely what will need to be done when you are working as a computational mathematician in the real
+world.
+
+Something about Github....
 
 Most of the algorithms that end up being translated into computer code, written and compiled into an executable/binary file (for 
 example, C, C++, or Fortran), and run on various computers will produce an approximate solution to an underlying mathematical 
