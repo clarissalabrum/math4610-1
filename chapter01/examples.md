@@ -150,4 +150,5 @@ best way to display results of a simulation.
 Question from the Boss: I don't get what this means? Can you show me a picture of what the numbers mean?
 
 [Back to Main Page](https://jvkoebbe.github.io/math4610/main) | 
-[Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
+[Back to Table of Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents) |
+[Next](https://jvkoebbe.github.io/math4610/chapter02/main)
