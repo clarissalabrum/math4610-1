@@ -10,5 +10,5 @@ solving complicated problems:
 2. [Vector Norms](https://jvkoebbe.github.io/vectorNorms)
 3. [Matrix Norms](https://jvkoebbe.github.io/matrixNorms)
 4. [Vector Operations](https://jvkoebbe.github.io/vectorOperations)
-5. [Standard Matrix Operations](https://jvkoebbe.github.io/matrixOperations)
+5. [Matrix Operations](https://jvkoebbe.github.io/matrixOperations)
 6. [More Matrix Operations](https://jvkoebbe.github.io/moreMatrixOperations)
