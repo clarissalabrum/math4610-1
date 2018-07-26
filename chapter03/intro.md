@@ -1,4 +1,4 @@
-#Root Finding for Nonlinear Functions of One Variable
+# Root Finding for Nonlinear Functions of One Variable
 
 In this chapter, the first of a number of mathematical problems is considered. Finding the roots of nonlinear functions has been
 studied for more than a century. 
