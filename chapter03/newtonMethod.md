@@ -1,0 +1,3 @@
+## Taylor's Theorem and Newton's Method
+
+In this section, we will assume the function is....
