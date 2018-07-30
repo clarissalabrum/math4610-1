@@ -120,20 +120,32 @@
         on your computer write out the same statement. In addition, the way that the code is compiled will also change. That
         we will do on the other side of the following code.
         <pre>
-              program main
-              integer id, nthrds
-              integer omp_get_thread_num, omp_get_num_threads
-        C$OMP PARALLEL PRIVATE(id)
-              id = omp_get_thread_num()
-              print *, 'hello world from thread', id
-        C$OMP BARRIER
-              if(id .eq. 0) then
-                nthrds = omp_get_num_threads()
-                print *, 'There are', nthrds, ' threads!'
-              end if
-        C$OMP END PARALLEL
-              end
+        |      program main
+        |      integer id, nthrds
+        |      integer omp_get_thread_num, omp_get_num_threads
+        |C$OMP PARALLEL PRIVATE(id)
+        |      id = omp_get_thread_num()
+        |      print *, 'hello world from thread', id
+        |C$OMP BARRIER
+        |      if(id .eq. 0) then
+        |        nthrds = omp_get_num_threads()
+        |        print *, 'There are', nthrds, ' threads!'
+        |      end if
+        |C$OMP END PARALLEL
+        |      stop
+        |      end
         </pre>
+        First, there are some things that need to be described in the code:
+        <ol type="a">
+          <li> 
+            <p> The line on the left indicates how the code needs to be written in the column. In fortran, the comment line
+            must start as the first character of the line typed in. So, the pipe, "|", is like the edge of the window and is
+            not actually a character, just the border of the document.
+            </p>
+          </li>
+          <li>
+            <p> The characters "C$OMP" tells the compiler that the line is a line associated with OpenMP.
+        </ol>
       </p>
     </li>
     <li>
