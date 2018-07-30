@@ -65,7 +65,21 @@
            <li> Upload the routines that you created in the first problem. </li>
            <li> 
              Compile the routines into object modules (.o files). For example, put the files you have uploaded into a
-             folder (say hw1_prob3) and change directories to move down into the folder.
+             folder, say hw1_prob3, using the command
+             <pre>
+               % mkdir hw1_prob3
+             </pre>
+             in a Cygwin/Linux/Unix operating system. Then use
+             <pre>
+               % mv *.f hw1_prob3
+               % cd hw1_prob3
+             </pre>
+             to move all files ending with a .f suffix to the folder just created and change the current folder to the folder
+             just created. Finally, compile the files using
+             <pre>
+               % gfortran *.f
+             </pre>
+             The result will be a bunch of object files with a suffix of ".o".
            </li>
          </ol>
       </p>
