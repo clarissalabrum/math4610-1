@@ -76,11 +76,25 @@
              </pre>
              to move all files ending with a .f suffix to the folder just created and change the current folder to the folder
              just created. Finally, compile the files using
-             <pre>             
-               % CC -c *.o
-               % gfortran *.f
+             <pre>
+               % gfortran -c *.f
              </pre>
-             The result will be a bunch of object files with a suffix of ".o".
+             or
+             <pre>
+               % gcc -c *.o
+             </pre>
+             using a C-compiler. The result will be a bunch of object files with a suffix of ".o".
+           </li>
+           <li>
+             The last step in this problem is to create a shared library from the routines you have created.      
+             <pre>
+               % ar rcv mylib *.o
+             </pre>
+             or  
+             <pre>
+               % ar rcv mylib *.o
+               % ranlib mylib.a
+             </pre>
            </li>
          </ol>
       </p>
@@ -93,6 +107,10 @@
            stop
            end
          </pre>      
+      
+
+
+      
          to implement the good old Hello World introductory program. Compile and run the code you have created. The code should
          produce the string in the print statement.
     </li>
