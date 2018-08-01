@@ -37,7 +37,16 @@
       summary of your work in your software manual as an example of the importance of absolute and relative errors in machine
       precision computations.
     </li>
-    <li> Problem: use of conjugate arithmetic to stabilize numerical computation
+    <li> Problem: Sometimes a formula can be modified to mitigate issues related to machine precision computations. Above, an
+      approximation of the derivative. For $f(x)=\sqrt{x}$ use the derivative approximation using to examine machine precision
+      errors as $h$ tends to zero. Then use the conjugate of the numerator to rewrite the derivative formula using the following
+      steps:
+      <ol type="a">
+        <li> multiply the numerator and denominator by the conjugate, </li>
+        <li> simplify the expression, and </li>
+        <li> analyze the errors using the new form of the derivative. </li>
+      </ol>
+      Compare the result with the direct use of the derivative formula.
     </li>
     <li> Problem: function iteration problem
     </li>
