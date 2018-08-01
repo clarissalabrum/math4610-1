@@ -5,9 +5,9 @@ body {
      background-color:                #ffff55;
      background-image:     url(hwbckgrnd.jpg);
     }
-h1, h2, h3 {
+h1 {
    font-family:          Tacoma, Arial, serif;
-   font-size:                           0.8em;
+   font-size:                           1.2em;
    color:                               black;
    }
 li {
