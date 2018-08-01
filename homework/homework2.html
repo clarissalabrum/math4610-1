@@ -18,9 +18,17 @@
     Math 4610 Fundamentals of Computational Mathematics: Homework 2 Problems - Due
   </h1>
   <ol type="1">
-    <li> Problem: Relative vs. Absolute error problem
+    <li> Problem: Write routines that can be used to compute the absolute and relative error of a machine precision number
+      and an "exact" value. The output should be a single number of type double. Note that you should be considering the
+      efficiency of the routines you write. So, do not use branching statements to write one routine to implement these types
+      of algorithms in a single routine. Conditional statements should be avoided in terms of efficiency. Add the routines to
+      the software manual you are building throughout the semester and add the routines to your shared libraries.
     </li>
-    <li> Problem: Finite difference problem for error issues
+    <li> Problem: In this problem, you will investigate problems that occur due to finite precision of arithmetic. In the text,
+      one standard approximation for derivatives involves the definition
+      $$\int\ f(x)\ dx = \lim_{h\rightarrow 0}\ {{f(x+h)-f(x)}\over{h}}$$
+      The approximation
+      $$\int\ f(x)\ dx \approx {{f(x+h)-f(x)}\over{h}}$$
     </li>
     <li> Problem: use of conjugate arithmetic to stabilize numerical computation
     </li>
