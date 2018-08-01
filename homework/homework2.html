@@ -37,18 +37,33 @@
       summary of your work in your software manual as an example of the importance of absolute and relative errors in machine
       precision computations.
     </li>
-    <li> Problem: Sometimes a formula can be modified to mitigate issues related to machine precision computations. Above, an
-      approximation of the derivative. For $f(x)=\sqrt{x}$ use the derivative approximation using to examine machine precision
-      errors as $h$ tends to zero. Then use the conjugate of the numerator to rewrite the derivative formula using the following
-      steps:
+    <li> Problem: Sometimes a formula can be modified to mitigate issues related to machine precision computations.
       <ol type="a">
-        <li> multiply the numerator and denominator by the conjugate, </li>
-        <li> simplify the expression, and </li>
-        <li> analyze the errors using the new form of the derivative. </li>
+        <li> Above, an approximation of the derivative. For $f(x)=\sqrt{x}$ use the derivative approximation using to examine
+          machine precision errors as $h$ tends to zero. Then use the conjugate of the numerator to rewrite the derivative formula
+          using the following steps:
+          <ol type="i">
+            <li> multiply the numerator and denominator by the conjugate, </li>
+            <li> simplify the expression, and </li>
+            <li> analyze the errors using the new form of the derivative. </li>
+          </ol>
+          Compare the result with the direct use of the derivative formula.
+        </li>
+        <li> In this problem, approximate the derivative of $f(x)=sin(x)$ at $x_0=0$ using the difference
+          $$\int\ f(x)\ dx \approx {{f(x+h)-f(x)}\over{h}}$$
+          and use a Taylor series expansion in place of the evaluation of the sine function. Recall that $sin(0)=0$. Rewrite
+          the expression and make sure the derivative is accurately approximated as $h$ is taken closer to zero. What is the
+          computational difference between the initial expression and the rewritten expression?
+        </li>
       </ol>
-      Compare the result with the direct use of the derivative formula.
     </li>
-    <li> Problem: function iteration problem
+    <li> Problem: For this problem, you will need to write a routine (or possibly more than one routine) that searches for a
+      root of a given function using function iteration. Recall from your reading, you will need to provide an iteration
+      function in each case. Apply functional iteration to each of the problems given below:
+      <ol type="a">
+        <li> $f(x)=x^2-3$ </li>
+        <li> $f(x)=sin(\pi\ x)$ </li>
+      </ol>
     </li>
     <li> Problem: bisection method problem
     </li>
