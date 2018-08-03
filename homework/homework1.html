@@ -18,61 +18,68 @@
     Math 4610 Fundamentals of Computational Mathematics: Homework 1 Problems - Due
   </h1>
   <ol type="1">
-    <li> Problem: Write a code that will return the machine precision for your computer (or any other computer). Give the method
-      a name that is descriptive - for example, maceps(), or something like that. The routine should return the default machine
-      precision. Create a second routine that will return the machine precision in double the precision. Give the routine a
-      unique name, say dmaceps(). Make sure that your code is fully documented with you as the author and so on. An example of
-      a Fortran code is given in the notes. You can translate this into a C or C++ code to do the work.
+    <li> Problem: Write a code that will return machine precision for your computer (or any other computer for that matter) in
+      single precision arithmetic. Give the method a name that is descriptive. For example, maceps(), or something like that.
+      The routine should return the default machine precision. Create a second routine that will return the machine precision
+      in double precision computations. Give the routine a unique name, say dmaceps(). Make sure that your code is fully
+      documented with you as the author and so on. An example of a Fortran code is included in this repository. You can
+      translate this into a Python, C, or C++ code to do the work. You can also modify the Fortran and use this directly.
     </li>
-    <li> Problem: Create software manual pages for the two routines using the template at the following link:
-          <hr>
-          <a href="https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate">
-            Software Manual Markdown Template
-          </a>
-          <hr>
+    <li> Problem: Create a repository on [Github](https://www.github.com) and create a repositry for this homework that will
+         contain a software manual for all the code you will write and work with in the course. The repository should include
+         a table of contents where each entry in the table of contents is linked to a software manual page where the user can
+         read about that entry. Start the software manual by creating software manual pages for the two routines using the
+         template at the following link:
+         <hr>
+           <a href="https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate">
+             Software Manual Markdown Template
+           </a>
+         <hr>
+      Note: The software manual must use the template above to be graded!.
     </li>
     <li> Problem: To complete this problem, you may need to go to the Engineering Computer Lab on the third floor of the
-         Engineering Building. If you have Cygwin installed on a laptop or desktop computer that you own, you can do this
-         homework at home. Note that if you have some version of Linux/Unix on your computer, you can also do this homework
-         using your own computer. Finally, if you are working on a MAC/Apple, you can also complete this problem using your
-         laptop or desktop. Complete the following steps:
-         <ol type="a">
-           <li> Log onto the computer (Engineering Lab) and open a command terminal to work in. </li>
-           <li> Upload the routines that you created in the first problem. </li>
-           <li> 
-             Compile the routines into object modules (.o files). For example, put the files you have uploaded into a
-             folder, say hw1_prob3, using the command
-             <pre>
-               % mkdir hw1_prob3
-             </pre>
-             in a Cygwin/Linux/Unix operating system. Then use
-             <pre>
-               % mv *.f hw1_prob3
-               % cd hw1_prob3
-             </pre>
-             to move all files ending with a .f suffix to the folder just created and change the current folder to the folder
-             just created. Finally, compile the files using
-             <pre>
-               % gfortran -c *.f
-             </pre>
-             or
-             <pre>
-               % gcc -c *.o
-             </pre>
-             using a C-compiler. The result will be a bunch of object files with a suffix of ".o".
-           </li>
-           <li>
-             The last step in this problem is to create a shared library from the routines you have created.      
-             <pre>
-               % ar rcv mylib *.o
-             </pre>
-             or  
-             <pre>
-               % ar rcv mylib *.o
-               % ranlib mylib.a
-             </pre>
-           </li>
-         </ol>
+      Engineering Building. If you have Cygwin installed on a laptop or desktop computer that you own, you can do this
+      homework at home. Note that if you have some version of Linux/Unix on your computer, you can also do this homework
+      using your own computer. Finally, if you are working on a MAC/Apple, you can also complete this problem using your
+      laptop or desktop. Complete the following steps:
+      <ol type="a">
+        <li> Log onto a computer (Engineering Lab) and open a command terminal to work in. </li>
+        <li> Upload/copy the routines that you created in the first problem. </li>
+        <li> 
+          Compile the routines into object modules (.o files). For example, put the files you have uploaded into a
+          folder, say hw1_prob3, using the command
+          <pre>
+            % mkdir hw1_prob3
+          </pre>
+          and in a Cygwin/Linux/Unix operating system. Note that the "%" is the command prompt that may appear in the command
+          terminal. Then use
+          <pre>
+            % mv *.f hw1_prob3
+            % cd hw1_prob3
+          </pre>
+          to move all files ending with a .f suffix to the folder just created and change the working folder to the folder
+          just created. Finally, compile the files using
+          <pre>
+            % gfortran -c *.f
+          </pre>
+          or
+          <pre>
+            % gcc -c *.c
+          </pre>
+          using the C-compiler in Cygwin. The result will be a bunch of object files with a suffix of ".o".
+        </li>
+        <li>
+          The last step in this problem is to create a shared library from the routines you have created.      
+          <pre>
+            % ar rcv mylib *.o
+          </pre>
+          or  
+          <pre>
+            % ar rcv mylib *.o
+            % ranlib mylib.a
+          </pre>
+        </li>
+      </ol>
     </li>
     <li> Problem: In this problem you will learn a bit more about your computer and how many processes you can run on the
        cores included in your computer. You will use OpenMP to do this work.
