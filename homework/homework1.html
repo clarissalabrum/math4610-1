@@ -82,7 +82,7 @@
       </ol>
     </li>
     <li> Problem: In this problem you will learn a bit more about your computer and how many processes you can run on the
-       cores included in your computer. You will use OpenMP to do this work.
+      cores included in your computer. You will use OpenMP to do this work.
       <ol type="a">
         <li> To start, write code like the following.
           <pre>
@@ -119,11 +119,12 @@
           <ol type="i">
             <li> The line on the left indicates how the code needs to be written in the column. In fortran, the comment
               line must start as the first character of the line typed in. So, the pipe, "|", is like the edge of the
-              window and is not actually a character, just the border of the document.
+              window and is not actually a character on your screen, just the border of the document.
             </li>
-            <li> The characters "C$OMP" tells the compiler that the line is a line associated with OpenMP. The first letter
+            <li> The string "C$OMP" tells the compiler that the line is a line associated with OpenMP. The first letter
                  must appear in the first column and indicates that when compiled without OpenMP extensions, will be ignored.
-                 If the OpenMP library is available, the compiler will include the parameters contained in the comments.
+                 If the OpenMP library is available, the compiler will include the parameters contained in the comments. These
+                 strings are the start of a "directive" to the compiler to do something.
             </li>
             <li> For the present time, (1) save the code above into a file named "hello.f", (2) compile the code above, using
               <pre>
