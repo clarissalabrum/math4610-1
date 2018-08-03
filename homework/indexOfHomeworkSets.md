@@ -6,3 +6,4 @@ set by the instructor for the semester. If you have questions, contact the instr
 
 1. [Homework 1](https://jvkoebbe.github.io/math4610/homework/homework1)
 2. [Homework 2](https://jvkoebbe.github.io/math4610/homework/homework2)
+3. [Homework 3](https://jvkoebbe.github.io/math4610/homework/homework3)
