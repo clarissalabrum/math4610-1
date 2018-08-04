@@ -1,1 +1,64 @@
-Fourth Assignment Page
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework</title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+  <h1>
+    Math 4610 Fundamentals of Computational Mathematics: Homework 4 Problems - Due
+  </h1>
+  <ol type="1">
+    <li> Problem: Write a routine that will perform Gaussian elimination on a square matrix. Return the result of the operation
+      in the input array. That is, overwrite the orginal array with the elimination.
+    </li>
+    <li> Problem: Repeat the work in the previous problem but for a general rectangular matrix.
+    </li>
+    <li> Problem: Write a routine to perform forward substitution on a lower triangular matrix.
+    </li>
+    <li> Problem: Write a routine to perform back substitution on an upper triangular matrix.
+    </li>
+    <li> Problem: Combine the routines from the previous problems to form a routine to solve square linear systems of equations.
+      That is, reuse the routines you have already created through instantiation, calling with arguments, etc.
+    </li>
+    <li> Problem: Create a new routine from your Gaussian Elimination routine that saves the multiplication factors and contains
+      the information for a LU-factorization of a square matrix.
+    </li>
+    <li> Problem: Combine routines from previous problems in this homework set to solve a square linear system of equations using
+      LU-factorization.
+    </li>
+    <li> Problem: When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+         $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+      Write a routine that will return the roots of a quadratic polynomial in an array. Also, create a software manual entry for
+      the routine and include this in your software manual.
+    </li>
+    <li> Problem: Compute the solutions for the following simple initial value problems:
+      <ol type="a">
+        <li> ${{dx}\over{dt}}=3 x$ and $x(0)=1.0$ </li>
+        <li> ${{dx}\over{dt}}=3 t x$ and $x(0)=1.0$ </li>
+        <li> ${{dx}\over{dt}}=0.1 x - 0.003 x^2$ and $x(0)=4$ </li>
+        <li> ${{dx}\over{dt}}=0.1 x - 0.003 x^2$ and $x(0)=400$ </li>
+      </ol>
+    </li>
+    <li> Problem: Search the internet for an application that is influenced by machine precision. Write a paragraph on one of
+      the results you have found. Identify one and only one such web site. Make sure that you cite the web site appropriately.
+    </li>
+    <li> Problem: Graph the solutions of the last two differential equations in the Problem above. That is,
+      <ol type="a">
+        <li> ${{dx}\over{dt}}=0.1 x - 0.003 x^2$ and $x(0)=4$ </li>
+        <li> ${{dx}\over{dt}}=0.1 x - 0.003 x^2$ and $x(0)=400$ </li>
+      </ol>
+      You do not need to recompute the solutions - just graph the solutions.
+    </li>
+  </ol>
+</body>
+</html>
