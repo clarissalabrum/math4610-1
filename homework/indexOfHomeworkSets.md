@@ -8,3 +8,4 @@ set by the instructor for the semester. If you have questions, contact the instr
 2. [Homework 2](https://jvkoebbe.github.io/math4610/homework/homework2)
 3. [Homework 3](https://jvkoebbe.github.io/math4610/homework/homework3)
 4. [Homework 4](https://jvkoebbe.github.io/math4610/homework/homework4)
+4. [Homework 5](https://jvkoebbe.github.io/math4610/homework/homework5)
