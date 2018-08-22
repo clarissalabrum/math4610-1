@@ -80,7 +80,7 @@ processing the GPU processing.
 ### Turning in Homework and the Software Manual
 
 To turn in your homework, you will need to supply (via email) a repository link that your instructor and "git" from
-[Github](https://www.github.com]. To grade/edit your homework, you will need to identify your homework repository as something
+[Github](https://www.github.com). To grade/edit your homework, you will need to identify your homework repository as something
 on which your instructor is a collaborator.
 
 ### Grading:
