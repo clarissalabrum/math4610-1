@@ -1,7 +1,7 @@
 ### Examples of the Importance of Computational Mathematics and Scientific Computing
 
 If you are reading the content in this repository, you are probably interested in mathematics, computer programming, and a
-number of other computer related skill set. In addition, if you are reading this you are likely interested in how to solve
+number of other computer related skill sets. In addition, if you are reading this you are likely interested in how to solve
 real problems with a computer - not just use someone else's program to play a game or stream a video. So, it makes sense to 
 understand what computational mathematics is and what computational mathematics is not. The information in this chapter details 
 some examples of the use of methods and tools from computational mathematics and/or scientific computing. For the examples 
