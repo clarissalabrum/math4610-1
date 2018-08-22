@@ -4,8 +4,8 @@ The following list provides links to the homework assignments to be completed by
 Computational Mathematics. The problem sets are geared to a one semester course. Due dates for all homework and projects are
 set by the instructor for the semester. If you have questions, contact the instructor for the course you are taking.
 
-1. [Homework 1](https://jvkoebbe.github.io/math4610/homework/homework1) Due Wednesday, September 5, 2018
-2. [Homework 2](https://jvkoebbe.github.io/math4610/homework/homework2)
-3. [Homework 3](https://jvkoebbe.github.io/math4610/homework/homework3)
-4. [Homework 4](https://jvkoebbe.github.io/math4610/homework/homework4)
-4. [Homework 5](https://jvkoebbe.github.io/math4610/homework/homework5)
+1. [Homework 1](https://jvkoebbe.github.io/math4610/homework/homework1) -- **Due**: Wednesday, September 5, 2018
+2. [Homework 2](https://jvkoebbe.github.io/math4610/homework/homework2) -- **Due**: Wednesday, September 14, 2018
+3. [Homework 3](https://jvkoebbe.github.io/math4610/homework/homework3) -- **Due**: Wednesday, September 5, 2018
+4. [Homework 4](https://jvkoebbe.github.io/math4610/homework/homework4) -- **Due**: Wednesday, September 5, 2018
+4. [Homework 5](https://jvkoebbe.github.io/math4610/homework/homework5) -- **Due**: Wednesday, September 5, 2018
