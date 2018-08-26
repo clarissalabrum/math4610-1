@@ -17,6 +17,7 @@ primary concern of this material is the approximate solution of mathematical pro
 mathematical problem is that a solution exists. Once we know a solution exists, we can design any number of algorithms for the
 approximate solution of the problem.
 
+0. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/basicReview/algebra.html)
 1. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/basicReview/algebra)
 2. [Basic Review/Notation For Trigonometry](https://jvkoebbe.github.io/math4610/basicReview/trigonometry)
 3. [Basic Review/Notation For Calculus](https://jvkoebbe.github.io/math4610/basicReview/calculus)
