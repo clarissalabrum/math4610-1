@@ -17,7 +17,18 @@ primary concern of this material is the approximate solution of mathematical pro
 mathematical problem is that a solution exists. Once we know a solution exists, we can design any number of algorithms for the
 approximate solution of the problem.
 
-0. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/basicReview/algebra.html)
+### html versions:
+
+1. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/basicReview/algebra.html)
+2. [Basic Review/Notation For Trigonometry](https://jvkoebbe.github.io/math4610/basicReview/trigonometry.html)
+3. [Basic Review/Notation For Calculus](https://jvkoebbe.github.io/math4610/basicReview/calculus.html)
+4. [Basic Review/Notation For Linear Algebra](https://jvkoebbe.github.io/math4610/basicReview/linalg.html)
+5. [Basic Review/Notation For Ordinary Differential Equations](https://jvkoebbe.github.io/math4610/basicReview/ode.html)
+6. [Basic Review/Notation For Partial Differential Equations](https://jvkoebbe.github.io/math4610/basicReview/pde.html)
+7. [Basic Review/Notation For Discrete Mathematics](https://jvkoebbe.github.io/math4610/basicReview/discrete.html)
+
+### markdown versions
+
 1. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/basicReview/algebra)
 2. [Basic Review/Notation For Trigonometry](https://jvkoebbe.github.io/math4610/basicReview/trigonometry)
 3. [Basic Review/Notation For Calculus](https://jvkoebbe.github.io/math4610/basicReview/calculus)
