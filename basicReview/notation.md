@@ -27,7 +27,7 @@ approximate solution of the problem.
 6. [Basic Review/Notation For Partial Differential Equations](https://jvkoebbe.github.io/math4610/basicReview/pde.html)
 7. [Basic Review/Notation For Discrete Mathematics](https://jvkoebbe.github.io/math4610/basicReview/discrete.html)
 
-### markdown versions
+### markdown versions:
 
 1. [Basic Review/Notation For Algebra](https://jvkoebbe.github.io/math4610/basicReview/algebra)
 2. [Basic Review/Notation For Trigonometry](https://jvkoebbe.github.io/math4610/basicReview/trigonometry)
