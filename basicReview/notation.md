@@ -42,4 +42,4 @@ prepare the reader in these areas.
 
  [<**Previous**>](https://jvkoebbe.github.io/math4610/frontMatter/preface)
  [<**TOC**>](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
- [<**Next**>](https://jvkoebbe.github.io/math4610/chapter01/examples)
+ [<**Next**>](https://jvkoebbe.github.io/math4610/chapter01/intro)
