@@ -49,4 +49,4 @@ graphics format (e.g, JPEG and BMP)
 
  [<**Previous**>](https://jvkoebbe.github.io/math4610/tableOfContents)
  [<**TOC**>](https://jvkoebbe.github.io/math4610/tableOfContents)
- [<**Next**>](https://jvkoebbe.github.io/math4610/frontMatter/preface)
+ [<**Next**>](https://jvkoebbe.github.io/math4610/basicReview/notation)
