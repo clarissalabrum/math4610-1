@@ -46,3 +46,7 @@ is available at this link:
 Note that you should be able to look at the .md file for this preface. The html/img tags and such can be copied directly from 
 the file, [preface.md](https://jvkoebbe.github.io/math4610/frontMatter/preface.md). Note that the inclusion should work for any
 graphics format (e.g, JPEG and BMP)
+
+ [<**Previous**>](https://jvkoebbe.github.io/math4610/tableOfContents)
+ [<**TOC**>](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
+ [<**Next**>](https://jvkoebbe.github.io/math4610/frontMatter/preface)
