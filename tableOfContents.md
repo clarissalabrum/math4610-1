@@ -81,5 +81,5 @@ links below will take you to individual projects that may change in time or as t
  2. [Hello World Application in OpenMP](https://jvkoebbe.github.io/math4610/projects/helloWorldProject)
  
  [<**Previous**>](https://jvkoebbe.github.io/math4610/tableOfContents)
- [<**TOC**>](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
+ [<**TOC**>](https://jvkoebbe.github.io/math4610/tableOfContents)
  [<**Next**>](https://jvkoebbe.github.io/math4610/frontMatter/preface)
