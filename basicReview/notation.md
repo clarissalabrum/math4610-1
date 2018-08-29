@@ -39,3 +39,7 @@ approximate solution of the problem.
 
 For more thorough information students should be find a textbook in the area and review or take a course that will better
 prepare the reader in these areas.
+
+ [<**Previous**>](https://jvkoebbe.github.io/math4610/frontMatter/preface)
+ [<**TOC**>](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents)
+ [<**Next**>](https://jvkoebbe.github.io/math4610/chapter_01)
