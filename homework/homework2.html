@@ -14,10 +14,13 @@
   </script>
 </head>
 <body>
+  <hr>
   <h1>
     Math 4610 Fundamentals of Computational Mathematics: Homework 2 Problems
   </h1>
+  <hr>
   <ol type="1">
+    <hr>
     <li> Problem: Write routines that can be used to compute the absolute error
       $$ e_{abs} = | x - y |$$
       and relative error
@@ -28,6 +31,7 @@
       terms of efficiency. Add the two routines to the software manual you are building throughout the semester and add the
       routines to your shared libraries.
     </li>
+    <hr>
     <li> Problem: In this problem, you will investigate problems that occur due to finite precision of arithmetic. In the text,
       one standard approximation for derivatives involves the definition
       $$f'(x)\ dx = \lim_{h\rightarrow 0}\ {{f(x+h)-f(x)}\over{h}}$$
@@ -41,6 +45,7 @@
       summary of your work in your software manual as an example of the importance of absolute and relative errors in machine
       precision computations.
     </li>
+    <hr>
     <li> Problem: Sometimes a formula can be modified to mitigate issues related to machine precision computations.
       <ol type="a">
         <li> Above, an approximation of the derivative. For $f(x)=\sqrt{x}$ use the derivative approximation using to examine
@@ -61,6 +66,7 @@
         </li>
       </ol>
     </li>
+    <hr>
     <li> Problem: For this problem, you will need to write a routine (or possibly more than one routine) that searches for a
       root of a given function using function iteration. Recall from your reading, you will need to provide an iteration
       function in each case. Apply functional iteration to each of the problems given below:
@@ -69,24 +75,30 @@
         <li> $f(x)=sin(\pi\ x)$ </li>
       </ol>
     </li>
+    <hr>
     <li> Problem: Implement the Bisection Method and test the method on the functions in the previous problem. Also, include
       an entry in your software manual with the results from the tests on the given function.
     </li>
+    <hr>
     <li> Problem: Repeat the previous exercise with code written to implement Newton's method.
     </li>
+    <hr>
     <li> Problem: Repeat the previous exercise with code written to implement the secant method approximation of Newton's
       method.
     </li>
+    <hr>
     <li> Problem: Repeat the previous exercise with code written to implement a hybrid method using bisection to guarantee
       the roots are bracketed and Newton's method for faster convergence once the interval has been narrowed. Make sure that
       the bisection method reduces the interval size by one order of magnitude ($10^{-1}$) when the method is necessary. Then
       try one step of Newton's method to see if the interval has been reduced enough.
     </li>
+    <hr>
     <li> Problem: Repeat the previous exercise with code written to implement a hybrid method using bisection to guarantee
       the roots are bracketed and the secant method for faster convergence once the interval has been narrowed. Make sure that
       the bisection method reduces the interval size by one order of magnitude ($10^{-1}$) when the method is necessary. Then
       try one step of the secant method to see if the interval has been reduced enough.
     </li>
+    <hr>
     <li> Problem: Perform an online search for references to bracketing of roots of functions of a single real variable. Look
       for applications an explanations of how to bracket roots of nonlinear functions. Make sure that you cite at least three
       sources. You can cite web sites and/or web pages that discuss bracketing.
