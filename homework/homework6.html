@@ -1,1 +1,61 @@
-here it is
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework</title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+  <hr>
+  <h1>
+    Math 4610 Fundamentals of Computational Mathematics: Homework 5 Problems
+  </h1>
+  <h3>
+    Due: Monday, October 8, 2018
+  </h3>
+  <hr>
+  <ol type="1">
+    <li> Problem: Write a piece of code that implements the power method for the computation of the largest eigenvalue (in
+      magnitude) for a square matrix. Make sure that you produce an entry in your software manual. As an example, use the
+      method for the production of a square matrix from the last assignment.
+    </li>
+    <hr>
+    <li> Problem: Write a piece of code that implements the inverse power method for the computation of the largest eigenvalue
+      (in magnitude) for a square matrix. Make sure that you produce an entry in your software manual. As an example, use the
+      method for the production of a square matrix from the last assignment.
+    </li>
+    <hr>
+    <li> Problem: Write code that uses the code from the previous two problems to estimate the 2-condition number of a matrix.
+      Put this code in your software manual with an example using the matrix generation code from the previous assignment.
+    </li>
+    <hr>
+    <li> Problem: Write an OpenMP version of the power method for the computation of the largest eigenvalue of a matrix.
+    </li>
+    <hr>
+    <li> Problem: Write an OpenMP version of the inverse power method for the computation of the largest eigenvalue of a matrix.
+    </li>
+    <hr>
+    <li> Problem: Write a code that will compute the 2-condition number of a matrix using your OpenMP code for the power method
+      and inverse power method.
+    </li>
+    <hr>
+    <li> Problem: Compare the 2-condition number codes with and without the OpenMP directives. Which is faster?
+    </li>
+    <hr>
+    <li> Problem: Compare the methods in this assignment on linear systems of equations of size $40\times40$, $80\times80$,
+      $160\times 160$, $320\times 320$, and $640\times 640$. That is, create matrices and right hand sides to match as suggest
+      in the problems above. Compare the methods in terms of number of iterations and cpu time. Produce a graph that visualizes
+      the work and describe what the results tell us about the various methods.
+    </li>
+    <hr>
+  </ol>
+</body>
+</html>
