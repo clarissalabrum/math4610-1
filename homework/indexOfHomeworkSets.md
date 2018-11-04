@@ -9,3 +9,4 @@ set by the instructor for the semester. If you have questions, contact the instr
 3. [Homework 3](https://jvkoebbe.github.io/math4610/homework/homework3) -- **Due**: Monday, September 24, 2018
 4. [Homework 4](https://jvkoebbe.github.io/math4610/homework/homework4) -- **Due**: Monday, October 1, 2018
 5. [Homework 5](https://jvkoebbe.github.io/math4610/homework/homework5) -- **Due**: Monday, October 8, 2018
+5. [Homework 6](https://jvkoebbe.github.io/math4610/homework/homework6) -- **Due**: Monday, October 8, 2018
