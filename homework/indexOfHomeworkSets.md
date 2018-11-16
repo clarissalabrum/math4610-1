@@ -10,3 +10,7 @@ set by the instructor for the semester. If you have questions, contact the instr
 4. [Homework 4](https://jvkoebbe.github.io/math4610/homework/homework4)
 5. [Homework 5](https://jvkoebbe.github.io/math4610/homework/homework5)
 6. [Homework 6](https://jvkoebbe.github.io/math4610/homework/homework6)
+
+## Other Homework information and links:
+
+1. [OpenMP Tutorial](https://computing.llnl.gov/tutorials/openMP/)
