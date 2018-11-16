@@ -14,3 +14,4 @@ set by the instructor for the semester. If you have questions, contact the instr
 ## Other Homework information and links:
 
 1. [OpenMP Tutorial](https://computing.llnl.gov/tutorials/openMP/)
+2. [Hadamard Product Definition](https://en.wikipedia.org/wiki/Hadamard_product_(matrices)/)
