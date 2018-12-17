@@ -1,3 +1,12 @@
+# Prerequisite Problems
+
+The following is a link to a set of problems that represent computational skills students must know before taking a course like Math
+4610. These problems should be relatively easy for a student who has completed the prerequisite courses for Math 4610. Students may be
+asked to complete these problems as a means of testing prerequisite skills. The intent of this assignment is to make sure students have
+the best possible chance of success in the course.
+
+1. [Prerequisite Skills Homework](https://jvkoebbe.github.io/math4610/homework/prerequisite_problems)
+
 # Homework Sets and Computational Projects
 
 The following list provides links to the homework assignments to be completed by students in Math 4610 Fundamentals of
