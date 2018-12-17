@@ -23,11 +23,12 @@ set by the instructor for the semester. If you have questions, contact the instr
 # Presentations and Talks from Invited Lectures:
 
 Over the past few semesters, faculty from the USU campus have been invited to talk about topics in computational mathematics during 
-class time in Math 4610. The following provide links to slides that the speakers have used during their lectures.
+class time in Math 4610. The following provide links to slides that the speakers have used during their lectures. Note that the slides
+have been exported to pdf when necessary.
 
 ## Fall Semester 2018:
 
-1. 
+1. [title](https://jvkoebbe.github.io/math4610/homework/jiazhao.pdf)
 
 # Other Homework information and links:
 
