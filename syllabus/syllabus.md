@@ -31,11 +31,11 @@ The following is a current version of the course description for
 change from time to time and this information may change. The current description is from the course as of Fall Semester 2018.
 The official course description can be found on the [USU](http://www.usu.edu/) Course Catalog page.
 
->> MATH 5610 - Computational Linear Algebra and Solution of Systems of Equations (3 credits) Numerical solutions of systems
->> of linear and nonlinear equations, methods for eigensystems, least squares problems, finding roots of functions and
->> nonlinear systems, constrained and unconstrained optimization.
->> Prerequisite/Restriction: (1) MATH 2210 with a C- or better (2) MATH 2250 or MATH 2270  with a C- or better **and**
->> (3) ability to program in a high-level programming language.
+>> MATH 4610 - Fundamentals of Computational Mathematics, 3 credits, Course presents fundamental topics common in computational
+>> mathematics and problem solving, including:  truncation and round-off error, algorithms to find solutions of nonlinear 
+>> equations, numerical solution of linear systems by direct and iterative approaches, interpolation methods, numerical 
+>> differentiation and quadrature rules. Prerequisite/Restriction: (1) MATH 1220, MATH 2250, or MATH 2270 with a C- or better 
+>> **and** (2) the bility to program with a high-level computer language (C/C++, Python, Fortran)
 
 ### Textbook:
 
