@@ -1,4 +1,4 @@
-# Math 4610 Main Web Page
+# Math 4610 Fundamentals of Computational Mathematics
 
 ## Development of Math 4610
 
