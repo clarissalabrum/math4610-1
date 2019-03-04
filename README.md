@@ -89,7 +89,7 @@ these topics arise in presentation of content in the course.
 
 ## Table of Contents
 
-[Course Contents](https://jvkoebbe.github.io/math4610/frontMatter/tableOfContents): The previous link will take you to a
+[Course Contents](https://jvkoebbe.github.io/math4610/tableOfContents): The previous link will take you to a
 Markdown (.md) file that contains a the table of contents for the course. For a one semester course, there may be more content
 than can be covered. The content can be used to give instructors/readers plenty to do.
 
