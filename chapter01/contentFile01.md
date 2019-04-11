@@ -8,4 +8,4 @@
 
 ## Questions About the Content
 
-[previous](./contentFile01) [next](./contentFile02)
+[previous](./contentFile01) [next](https://jvkoebbe.github.io/math4610/chapter01/contentFile02)
