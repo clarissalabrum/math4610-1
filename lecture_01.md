@@ -1,11 +1,8 @@
-<hr>
 # Math 4610 Fundamentals of Computational Mathematics  - Lecture 1
-<hr>
 
 The content for each lecture in Math 4610 will be presented in a lecture format
 that will follow an outline presented at the beginning of each class period.
 For the first lecture, the following list of items will be covered:
-<hr>
 
 ## Content Items:
 
