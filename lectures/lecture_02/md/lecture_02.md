@@ -1,4 +1,4 @@
-# Math 4610 Fundamentals of Computational Mathematics  - Lecture 3
+# Math 4610 Fundamentals of Computational Mathematics  - Lecture 2
 
 In this lesson, you will be introduced to a simple algorithm for the
 determination of a machine epsilon. This algorithm will motivate an organized
