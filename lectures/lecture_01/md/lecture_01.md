@@ -45,7 +45,7 @@ For the first lecture, the following list of items will be covered:
 
 ---
 
-[next lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_02/lecture_02.md)
+[next lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
 
 ---
 
