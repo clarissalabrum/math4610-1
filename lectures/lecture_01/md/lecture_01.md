@@ -15,8 +15,7 @@ For the first lecture, the following list of items will be covered:
        syllabus in this course will cover instructor information, instructor
        comments and policies, grading information, and some information about
        university policies.
-       <a src = "https://jvkoebbe.github.io/math4610/syllabus/syllabus.pdf"
-          type = "application/pdf"> go there</a>
+       [> > go there](https://jvkoebbe.github.io/math4610/syllabus/syllabus.pdf)
 
   2. **A Brief Introduction to Command Windows and Linux/Unix:** To be
        effective in Math 4610 you will need to be able to work in some command
