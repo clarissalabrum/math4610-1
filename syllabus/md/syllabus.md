@@ -17,7 +17,7 @@ Syllabus**
 **Phone No:** | 435-797-2825
 **email:** | [joe.koebbe@usu.edu](mailto:joe.koebbe@usu.edu)
 **web page:** | [Department Web Page](http:www.math.usu.edu/~koebbe)
-**Github Page**: | [github link](https://jvkoebbe.github.io/math4610/README)
+**Github Page**: | [github link](https://jvkoebbe.github.io/math4610/)
 
 <hr>
 
