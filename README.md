@@ -13,6 +13,10 @@ of a number of mathematical problems. The amount of analysis needed is minimal (
 Linear Algebra). The goal is to introduce students into the world of computer coding and simulation. Later courses (e.g,
 Math 5610 and Math 6610) treat analysis of the methods at a more advanced level.
 
+## Quick Links to Content
+
+[https://jvkoebbe.github.io/math4610/quickLinks](https://jvkoebbe.github.io/math4610/quickLinks)
+
 ## Course Syllabus
 
 [Course Syllabus](https://jvkoebbe.github.io/math4610/syllabus/md/syllabus): This link provides access to a pdf file that contains a
