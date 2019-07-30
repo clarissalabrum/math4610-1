@@ -2,9 +2,10 @@
 
 ## Development of Math 4610
 
-This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at [Utah State University](http://www.usu.edu)
-in the [Department of Mathematics and Statistics](http://www.math.usu.edu/). The course is
-intended for students in the [College of Science](https://www.usu.edu/science), the College of Engineering, and any other
+This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at
+[Utah State University](http://www.usu.edu) in the [Department of Mathematics
+and Statistics](http://www.math.usu.edu/). The course is intended for students
+in the [College of Science](https://www.usu.edu/science), the College of Engineering, and any other
 students who have completed a basic course in linear algebra (e.g, Math 2270 Linear Algebra) AND ordinary differential
 equations (e.g, Math 2280 Ordinary Differential Equations). Students who have completed the combined course Math 2250
 are also well qualified to be in this course. Primarily, the course presents computational methods for the approximate solution 
@@ -14,7 +15,7 @@ Math 5610 and Math 6610) treat analysis of the methods at a more advanced level.
 
 ## Course Syllabus
 
-[Course Syllabus](https://jvkoebbe.github.io/math4610/syllabus/syllabus): This link provides access to a pdf file that contains a
+[Course Syllabus](https://jvkoebbe.github.io/math4610/syllabus/md/syllabus): This link provides access to a pdf file that contains a
 current of the syllabus for the course as taught at Utah State University. This should give the reader some idea of how the
 materials are covered at USU.
 
