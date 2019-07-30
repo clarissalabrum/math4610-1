@@ -1,7 +1,7 @@
 <hr>
 
-# Math 4610 Fundamentals of Computational Mathematics **Fall Semester 2019
-Syllabus**
+# Math 4610 Fundamentals of Computational Mathematics 
+# Fall Semester 2019 Syllabus
 
 <hr>
 
@@ -15,9 +15,9 @@ Syllabus**
 **-** | MWF 10:30am-11:20am
 **-** | MWF 1:00am-2:00am
 **Phone No:** | 435-797-2825
-**email:** | [joe.koebbe@usu.edu](mailto:joe.koebbe@usu.edu)
-**web page:** | [Department Web Page](http:www.math.usu.edu/~koebbe)
-**Github Page**: | [github link](https://jvkoebbe.github.io/math4610/)
+**Email:** | [joe.koebbe@usu.edu](mailto:joe.koebbe@usu.edu)
+**Web Page:** | [http:www.math.usu.edu/~koebbe](http:www.math.usu.edu/~koebbe)
+**Github Page**: | [https://jvkoebbe.github.io/math4610/](https://jvkoebbe.github.io/math4610/)
 
 <hr>
 
@@ -49,12 +49,12 @@ language (C/C++, Python, Fortran)
 
 If you have not completed a computer programming class, for example USU courses
 CS 1400 Introduction to Computer Science - CS 1 and/or CS 1410 Introduction to
-Computer Science - CS 2, you will {\bf NOT} be able to complete this course.
+Computer Science - CS 2, you will **NOT** be able to complete this course.
 This course is not intended to be a platform for learning a computer programming
-language. This course is intended to provide students with an opportunity to
-apply an already mastered computer programming skill set to algorithm
-development and implementation. Students {\bf MUST} be able to write computer
-programs on the first day of class - {\bf NO EXCEPTIONS}.
+language. Math 4610 is a course that is intended to provide students with an
+opportunity to apply already mastered computer programming skills to algorithm
+development and implementation. Students **MUST** be able to write computer
+programs on the first day of class - **NO EXCEPTIONS**.
 
 <hr>
 
@@ -69,13 +69,14 @@ posted at the following online location:
 Textbook Link:  [https://jvkoebbe.github.io/math4610/](
     https://jvkoebbe.github.io/math4610/)
  
-The materials are available to any person who is interested in learning about
-computational mathematics. There are a number of textbooks and other materials
-that might be useful in working through the materials Github available at the
-link given above. Note that the materials at the link above are governed by a
-Creative Commons License. This license allows free use of the materials for
-noncommercial purposes. This includes any derivative works from the materials at
-the given site.
+The materials are available to any student or person interested in learning
+about computational mathematics. There are a number of textbooks and other
+materials that might be useful in working through the algorithms and also the
+computational resources, like Github. References and links to these resources
+will be made available at the link given above. Note that the materials at the
+link above are governed by a Creative Commons License. This license allows free
+use of the materials for noncommercial purposes. This includes any derivative
+works from the materials at the Github site.
 
 <hr>
 
@@ -88,7 +89,7 @@ instructor's discretion any materials needed for these topics will be provided
 either in class, through handouts, or through posts to the instructor's main
 web page.
 
-    http://www.math.usu.edu/~koebbe
+http://www.math.usu.edu/~koebbe
 
 Note that this syllabus is posted at both the instructor's site and also on the
 Github site with link given above. Also, note that the syllabus will change from
@@ -129,8 +130,8 @@ list:
 <hr>
 
 This course is intended for advanced undergraduate students and graduate
-students who have already taken Math 2270 Linear Algebra {\bf and} Math 2280
-Ordinary Differential Equations {\bf or} Math 2250 Linear Algebra and Ordinary
+students who have already taken Math 2270 Linear Algebra **and** Math 2280
+Ordinary Differential Equations **or** Math 2250 Linear Algebra and Ordinary
 Differential Equations. The content will contain methods for the approximate
 solution of simple mathematical problems through algorithms implemented into a
 high level computer programming language. The basic mathematics skill set needed
@@ -162,7 +163,7 @@ or after class, or during office hours.
 
 <hr>
 
-## Why Not Matlab or Mathematica:
+## Why No Matlab or Mathematica:
 
 <hr>
 
@@ -171,9 +172,10 @@ writing programs. There are two important reasons for not allowing Matlab as a
 programming language. These are the following:
 
 1. First, in many of the intrinsic routines, most of the details are buried in
-   the code written by people employed at the Math Works, the people who produce
-   Matlab. This means that students will not see the nuts and bolts of how
-   numerical algorithms work.
+   the code written by people employed at the Math Works (the people who produce
+   Matlab). This means that students will not see the nuts and bolts of how
+   numerical algorithms work. There is a lot that is learned when you debug a
+   code that you or one of your colleagues have created to solve a problem.
 
 2. **Cost!!!** While at USU, the cost for licensing Matlab or Maple is more than
    reasonable. However, corporate licensing is very expensive. It is highly
@@ -182,11 +184,12 @@ programming language. These are the following:
    the hidden details in intrinsic routines. This course assumes students want
    to learn these details.
 
-Note that Matlab or Maple are great tools for prototyping ideas in applied and
-computational mathematics. Your instructor works in Matlab occasionally and used
-to use Mathematica extensively. However, your instructor never needed to
-purchase a license for these products. These tools were purchased within the
-structure of a grant proposal or by USU IT.
+Note that Mathematica, Matlab, or Maple are great tools for prototyping ideas in
+applied and computational mathematics. Your instructor works in Matlab
+occasionally and used to use Mathematica extensively. However, your instructor
+never needed to purchase a license for these products. These tools were
+purchased within the structure of a grant proposal or by USU IT with huge
+educational discounts.
 
 <hr>
 
@@ -202,29 +205,35 @@ Your grade in the course will be determined by the following:
    appointment. This will count as one homework assignment.
 
 2. Homework will account for a 35\% of a student's grade. Homework must be
-   turned in on time. {\bf Under normal conditions late homework will not be
-   accepted.} If you must be gone, any homework must be turned in on or before
+   turned in on time. **Under normal conditions late homework will not be
+   accepted.** If you must be gone, any homework must be turned in on or before
    the due date. The only exception to this rule is for a family emergency.
    Also, homework must legible. Much of your work will be done using "git" and
    made available for grading using Github. This will mean that most of your
    homework will be typed. There will be times when a scanned, handwritten
    solution will be appropriate. Make sure these solutions are legible and the
-   scan of the work is readable.
+   scan of the work is readable. There will be a temptation to scan work in
+   using a smart phone. If you do, make sure things are lined up and easy to
+   read.
 
 3. Students will be required to create a software manual to document the
-   algorithms developed during the semester. This will account for \%15 of the
+   algorithms developed during the semester. This will account for 15% of the
    overall grade in the course. The software manual will be comprised of short
    descriptions of the algorithms developed and implemented in this class. For
    each piece of code that is developed in the class there must be an entry in
-   your software manual. We will discuss this in some detail during the first
-   week of the semester.
+   your software manual. The format for the software manual pages will be fixed.
+   An example of the format can be found at the following link:
+
+   https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate
+
+   We will discuss this in some detail during the first week of the semester. 
 
 4. Two midterms will be given. Each will cover about one half of the content of
-   the course. Each of these midterms will account for 15\% or 30\% of the grade
+   the course. Each of these midterms will account for 15% or 30% of the grade
    earned in the course.
 
 5. A comprehensive exam will be given during finals week. The final will account
-   for \%20 percent of the overall grade in the course.
+   for 20% percent of the overall grade in the course.
 
 If students have questions about assignments, the software manual, midterms, 
 and/or final please contact your instructor. One of the assignments will be to
@@ -241,7 +250,7 @@ students, faculty, and administrators at USU. Students should realize that any
 policies stated in this syllabus are included for convenience. The official
 policies applied to this course can be found online at the following address.
 
-    http://catalog.usu.edu/content.php?catoid=12&navoid=3587
+http://catalog.usu.edu/content.php?catoid=12&navoid=3587
 
 Any policies in this document are superseded by the online policies at the link
 given above. Note that the above link was tested June 21, 2019. This may change
@@ -250,7 +259,7 @@ students, faculty, and staff. Questions about USU policies should be taken up
 with the appropriate office on campus, such as the Dean's office in the College
 of Science.
 
-    http://www.usu.edu/
+http://www.usu.edu/
 
 <hr>
 
