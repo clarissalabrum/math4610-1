@@ -4,7 +4,7 @@
 The following list includes links to the lectures in Math 4610.
 
   * **Lecture 1.** 
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01.md)
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01)
 
      - Syllabus,
      - Command terminals,
@@ -14,7 +14,7 @@ The following list includes links to the lectures in Math 4610.
 
 
   * **Lecture 2.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02.md)
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
 
      - homework repositories,
      - hello world,
@@ -23,7 +23,7 @@ The following list includes links to the lectures in Math 4610.
      - testing codes 
 
   * **Lecture 3.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03.md)
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03)
 
      - number representation and machine precision,
      - definition of absolute and relative errors
@@ -31,7 +31,7 @@ The following list includes links to the lectures in Math 4610.
      - an example using derivative approximations
 
   * **Lecture 4.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04.md)
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
 
      - definition of truncation error
      - an example using derivative approximations
