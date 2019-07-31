@@ -26,7 +26,7 @@ For the first lecture, the following list of items will be covered:
        Also, if you are using a Mac, the desktop system is already built on a
        Unix kernel. So, there are ready made ways to interact with Unix on a
        Mac/Appled. One such example is Homebrew.
-       [> > go there](https://jvkoebbe.github.io/syllabus.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf)
 
   3. **Compiling and Running a Simple Code - Hello World:** As a simple
        example, how to compile and run a simple code in the C programming
