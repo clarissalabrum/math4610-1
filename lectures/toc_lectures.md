@@ -1,36 +1,43 @@
-\documentclass[10pt,fleqn]{article}
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+# Math 4610 Table of Contents for Lectures:
 
-\nofiles
-
-\pagestyle{empty}
-
-\setlength{\parindent}{0in}
-
-\input{../../../../tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Math 4610 Table of Contents for Lectures:}
-\vskip0.1in\hrule\vskip0.1in
-\noindent
 The following list includes links to the lectures in Math 4610.
-\vskip0.1in\hrule\vskip0.1in
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent
-  1. **Lecture 1.** Syllabus, Command terminals, Cygwin, coding and compiling,
-     Github, etc.
+
+  * **Lecture 1.** 
 [> > go there](https://jvkoebbe.github.io/lectures/lecture_01/md/lecture_01.md)
-  2. **Lecture 2.** Repositories, Sharing Libraries, and Test Codes} 
-[> > go there](https://jvkoebbe.github.io/lectures/lecture_01/md/lecture_01.md)
+
+     - Syllabus,
+     - Command terminals,
+     - Cygwin,
+     - coding and compiling in an example: machine precision, and 
+     - Github. 
+
+
+  * **Lecture 2.**
+[> > go there](https://jvkoebbe.github.io/lectures/lecture_02/md/lecture_02.md)
+
+     - homework repositories,
+     - hello world,
+     - using **git** to work locally
+     - sharing libraries of objects, and
+     - testing codes 
+
+  * **Lecture 3.**
+[> > go there](https://jvkoebbe.github.io/lectures/lecture_03/md/lecture_03.md)
+
+     - number representation and machine precision,
+     - definition of absolute and relative errors
+     - arithmetic operations and accumulation of error
+     - an example using derivative approximations
+
+  * **Lecture 4.**
+[> > go there](https://jvkoebbe.github.io/lectures/lecture_04/md/lecture_04.md)
+
+     - definition of truncation error
+     - an example using derivative approximations
+     - Taylor series expansions and truncation error
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item {\bf Lecture: Accuracy Using the Difference Quotient for the Derivative}
