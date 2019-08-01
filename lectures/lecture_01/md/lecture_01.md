@@ -38,7 +38,7 @@ For the first lecture, the following list of items will be covered:
        Github for this course. You will be required to build and maintain a
        software manual for the computer codes you will write. A specific format
        for your homework repository and the software manual will be discussed.
-       [> > go there](https://jvkoebbe.github.io/syllabus.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf)
 
   5. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
