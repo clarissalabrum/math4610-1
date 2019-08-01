@@ -32,7 +32,7 @@ For the first lecture, the following list of items will be covered:
        example, how to compile and run a simple code in the C programming
        language will be presented. This will be related to the command window
        primer in the lecture.
-       [> > go there](https://jvkoebbe.github.io/syllabus.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/coding_example.pdf)
 
   4. **Github and Homework:** You will need to create a student account on
        Github for this course. You will be required to build and maintain a
