@@ -21,8 +21,11 @@ computational mathematics.
 ## Related Links:
 
 * [Joe Koebbe's Web Site](http://www.math.usu.edu/~koebbe)
+
 * [Department of Mathematics and Statistics](http://www.math.usu.edu/)
+
 * [USU](http://www.usu.edu/)
+
 * [Joe Koebbe's Repositories on Github](https://github.com/jvkoebbe)
 
 ## Links to Other Course Materials:

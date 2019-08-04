@@ -4,8 +4,11 @@
 ## <center> Joe Koebbe </center>
 
 <hr>
-  These notes are part of an Open Resource Educational project
-            sponsored by Utah State University
+
+  These notes are part of an
+  [Open Educational Resource](https://www.oer.usu.edu/)
+  project sponsored by Utah State University
+
 <hr>
 
 **Coding Example for Math 4610 at USU: Creation of a sub-directory.** 
