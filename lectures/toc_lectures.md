@@ -6,19 +6,18 @@ The following list includes links to the lectures in Math 4610.
   * **Lecture 1.** 
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01)
 
-     - Syllabus,
-     - Command terminals,
-     - Cygwin,
-     - coding and compiling in an example: machine precision, and 
-     - Github. 
+     - The syllabus,
+     - command windows/terminals, Cygwin,
+     - coding and compiling in an example: (hello world!), and 
+     - Github and homework. 
 
 
   * **Lecture 2.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
 
      - homework repositories,
-     - hello world,
      - using **git** to work locally
+     - a coding example for determining machine precision,
      - sharing libraries of objects, and
      - testing codes 
 
@@ -33,9 +32,23 @@ The following list includes links to the lectures in Math 4610.
   * **Lecture 4.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
 
+     - Some information on html, xhtml, and markdown,
      - definition of truncation error
-     - an example using derivative approximations
-     - Taylor series expansions and truncation error
+     - an example using derivative approximations, and 
+
+  * **Lecture 5.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
+
+     - The software manual format/template and Jekyll,
+     - a calculus level review of Taylor series expansions,
+     - analyzing truncation errors, and
+     - applying Taylor series expansions to derivative approximations
+
+  * **Lecture 6.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06)
+
+     - Task Sheet 1
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

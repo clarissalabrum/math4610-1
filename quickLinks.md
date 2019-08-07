@@ -18,6 +18,8 @@ computational mathematics.
 
 * [Software Manual Template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
 
+* [Joe Koebbe's Repositories on Github](https://github.com/jvkoebbe)
+
 ## Related Links:
 
 * [Joe Koebbe's Web Site](http://www.math.usu.edu/~koebbe)
@@ -25,8 +27,6 @@ computational mathematics.
 * [Department of Mathematics and Statistics](http://www.math.usu.edu/)
 
 * [USU](http://www.usu.edu/)
-
-* [Joe Koebbe's Repositories on Github](https://github.com/jvkoebbe)
 
 ## Links to Other Course Materials:
 

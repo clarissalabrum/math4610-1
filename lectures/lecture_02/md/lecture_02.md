@@ -12,9 +12,18 @@ important skill to have in computational mathematics.
 
 ## Content Items:
 
-  1. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
+  1. **Homework repositories on Github:** - We will discuss the homework
+     repository that each of you will create. The homework repository should be
+     a private repository with you instructor as the only collaborator. Homework
+     will be graded by first cloning the repository and then creating a pull
+     action to grade any modifications.
+     [> > go there](https://www.github.com/jvkoebbe/math4610)
+
+  2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
        will be taken up in class to show how to work and collaborate with other
-       students and your instructor.
+       students and your instructor. The "git" platform allows you to work on a
+       laptop at home and then "push" your work and any modifications to Github
+       where the instructor can get to the work.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/md/git_primer)
 
   2. **An Algorithm for Machine Precision:** A simple algorithm for determining
