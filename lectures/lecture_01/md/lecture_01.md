@@ -27,19 +27,22 @@ For the first lecture, the following list of items will be covered:
        Also, if you are using a Mac, the desktop system is already built on a
        Unix kernel. So, there are ready made ways to interact with Unix on a
        Mac/Appled. One such example is Homebrew.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/cygwin_primer)
+       [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf)
 
   3. **Compiling and Running a Simple Code - Hello World:** As a simple
        example, how to compile and run a simple code in the C programming
        language will be presented. This will be related to the command window
        primer in the lecture.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/coding_example.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/coding_example)
+       [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/coding_example.pdf)
 
   4. **Github and Homework:** You will need to create a student account on
        Github for this course. You will be required to build and maintain a
        software manual for the computer codes you will write. A specific format
        for your homework repository and the software manual will be discussed.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/github_primer)
+       [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf)
 
   5. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.

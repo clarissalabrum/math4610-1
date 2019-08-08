@@ -17,6 +17,7 @@ important skill to have in computational mathematics.
      a private repository with you instructor as the only collaborator. Homework
      will be graded by first cloning the repository and then creating a pull
      action to grade any modifications.
+
      [> > go there](https://www.github.com/jvkoebbe/math4610)
 
   2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
@@ -24,7 +25,9 @@ important skill to have in computational mathematics.
        students and your instructor. The "git" platform allows you to work on a
        laptop at home and then "push" your work and any modifications to Github
        where the instructor can get to the work.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/md/git_primer)
+
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
   2. **An Algorithm for Machine Precision:** A simple algorithm for determining
        the precision for number representation will be covered. Two different
@@ -58,16 +61,6 @@ that will follow an outline presented at the beginning of each class period.
 For the first lecture, the following list of items will be covered:
 
 ---
-
-## Content Items:
-
-  1. **The Syllabus:** As in any college course, the syllabus in this
-       course will provide students with an idea of what is expected. The
-       syllabus in this course will cover instructor information, instructor
-       comments and policies, grading information, and some information about
-       university policies.
-       [> > go there](https://jvkoebbe.github.io/math4610/syllabus/md/syllabus)
-       ([pdf](https://jvkoebbe.github.io/math4610/syllabus/pdf/syllabus.pdf))
 
   2. **A Brief Introduction to Command Windows and Linux/Unix:** To be
        effective in Math 4610 you will need to be able to work in some command
