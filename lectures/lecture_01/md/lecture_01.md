@@ -49,7 +49,9 @@ For the first lecture, the following list of items will be covered:
 
 ---
 
-[next lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
+[prev](https://jvkoebbe.github.io/math4610/cover) |
+[toc](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) |
+[next](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
 
 ---
 
