@@ -204,7 +204,7 @@ Your grade in the course will be determined by the following:
    exams described below during posted office hours or by making an
    appointment. This will count as one homework assignment.
 
-2. Homework will account for a 35\% of a student's grade. Homework must be
+2. Homework will account for a 35% of a student's grade. Homework must be
    turned in on time. **Under normal conditions late homework will not be
    accepted.** If you must be gone, any homework must be turned in on or before
    the due date. The only exception to this rule is for a family emergency.
@@ -250,7 +250,8 @@ students, faculty, and administrators at USU. Students should realize that any
 policies stated in this syllabus are included for convenience. The official
 policies applied to this course can be found online at the following address.
 
-http://catalog.usu.edu/content.php?catoid=12&navoid=3587
+[http://catalog.usu.edu/content.php?catoid=12&navoid=3587](
+http://catalog.usu.edu/content.php?catoid=12&navoid=3587)
 
 Any policies in this document are superseded by the online policies at the link
 given above. Note that the above link was tested June 21, 2019. This may change
@@ -259,7 +260,7 @@ students, faculty, and staff. Questions about USU policies should be taken up
 with the appropriate office on campus, such as the Dean's office in the College
 of Science.
 
-http://www.usu.edu/
+[http://www.usu.edu/](http://www.usu.edu/)
 
 <hr>
 
