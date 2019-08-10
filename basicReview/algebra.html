@@ -20,58 +20,94 @@
 </h2>
 <hr>
 
-The reason for including a brief review of algebra is to make sure students are on the same wavelength in terms of mathematical
-notation that will be used in this material. There are also a number of examples of how to use LaTeX and other mathematical
-tools for presenting solutions to the problems in the text. Students do not need to use LaTeX to complete problems. However,
-with the increasing use of technology in education and further into industry, it is a good idea to start using type setting
-tools like LaTeX to write up work being done as students work through this material. Another thing the reader may be able to
-pick up is how to include graphics in Github repositories like this repository and/or in other hardcopy/electronic documents.
-
-Note that the review provided in this material is NOT a thorough discussion algebra. Only content needed for the material in 
-this repository is presented. If a reader or student is in need of more, it is suggested that another more thorough source 
-should be found. That is, find the book you used to learn algebra or take/retake a course in algebra.
-
-Now to a very brief review of algebra.
-
+<p> The reason for including a brief review of algebra is to make sure students
+    are on the same wavelength in terms of mathematical notation that will be
+    used in this material. There are also a number of examples of how to use
+    $\LaTeX$ and other mathematical tools for presenting solutions to the
+    problems in the text. Students do not need to use $\LaTeX$ to complete
+    problems. However, with the increasing use of technology in education and
+    further into industry, it is a good idea to start using type setting tools
+    like $\LaTeX$ to write up work being done as students work through this
+    material. Another thing the reader may be able to pick up is how to include
+    graphics in <bold>Github</bold> repositories like this repository and/or in
+    other hardcopy/electronic documents.
+</p>
+<p> Note that the review provided in this material is NOT a thorough discussion
+    of algebra content. Only content needed for the material in this repository
+    is presented. If a reader or student is in need of more, it is suggested
+    that another more thorough source should be found. That is, find the book
+    you used to learn algebra or take/retake a course in algebra.
+</p>
+<p> Now to a very brief review of algebra.
+</p>
 <hr>
 <h3>
   Definition of Relations and Functions
 </h3>
 <hr>
 
-One of the first things students see in any basic algebra course is the definition of a function. In particular, students will
-see functions in the form of polynomials, rational functions of polynomials, root and power functions,
-<a href="https://jvkoebbe.github.io/math4610/basicReview/trigonometry.html"> trig</a> functions, exponential and logarithmic
-functions, and combinations of these functions. These types of functions are sometimes called elementary functions. A basic
-definition of a function is the following:
-
-<bold> Definition:</bold> Given a set of numbers, $S$, a <bold>function</bold>, $f$, is a rule that assigns to each number
-$x\in S$ a unique number in another set $T$ of numbers. The set $S$ is called the <bold>domain</bold> or (preimage) of the
-function and the set $T$ is called the <bold>range<\bold> or image of the function.
-
-In this repository, the terms domain and range will be used throughout. The notation for a function in this repository is:
+<p>
+One of the first things students see in any basic algebra course is the
+definition of a function. In particular, students will see functions in the form
+of polynomials, rational functions of polynomials, root and power functions,
+  <a href="https://jvkoebbe.github.io/math4610/basicReview/trigonometry.html">
+    trigonometric
+  </a>
+functions, exponential and logarithmic functions, and combinations of these
+functions. These types of functions are sometimes called elementary functions.
+A basic definition of a function is the following:
+</p>
+<hr>
+<p>
+<bold>Definition:</bold> Given a set of numbers, $S$, a <bold>function</bold>, $f$, is a rule that assigns to each number
+$x\in S$ a unique number in another set $T$ of numbers. The set $S$ is called
+the <bold>domain</bold> or preimage of the function and the set $T$ is called
+the <bold>range</bold> or image of the function.
+</p>
+<hr>
+<p>
+In this repository, the terms domain and range will be used throughout. The
+notation for a function in this repository is:
 $$y = f(x)$$    
-where $x$ is in the domain of the function and $y$ is in the range of the function. A few examples are included so that the
-reader can see how the notation will be used in the text.
-
+where $x$ is in the domain of the function and $y$ is in the range of the
+function. Another notation we may use is the following.
+$$f:x\rightarrow y$$    
+A few examples are included so that the reader can see how the
+notation will be used in the text.
+</p>
+<hr>
+<p>
 <bold> Example 1:</bold> A linear polynomial can be written in the form
-
 $$ y = f(x) = a + b * x $$
-
-where $a$ and $b$ are constant numbers and $x$ is a variable.
-
-There a couple of types of domains that are important in determining the solution of problems. The first is the natural domain
-of the function and the other is an implied domain for the function. The following gives a definition of these sets of numbers.
-
-**Definition:** The **natural domain** of a function, f, is the largest set of numbers where the function is defined. The 
-**implied domain** refers to the set of numbers that is implied by the problem being solved.
-
-The difference between an implied and natural domain can be explained as follows. Many problems in applied mathematics and
-engineering involve the solution of evolution problems where an ordinary differential equation or
-[ode](https://jvkoebbe/math4610/chapter_14/ode). The solution of the differential equation in a problem may be defined for all
-real numbers. This defines the natural domain of the solution of the differential equations. In many cases, the solution is
-only needed for input values starting at some time, _t_, and moving along the positive axis in time. So the implied domain will
-be a portion a subset of the natural domain of the solution.
+where $a$ and $b$ are fixed constant numbers and $x$ is the independent variable
+and $y$ is the dependent variable..
+</p>
+<hr>
+<p>
+There a couple of types of domains that are important in determining the
+solution of problems. The first is the natural domain of the function and the
+other is an implied domain for the function. The following gives a definition of
+these sets of numbers.
+</p>
+<p>
+<bold>Definition:</bold> The <bold>natural domain</bold> of a function, i$f$, is
+the largest set of numbers where the function is defined. The
+<bold>implied domain</bold> refers to the set of numbers that is implied by the
+problem being solved.
+</p>
+<p>
+The difference between an implied and natural domain can be explained as
+follows. Many problems in applied mathematics and engineering involve the
+computing a solution of evolution problems where an ordinary differential
+equation or
+[ode](https://jvkoebbe/math4610/chapter_14/ode).
+The solution of the differential equation in a problem may be defined for all
+real numbers. This defines the natural domain of the solution of the
+differential equations. In many cases, the solution is only needed for input
+values starting at some time, $t$, and moving along the positive axis in time.
+So the implied domain will be a portion a subset of the natural domain of the
+solution.
+</p>
 
 In computational mathematics the set of numbers that can be represented is finite. This is due to 
 [finite representation](https://jvkoebbe.github.io/math4610/sourcesOfError) of numbers

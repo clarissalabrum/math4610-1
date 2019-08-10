@@ -16,9 +16,11 @@ computational mathematics.
 
 * [Project Descriptions](https://jvkoebbe.github.io/math4610/projects/indexOfProjects)
 
-* [Software Manual Template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
+## Review Materials:
 
-## Related Links:
+* [Basic Algebra Content Review](https://jvkoebbe.github.io/math4610/basicReview/algebra.html)
+
+## Other Links:
 
 * [Joe Koebbe's Repositories on Github](https://github.com/jvkoebbe)
 
