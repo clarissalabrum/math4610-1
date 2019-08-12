@@ -16,7 +16,7 @@
 **-** | MWF 1:00am-2:00am
 **Phone No:** | 435-797-2825
 **Email:** | [joe.koebbe@usu.edu](mailto:joe.koebbe@usu.edu)
-**Web Page:** | [http:www.math.usu.edu/~koebbe](http:www.math.usu.edu/~koebbe)
+**Web Page:** | [http://www.math.usu.edu/~koebbe](http:www.math.usu.edu/~koebbe)
 **Github Page**: | [https://jvkoebbe.github.io/math4610/](https://jvkoebbe.github.io/math4610/)
 
 <hr>

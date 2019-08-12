@@ -208,3 +208,9 @@ binary can be copied into /bin.
 ![Screenshot taken using **Snip & Sketch. This is an app on my Windows 10 box](../images/cygwin_09.png)
 
 <hr>
+
+[Top of Lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lect
+ure_01)
+
+<hr>
+

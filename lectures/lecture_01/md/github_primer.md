@@ -62,3 +62,9 @@ build and name repositories in the next few pages.
 ![Screenshot taken using **Snip & Sketch. This is an app on my Windows 10 box](../images/github_03.png)
 
 <hr>
+
+[Top of Lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lect
+ure_01)
+
+<hr>
+
