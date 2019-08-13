@@ -1,6 +1,12 @@
+<hr>
+
 # Math 4610 Fundamentals of Computational Mathematics
 
+<hr>
+
 ## Welcome
+
+<hr>
 
 This site provides links to materials used in teaching a single one semester
 course in the Department of Mathematics and Statistics at Utah State University
@@ -12,8 +18,12 @@ development of reusable computer codes, and information on how to get started
 with parallel computing platform (e.g, multicore programming, graphics
 processing units, threads in Java, and other topics.
 
-## Quick Links to Content Areas in this Repository
+<hr>
 
-Math Links | Computer Skills Links | Course Links
----------- | --------------------- | ------------
-Course Materials | Reusable Code | Syllabus
+## Cover page for Math 4610
+
+<hr>
+
+[Table of Contents for Lectures](https://jvkoebbe.github.io/math4610/lectures/toc_lectures)
+
+<hr>
