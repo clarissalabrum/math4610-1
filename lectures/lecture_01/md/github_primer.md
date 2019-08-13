@@ -50,7 +50,7 @@ work.
 
 <hr>
 
-**Cygwin Primer for Math 4610 at USU:** List the Contents of the Home Directory 
+**Github Primer for Math 4610 at USU:** List the Contents of the Home Directory 
 
 <hr>
 

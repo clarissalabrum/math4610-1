@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  23 JUL 2019 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  12 AUG 2019 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**github_primer.tex
+**github_primer
 (./github_primer.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -34,7 +34,7 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 No auxiliary output files.
 
-(../../../../../../tex/commands/commands.tex
+(/cygdrive/m/tex/commands/commands.tex
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -170,141 +170,45 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 <../images/github_01.png, id=12, 580.41844pt x 283.0575pt>
 File: ../images/github_01.png Graphic file (type png)
 <use ../images/github_01.png>
-Package pdftex.def Info: ../images/github_01.png  used on input line 53.
+Package pdftex.def Info: ../images/github_01.png  used on input line 51.
 (pdftex.def)             Requested size: 580.41702pt x 283.0568pt.
 
-Overfull \hbox (92.59453pt too wide) in paragraph at lines 53--54
+Overfull \hbox (92.59453pt too wide) in paragraph at lines 51--52
  [][] 
  []
 
 [2
 
  <../images/github_01.png>]
-<../images/cygwin_01.png, id=20, 499.8675pt x 315.42844pt>
-File: ../images/cygwin_01.png Graphic file (type png)
-<use ../images/cygwin_01.png>
-Package pdftex.def Info: ../images/cygwin_01.png  used on input line 79.
-(pdftex.def)             Requested size: 499.86627pt x 315.42766pt.
+<../images/github_02.png, id=20, 316.93407pt x 347.79938pt>
+File: ../images/github_02.png Graphic file (type png)
+<use ../images/github_02.png>
+Package pdftex.def Info: ../images/github_02.png  used on input line 83.
+(pdftex.def)             Requested size: 316.93329pt x 347.79852pt.
+ [3
 
-Overfull \hbox (12.04378pt too wide) in paragraph at lines 79--81
- [][] 
- []
+ <../images/github_02.png>]
+<../images/github_03.png, id=25, 755.07094pt x 400.49625pt>
+File: ../images/github_03.png Graphic file (type png)
+<use ../images/github_03.png>
+Package pdftex.def Info: ../images/github_03.png  used on input line 105.
+(pdftex.def)             Requested size: 755.06909pt x 400.49527pt.
 
-[3
-
- <../images/cygwin_01.png>]
-<../images/cygwin_02.png, id=25, 502.12593pt x 321.45094pt>
-File: ../images/cygwin_02.png Graphic file (type png)
-<use ../images/cygwin_02.png>
-Package pdftex.def Info: ../images/cygwin_02.png  used on input line 106.
-(pdftex.def)             Requested size: 502.12471pt x 321.45015pt.
-
-Overfull \hbox (14.30222pt too wide) in paragraph at lines 106--108
+Overfull \hbox (267.2466pt too wide) in paragraph at lines 105--107
  [][] 
  []
 
 [4
 
- <../images/cygwin_02.png>]
-<../images/cygwin_03.png, id=30, 499.11469pt x 317.68687pt>
-File: ../images/cygwin_03.png Graphic file (type png)
-<use ../images/cygwin_03.png>
-Package pdftex.def Info: ../images/cygwin_03.png  used on input line 139.
-(pdftex.def)             Requested size: 499.11345pt x 317.68608pt.
-
-Overfull \hbox (11.29095pt too wide) in paragraph at lines 139--141
- [][] 
- []
-
-[5
-
- <../images/cygwin_03.png>]
-<../images/cygwin_04.png, id=35, 498.36188pt x 316.93407pt>
-File: ../images/cygwin_04.png Graphic file (type png)
-<use ../images/cygwin_04.png>
-Package pdftex.def Info: ../images/cygwin_04.png  used on input line 167.
-(pdftex.def)             Requested size: 498.36066pt x 316.93329pt.
-
-Overfull \hbox (10.53816pt too wide) in paragraph at lines 167--169
- [][] 
- []
-
-[6
-
- <../images/cygwin_04.png>]
-<../images/cygwin_05.png, id=40, 500.62032pt x 316.93407pt>
-File: ../images/cygwin_05.png Graphic file (type png)
-<use ../images/cygwin_05.png>
-Package pdftex.def Info: ../images/cygwin_05.png  used on input line 197.
-(pdftex.def)             Requested size: 500.6191pt x 316.93329pt.
-
-Overfull \hbox (12.7966pt too wide) in paragraph at lines 197--199
- [][] 
- []
-
-[7
-
- <../images/cygwin_05.png>]
-<../images/cygwin_06.png, id=46, 499.11469pt x 316.18124pt>
-File: ../images/cygwin_06.png Graphic file (type png)
-<use ../images/cygwin_06.png>
-Package pdftex.def Info: ../images/cygwin_06.png  used on input line 232.
-(pdftex.def)             Requested size: 499.11345pt x 316.18047pt.
-
-Overfull \hbox (11.29095pt too wide) in paragraph at lines 232--234
- [][] 
- []
-
-[8
-
- <../images/cygwin_06.png>]
-<../images/cygwin_07.png, id=51, 502.12593pt x 320.69812pt>
-File: ../images/cygwin_07.png Graphic file (type png)
-<use ../images/cygwin_07.png>
-Package pdftex.def Info: ../images/cygwin_07.png  used on input line 263.
-(pdftex.def)             Requested size: 502.12471pt x 320.69733pt.
-
-Overfull \hbox (14.30222pt too wide) in paragraph at lines 263--265
- [][] 
- []
-
-[9
-
- <../images/cygwin_07.png>]
-<../images/cygwin_08.png, id=56, 500.62032pt x 318.43968pt>
-File: ../images/cygwin_08.png Graphic file (type png)
-<use ../images/cygwin_08.png>
-Package pdftex.def Info: ../images/cygwin_08.png  used on input line 293.
-(pdftex.def)             Requested size: 500.6191pt x 318.4389pt.
-
-Overfull \hbox (12.7966pt too wide) in paragraph at lines 293--295
- [][] 
- []
-
-[10
-
- <../images/cygwin_08.png>]
-<../images/cygwin_09.png, id=61, 497.60907pt x 315.42844pt>
-File: ../images/cygwin_09.png Graphic file (type png)
-<use ../images/cygwin_09.png>
-Package pdftex.def Info: ../images/cygwin_09.png  used on input line 322.
-(pdftex.def)             Requested size: 497.60785pt x 315.42766pt.
-
-Overfull \hbox (9.78535pt too wide) in paragraph at lines 322--324
- [][] 
- []
-
-[11
-
- <../images/cygwin_09.png>] ) 
+ <../images/github_03.png>] ) 
 Here is how much of TeX's memory you used:
- 1561 strings out of 492632
- 22531 string characters out of 6136088
- 84950 words of memory out of 5000000
- 5463 multiletter control sequences out of 15000+600000
+ 1525 strings out of 492632
+ 21637 string characters out of 6136088
+ 83944 words of memory out of 5000000
+ 5434 multiletter control sequences out of 15000+600000
  7766 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,25p,355b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,6n,25p,345b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
@@ -312,10 +216,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on github_primer.pdf (11 pages, 235376 bytes).
+Output written on github_primer.pdf (4 pages, 233570 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
