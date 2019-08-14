@@ -22,7 +22,7 @@ important skill to have in computational mathematics.
      a private repository with you instructor as the only collaborator. Homework
      will be graded by first cloning the repository and then creating a pull
      action to grade any modifications.
-     [> > go there](https://www.github.com/jvkoebbe/math4610/lectures/lecture_02/homework)
+     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
 
   2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"

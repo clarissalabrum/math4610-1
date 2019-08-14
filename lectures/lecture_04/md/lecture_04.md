@@ -1,13 +1,8 @@
-# Math 4610 Fundamentals of Computational Mathematics  - Lecture 3
+# Math 4610 Fundamentals of Computational Mathematics  - Lecture 4
 
-The accumulation of round off error can be a serious problem in computational
-mathematics. The idea in this lecture is to focus on errors that occur ain every
-arithmetic operation performed by a computer in any attempt to solve a
-mathematical problem. Some simple examples of how to use interval analysis will
-be covered. Documentation of algorithms and computer codes is essential to any
-successful attempt to write reusable code. Finally, we will introduce the
-general mathematical problem of finding the roots of a nonlinear function of a
-single variable.
+In this and the next lecture or two algorithms for computing the solution of
+the general root finding problem will be covered. In this lecture, functional
+iteration will be discussed including the idea of convergence and
 
 <hr>
 
@@ -51,13 +46,13 @@ single variable.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  5. **Wrap up and Questions:**  If there is time and anyone has questions about
+  6. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
 
 ---
 
-[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02) |
+[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03) |
 [toc](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) |
-[next](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
+[next](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
 
 ---
