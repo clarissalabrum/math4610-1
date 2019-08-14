@@ -1,10 +1,15 @@
 # Math 4610 Fundamentals of Computational Mathematics  - Lecture 2
 
-In this lesson, you will be introduced to a simple algorithm for the
-determination of a machine epsilon. This algorithm will motivate an organized
-presentation of round off error and the analysis of how errors accumulate in
-complicated computations. One way to proceed is through interval analysis
-applied to numbers that are approximated in machine arithmetic. A simple 
+In this lesson, you will be introduced to simple algorithms for determining
+"machine epsilon" to quantify computer number precision. The output of these
+algorithms serve as a warning about using computers in the solution of real
+mathematical problems. In adition to finite precision in the representation of
+numbers on a computer, most approximation algorithms will require large numbers
+arithmetic operations to determine an appropriate approximation.
+
+resentation of round off error and the analysis of how errors accumulate in
+complex computations. One way to proceed is through interval analysis applied to
+numbers that are approximated in machine arithmetic. A simple 
 example of how to build a shared library will also be discussed. This is an
 important skill to have in computational mathematics.
 
@@ -17,31 +22,41 @@ important skill to have in computational mathematics.
      a private repository with you instructor as the only collaborator. Homework
      will be graded by first cloning the repository and then creating a pull
      action to grade any modifications.
-
-     [> > go there](https://www.github.com/jvkoebbe/math4610)
+     [> > go there](https://www.github.com/jvkoebbe/math4610/lectures/lecture_02/homework)
+     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
 
   2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
        will be taken up in class to show how to work and collaborate with other
        students and your instructor. The "git" platform allows you to work on a
        laptop at home and then "push" your work and any modifications to Github
        where the instructor can get to the work.
-
        [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  2. **An Algorithm for Machine Precision:** A simple algorithm for determining
-       the precision for number representation will be covered. Two different
-       versions of the code will be presented that determine single and double
-       precision for your computer.
+  3. **Code for Determining Machine Precision:** A simple algorithm for
+     determining the precision for number representation will be covered. Two
+     different versions of the code will be presented that determine single and
+     double precision for your computer. Note that these two codes will be used
+     to show students how to build a shared library.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  3. **Writing a Code with Different Precision:** 
+  4. **Building a Shared Library for Reusing Code:** In important skill that
+     computational mathematicians should learn is the ability to take relatively
+     small codes and turning these into reusable object files and then
+     collecting the object files into a shared library. 
+       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  4. **Including Code in Shared Libraries:** 
+  5. **Testing the Codes in a Shared Library:** We will go over how to write a
+     code that uses the object routines in a shared library. Linking a main
+     code to a library will be covered.
+       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  5. **Definitions of Floating Point Numbers:** 
-
-  6. **An Introduction to Interval Analysis:** 
+  6. **Floating Point Representation of Numbers on Computers:** The IEEE
+     standard for number representation will be covered. Number precision for
+     32-bit and 64-bit systems will be covered. 
 
   7. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
