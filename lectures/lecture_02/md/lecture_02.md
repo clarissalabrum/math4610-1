@@ -17,12 +17,13 @@ important skill to have in computational mathematics.
 
 ## Content Items:
 
-  1. **Homework repositories on Github:** - We will discuss the homework
-     repository that each of you will create. The homework repository should be
-     a private repository with you instructor as the only collaborator. Homework
-     will be graded by first cloning the repository and then creating a pull
-     action to grade any modifications.
-     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework)
+  1. **Homework repositories on Github:** - We will discuss how to create a
+     homework repository that each student must have to complete homework. The
+     homework repository should be a private repository with you instructor as
+     the only collaborator. Homework will be graded by first cloning the
+     repository and then your constructor can create a branch for grading. This
+     can be repeated by creating a pull request on the repository.
+     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework_structure)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
 
   2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"

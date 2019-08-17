@@ -1,0 +1,397 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  14 AUG 2019 17:50
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**homework_structure
+(./homework_structure.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\dimen102
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+No auxiliary output files.
+
+(/cygdrive/m/tex/commands/commands.tex
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+\c@beans=\count88
+\c@theorem=\count89
+\c@example=\count90
+\c@definition=\count91
+\c@problem=\count92
+)
+No file homework_structure.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen106
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen107
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks16
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 27.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 27.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<../images/github_01.png, id=16, 580.41844pt x 283.0575pt>
+File: ../images/github_01.png Graphic file (type png)
+<use ../images/github_01.png>
+Package pdftex.def Info: ../images/github_01.png  used on input line 73.
+(pdftex.def)             Requested size: 580.41702pt x 283.0568pt.
+
+Overfull \hbox (92.59453pt too wide) in paragraph at lines 73--75
+ [][] 
+ []
+
+[3
+
+ <../images/github_01.png>]
+<../images/github_02.png, id=23, 1076.52188pt x 566.86781pt>
+File: ../images/github_02.png Graphic file (type png)
+<use ../images/github_02.png>
+Package pdftex.def Info: ../images/github_02.png  used on input line 88.
+(pdftex.def)             Requested size: 1076.51926pt x 566.86642pt.
+
+Overfull \hbox (588.69676pt too wide) in paragraph at lines 88--90
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4]
+<../images/github_03.png, id=27, 755.07094pt x 400.49625pt>
+File: ../images/github_03.png Graphic file (type png)
+<use ../images/github_03.png>
+Package pdftex.def Info: ../images/github_03.png  used on input line 112.
+(pdftex.def)             Requested size: 755.06909pt x 400.49527pt.
+
+Overfull \hbox (267.2466pt too wide) in paragraph at lines 112--114
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+<../images/github_04.png, id=31, 1076.52188pt x 566.115pt>
+File: ../images/github_04.png Graphic file (type png)
+<use ../images/github_04.png>
+Package pdftex.def Info: ../images/github_04.png  used on input line 123.
+(pdftex.def)             Requested size: 1076.51926pt x 566.11362pt.
+
+Overfull \hbox (588.69676pt too wide) in paragraph at lines 123--125
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+<../images/github_05.png, id=35, 1076.52188pt x 566.86781pt>
+File: ../images/github_05.png Graphic file (type png)
+<use ../images/github_05.png>
+Package pdftex.def Info: ../images/github_05.png  used on input line 134.
+(pdftex.def)             Requested size: 1076.51926pt x 566.86642pt.
+
+Overfull \hbox (588.69676pt too wide) in paragraph at lines 134--136
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+<../images/github_06.png, id=40, 1075.76906pt x 566.115pt>
+File: ../images/github_06.png Graphic file (type png)
+<use ../images/github_06.png>
+Package pdftex.def Info: ../images/github_06.png  used on input line 145.
+(pdftex.def)             Requested size: 1075.76643pt x 566.11362pt.
+
+Overfull \hbox (587.94394pt too wide) in paragraph at lines 145--147
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+<../images/github_07.png, id=44, 1077.27469pt x 566.115pt>
+File: ../images/github_07.png Graphic file (type png)
+<use ../images/github_07.png>
+Package pdftex.def Info: ../images/github_07.png  used on input line 156.
+(pdftex.def)             Requested size: 1077.27206pt x 566.11362pt.
+
+Overfull \hbox (589.44957pt too wide) in paragraph at lines 156--158
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+<../images/github_08.png, id=48, 1072.75781pt x 565.36218pt>
+File: ../images/github_08.png Graphic file (type png)
+<use ../images/github_08.png>
+Package pdftex.def Info: ../images/github_08.png  used on input line 167.
+(pdftex.def)             Requested size: 1072.7552pt x 565.3608pt.
+
+Overfull \hbox (584.93271pt too wide) in paragraph at lines 167--169
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+<../images/github_09.png, id=52, 1077.27469pt x 568.37344pt>
+File: ../images/github_09.png Graphic file (type png)
+<use ../images/github_09.png>
+Package pdftex.def Info: ../images/github_09.png  used on input line 178.
+(pdftex.def)             Requested size: 1077.27206pt x 568.37206pt.
+
+Overfull \hbox (589.44957pt too wide) in paragraph at lines 178--180
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
+<../images/github_10.png, id=56, 1075.01625pt x 564.60938pt>
+File: ../images/github_10.png Graphic file (type png)
+<use ../images/github_10.png>
+Package pdftex.def Info: ../images/github_10.png  used on input line 189.
+(pdftex.def)             Requested size: 1075.01364pt x 564.60799pt.
+
+Overfull \hbox (587.19115pt too wide) in paragraph at lines 189--191
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12]
+<../images/github_11.png, id=60, 1078.0275pt x 568.37344pt>
+File: ../images/github_11.png Graphic file (type png)
+<use ../images/github_11.png>
+Package pdftex.def Info: ../images/github_11.png  used on input line 200.
+(pdftex.def)             Requested size: 1078.02487pt x 568.37206pt.
+
+Overfull \hbox (590.20238pt too wide) in paragraph at lines 200--202
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]
+<../images/github_12.png, id=65, 1076.52188pt x 565.36218pt>
+File: ../images/github_12.png Graphic file (type png)
+<use ../images/github_12.png>
+Package pdftex.def Info: ../images/github_12.png  used on input line 211.
+(pdftex.def)             Requested size: 1076.51926pt x 565.3608pt.
+
+Overfull \hbox (588.69676pt too wide) in paragraph at lines 211--213
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+<../images/github_13.png, id=69, 1075.76906pt x 566.86781pt>
+File: ../images/github_13.png Graphic file (type png)
+<use ../images/github_13.png>
+Package pdftex.def Info: ../images/github_13.png  used on input line 222.
+(pdftex.def)             Requested size: 1075.76643pt x 566.86642pt.
+
+Overfull \hbox (587.94394pt too wide) in paragraph at lines 222--224
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16
+
+ <../images/github_02.png>] [17
+
+ <../images/github_03.png>] [18
+
+ <../images/github_04.png>] [19
+
+ <../images/github_05.png>] [20
+
+ <../images/github_06.png>] [21
+
+ <../images/github_07.png>] [22
+
+ <../images/github_08.png>] [23
+
+ <../images/github_09.png>] [24
+
+ <../images/github_10.png>] [25
+
+ <../images/github_11.png>]
+[26
+
+ <../images/github_12.png>] [27
+
+ <../images/github_13.png>] ) 
+Here is how much of TeX's memory you used:
+ 1576 strings out of 492632
+ 22920 string characters out of 6136088
+ 84953 words of memory out of 5000000
+ 5475 multiletter control sequences out of 15000+600000
+ 7766 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,6n,25p,350b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on homework_structure.pdf (27 pages, 1066813 bytes).
+PDF statistics:
+ 150 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+
