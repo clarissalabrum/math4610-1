@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  18 AUG 2019 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  18 AUG 2019 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -194,7 +194,7 @@ Package pdftex.def Info: ../images/github_03.png  used on input line 113.
 <../images/github_04.png, id=33, 1075.01625pt x 566.115pt>
 File: ../images/github_04.png Graphic file (type png)
 <use ../images/github_04.png>
-Package pdftex.def Info: ../images/github_04.png  used on input line 126.
+Package pdftex.def Info: ../images/github_04.png  used on input line 132.
 (pdftex.def)             Requested size: 365.86687pt x 192.6666pt.
  [6
 
@@ -202,96 +202,106 @@ Package pdftex.def Info: ../images/github_04.png  used on input line 126.
 <../images/github_05.png, id=38, 1075.01625pt x 566.86781pt>
 File: ../images/github_05.png Graphic file (type png)
 <use ../images/github_05.png>
-Package pdftex.def Info: ../images/github_05.png  used on input line 148.
+Package pdftex.def Info: ../images/github_05.png  used on input line 159.
 (pdftex.def)             Requested size: 365.86687pt x 192.92279pt.
 
 [7
 
  <../images/github_05.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 179.
 <../images/github_06.png, id=44, 1075.76906pt x 565.36218pt>
 File: ../images/github_06.png Graphic file (type png)
 <use ../images/github_06.png>
-Package pdftex.def Info: ../images/github_06.png  used on input line 172.
+Package pdftex.def Info: ../images/github_06.png  used on input line 188.
 (pdftex.def)             Requested size: 365.86687pt x 192.28098pt.
  [8
 
  <../images/github_06.png>]
-<../images/github_07.png, id=49, 1075.76906pt x 566.86781pt>
+<../images/github_07.png, id=50, 1075.76906pt x 566.86781pt>
 File: ../images/github_07.png Graphic file (type png)
 <use ../images/github_07.png>
-Package pdftex.def Info: ../images/github_07.png  used on input line 202.
+Package pdftex.def Info: ../images/github_07.png  used on input line 222.
 (pdftex.def)             Requested size: 365.86687pt x 192.79305pt.
  [9
 
  <../images/github_07.png>]
-<../images/github_08.png, id=54, 1072.75781pt x 565.36218pt>
+<../images/github_08.png, id=55, 1072.75781pt x 565.36218pt>
 File: ../images/github_08.png Graphic file (type png)
 <use ../images/github_08.png>
-Package pdftex.def Info: ../images/github_08.png  used on input line 223.
+Package pdftex.def Info: ../images/github_08.png  used on input line 248.
 (pdftex.def)             Requested size: 365.86687pt x 192.81584pt.
  [10
 
  <../images/github_08.png>]
-<../images/github_09.png, id=59, 1077.27469pt x 568.37344pt>
+<../images/github_09.png, id=60, 1077.27469pt x 568.37344pt>
 File: ../images/github_09.png Graphic file (type png)
 <use ../images/github_09.png>
-Package pdftex.def Info: ../images/github_09.png  used on input line 242.
+Package pdftex.def Info: ../images/github_09.png  used on input line 271.
 (pdftex.def)             Requested size: 365.86687pt x 193.03627pt.
  [11
 
  <../images/github_09.png>]
-<../images/github_10.png, id=64, 1075.01625pt x 564.60938pt>
+<../images/github_10.png, id=65, 1075.01625pt x 564.60938pt>
 File: ../images/github_10.png Graphic file (type png)
 <use ../images/github_10.png>
-Package pdftex.def Info: ../images/github_10.png  used on input line 253.
+Package pdftex.def Info: ../images/github_10.png  used on input line 295.
 (pdftex.def)             Requested size: 365.86687pt x 192.15417pt.
 
 [12
 
  <../images/github_10.png>]
-<../images/github_11.png, id=69, 1078.0275pt x 568.37344pt>
+<../images/github_11.png, id=70, 1078.0275pt x 568.37344pt>
 File: ../images/github_11.png Graphic file (type png)
 <use ../images/github_11.png>
-Package pdftex.def Info: ../images/github_11.png  used on input line 264.
+Package pdftex.def Info: ../images/github_11.png  used on input line 314.
 (pdftex.def)             Requested size: 365.86687pt x 192.8975pt.
  [13
 
  <../images/github_11.png>]
-<../images/github_12.png, id=75, 1076.52188pt x 565.36218pt>
+<../images/github_12.png, id=76, 1076.52188pt x 565.36218pt>
 File: ../images/github_12.png Graphic file (type png)
 <use ../images/github_12.png>
-Package pdftex.def Info: ../images/github_12.png  used on input line 275.
+Package pdftex.def Info: ../images/github_12.png  used on input line 330.
 (pdftex.def)             Requested size: 365.86687pt x 192.14294pt.
  [14
 
  <../images/github_12.png>]
-<../images/github_13.png, id=80, 1075.76906pt x 566.86781pt>
+<../images/github_13.png, id=81, 1075.76906pt x 566.86781pt>
 File: ../images/github_13.png Graphic file (type png)
 <use ../images/github_13.png>
-Package pdftex.def Info: ../images/github_13.png  used on input line 286.
+Package pdftex.def Info: ../images/github_13.png  used on input line 345.
 (pdftex.def)             Requested size: 365.86687pt x 192.79305pt.
  [15
 
- <../images/github_13.png>] ) 
+ <../images/github_13.png>]
+File: ../images/github_13.png Graphic file (type png)
+<use ../images/github_13.png>
+Package pdftex.def Info: ../images/github_13.png  used on input line 360.
+(pdftex.def)             Requested size: 365.86687pt x 192.79305pt.
+ [16
+
+] ) 
 Here is how much of TeX's memory you used:
- 1576 strings out of 492632
- 22930 string characters out of 6136088
+ 1577 strings out of 492632
+ 22944 string characters out of 6136088
  83953 words of memory out of 5000000
- 5475 multiletter control sequences out of 15000+600000
+ 5476 multiletter control sequences out of 15000+600000
  7766 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,25p,352b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on homework_description.pdf (15 pages, 1148352 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb>
+Output written on homework_description.pdf (16 pages, 1159403 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
