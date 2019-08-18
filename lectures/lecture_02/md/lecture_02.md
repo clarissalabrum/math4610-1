@@ -23,8 +23,8 @@ important skill to have in computational mathematics.
      the only collaborator. Homework will be graded by first cloning the
      repository and then your constructor can create a branch for grading. This
      can be repeated by creating a pull request on the repository.
-     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework_description)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework_description.pdf)
+     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/homework_description)
+     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/homework_description.pdf)
 
   2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
        will be taken up in class to show how to work and collaborate with other
