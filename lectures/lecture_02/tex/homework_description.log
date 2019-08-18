@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  14 AUG 2019 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  17 AUG 2019 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**homework_structure
-(./homework_structure.tex
+**homework_description.tex
+(./homework_description.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -119,7 +119,7 @@ e
 \c@definition=\count91
 \c@problem=\count92
 )
-No file homework_structure.aux.
+No file homework_description.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
@@ -167,26 +167,27 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<../images/github_01.png, id=16, 580.41844pt x 283.0575pt>
+<../images/github_01.png, id=16, 1075.01625pt x 564.60938pt>
 File: ../images/github_01.png Graphic file (type png)
 <use ../images/github_01.png>
 Package pdftex.def Info: ../images/github_01.png  used on input line 73.
-(pdftex.def)             Requested size: 580.41702pt x 283.0568pt.
+(pdftex.def)             Requested size: 1075.01364pt x 564.60799pt.
 
-Overfull \hbox (92.59453pt too wide) in paragraph at lines 73--75
+Overfull \hbox (587.19115pt too wide) in paragraph at lines 73--75
  [][] 
  []
 
-[3
 
- <../images/github_01.png>]
-<../images/github_02.png, id=23, 1076.52188pt x 566.86781pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3]
+<../images/github_02.png, id=22, 1075.01625pt x 564.60938pt>
 File: ../images/github_02.png Graphic file (type png)
 <use ../images/github_02.png>
 Package pdftex.def Info: ../images/github_02.png  used on input line 88.
-(pdftex.def)             Requested size: 1076.51926pt x 566.86642pt.
+(pdftex.def)             Requested size: 1075.01364pt x 564.60799pt.
 
-Overfull \hbox (588.69676pt too wide) in paragraph at lines 88--90
+Overfull \hbox (587.19115pt too wide) in paragraph at lines 88--90
  [][] 
  []
 
@@ -194,13 +195,13 @@ Overfull \hbox (588.69676pt too wide) in paragraph at lines 88--90
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
-<../images/github_03.png, id=27, 755.07094pt x 400.49625pt>
+<../images/github_03.png, id=26, 766.36313pt x 450.9347pt>
 File: ../images/github_03.png Graphic file (type png)
 <use ../images/github_03.png>
 Package pdftex.def Info: ../images/github_03.png  used on input line 112.
-(pdftex.def)             Requested size: 755.06909pt x 400.49527pt.
+(pdftex.def)             Requested size: 766.36127pt x 450.9336pt.
 
-Overfull \hbox (267.2466pt too wide) in paragraph at lines 112--114
+Overfull \hbox (278.53877pt too wide) in paragraph at lines 112--114
  [][] 
  []
 
@@ -208,13 +209,13 @@ Overfull \hbox (267.2466pt too wide) in paragraph at lines 112--114
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
-<../images/github_04.png, id=31, 1076.52188pt x 566.115pt>
+<../images/github_04.png, id=30, 1075.01625pt x 566.115pt>
 File: ../images/github_04.png Graphic file (type png)
 <use ../images/github_04.png>
 Package pdftex.def Info: ../images/github_04.png  used on input line 123.
-(pdftex.def)             Requested size: 1076.51926pt x 566.11362pt.
+(pdftex.def)             Requested size: 1075.01364pt x 566.11362pt.
 
-Overfull \hbox (588.69676pt too wide) in paragraph at lines 123--125
+Overfull \hbox (587.19115pt too wide) in paragraph at lines 123--125
  [][] 
  []
 
@@ -222,13 +223,13 @@ Overfull \hbox (588.69676pt too wide) in paragraph at lines 123--125
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6]
-<../images/github_05.png, id=35, 1076.52188pt x 566.86781pt>
+<../images/github_05.png, id=34, 1075.01625pt x 566.86781pt>
 File: ../images/github_05.png Graphic file (type png)
 <use ../images/github_05.png>
 Package pdftex.def Info: ../images/github_05.png  used on input line 134.
-(pdftex.def)             Requested size: 1076.51926pt x 566.86642pt.
+(pdftex.def)             Requested size: 1075.01364pt x 566.86642pt.
 
-Overfull \hbox (588.69676pt too wide) in paragraph at lines 134--136
+Overfull \hbox (587.19115pt too wide) in paragraph at lines 134--136
  [][] 
  []
 
@@ -236,11 +237,11 @@ Overfull \hbox (588.69676pt too wide) in paragraph at lines 134--136
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7]
-<../images/github_06.png, id=40, 1075.76906pt x 566.115pt>
+<../images/github_06.png, id=39, 1075.76906pt x 565.36218pt>
 File: ../images/github_06.png Graphic file (type png)
 <use ../images/github_06.png>
 Package pdftex.def Info: ../images/github_06.png  used on input line 145.
-(pdftex.def)             Requested size: 1075.76643pt x 566.11362pt.
+(pdftex.def)             Requested size: 1075.76643pt x 565.3608pt.
 
 Overfull \hbox (587.94394pt too wide) in paragraph at lines 145--147
  [][] 
@@ -250,13 +251,13 @@ Overfull \hbox (587.94394pt too wide) in paragraph at lines 145--147
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8]
-<../images/github_07.png, id=44, 1077.27469pt x 566.115pt>
+<../images/github_07.png, id=43, 1075.76906pt x 566.86781pt>
 File: ../images/github_07.png Graphic file (type png)
 <use ../images/github_07.png>
 Package pdftex.def Info: ../images/github_07.png  used on input line 156.
-(pdftex.def)             Requested size: 1077.27206pt x 566.11362pt.
+(pdftex.def)             Requested size: 1075.76643pt x 566.86642pt.
 
-Overfull \hbox (589.44957pt too wide) in paragraph at lines 156--158
+Overfull \hbox (587.94394pt too wide) in paragraph at lines 156--158
  [][] 
  []
 
@@ -264,7 +265,7 @@ Overfull \hbox (589.44957pt too wide) in paragraph at lines 156--158
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9]
-<../images/github_08.png, id=48, 1072.75781pt x 565.36218pt>
+<../images/github_08.png, id=47, 1072.75781pt x 565.36218pt>
 File: ../images/github_08.png Graphic file (type png)
 <use ../images/github_08.png>
 Package pdftex.def Info: ../images/github_08.png  used on input line 167.
@@ -278,7 +279,7 @@ Overfull \hbox (584.93271pt too wide) in paragraph at lines 167--169
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10]
-<../images/github_09.png, id=52, 1077.27469pt x 568.37344pt>
+<../images/github_09.png, id=51, 1077.27469pt x 568.37344pt>
 File: ../images/github_09.png Graphic file (type png)
 <use ../images/github_09.png>
 Package pdftex.def Info: ../images/github_09.png  used on input line 178.
@@ -292,7 +293,7 @@ Overfull \hbox (589.44957pt too wide) in paragraph at lines 178--180
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11]
-<../images/github_10.png, id=56, 1075.01625pt x 564.60938pt>
+<../images/github_10.png, id=55, 1075.01625pt x 564.60938pt>
 File: ../images/github_10.png Graphic file (type png)
 <use ../images/github_10.png>
 Package pdftex.def Info: ../images/github_10.png  used on input line 189.
@@ -306,7 +307,7 @@ Overfull \hbox (587.19115pt too wide) in paragraph at lines 189--191
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12]
-<../images/github_11.png, id=60, 1078.0275pt x 568.37344pt>
+<../images/github_11.png, id=59, 1078.0275pt x 568.37344pt>
 File: ../images/github_11.png Graphic file (type png)
 <use ../images/github_11.png>
 Package pdftex.def Info: ../images/github_11.png  used on input line 200.
@@ -320,7 +321,7 @@ Overfull \hbox (590.20238pt too wide) in paragraph at lines 200--202
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13]
-<../images/github_12.png, id=65, 1076.52188pt x 565.36218pt>
+<../images/github_12.png, id=64, 1076.52188pt x 565.36218pt>
 File: ../images/github_12.png Graphic file (type png)
 <use ../images/github_12.png>
 Package pdftex.def Info: ../images/github_12.png  used on input line 211.
@@ -334,7 +335,7 @@ Overfull \hbox (588.69676pt too wide) in paragraph at lines 211--213
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14]
-<../images/github_13.png, id=69, 1075.76906pt x 566.86781pt>
+<../images/github_13.png, id=68, 1075.76906pt x 566.86781pt>
 File: ../images/github_13.png Graphic file (type png)
 <use ../images/github_13.png>
 Package pdftex.def Info: ../images/github_13.png  used on input line 222.
@@ -349,38 +350,40 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15] [16
 
- <../images/github_02.png>] [17
+ <../images/github_01.png>] [17
 
- <../images/github_03.png>] [18
+ <../images/github_02.png>] [18
 
- <../images/github_04.png>] [19
+ <../images/github_03.png>] [19
 
- <../images/github_05.png>] [20
+ <../images/github_04.png>] [20
 
- <../images/github_06.png>] [21
+ <../images/github_05.png>] [21
 
- <../images/github_07.png>] [22
+ <../images/github_06.png>] [22
 
- <../images/github_08.png>] [23
+ <../images/github_07.png>] [23
 
- <../images/github_09.png>] [24
+ <../images/github_08.png>] [24
 
- <../images/github_10.png>] [25
+ <../images/github_09.png>] [25
 
- <../images/github_11.png>]
+ <../images/github_10.png>]
 [26
 
- <../images/github_12.png>] [27
+ <../images/github_11.png>] [27
+
+ <../images/github_12.png>] [28
 
  <../images/github_13.png>] ) 
 Here is how much of TeX's memory you used:
  1576 strings out of 492632
- 22920 string characters out of 6136088
- 84953 words of memory out of 5000000
+ 22930 string characters out of 6136088
+ 85953 words of memory out of 5000000
  5475 multiletter control sequences out of 15000+600000
  7766 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,25p,350b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,6n,25p,356b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
@@ -388,10 +391,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on homework_structure.pdf (27 pages, 1066813 bytes).
+Output written on homework_description.pdf (28 pages, 1143653 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 153 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,6 +5,7 @@ The following list includes links to the lectures in Math 4610.
 
   * **Lecture 1.** 
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/lecture_01.pdf)
 
      - The syllabus,
      - command windows/terminals, Cygwin,
