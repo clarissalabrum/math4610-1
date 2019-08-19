@@ -17,7 +17,13 @@ important skill to have in computational mathematics.
 
 ## Content Items:
 
-  1. **Homework repositories on Github:** - We will discuss how to create a
+  1. **Building a Repository on Github:** - We will discuss how to create a
+     general repository to start class. The idea is that students should create
+     the math4610 repository in this part of the lecture.
+     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/newrepository_primer)
+     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/newrepositry_primer.pdf)
+
+  2. **Homework repositories on Github:** - We will discuss how to create a
      homework repository that each student must have to complete homework. The
      homework repository should be a private repository with you instructor as
      the only collaborator. Homework will be graded by first cloning the
@@ -26,7 +32,7 @@ important skill to have in computational mathematics.
      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/homework_description)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/homework_description.pdf)
 
-  2. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
+  3. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
        will be taken up in class to show how to work and collaborate with other
        students and your instructor. The "git" platform allows you to work on a
        laptop at home and then "push" your work and any modifications to Github
@@ -34,7 +40,7 @@ important skill to have in computational mathematics.
        [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  3. **Code for Determining Machine Precision:** A simple algorithm for
+  4. **Code for Determining Machine Precision:** A simple algorithm for
      determining the precision for number representation will be covered. Two
      different versions of the code will be presented that determine single and
      double precision for your computer. Note that these two codes will be used
@@ -42,24 +48,24 @@ important skill to have in computational mathematics.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  4. **Building a Shared Library for Reusing Code:** In important skill that
+  5. **Building a Shared Library for Reusing Code:** In important skill that
      computational mathematicians should learn is the ability to take relatively
      small codes and turning these into reusable object files and then
      collecting the object files into a shared library. 
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  5. **Testing the Codes in a Shared Library:** We will go over how to write a
+  6. **Testing the Codes in a Shared Library:** We will go over how to write a
      code that uses the object routines in a shared library. Linking a main
      code to a library will be covered.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  6. **Floating Point Representation of Numbers on Computers:** The IEEE
+  7. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
      32-bit and 64-bit systems will be covered. 
 
-  7. **Wrap up and Questions:** If there is time and anyone has questions about
+  8. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
 
 
