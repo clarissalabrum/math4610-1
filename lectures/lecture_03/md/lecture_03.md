@@ -51,7 +51,7 @@ single variable.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  5. **Wrap up and Questions:**  If there is time and anyone has questions about
+  6. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
 
 ---

@@ -15,41 +15,73 @@ The following list includes links to the lectures in Math 4610.
 
   * **Lecture 2.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/lecture_02.pdf)
 
-     - homework repositories,
-     - using **git** to work locally
+     - Homework repositories,
      - a coding example for determining machine precision,
      - sharing libraries of objects, and
-     - testing codes 
+     - writing test codes. 
 
   * **Lecture 3.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/lecture_03.pdf)
 
+     - Using **git** to work locally (at home),
      - number representation and machine precision,
-     - definition of absolute and relative errors
-     - arithmetic operations and accumulation of error
-     - an example using derivative approximations
+     - definition of absolute and relative errors,
+     - arithmetic operations and accumulation of error, and
+     - an example of analytic versus approximation of derivatives.
 
   * **Lecture 4.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_04/pdf/lecture_04.pdf)
 
-     - Some information on html, xhtml, and markdown,
-     - definition of truncation error
-     - an example using derivative approximations, and 
+     - Coding the derivative example,
+     - definition of truncation error,
+     - comparing roundoff error and truncation error,
+     - a brief review of Taylor series expansion,
+     - alternative approximations of the derivative, and
+     - building a software manual.
 
   * **Lecture 5.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/lecture_05.pdf)
 
-     - The software manual format/template and Jekyll,
-     - a calculus level review of Taylor series expansions,
-     - analyzing truncation errors, and
-     - applying Taylor series expansions to derivative approximations
+     - Some information on formatting results and output,
+     - basics for html, xhtml, and markdown, LaTeX,
+     - the software manual format/template and Jekyll, and
+     - using "git push" to make changes on Github.
 
   * **Lecture 6.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_06/pdf/lecture_06.pdf)
 
-     - Task Sheet 1
+     - The general root finding problem for functions of one variable,
+     - transformation of the root finding problem to a fixed point problem,
+     - lack of uniqueness of the fixed point equation, and
+     - convergence of fixed point iteration.
 
+  * **Lecture 7.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_07/md/lecture_07)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_07/pdf/lecture_07.pdf)
+
+     - Coding up a fixed point iteration for the root finding problem,
+     - classes of functions in the general root finding problem, and
+     - continuity, the Intermediate Value Theorem and the Bisection method.
+
+  * **Lecture 8.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_08/md/lecture_08)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_08/pdf/lecture_06.pdf)
+
+     - Coding up a the Bisection Method for finding roots,
+     - a basic routine/method for bisection,
+     - stopping criteria for the Bisection, and
+     - a relationship between the number of iterations and error in the
+       approximation.
+
+  * **Lecture 9.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_09/md/lecture_09)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_09/pdf/lecture_09.pdf)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
