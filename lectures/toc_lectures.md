@@ -83,6 +83,54 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_09/md/lecture_09)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_09/pdf/lecture_09.pdf)
 
+     - Differentiable functions in the root finding problem,
+     - more terms and Newton's Method for root finding,
+     - Newton's method and second order accuracy, and
+     - proving convergence.
+
+  * **Lecture 10.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_10/md/lecture_10)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_10/pdf/lecture_10.pdf)
+
+     - Coding Newton's method,
+     - stopping criteria, and
+     - second order approximation of roots.
+
+  * **Lecture 11.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_11/md/lecture_11)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_11/pdf/lecture_11.pdf)
+
+     - Approximation of Newton's method using the Secant method,
+     - coding the secant method, and
+     - accuracy of the Secant method in comparison to Bisection and Newton's
+       method, and
+     - a summary of properties for root finding methods.
+
+  * **Lecture 12.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_12/md/lecture_12)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_12/pdf/lecture_12.pdf)
+
+     - Finding multiple roots for functions of more than one variable,
+     - divide and conquer strategies, and
+     - application of multicore programming strategies.
+
+  * **Lecture 13.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_13/md/lecture_13)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_13/pdf/lecture_13.pdf)
+
+     - placeholder
+
+  * **Lecture 14.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_14/md/lecture_14)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_14/pdf/lecture_14.pdf)
+
+     - placeholder
+
+  * **Lecture 15.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_15/md/lecture_15)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_15/pdf/lecture_15.pdf)
+
+     - Exam I
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
