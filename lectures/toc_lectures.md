@@ -118,13 +118,16 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_13/md/lecture_13)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_13/pdf/lecture_13.pdf)
 
-     - placeholder
+     - Linaear systems of equations,
+     - transforming a linear systems into a matrix equation,
+     - solution of small linear systems using Gaussian elimination, and
+     - elementary row operations.
 
   * **Lecture 14.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_14/md/lecture_14)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_14/pdf/lecture_14.pdf)
 
-     - placeholder
+     - Coding up Gaussian elimination for square linear systems of equations,
 
   * **Lecture 15.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_15/md/lecture_15)
@@ -134,67 +137,10 @@ The following list includes links to the lectures in Math 4610.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item {\bf Lecture: Accuracy Using the Difference Quotient for the Derivative}
-    \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-    \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-    \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item A mathematical example of errors in the determination of an
-            approximate formula for the derivative of a function in one
-            independent variable.
-      \item Definition of truncation error when using approximations of analytic
-            formulas. The definition of the derivative will be reviewed and used
-            as a means to obtain an approximation of the derivative.
-      \item Analysis of the difference quotient as an approximation of the
-            first derivative using Taylor series expansions. We will briefly
-            review Taylor series normally presented in the second semester of an
-            engineering calculus sequence. At USU, the prerequisite course is
-            Math 1220 Calculus II.
-      \item Coding up the approximation of the finite difference approximation
-            and testing the code. Note that the code will produce a numerical
-            value and the results will be \lq\lq verified\rq\rq\ using a known
-            derivative. A general discussion of the computation of the error
-            will start with this example.
-      \item The end of class will be used to go over any details from previous
-            classes.
-    \end{list}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item {\bf Lecture: The Bisection Method:}
-    \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-    \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-    \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item Definition of the root finding problem for one variable will be
-            stated mathematically.
-      \item A brief version of the Intermediate Value Theorem for continuous
-            functions of a single real variable will be given.
-      \item The next step will be to develop and code the Bisection method based
-            on what the Intermediate Value Theorem states. 
-      \item Using recursion to define an implementation of the Bisection Method.
-      \item An alternate way to write the Bisection method using a specified
-            number of iterations based on interval size reduction.
-    \end{list}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item {\bf Lecture: Truncation Error versus Roundoff Error} 
     \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
     \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
     \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item Formally define truncation error and roundoff error related to
-            machine precision.
-      \item Define the terms absolute error and relative (or percent) error.
-            This part of the lecture will include examples involving
-            sensitivity of errors to small changes or perturbations in the
-            numerical computations.
-      \item How roundoff errors can be accumulate through computationally
-            intensive algorithms. One example involves the approximate solution
-            of linear systems of equations or systems of differential equations.
-      \item Discussion of the two sources of error in the context of a finite
-            difference approximation from the previous lecture. Students will
-            see how to compute both absolute error and relative error for this
-            example.
       \item Interval Analysis and the accumulation of roundoff error. Interval
             analysis allows a computational mathematicians to determine bounds
             on how errors accumulate over a large number of computations.
