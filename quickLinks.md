@@ -12,7 +12,7 @@ computational mathematics.
 
 * [Lectures](https://jvkoebbe.github.io/math4610/lectures/toc_lectures)
 
-* [Homework/Tasks](https://jvkoebbe.github.io/math4610/homework/toc_tasks)
+* [Homework/Tasks](https://jvkoebbe.github.io/math4610/tasksheets/toc_tasks)
 
 * [Project Descriptions](https://jvkoebbe.github.io/math4610/projects/indexOfProjects)
 
