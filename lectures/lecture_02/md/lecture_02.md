@@ -21,7 +21,7 @@ important skill to have in computational mathematics.
      general repository to start class. The idea is that students should create
      the math4610 repository in this part of the lecture.
      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/newrepository_primer)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/newrepositry_primer.pdf)
+     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/newrepository_primer.pdf)
 
   2. **Homework repositories on Github:** - We will discuss how to create a
      homework repository that each student must have to complete homework. The
