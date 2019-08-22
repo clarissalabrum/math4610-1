@@ -8,6 +8,14 @@ iteration will be discussed including the idea of convergence and
 
 ## Content Items:
 
+  3. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
+       will be taken up in class to show how to work and collaborate with other
+       students and your instructor. The "git" platform allows you to work on a
+       laptop at home and then "push" your work and any modifications to Github
+       where the instructor can get to the work.
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+
   1. **Roundoff Errors and Arithmetic Operations:** - Every computation done
      combines two numbers that in general are only approximations of the exact
      values. The errors in some cases result in catastrophic cancellation that
