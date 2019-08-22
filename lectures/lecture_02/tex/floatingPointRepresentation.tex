@@ -13,7 +13,7 @@
 
 \setlength{\parindent}{0in}
 
-\input{../../../../../tex/commands/commands}
+\input{/cygdrive/m/tex/commands/commands}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -21,16 +21,63 @@
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 {\bf Math 4610 Fundamentals of Computational Mathematics  -  Floating Point 
-    Number Representation.}  
+    Representation of Numbers.}  
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-As people who use computers to solve numerical problems, we need to have a 
-common form for the numbers and common results from the algorithms that we
-develop and use. This section of the content will give a simple agreed upon
-form for the numbers we use and some guarantee the arithmetic operations produce
-the same result on different computers.
+Any work that is done on a computer boils down to manipulating numbers. A
+problem with this is that computers have finite resources and the representation
+of many numbers requires the use of an infinite number of decimal digits. For
+example, given a circle, the formula for the circumference is
+$$C = 2 \times \pi \times r = \pi \times d$$
+where $r$ is the radius of the circle and $d$ is the diameter of the circle. The
+number $\pi$ is not a rational number. That is, the decimal expansion of this
+value has an infinite fractional part. The value can be represented as follows:
+$$\pi\approx 3.141592653589793...$$
+where the ellipsis notation, $...$, means the digits never repeat. So, to get an
+exact representation of $\pi$ it is necessary to have an infinite number of
+digits available. Since compouter resources are finite, we must settle for an
+approximation.
+
+We could use the approximation
+$$\pi\approx 3.141592653589793$$
+without including an infinite number of digits. One question the should arise is
+how many digits will provide us with an accurate enough approximation.  In some
+cases, a very crude approximation is enough. In some of our United States, laws
+have been passed to legally approximate $\pi$ using a rational number. For
+example,
+$$\pi\approx {{22}\over 7}$$
+provides an approximation that will hold up in a courst of law. If you are
+pouring a circular concrete slab for a water tank it is a good idea to have a
+concrete estimate for the number $\pi$.
+
+Basically, numbers are best represented on a computer using zeros and ones -
+or in a binary number system. Other common number systems used involve octal
+or base 8 and hexidecimal or base 16. Another issue that arises in the
+representation of numbers is numbers that are relatively prime to base 2. As
+a simple example, consider the representation of the number $1/3$ in base 2.
+The value is
+$${1\over 3} = 0.01010101.....$$
+where the last pair of digits repeats forever. If a finite number of binary
+digits are used to represent $1/3$, the result is an approximation of the exact
+value. Note that a base 10 representation of $1/3$ is given by the decimal
+representation
+$${1\over 3} = 0.3333333333333.........$$
+Even if computers worked in a base 10 system, we would necessarily have to
+settle for approximate number representation.
+
+
 
 IEEE standards reference here.....
+\[
+\begin{array}{|c|c|c|}
+   \hline
+   \makebox{sign} & \ \ \ \ \ \ \ \ \makebox{mantissa} \ \ \ \ \ \ \ \ \ \
+                  & \makebox{exponent}\\
+   \hline
+   \makebox{1 bit} & \makebox{52 bit} & \makebox{11 bit} \\
+   \hline
+\end{array}
+\]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

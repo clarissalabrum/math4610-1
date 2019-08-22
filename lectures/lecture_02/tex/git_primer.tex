@@ -21,14 +21,11 @@
 
 \setlength{\parindent}{0in}
 
-\input{../../../../../tex/commands/commands}
+\input{/cygdrive/m/tex/commands/commands}
 
 \begin{document}
 \maketitle
 \newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
@@ -36,20 +33,59 @@
 {\bf Git Primer for Math 4610 at USU: What is \lq git\rq ?} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-When programmers are working on large complex software projects, it is
-important to keep all people involved on the same page.
+Version Control Systems (VCS) have been around for a long time. A VCS allows one
+or more developers the ability to create software and then modify and test code
+without losing the production level version of the code. So, if a production
+code exists for simulation of ice sheets in the artic ocean, a developer can add
+to or modify the code without destroying a code that has been up and running.
+Instead, a good VCS will allow the developer to modify/fix the production code
+using a separate branch. Once the modifications have been tested and are stable
+the changes can be merged with the production level code.
+
+Another advantage of VCS involves the development of codes intended to solve
+complicated problems where a number of developers are all contributing to the
+production level code. In fact, there may be groups of developers working on
+disjoint parts of a production level code. If two developers are working on one
+function or option to a code, they may come up with competing codes that both
+cannot be implemented. So, a means to merge the ideas back together into the
+production level code. VCS provide a structure for doing this.
+
+In this course we will use \lq\lq/ git\rq\rq. This VCS has been used in the
+development and implementation of the Unix kernel that many programmers have
+come to know and love. The use of git in this course will be to allow students
+to work locally and communicate seamlessly with the repositroies on Github.
+
+This primer will provide students with a starting point for using git.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Git Primer for Math 4610 at USU: What is \lq git\rq ?} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+First, let's find git on a computer before figuring out how to use this. Open a
+command window, say a Cygwin terminal, and type in the following command at the
+prompt.
 \begin{verbatim}
 
-   which git
+     which git
 
 \end{verbatim}
+Optimally, you should see the following returned.
+\begin{verbatim}
+
+     /bin/git
+
+\end{verbatim}
+If the software is not installed, an error message that lets you know that the
+command cannot be found. Note that an additional command is entered in the
+figure below to determine the version of the software that will be run when the
+git command is executed.
 \vskip0.1in\hrule\vskip0.1in
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_00.png}
-\vskip0.1in
-\includegraphics{../images/cygwin_icon.png}
+\includegraphics{../images/git_01.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -74,7 +110,7 @@ obtain a terminal to work in, see below.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_01.png}
+\includegraphics{../images/git_02.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -101,7 +137,7 @@ that most linux commands look like the following:
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_02.png}
+\includegraphics{../images/git_02.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -134,7 +170,7 @@ where you are in a directory structure.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_03.png}
+\includegraphics{../images/git_03.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -162,7 +198,7 @@ syntax for the command is the following.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_04.png}
+\includegraphics{../images/git_04.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -192,7 +228,7 @@ commands.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_05.png}
+\includegraphics{../images/git_05.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -227,7 +263,7 @@ example
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_06.png}
+\includegraphics{../images/git_06.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -258,7 +294,7 @@ consuming process. It is one of those things that you figure out as you go.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_07.png}
+\includegraphics{../images/git_07.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -288,7 +324,7 @@ something besides \lq a\rq\ then type the following.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_08.png}
+\includegraphics{../images/git_08.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -317,7 +353,7 @@ binary can be copied into /bin.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_09.png}
+\includegraphics{../images/git_09.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
