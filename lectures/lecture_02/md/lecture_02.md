@@ -46,7 +46,7 @@ important skill to have in computational mathematics.
      double precision for your computer. Note that these two codes will be used
      to show students how to build a shared library.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/finite_precision.pdf)
 
   5. **Building a Shared Library for Reusing Code:** In important skill that
      computational mathematicians should learn is the ability to take relatively
