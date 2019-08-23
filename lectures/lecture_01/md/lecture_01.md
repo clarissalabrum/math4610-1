@@ -44,6 +44,13 @@ For the first lecture, the following list of items will be covered:
        [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/github_primer)
        [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf)
 
+  5. **Homework Tasksheets:** Homework for the course will be given via
+        tasksheets for students to complete. These task sheets will appear on
+        Github for this course. The table of contents for the tasksheets can be
+        found through the following links.
+        [> > go there](https://jvkoebbe.github.io/math4610/tasksheets/md/toc_tasksheets)
+        [(pdf)](https://jvkoebbe.github.io/math4610/tasksheets/pdf/toc_tasksheet.pdf)
+
   5. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
 
