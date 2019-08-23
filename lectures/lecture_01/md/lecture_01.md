@@ -49,7 +49,7 @@ For the first lecture, the following list of items will be covered:
         Github for this course. The table of contents for the tasksheets can be
         found through the following links.
         [> > go there](https://jvkoebbe.github.io/math4610/tasksheets/md/toc_tasksheets)
-        [(pdf)](https://jvkoebbe.github.io/math4610/tasksheets/pdf/toc_tasksheet.pdf)
+        [(pdf)](https://jvkoebbe.github.io/math4610/tasksheets/pdf/toc_tasksheets.pdf)
 
   5. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
