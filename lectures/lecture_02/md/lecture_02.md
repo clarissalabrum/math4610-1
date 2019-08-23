@@ -46,7 +46,7 @@ important skill to have in computational mathematics.
      different versions of the code will be presented that determine single and
      double precision for your computer. Note that these two codes will be used
      to show students how to build a shared library.
-      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/maceps.html)
+      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/maceps)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/maceps.pdf)
 
   5. **Roundoff Errors and Arithmetic Operations:** - Every computation done

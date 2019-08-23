@@ -1,7 +1,22 @@
+# <center> Machine Epsilon Code </center>
 
-# Math 4610 Fundamentals of Computational Mathematics: Machine Epsilon Code 
+## <center> Joe Koebbe </center>
 
-## Development of a Test for Machine Precision
+<hr>
+
+**How to Determine Machine Epsilon**
+
+<hr>
+
+  These notes are part of an
+  [Open Educational Resource](https://www.oer.usu.edu)
+  project sponsored by Utah State University
+
+<hr>
+
+**Math 4610: Development of a Test for Machine Precision.**
+
+<hr>
 
 To determine machine precision for your computer we need a strategy that will
 display accuracy. We know that the number of digits kept in a machine precision
@@ -10,17 +25,24 @@ number system. As scientists, engineers, and computer scientists the results
 that we want to see are decimal (base 10) numbers. Our goal should be to
 determine the resolution of our numbers in base 10.
 
+<hr>
+
 One way to proceed would be to try to compare a sequence of numbers converging
 to zero until the machine numbers are internally no different than zero. The
 problem with this strategy is that we will need to compute the difference
 between a term in the sequence and the number zero. That is,
-
+ 
      error = number - zero
 
 The trouble with this approach is that in the difference of the two numbers
 that are close to zero may cancel and in floating point arithmetic, there is
 no guarantee as to what values will be returned due to the rounding algorithm
-used by any computer.
+used by any computer. That is, if digits that are beyond the finite
+representation of the computer numbers are included in the computation, there is
+no guarantee the values returned. This is the old computer programming adage of
+garbage in equals garbage out.
+
+<hr>
 
 A more stable approach is to compare a sequence of numbers converging to one
 meaning consider
@@ -32,96 +54,131 @@ number one is represented exactly in binary arithmetic. Notice that there are
 parentheses around the last two terms. This will force a code to evaluate the
 term in parentheses first before computing the difference. 
 
-**Routine Name:**           smaceps
+<hr>
 
-**Author:** Joe Koebbe
+So, let's write pseudo-code that will compute this difference as a parameter,
+epsilon, is made closer and closer to zero.
 
-**Language:** Fortran. The code can be compiled using the GNU Fortran compiler (gfortran).
+     // comment: initialize the constant one and the small value
 
-For example,
+     one = 1.0;
+     eps = 1.0;
 
-    gfortran smaceps.f
+     // comment: loop over the computing the difference between 1 and 1 plus a
+     //          bit
 
-will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
-better
+     for i=1,1000
+       diff = one - ( one + eps );
+       eps = 0.5 * eps;
+     end
 
-    gfortran -o smaceps smaceps.f
+This will work, but there is no way to tell when the difference is zero. So, we
+need to add some way to identify the output.
 
-**Description/Purpose:** This routine will compute the single precision value for the machine epsilon or the number of digits
-in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
-usually will need to be run one time for each computer.
+<hr>
 
-**Input:** There are no inputs needed in this case. Even though there are arguments supplied, the real purpose is to
-return values in those variables.
+So, let's add a line to print out the values we are interested in.
 
-**Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the
-computer being queried.
+     // comment: initialize the constant one and the small value
 
-**Usage/Example:**
+     one = 1.0;
+     eps = 1.0;
 
-The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be
-represented. Since the code is written in terms of a Fortran subroutine, the values of the machine machine epsilon and
-the power of two that gives the machine epsilon. Due to implicit Fortran typing, the first argument is a single precision
-value and the second is an integer.
+     // comment: loop over the computing the difference between 1 and 1 plus a
+     //          bit
 
-      call smaceps(sval, ipow)
-      print *, ipow, sval
+     for i=1,1000
+       diff = one - ( one + eps );
+       print diff, eps;
+       eps = 0.5 * eps;
+     end
 
-Output from the lines above:
+The last little issue is the number of times the algorithm will execute the loop
+is a bit high.
 
-      24   5.96046448E-08
+<hr>
 
-The first value (24) is the number of binary digits that define the machine epsilon and the second is related to the
-decimal version of the same value. The number of decimal digits that can be represented is roughly eight (E-08 on the
-end of the second value).
+So, a last version of the algorithm might look like
 
-**Implementation/Code:** The following is the code for smaceps()
+     // comment: initialize the constant one and the small value
 
-      subroutine smaceps(seps, ipow)
-    c
-    c set up storage for the algorithm
-    c --------------------------------
-    c
-          real seps, one, appone
-    c
-    c initialize variables to compute the machine value near 1.0
-    c ----------------------------------------------------------
-    c
-          one = 1.0
-          seps = 1.0
-          appone = one + seps
-    c
-    c loop, dividing by 2 each time to determine when the difference between one and
-    c the approximation is zero in single precision
-    c --------------------------------------------- 
-    c
-          ipow = 0
-          do 1 i=1,1000
-             ipow = ipow + 1
-    c
-    c update the perturbation and compute the approximation to one
-    c ------------------------------------------------------------
-    c
-            seps = seps / 2
-            appone = one + seps
-    c
-    c do the comparison and if small enough, break out of the loop and return
-    c control to the calling code
-    c ---------------------------
-    c
-            if(abs(appone-one) .eq. 0.0) return
-    c
-        1 continue
-    c
-    c if the code gets to this point, there is a bit of trouble
-    c ---------------------------------------------------------
-    c
-          print *,"The loop limit has been exceeded"
-    c
-    c done
-    c ----
-    c
-          return
-    end
+     one = 1.0;
+     eps = 1.0;
 
-**Last Modified:** September/2017
+     // comment: loop over the computing the difference between 1 and 1 plus a
+     //          bit
+
+     for i=1,1000
+       diff = one - ( one + eps );
+       print diff, eps;
+       if(diff == 0.0) return;
+       eps = 0.5 * eps;
+     end
+
+The next thing we will need to do is translate this algorithm into code. This
+can be translated into C, C++, Fortran, Java, Python or any other language.
+
+<hr>
+
+For the work at this point, the coding language used in the following example
+is fortran.
+
+     subroutine smaceps(seps, ipow)
+     c
+     c set up storage for the algorithm
+     c --------------------------------
+     c
+           real seps, one, appone
+     c
+     c initialize variables to compute the machine value near 1.0
+     c ----------------------------------------------------------
+     c
+           one = 1.0
+           seps = 1.0
+           appone = one + seps
+     c
+     c loop, dividing by 2 each time to determine when the difference between
+     c one and the approximation is zero in single precision
+     c -----------------------------------------------------
+     c
+           ipow = 0
+           do 1 i=1,1000
+              ipow = ipow + 1
+     c
+     c update the perturbation and compute the approximation to one
+     c ------------------------------------------------------------
+     c
+             seps = seps / 2
+             appone = one + seps
+     c
+     c do the comparison and if small enough, break out of the loop and return
+     c control to the calling code
+     c ---------------------------
+     c
+             if(abs(appone-one) .eq. 0.0) return
+     c
+         1 continue
+     c
+     c if the code gets to this point, there is a bit of trouble
+     c ---------------------------------------------------------
+     c
+           print *,"The loop limit has been exceeded"
+     c
+     c done
+     c ----
+     c
+     return
+     end
+
+In the Fortran code, there is a lot of documentation of the steps in the code.
+To compile the code in linux command terminal, the following will work if the
+compiler is installed.
+
+     % gfortran -o smaceps smaceps.f
+
+The output from this compilation command is an object file named
+
+     maceps.o
+
+<hr>
+
