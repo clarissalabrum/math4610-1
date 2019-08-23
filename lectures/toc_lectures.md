@@ -18,17 +18,19 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/lecture_02.pdf)
 
-     - Homework repositories,
-     - a coding example for determining machine precision,
-     - sharing libraries of objects, and
-     - writing test codes. 
+     - General repositories creation,
+     - homework repositories,
+     - some intuition about finite precision in number representation,
+     - a coding example for determining machine precision, and
+     - an introduction to roundoff error. 
 
   * **Lecture 3.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/lecture_03.pdf)
 
-     - Using **git** to work locally (at home),
-     - number representation and machine precision,
+     - Collections of object files and shared libraries,
+     - testing codes in a shared library,
+     - IEEE standard of machine number number representation,
      - definition of absolute and relative errors,
      - arithmetic operations and accumulation of error, and
      - an example of analytic versus approximation of derivatives.
@@ -37,6 +39,7 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_04/pdf/lecture_04.pdf)
 
+     - Using **git** to work locally (at home),
      - Coding the derivative example,
      - definition of truncation error,
      - comparing roundoff error and truncation error,
