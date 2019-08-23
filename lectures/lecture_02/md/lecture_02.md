@@ -32,7 +32,16 @@ important skill to have in computational mathematics.
      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/homework_description)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/homework_description.pdf)
 
-  3. **Code for Determining Machine Precision:** A simple algorithm for
+  3. **Practical Intuition about Machine Precision:** Some simple examples of
+     how computers represent numbers are given that indicate that almost all of
+     the work done by computers is an approximation. Finite representation in a
+     binary number system has significant limitations. Since this is what we
+     have to use, it is important to understand the implications of finite
+     number representation. 
+     [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/finite_precision.pdf)
+
+  4. **Code for Determining Machine Precision:** A simple algorithm for
      determining the precision for number representation will be covered. Two
      different versions of the code will be presented that determine single and
      double precision for your computer. Note that these two codes will be used
@@ -40,7 +49,7 @@ important skill to have in computational mathematics.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/finite_precision.pdf)
 
-  4. **Roundoff Errors and Arithmetic Operations:** - Every computation done
+  5. **Roundoff Errors and Arithmetic Operations:** - Every computation done
      combines two numbers that in general are only approximations of the exact
      values. The errors in some cases result in catastrophic cancellation that
      result in output that is garbage. We will look at the sum, difference,
