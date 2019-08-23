@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  22 AUG 2019 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  23 AUG 2019 08:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,7 +165,7 @@ Here is how much of TeX's memory you used:
 nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on floatingPointRepresentation.pdf (1 page, 54808 bytes).
+Output written on floatingPointRepresentation.pdf (1 page, 54826 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

@@ -1,8 +1,38 @@
+\documentclass[10pt,fleqn]{article}
+%\usepackage{graphicx}
 
-# Math 4610 Fundamentals of Computational Mathematics: Machine Epsilon Code 
 
-## Development of a Test for Machine Precision
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
 
+\title{Math 4610 Lecture Notes \\
+            \ \\
+            Machine Epsilon Code 
+  \footnote{These notes are part of an Open Resource Educational project
+            sponsored by Utah State University}}
+
+\author{Joe Koebbe}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+\maketitle
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Math 4610: Development of a Test for Machine Precision.}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
 To determine machine precision for your computer we need a strategy that will
 display accuracy. We know that the number of digits kept in a machine precision
 number is finite. In addition, we know that the numbers are stored in a binary
@@ -14,23 +44,69 @@ One way to proceed would be to try to compare a sequence of numbers converging
 to zero until the machine numbers are internally no different than zero. The
 problem with this strategy is that we will need to compute the difference
 between a term in the sequence and the number zero. That is,
+\begin{verbatim}
+ 
+    error = number - zero
 
-     error = number - zero
-
+\end{verbatim}
 The trouble with this approach is that in the difference of the two numbers
 that are close to zero may cancel and in floating point arithmetic, there is
 no guarantee as to what values will be returned due to the rounding algorithm
-used by any computer.
+used by any computer. That is, if digits that are beyond the finite
+representation of the computer numbers are included in the computation, there is
+no guarantee the values returned. This is the old computer programming adage of
+garbage in equals garbage out.
 
 A more stable approach is to compare a sequence of numbers converging to one
 meaning consider
+\begin{verbatim}
 
      error = 1 - ( 1 + epslion )
 
+\end{verbatim}
 where epsilon is represents a decreasing sequence of values. Note also that the
 number one is represented exactly in binary arithmetic. Notice that there are
 parentheses around the last two terms. This will force a code to evaluate the
 term in parentheses first before computing the difference. 
+
+So, let's write a code that will compute this difference as a parameter,
+$\epsilon$, is made closer and closer to zero.
+\begin{verbatim}
+
+     // intialize the constant one and the small value
+
+     one = 1.0;
+     eps = 1.0
+
+     // loop over the computing the difference between 1 and 1 plus a bit
+
+     for i=1:20
+       diff = one - ( 1 + eps );
+       if(diff == 0) {
+       eps = 0.5 * eps;
+     end
+
+\end{verbatim}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **Routine Name:**           smaceps
 

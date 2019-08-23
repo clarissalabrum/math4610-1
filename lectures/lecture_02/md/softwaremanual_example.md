@@ -1,36 +1,7 @@
+# Math 4610 Fundamentals of Computational Mathematics Software Manual Template File
 
-# Math 4610 Fundamentals of Computational Mathematics: Machine Epsilon Code 
-
-## Development of a Test for Machine Precision
-
-To determine machine precision for your computer we need a strategy that will
-display accuracy. We know that the number of digits kept in a machine precision
-number is finite. In addition, we know that the numbers are stored in a binary
-number system. As scientists, engineers, and computer scientists the results
-that we want to see are decimal (base 10) numbers. Our goal should be to
-determine the resolution of our numbers in base 10.
-
-One way to proceed would be to try to compare a sequence of numbers converging
-to zero until the machine numbers are internally no different than zero. The
-problem with this strategy is that we will need to compute the difference
-between a term in the sequence and the number zero. That is,
-
-     error = number - zero
-
-The trouble with this approach is that in the difference of the two numbers
-that are close to zero may cancel and in floating point arithmetic, there is
-no guarantee as to what values will be returned due to the rounding algorithm
-used by any computer.
-
-A more stable approach is to compare a sequence of numbers converging to one
-meaning consider
-
-     error = 1 - ( 1 + epslion )
-
-where epsilon is represents a decreasing sequence of values. Note also that the
-number one is represented exactly in binary arithmetic. Notice that there are
-parentheses around the last two terms. This will force a code to evaluate the
-term in parentheses first before computing the difference. 
+This is a template file for building an entry in the student software manual project. You should use the formatting below to
+define an entry in your software manual.
 
 **Routine Name:**           smaceps
 
