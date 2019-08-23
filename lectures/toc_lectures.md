@@ -9,8 +9,9 @@ The following list includes links to the lectures in Math 4610.
 
      - The syllabus,
      - command windows/terminals, Cygwin,
-     - coding and compiling in an example: (hello world!), and 
-     - Github and homework. 
+     - coding and compiling in an example: (hello world!),
+     - Github and homework, and 
+     - homework tasksheets (where to start). 
 
 
   * **Lecture 2.**
