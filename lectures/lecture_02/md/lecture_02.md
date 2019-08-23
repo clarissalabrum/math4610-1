@@ -40,18 +40,15 @@ important skill to have in computational mathematics.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/finite_precision.pdf)
 
-  4. **Building a Shared Library for Reusing Code:** In important skill that
-     computational mathematicians should learn is the ability to take relatively
-     small codes and turning these into reusable object files and then
-     collecting the object files into a shared library. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+  4. **Roundoff Errors and Arithmetic Operations:** - Every computation done
+     combines two numbers that in general are only approximations of the exact
+     values. The errors in some cases result in catastrophic cancellation that
+     result in output that is garbage. We will look at the sum, difference,
+     product, and ratio of numbers. Note that all operations involve some
+     combination of these four operations.
+     [> > go there](https://www.github.com/jvkoebbe/math4610/lectures/lecture_02/homework)
+     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
 
-  5. **Testing the Codes in a Shared Library:** We will go over how to write a
-     code that uses the object routines in a shared library. Linking a main
-     code to a library will be covered.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
   6. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
