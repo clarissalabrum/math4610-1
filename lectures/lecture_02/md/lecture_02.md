@@ -38,8 +38,8 @@ important skill to have in computational mathematics.
      binary number system has significant limitations. Since this is what we
      have to use, it is important to understand the implications of finite
      number representation. 
-     [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/finite_precision.pdf)
+     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/floatingPointRepresentation)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/lecture_02/pdf/floatingPointRepresentation.pdf)
 
   4. **Code for Determining Machine Precision:** A simple algorithm for
      determining the precision for number representation will be covered. Two
