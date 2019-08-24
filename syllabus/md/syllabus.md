@@ -13,7 +13,7 @@
 **Office:** | ANSC 209
 **Office Hours** | MWF 8:00am-9:20am
 **-** | MWF 10:30am-11:20am
-**-** | MWF 1:00am-2:00am
+**-** | MWF 1:00pm-2:00pm
 **Phone No:** | 435-797-2825
 **Email:** | [joe.koebbe@usu.edu](mailto:joe.koebbe@usu.edu)
 **Web Page:** | [http://www.math.usu.edu/~koebbe](http://www.math.usu.edu/~koebbe)
