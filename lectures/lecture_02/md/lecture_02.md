@@ -55,7 +55,7 @@ important skill to have in computational mathematics.
      result in output that is garbage. We will look at the sum, difference,
      product, and ratio of numbers. Note that all operations involve some
      combination of these four operations.
-      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/singledoubleprecision)
+     | [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/singledoubleprecision.pdf)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/singledoubleprecision.pdf)
 
   6. **Floating Point Representation of Numbers on Computers:** The IEEE
