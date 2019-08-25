@@ -58,8 +58,6 @@ important skill to have in computational mathematics.
       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/singledoubleprecision)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/singledoubleprecision.pdf)
 
-## big deal eh!
-
   6. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
      32-bit and 64-bit systems will be covered. 
