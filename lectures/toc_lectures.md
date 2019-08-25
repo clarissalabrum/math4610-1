@@ -18,8 +18,6 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/lecture_02.pdf)
 
-Forcing this to do anything damnit!!!!
-
      - General repositories creation,
      - homework repositories,
      - some intuition about finite precision in number representation,
