@@ -66,6 +66,9 @@ important skill to have in computational mathematics.
        the lecture, these will be addressed.
 
 
+The next deal is to make this damn thing go to the correct place.
+
+
 ---
 
 [prev](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01) |
