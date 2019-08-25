@@ -1,3 +1,11 @@
+
+# Math 4610 Fundamentals of Computational Mathematics 
+
+
+## Single and Double Precision Numbers.
+
+
+
 \documentclass[10pt,fleqn]{article}
 %\usepackage{graphicx}
 
