@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+  <hr>
+  <h1>
+    Math 4610 Fundamentals of Computational Mathematics:
+        Floating Point Representation of Numbers.
+  </h1>
+  <hr>
+  <p>
+    Given these considerations for the format of computer numbers and a
+    specified number of bits to make available for numbers, the only thing left
+    is to determine how to divide up the bits. It makes sense to use the same
+    number of bits for each number used on a computer. For single precision
+    numbers the IEEE 754 representation is defined by 32 bits organized as
+    follows.
+    <ul>
+      <li> bits 0 through 22 (23 bits) define the mantissa or fraction </li>
+      <li> bits 23 through 30 (8 bits) define the integer exponent </li>
+      <li> bit 31 (1 bit) for the sign of the number </li>
+    </ul>
+    So, a standard single precision number can be written in the form
+    $$
+      (-1)^{b_{31}} \times 2^{b_{30}b_{29}\cdots b_{32}-127}
+     \times (1.b_{22}b_{21}\ldots b_{0})_2
+    $$
+    Note that all the digits, $b_i$, $i=0,1,\ldots,31$ are binary digits. These
+    digits are either 0 or 1. Also, the exponent is shifted to be symmetric
+    about the origin. That way the exponent can be used to resolve very small
+    numbers (e.g, $2^{-127}$) and very large numbers (e.g, $2^{128}$). 
+  </p>
+
+  <hr>
+
+  <a href="https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_01.html"> back </a> |
+  <a href="https://jvkoebbe.github.io/math4610/lectures/toc_lectures"> toc </a> |
+  <a href="https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html"> next </a>
+
+  <hr>
+
+</body>
+</html>

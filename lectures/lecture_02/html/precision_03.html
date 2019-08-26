@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+  <hr>
+  <h1>
+    Math 4610 Fundamentals of Computational Mathematics:
+        Floating Point Representation of Numbers.
+  </h1>
+  <hr>
+  <p>
+    In a previous part of this lecture, an algorithm was coded (maceps.o) that
+    returns the number of digits expects to correct for a machine/computer
+    number. We can actually verify that this makes sense as follows.
+    <ul>
+      <li> $1 + 2^{-23} \approx 1.000000119$ </li>
+      <li> $2 - 2^{-23} \approx 1.999999881$ </li>
+      <li> $2^{-126} \approx 1.175549435 \times 10^{-38}$ </li>
+      <li> $2^{127} \approx 1.70141183 \times 10^{38}$ </li>
+    </ul>
+    The importance of these numbers is the following. The first number is
+    exactly the value we should see from the single precision machine epsilon
+    code before the 1 is subtracted.
+  </p>
+
+
+  <hr>
+
+  <a href="https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html"> back </a> |
+  <a href="https://jvkoebbe.github.io/math4610/lectures/toc_lectures"> toc </a> |
+  <a href="https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html"> next </a>
+
+  <hr>
+
+</body>
+</html>
