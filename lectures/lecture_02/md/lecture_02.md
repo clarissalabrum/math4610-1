@@ -62,6 +62,8 @@ important skill to have in computational mathematics.
      * [**Part 1:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_01.html) 
      * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
      * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
+     * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
+     * [**Part 5:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_05.html)
 
   6. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
