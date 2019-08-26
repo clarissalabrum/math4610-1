@@ -58,10 +58,10 @@ important skill to have in computational mathematics.
      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
      | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/precision_00.pdf)
 
-     * [**Intro:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/md/precision_00) | [(pdf)](https://jvkoebbe.github.io/math4610/lecture/lecture_02/pdf/precision_00.pdf)
-     * [**Part 1:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/md/precision_01) | [(pdf)](https://jvkoebbe.github.io/math4610/lecture/lecture_02/pdf/precision_01.pdf)
-     * [**Part 2:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/md/precision_02) | [(pdf)](https://jvkoebbe.github.io/math4610/lecture/lecture_02/pdf/precision_02.pdf)
-     * [**Part 3:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/md/precision_03) | [(pdf)](https://jvkoebbe.github.io/math4610/lecture/lecture_02/pdf/precision_03.pdf)
+     * [**Intro:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/md/precision_00)
+     * [**Part 1:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/html/precision_01.html) 
+     * [**Part 2:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/html/precision_02.html)
+     * [**Part 3:**](https://jvkoebbe.github.io/math4610/lecture/lecture_02/html/precision_03.html)
 
   6. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
