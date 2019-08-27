@@ -1,0 +1,559 @@
+\documentclass[10pt,fleqn]{article}
+%\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\title{Math 4610 Lecture Notes \\
+            \ \\
+      Measurement of Error
+  \footnote{These notes are part of an Open Resource Educational project
+            sponsored by Utah State University}}
+
+\author{Joe Koebbe}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+\maketitle
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Absolute and Relative Error: Introduction.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+In most cases, the solution of a mathematical problem can only be approximated.
+So, it would be a good idea to have a way to measure the error between the exact
+solution and the approximation of that solution. We will define two types of
+error. These are absolute error and relative error. The {\bf absolute error} is
+the absolute value of the difference between the approximation and the exact
+value for the solution. That is, if $x^*$ is the exact value approximated by
+$x$, then
+$$ e_{abs} = | x - x^{*} | $$
+defines the absolute error. The {\bf relative error} is a scaled error defined
+by
+$$ e_{rel} = {{| x - x^{*} |}\over{|x^*|}} $$
+So, the relative error is a scaled or percent error based on the magnitude of
+the exact value.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Absolute and Relative Error: Examples.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If we are trying to find the roots of the polynomial
+$$
+  p(x) = x^5 + x^3 - 2\ x^2 + 5\ x
+$$
+we can see that $x=0$ is one solution. To find other roots we can use Newton's
+method to generate a sequence of approximations given a starting point. That is,
+we will generate a sequence
+$$
+   S = \left\lbrace x_k \right\rbrace_{k=0}^{\infty}
+$$
+Newton's method will be covered a bit later in this course. However, what we
+will want is for the sequence to converge to a root, say $x^*$. This can be
+rephrased as
+$$ | x_k - x^* | \rightarrow 0 $$
+which implies the absolute error will tend to zero as $k$ tends to $\infty$.
+Using the relative error we want
+$$ {{ | x_k - x^* | }\over{ | x^* | }} \rightarrow 0 $$
+For the polynomial define in this example, there will be problems in using the
+relative error near the zero roots. So, if the sequence starts to converg to the
+zero root, we would need to use the absolute error as a measure.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Absolute and Relative Error: A Numerical Example.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As an illustration of how absolute and relative errors compare, we can consider
+some numerical examples. The following table gives a pair of numbers along with
+both the absolute and relative errors.
+
+\begin{table}[h!]
+   \caption{Absolute and Relative Error Values}
+   \begin{center}
+   \begin{tabular}{c|c|c|c}
+     \hline
+     \textbf{$x$} & \textbf{$x^*$} & \textbf{abs. err.} & \textbf{rel. err.} \\
+     \hline
+     0.01 & 0.1 & 0.09 & 0.9 \\
+     \hline
+     1.01 & 1.0 & 0.01 & 0.01 \\
+     \hline
+     2.0   & 3.0  & 1.0 & 0.5 \\
+     \hline
+     10.0  & 9.0  & 1.0 & 0.1 \\
+     \hline
+     100.0 & 99.0 & 1.0 & 0.01 \\
+     \hline
+   \end{tabular}
+   \end{center}
+\end{table}
+
+Note that when both the approximation and exact value are close to zero, the
+absolute error becomes a better measure of error than the relative error and
+for large values (at least greater than one) one should expect that the better
+measure of the error is the relative error. We will use both in the development
+of algorithms to numerically solve mathematical problems.
+
+
+
+
+
+
+The following is a list of sources for error that need to be taken into account
+by compoutational scientists.
+\begin{enumerate}
+  \item {\bf Modeling Errors} These errors can occur when assumptions are made
+        about the phenomena being studied. For example, one may consider a model
+        of the solar system where the planets are assumed to be spheres, which
+        is not the case.
+  \item {\bf Measurement Errors:} These errors occur when instruments are used
+        to measure physical quantities. For example, the temperature of molten
+        lava might be measured to within one or two degrees based on the
+        magnitude of the exact temperature. The fractional part of the 
+        measurement would characterize the error.
+  \item {\bf Discretization Error:} In order to computer solutions to
+        mathematical problems using computers, it necessary that the model be
+        finite and discrete. For example, weather models based on systems of
+        partial differential equations require a discretization of the continuous model to fit in the
+        discrete framework of a computer simulation.
+\end{enumerate}
+Note that Github will not allow you the luxury of creating empty folders. This
+is an advantage in using \lq\lq git\rq\rq\ on a local machine. When changes are
+\lq\lq pushed\rq\rq\ to Github, empty folders are ignored. So, let's get started
+on the formatting the homework solutions portion of the repository for the
+class.
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Get to Github.} 
+\vskip0.1in\hrule\vskip0.1in
+The first step is to login to your Github account. So, in a web browser, type in
+\begin{verbatim}
+
+    https://github.com/
+
+\end{verbatim}
+and log on to your account. By this point you should already have an account on
+Github.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_01.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Login to Your Account.} 
+\vskip0.1in\hrule\vskip0.1in
+Use the popup to login to Github with your user name and password.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_02.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Starting Point for Working on a
+Repository.} 
+\vskip0.1in\hrule\vskip0.1in
+Once the following pops up, we can navigate through the repositories if you
+have more than one. In any case, you should have a repository named
+\begin{verbatim}
+
+    math4610
+
+\end{verbatim}
+Click on this repository to start creating files and the like. Once the
+repository is created, students can click on the name to work on the repository
+or use files in the repository.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_03.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Creating a File.} 
+\vskip0.1in\hrule\vskip0.1in
+To start putting together the repository for submitting task solutions, students
+can create a new file by clicking on the button as shown below. In particular,
+students should create the table of contents file for the task sheets. The goal
+is to get to the repository and create the table of contents for the solutions
+to the tasks that will be completed.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_04.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Type In Lines to Create the Table of
+Contents.} 
+\vskip0.1in\hrule\vskip0.1in
+In the following figure, two things should be noted. The first is the name of
+the file
+\begin{verbatim}
+
+    hw_toc.md
+
+\end{verbatim}
+Note that the extension, \lq\lq .md\rq\rq\ indicates to a browser that this is a
+MarkDown file. We will spend more time on using MarkDown in this and other
+lectures in the course. The second piece of the puzzle is the circled region
+where you can type in lines that will be used in the file. All you need to do is
+click to the right of the numbered line and start typing.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_05.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: A Start to a Table of Contents.} 
+\vskip0.1in\hrule\vskip0.1in
+To give an idea of how to use MarkDown to set up a table of contents. Each of
+the lines serve a function in the table of contents.
+\begin{verbatim}
+
+    # Math 4610 Homework Solutions
+
+\end{verbatim}
+This line is a header line due to the pound sign. The second nonblank line is a
+header line with a smaller font size. Note that these lines are short hand in
+HTML for $<h1>$ and $<h2>$. The next two lines provide links to other files that
+will contain your homework solutions. Note that the asterisk preceding the text
+in these lines indicates a bullet should be placed in front of the text. There
+are tasks in the homework that will walk you through at least some subset of
+MarkDown syntax. Note that one of the tasks requires students work through a
+tutorial on Markdown syntax.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_06.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Adding and Committing the File.} 
+\vskip0.1in\hrule\vskip0.1in
+Version Control Systems (VCS) like git do not make changes to a repository 
+unless a commit has been made. If you scroll down to the bottom of the webpage
+there are a couple of boxes and buttons to consider. The textboxes allow the
+user to enter comments about the changes being made to the repository. It is
+strongly recommended that students add comments about the changes being made.
+Finally, the is a button that will seal the deal on the modifications. To
+push the changes, click on the
+\begin{verbatim}
+
+    Commit new file
+
+\end{verbatim}
+button. If you do not want to keep the changes, click on the
+\begin{verbatim}
+
+    Cancel
+
+\end{verbatim}
+If you cancel the changes, a popup will appear that will allow you to reconsider
+the choice. So, click on the Commit button.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_07.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Another Example of File Creation.} 
+\vskip0.1in\hrule\vskip0.1in
+There are a couple of ways to create folders in a repository. One way is to go
+back into the editor function on Github and modify the name of an existing file.
+For this part of the lecture, a different repository will be used since the
+instructor already has a repository named \lq\lq math4610\rq\rq. Students should
+use their math4610 repository to follow along with this example. To start the
+process, create a file
+\begin{verbatim}
+
+    harmless.md
+
+\end{verbatim}
+You can include some text as shown and then commit the change as shown above.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_08.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Find the Filename in the Repository.} 
+\vskip0.1in\hrule\vskip0.1in
+Next, click on the repository name at the top of the webpage. Students should
+see the file name
+\begin{verbatim}
+
+    harmless.md
+
+\end{verbatim}
+in the list of files. Click on the filename in the list to show the contents of
+the file. 
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_09.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Rename the File while Creating a
+ Subdirectory.} 
+\vskip0.1in\hrule\vskip0.1in
+Click on the file
+\begin{verbatim}
+
+    harmless.md
+
+\end{verbatim}
+to open up the contents of the file for editing. To modify the file name, click
+on the little pencil to start editing the file. This will show the file name in
+a box and allow changes to be made in the file.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_10.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Rename the File and Create a
+ Subdirectory.} 
+\vskip0.1in\hrule\vskip0.1in
+The last step is to click at the beginning of the file name. The box that the
+file name appears in is editable. So, you can change the name or include the
+file separator that is used to create a new folder. Note that since there is
+a folder in the file name, Github will be glad to create the folder for you.
+In this example, the subdirectory
+\begin{verbatim}
+
+    temp
+
+\end{verbatim}
+is created as an example. You can name the folder anything you like.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_11.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Commit The New File and Folder.} 
+\vskip0.1in\hrule\vskip0.1in
+You must commit the changes using the
+\begin{verbatim}
+
+    Commit changes
+
+\end{verbatim}
+button near the bottom of the page.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_12.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Finding the new File and Folder in the
+Repository.} 
+\vskip0.1in\hrule\vskip0.1in
+The folder name will appear in the list of files and folders for the repository.
+Note that folders are listed first. Clicking on the folder
+\begin{verbatim}
+
+    temp
+
+\end{verbatim}
+will open the folder and show the file created. Recall that Github does not
+like or allow empty folders. So, there must be something in each and every
+folder.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_13.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Deleting Folders
+Repository.} 
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+To start the process, click on the folder you want to get rid of and click on
+the folder name. This will show the content of the folder.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_14.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Deleting the Files in the Folder
+Repository.} 
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+Delete the files one by one, by clicking on each file and then choose the
+garbage can to delete each of the files. Note that there will be one more step
+when all the files have been deleted. That is the Commit change button must be
+clicked to make all changes final.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_15.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Commit the Changes.} 
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+When you are done deleting the files, click the Commit change button. Note that
+when all the files have been dumped in the trash, since there is nothing left in
+the folder, Github automatically dumps the folder in the trash. In the example,
+here when the file 
+\begin{verbatim}
+
+    harmless.md
+
+\end{verbatim}
+is deleted, students should see the folder contents for the parent directory
+show up. The folder
+\begin{verbatim}
+
+    temp
+
+\end{verbatim}
+will not appear. This will be shown below.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_16.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Homework Repository for Math 4610: Check to See if the File is Deleted.} 
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+The last step is to see if the file has been deleted in the Github repository.
+Click on the repository while logged in and look for the
+\begin{verbatim}
+
+    temp
+
+\end{verbatim}
+folder. Note that by deleting the file
+\begin{verbatim}
+
+    harmless
+
+\end{verbatim}
+Github will throw away the folder and it will gone.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{../images/github_17.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
