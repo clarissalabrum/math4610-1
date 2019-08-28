@@ -51,16 +51,22 @@ have in computational mathematics.
       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/maceps)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/maceps.pdf)
 
-  5. **Measureing Errors - Absolute and Relative Errors:** The usual way to
+  5. **Measuring Errors - Absolute and Relative Errors:** The usual way to
      measure errors is either the absolute value of the difference between an
      approximation and the exact value. Relative or percent error gives a
      percent error relative to the exact value. These concepts will be defined
      and examples will be given. It should be noted that in many algorithms,
      how error is measured will determine stopping criteria for the algorithms.
-      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/maceps)
+      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/absolute_relative_error.html)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/maceps.pdf)
 
-  6. **Roundoff Errors and Arithmetic Operations:** - Every computation done
+  6. **Types of Error:** There a number of sources of errors that are
+     encountered in scientific computation. A list of the types of errors will
+     be covered in this part of the lecture.
+      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/type_of_error.html)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/types_of_error.pdf)
+
+  7. **Roundoff Errors and Arithmetic Operations:** - Every computation done
      combines two numbers that in general are only approximations of the exact
      values. The errors in some cases result in catastrophic cancellation that
      result in output that is garbage. We will look at the sum, difference,
@@ -75,7 +81,7 @@ have in computational mathematics.
      * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
      * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
 
-  6. **Floating Point Representation of Numbers on Computers:** The IEEE
+  8. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
      32-bit and 64-bit systems will be covered. 
 
