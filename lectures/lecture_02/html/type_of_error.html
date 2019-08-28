@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+  <hr>
+  <h1>
+    Math 4610 Fundamentals of Computational Mathematics: Types of Errors in
+         Scientific Computing
+  </h1>
+  <hr>
+  <h3> Types of Errors: Summary. </h3>
+  <hr>
+  <p>
+    Weather forcasting has improved over the past several decades due to
+    significant increases in computer speeds and mathematical modeling
+    techniques. Forcasts involve predicting future events based on present data
+    and past experience. The accuracy of weather predictions can mean the
+    difference between life and death in terms of major weather events like
+    hurricanes and tornados. If the forcast is wrong it could mean that people
+    will not have enough time to seek shelter. A typical weather model will
+    involve systems of differential equations and input parameters based current
+    conditions. In mathematical terms, this is called an initial value problem. 
+  </p>
+  <p>
+    Problems in the real world typically involve making observations and posing
+    questions about the physical processes being observed. For example, wildlife
+    biologists may decide to fit collars equipped with GPS devices on migrating
+    deer to find out how many times those deer cross highways or fences as they
+    move from winter to summer feeding grounds. Locations for the deer are taken
+    at discrete intervals to track the path deer take.  
+  </p>
+  <hr>
+  <h3> Types of Errors: A Summary. </h3>
+  <hr>
+  <p>
+    The following is a list of sources for error that need to be taken into
+    account by compoutational scientists.
+    <ul>
+      <li> <bold> Modeling Errors: </bold> These errors can occur when
+           assumptions are made about the phenomena being studied. For example,
+           one may consider a model of the solar system where the planets are
+           assumed to be spheres, which is not the case.
+      </li>
+      <li> <bold> Measurement Errors: </bold>  These errors occur when
+           instruments are used to measure physical quantities. For example, the
+           temperature of molten lava might be measured to within one or two
+           degrees based on the magnitude of the exact temperature. The
+           neglected fractional part of the measurement would characterize the
+           error.
+      </li>
+      <li> <bold> Discretization Error: </bold> In order to compute solutions to
+           real world mathematical problems using computers, it necessary that
+           the model be finite or discretized. For example, weather models based
+           on systems of partial differential equations require a discretization
+           of the continuous model to fit in the discrete framework of a
+           computer simulation. The discretization in this case requires
+           computing averages over finite volumes of the physcial space which is
+           a source of error.
+      </li>
+      <li> <bold> Roundoff Errors: </bold> These errors occur due to finite
+           precision of numbers on any computer. Computers are limited by the
+           finite amount of memory and storage. Most real numbers require an
+           infinite number of digits (at least all irrational numbers). So the
+           numerical values we work with will produce errors.
+      </li>
+      <li> <bold> Arithmetic Operations on Machine Numbers: <bold> We need to be
+           able to perform binary operations like addition, subtraction,
+           multiplication, and division. If we are using finite precision
+           machine numbers, the output will also have errors that can
+           accumulate.
+      </li>
+    </ul>
+  <hr>
+  <h3> Types of Errors: Comments. </h3>
+  <hr>
+    Of these errors, only one can be controlled by computational mathematicians.
+    Modeling errors are typically beyond the control of computational scientists
+    since the model is typically handed off to the computational scientist.
+    Measurements are completely dependent on the measurement instrumentation.
+    Roundoff error and accumulation of errors due to arithmetic are all
+    dependent on the computers we use. The only error computational scientists
+    can work on is on discretization error. We can change the methods used to
+    improve approximations for mathematical problems.
+  </p>
+  <hr>
+</body>
+</html>
