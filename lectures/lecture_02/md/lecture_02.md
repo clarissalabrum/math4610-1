@@ -1,5 +1,7 @@
 # Math 4610 Fundamentals of Computational Mathematics  - Lecture 2
 
+<hr>
+
 In this lesson, you will be introduced to simple algorithms for determining
 "machine epsilon" to quantify computer number precision. The output of these
 algorithms serve as a warning about using computers in the solution of real
@@ -9,9 +11,9 @@ arithmetic operations to determine an appropriate approximation.
 
 resentation of round off error and the analysis of how errors accumulate in
 complex computations. One way to proceed is through interval analysis applied to
-numbers that are approximated in machine arithmetic. A simple 
-example of how to build a shared library will also be discussed. This is an
-important skill to have in computational mathematics.
+numbers that are approximated in machine arithmetic. A simple example of how to
+build a shared library will also be discussed. This is an important skill to
+have in computational mathematics.
 
 <hr>
 
@@ -49,7 +51,16 @@ important skill to have in computational mathematics.
       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/maceps)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/maceps.pdf)
 
-  5. **Roundoff Errors and Arithmetic Operations:** - Every computation done
+  5. **Measureing Errors - Absolute and Relative Errors:** The usual way to
+     measure errors is either the absolute value of the difference between an
+     approximation and the exact value. Relative or percent error gives a
+     percent error relative to the exact value. These concepts will be defined
+     and examples will be given. It should be noted that in many algorithms,
+     how error is measured will determine stopping criteria for the algorithms.
+      [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/maceps)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/maceps.pdf)
+
+  6. **Roundoff Errors and Arithmetic Operations:** - Every computation done
      combines two numbers that in general are only approximations of the exact
      values. The errors in some cases result in catastrophic cancellation that
      result in output that is garbage. We will look at the sum, difference,
@@ -63,7 +74,6 @@ important skill to have in computational mathematics.
      * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
      * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
      * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
-     * [**Part 5:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_05.html)
 
   6. **Floating Point Representation of Numbers on Computers:** The IEEE
      standard for number representation will be covered. Number precision for
