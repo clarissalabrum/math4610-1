@@ -28,8 +28,24 @@
       <li> bits 52 through 62 (11 bits) define the integer exponent </li>
       <li> bit 63 (1 bit) for the sign of the number </li>
     </ul>
+    Mostly, codes will run in double precision and most new operating systems or
+    updates of older operating systems work in 64-bit arithmetic. This is an
+    indication that the old version of double precision is more like the current
+    single precision.
   </p>
-
+  <p>
+    There are a couple of cautionary remarks that should be made at this point
+    of the presentation. First, not all compilers (especially C/C++) treat
+    the float type as single precision. In fact, you should always test your
+    compiler to make sure that single precision and double precision mean what
+    you think they mean. The second not is that there can be challenges when an
+    entire operating system moves from one precision to a precision with more
+    resolution. When IBM moved from 16-bit arithmetic to 32-bit arithmetic a
+    bug in the operating system could be manipulated to give erroneous results
+    in simple computations. In the late 1980's, Sun Microsystems Inc. introduced
+    128-bit operating systems for scientific computing. So, it is a very good
+    idea to understand the resolution.
+  </p>
 
   <hr>
 
