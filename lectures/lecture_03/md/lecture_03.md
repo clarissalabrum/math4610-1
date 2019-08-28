@@ -13,27 +13,42 @@ single variable.
 
 ## Content Items:
 
-  1. **Building a Shared Library for Reusing Code:** In important skill that
+  1. **Roundoff Errors and Arithmetic Operations:** - Every computation done
+     combines two numbers that in general are only approximations of the exact
+     values. The errors in some cases result in catastrophic cancellation that
+     result in output that is garbage. We will look at the sum, difference,
+     product, and ratio of numbers. Note that all operations involve some
+     combination of these four operations.
+     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
+     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/precision_00.pdf)
+
+     * [**Intro:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
+     * [**Part 1:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_01.html)
+     * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
+     * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
+     * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
+
+  2. **Building a Shared Library for Reusing Code:** In important skill that
      computational mathematicians should learn is the ability to take relatively
      small codes and turning these into reusable object files and then
      collecting the object files into a shared library.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.pdf)
 
-  2. **Testing the Codes in a Shared Library:** We will go over how to write a
+  3. **Testing the Codes in a Shared Library:** We will go over how to write a
      code that uses the object routines in a shared library. Linking a main
      code to a library will be covered.
        [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/html/finite_precision)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.p
 
-  2. **Analytic Fixes for Cancellation Errors:** In some cases, the arithmetic
+  4. **Analytic Fixes for Cancellation Errors:** In some cases, the arithmetic
      operations needed in an algorithm can be rearranged through the use of
      some mathematical manipulation to obtain an equivalent algorithm that is
      more stable. A couple of examples will be treated.
        [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
 
-  3. **An Introduction to Interval Analysis:** Interval analysis involves doing
+  5. **An Introduction to Interval Analysis:** Interval analysis involves doing
      arithmetic on intervals instead of numbers. This will be made a bit more
      clear in the lecture. Sums, differences, products, and quotients are all
      treated within the structre of intervals. 

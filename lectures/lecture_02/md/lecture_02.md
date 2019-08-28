@@ -66,25 +66,6 @@ have in computational mathematics.
       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/type_of_error.html)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/types_of_error.pdf)
 
-  7. **Roundoff Errors and Arithmetic Operations:** - Every computation done
-     combines two numbers that in general are only approximations of the exact
-     values. The errors in some cases result in catastrophic cancellation that
-     result in output that is garbage. We will look at the sum, difference,
-     product, and ratio of numbers. Note that all operations involve some
-     combination of these four operations.
-     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/precision_00.pdf)
-
-     * [**Intro:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
-     * [**Part 1:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_01.html) 
-     * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
-     * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
-     * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
-
-  8. **Floating Point Representation of Numbers on Computers:** The IEEE
-     standard for number representation will be covered. Number precision for
-     32-bit and 64-bit systems will be covered. 
-
   7. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
 
