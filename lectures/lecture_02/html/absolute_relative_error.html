@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+  <hr>
+  <h1>
+    Math 4610 Fundamentals of Computational Mathematics: Measurement of Error
+  </h1>
+  <hr>
+  <h3>
+    Absolute and Relative Error: Introduction.} 
+  </h3>
+  <p>
+    In most cases, the solution of a mathematical problem can only be
+    approximated. So, it would be a good idea to have a way to measure the error
+    between the exact solution and the approximation of that solution. We will
+    define two types of error. These are absolute error and relative error. The
+    <bold> absolute error </bold> is the absolute value of the difference
+    between the approximation and the exact value for the solution. That is, if
+    $x^*$ is the exact value approximated by $x$, then
+    $$ e_{abs} = | x - x^{*} | $$
+    defines the absolute error. The <bold> relative error </bold> is a scaled
+    error defined by
+    $$ e_{rel} = {{| x - x^{*} |}\over{|x^*|}} $$
+    So, the relative error is a scaled or percent error based on the magnitude
+    of the exact value.
+  </p>
+  <hr>
+  <h3>
+    Absolute and Relative Error: Examples. 
+  </h3>
+  <hr>
+  <p>
+    If we are trying to find the roots of the polynomial
+    $$p(x) = x^5 + x^3 - 2\ x^2 + 5\ x$$
+    we can see that $x=0$ is one solution. To find other roots we can use
+    Newton's method to generate a sequence of approximations given a starting
+    point. That is, we will generate a sequence
+    $$ S = \left\lbrace x_k \right\rbrace_{k=0}^{\infty} $$
+    Newton's method will be covered a bit later in this course. However, what we
+    will want is for the sequence to converge to a root, say $x^*$. This can be
+    rephrased as
+    $$ | x_k - x^* | \rightarrow 0 $$
+    which implies the absolute error will tend to zero as $k$ tends to $\infty$.
+    Using the relative error we want
+    $$ {{ | x_k - x^* | }\over{ | x^* | }} \rightarrow 0 $$
+    For the polynomial define in this example, there will be problems in using
+    the relative error near the zero roots. So, if the sequence starts to
+    converg to the zero root, we would need to use the absolute error as a
+    measure.
+  </p>
+  <hr>
+  <h3>
+    Absolute and Relative Error: A Numerical Example.
+  </h3>
+  <p>
+    As an illustration of how absolute and relative errors compare, we can
+    consider some numerical examples. The following table gives a pair of
+    numbers along with both the absolute and relative errors.
+    $$
+    \begin{table}[h!]
+      \caption{Absolute and Relative Error Values}
+    \begin{center}
+    \begin{tabular}{c|c|c|c}
+     \hline
+     \textbf{$x$} & \textbf{$x^*$} & \textbf{abs. err.} & \textbf{rel. err.} \\
+     \hline
+     0.01 & 0.1 & 0.09 & 0.9 \\
+     \hline
+     1.01 & 1.0 & 0.01 & 0.01 \\
+     \hline
+     2.0   & 3.0  & 1.0 & 0.5 \\
+     \hline
+     10.0  & 9.0  & 1.0 & 0.1 \\
+     \hline
+     100.0 & 99.0 & 1.0 & 0.01 \\
+     \hline
+    \end{tabular}
+    \end{center}
+    \end{table}
+    $$
+    Note that when both the approximation and exact value are close to zero, the
+    absolute error becomes a better measure of error than the relative error and
+    for large values (at least greater than one) one should expect that the
+    better measure of the error is the relative error. We will use both in the
+    development of algorithms to numerically solve mathematical problems.
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <hr>
+</body>
+</html>

@@ -58,7 +58,7 @@ have in computational mathematics.
      and examples will be given. It should be noted that in many algorithms,
      how error is measured will determine stopping criteria for the algorithms.
       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/absolute_relative_error.html)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/maceps.pdf)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/absolute_relative_error.pdf)
 
   6. **Types of Error:** There a number of sources of errors that are
      encountered in scientific computation. A list of the types of errors will
