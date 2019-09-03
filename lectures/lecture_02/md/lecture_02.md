@@ -5,15 +5,14 @@
 In this lesson, you will be introduced to simple algorithms for determining
 "machine epsilon" to quantify computer number precision. The output of these
 algorithms serve as a warning about using computers in the solution of real
-mathematical problems. In adition to finite precision in the representation of
+mathematical problems. In addition to finite precision in the representation of
 numbers on a computer, most approximation algorithms will require large numbers
-arithmetic operations to determine an appropriate approximation.
-
-resentation of round off error and the analysis of how errors accumulate in
-complex computations. One way to proceed is through interval analysis applied to
-numbers that are approximated in machine arithmetic. A simple example of how to
-build a shared library will also be discussed. This is an important skill to
-have in computational mathematics.
+arithmetic operations to determine an appropriate approximation. How to measure
+error in ccmputations and sources of error will be presented. Note that most
+sources of error must just be taken as a part of the process. However, in
+computational science there are a few sources error that can be addressed by
+choosing or developing stable algorithms that will provide best approximations
+to the exact value. 
 
 <hr>
 

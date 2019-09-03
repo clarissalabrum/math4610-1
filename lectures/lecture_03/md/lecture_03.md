@@ -1,9 +1,10 @@
 # Math 4610 Fundamentals of Computational Mathematics  - Lecture 3
 
 The accumulation of round off error can be a serious problem in computational
-mathematics. The idea in this lecture is to focus on errors that occur ain every
-arithmetic operation performed by a computer in any attempt to solve a
-mathematical problem. Some simple examples of how to use interval analysis will
+mathematics. The idea in this lecture is to focus on errors that occur in every
+arithmetic operation performed by a computer.
+Some simple examples of how to
+mitigate inexact arithmetic interval analysis will
 be covered. Documentation of algorithms and computer codes is essential to any
 successful attempt to write reusable code. Finally, we will introduce the
 general mathematical problem of finding the roots of a nonlinear function of a
@@ -13,7 +14,16 @@ single variable.
 
 ## Content Items:
 
-  1. **Roundoff Errors and Arithmetic Operations:** - Every computation done
+  1. **Building a Shared Library for Reusing Code:** An important skill that
+     computational mathematicians should learn is to take relatively small codes
+     and turn these into reusable object files. These can be collected into a
+     shared library. A shared library can be linked to by other programs from
+     this point on. Note that the equivalent of a shared library in a Windows
+     setting is called a DLL.
+       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/md/shared_library_example)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.pdf)
+
+  2. **Roundoff Errors and Arithmetic Operations:** - Every computation done
      combines two numbers that in general are only approximations of the exact
      values. The errors in some cases result in catastrophic cancellation that
      result in output that is garbage. We will look at the sum, difference,
@@ -27,13 +37,6 @@ single variable.
      * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
      * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
      * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
-
-  2. **Building a Shared Library for Reusing Code:** In important skill that
-     computational mathematicians should learn is the ability to take relatively
-     small codes and turning these into reusable object files and then
-     collecting the object files into a shared library.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.pdf)
 
   3. **Testing the Codes in a Shared Library:** We will go over how to write a
      code that uses the object routines in a shared library. Linking a main

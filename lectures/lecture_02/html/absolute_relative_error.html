@@ -12,6 +12,13 @@
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
+<style type="text/css">
+  table, th, td {
+         padding: 5px 15px 5px 15px;
+         border: 1px solid black;
+         text-align: center;
+         }
+</style>
 </head>
 <body>
   <hr>
@@ -69,28 +76,55 @@
     As an illustration of how absolute and relative errors compare, we can
     consider some numerical examples. The following table gives a pair of
     numbers along with both the absolute and relative errors.
-    $$
-    \begin{table}[h!]
-      \caption{Absolute and Relative Error Values}
-    \begin{center}
-    \begin{tabular}{c|c|c|c}
-     \hline
-     \textbf{$x$} & \textbf{$x^*$} & \textbf{abs. err.} & \textbf{rel. err.} \\
-     \hline
-     0.01 & 0.1 & 0.09 & 0.9 \\
-     \hline
-     1.01 & 1.0 & 0.01 & 0.01 \\
-     \hline
-     2.0   & 3.0  & 1.0 & 0.5 \\
-     \hline
-     10.0  & 9.0  & 1.0 & 0.1 \\
-     \hline
-     100.0 & 99.0 & 1.0 & 0.01 \\
-     \hline
-    \end{tabular}
-    \end{center}
-    \end{table}
-    $$
+  </p>
+
+    <center>
+      <caption> Absolute and Relative Error Values </caption>
+      <table>
+        <tr>
+          <th> $x$ </th>
+          <th> $x^*$ </th>
+          <th> abs. error </th>
+          <th> rel. error </th>
+        </tr>
+        <tr>
+          <td> 0.01 </td> 
+          <td> 0.10 </td> 
+          <td> 0.09 </td>
+          <td> 0.90 </td>
+        </tr>
+          <td> 0.01 </td>
+          <td> 0.10 </td>
+          <td> 0.09 </td>
+          <td> 0.90 </td>
+        <tr>
+          <td> 1.01 </td>
+          <td> 1.00 </td>
+          <td> 0.01 </td>
+          <td> 0.01 </td>
+        </tr>
+        <tr>
+          <td> 2.0 </td>
+          <td> 3.0 </td>
+          <td> 1.0 </td>
+          <td> 0.5 </td>
+        </tr>
+        <tr>
+           <td> 10.0 </td>
+           <td> 9.0 </td>
+           <td> 1.0 </td>
+           <td> 0.1  </td>
+        </tr>
+        <tr>
+           <td> 100.0 </td> 
+           <td>  99.0 </td>
+           <td>  1.0 </td>
+           <td> 0.01 </td>
+        </tr>
+      </table>
+    </center>
+
+  <p>
     Note that when both the approximation and exact value are close to zero, the
     absolute error becomes a better measure of error than the relative error and
     for large values (at least greater than one) one should expect that the
