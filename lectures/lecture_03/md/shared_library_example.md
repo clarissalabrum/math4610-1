@@ -384,7 +384,7 @@ creating a whole suite of codes.
 
 <hr>
 
-[Top of Lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_02)
+[Top of Lecture](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_03)
 
 <hr>
 

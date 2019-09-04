@@ -8,53 +8,24 @@ iteration will be discussed including the idea of convergence and
 
 ## Content Items:
 
-  3. **Using Version Control Systems (VCS) - git:** A brief discussion of "git"
-       will be taken up in class to show how to work and collaborate with other
-       students and your instructor. The "git" platform allows you to work on a
-       laptop at home and then "push" your work and any modifications to Github
-       where the instructor can get to the work.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+  1. **Building a Shared Library for Reusing Code:** (cont) An important skill
+     that computational mathematicians should learn is to take relatively small
+     codes and turn these into reusable object files. These can be collected
+     into a shared library. A shared library can be linked to by other programs
+     from this point on. Note that the equivalent of a shared library in a
+     Windows setting is called a DLL.
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/shared_library_example)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_04/pdf/shared_library_example.pdf)
 
-  1. **Roundoff Errors and Arithmetic Operations:** - Every computation done
-     combines two numbers that in general are only approximations of the exact
-     values. The errors in some cases result in catastrophic cancellation that
-     result in output that is garbage. We will look at the sum, difference, 
-     product, and ratio of numbers. Note that all operations involve some
-     combination of these four operations.
-     [> > go there](https://www.github.com/jvkoebbe/math4610/lectures/lecture_02/homework)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
-
-  2. **Analytic Fixes for Cancellation Errors:** In some cases, the arithmetic
-     operations needed in an algorithm can be rearranged through the use of
-     some mathematical manipulation to obtain an equivalent algorithm that is
-     more stable. A couple of examples will be treated.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  3. **An Introduction to Interval Analysis:** Interval analysis involves doing
-     arithmetic on intervals instead of numbers. This will be made a bit more
-     clear in the lecture. Sums, differences, products, and quotients are all
-     treated within the structre of intervals. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  4. **Documentation of Reusable Code:**  Each student will need to write a
+  2. **Documentation of Reusable Code:**  Each student will need to write a
      software manual for the algorithms implemented in class. A template for the
      software manual has been created by your instructor using Jekyll on Github.
      Students are required to use the template and can look at the template and
      download a copy of the template for their own use.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/software_manual_template)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/software_template_manual.pdf)
 
-  5. **Statement of the Root Finding Problem:**  Many applied mathematics
-     problems can be stated in the form of a general root finding problem. In
-     this lecture the general root finding problem will be stated. Algorithms
-     for the root finding problem will be presented in the next few lectures.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  6. **Wrap up and Questions:**  If there is time and anyone has questions about
+  3. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
 
 ---
