@@ -28,29 +28,28 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/lecture_03.pdf)
 
-     - Collections of object files and shared libraries,
-     - testing codes in a shared library,
-     - IEEE standard of machine number number representation,
-     - definition of absolute and relative errors,
-     - arithmetic operations and accumulation of error, and
-     - an example of analytic versus approximation of derivatives.
+     - Measureing errors using absolute and relative errors,
+     - types of errors the arise for computational scientists must deal with,
+       and
+     - shared libraries an introduction
 
   * **Lecture 4.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_04/pdf/lecture_04.pdf)
 
-     - Using **git** to work locally (at home),
+     - More on shared libraries, and
+     - writing a software manual for the codes you create.
+
+  * **Lecture 5.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/lecture_05.pdf)
+
      - Coding the derivative example,
      - definition of truncation error,
      - comparing roundoff error and truncation error,
      - a brief review of Taylor series expansion,
      - alternative approximations of the derivative, and
      - building a software manual.
-
-  * **Lecture 5.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/lecture_05.pdf)
-
      - Some information on formatting results and output,
      - basics for html, xhtml, and markdown, LaTeX,
      - the software manual format/template and Jekyll, and
