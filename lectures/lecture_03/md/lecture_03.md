@@ -35,8 +35,8 @@ single variable.
      shared library. A shared library can be linked to by other programs from
      this point on. Note that the equivalent of a shared library in a Windows
      setting is called a DLL.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/md/shared_library_example)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/shared_library_example)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/shared_library_example.pdf)
 
   4. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
