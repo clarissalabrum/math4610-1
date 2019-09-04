@@ -53,10 +53,6 @@ to the exact value.
   5. **Wrap up and Questions:** If there is time and anyone has questions about
        the lecture, these will be addressed.
 
-
-The next deal is to make this damn thing go to the correct place.
-
-
 ---
 
 [prev](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01) |
