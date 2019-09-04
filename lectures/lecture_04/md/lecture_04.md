@@ -22,8 +22,8 @@ iteration will be discussed including the idea of convergence and
      software manual has been created by your instructor using Jekyll on Github.
      Students are required to use the template and can look at the template and
      download a copy of the template for their own use.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_04/md/softwaremanual_example)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/softwaremanual_example.pdf)
+       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/softwaremanual_example)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/softwaremanual_example.pdf)
 
   3. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
