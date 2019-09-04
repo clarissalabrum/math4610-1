@@ -25,7 +25,13 @@ iteration will be discussed including the idea of convergence and
        [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/softwaremanual_example)
        | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/softwaremanual_example.pdf)
 
-  3. **Wrap up and Questions:**  If there is time and anyone has questions about
+  3. **Link to the Software Manual Template** The link for the software
+     maual is:
+     [link](https://jvkoebbe.github.io/math4610/softwareManual/softwareManualTemplate.md)
+
+ 
+
+  4. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
 
 ---
