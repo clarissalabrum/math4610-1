@@ -1,6 +1,7 @@
 \documentclass[10pt,fleqn]{article}
 \usepackage{hyperref}
 
+
 \setlength{\topmargin}{-.75in}
 \addtolength{\textheight}{2.00in}
 \setlength{\oddsidemargin}{.00in}
@@ -22,41 +23,12 @@
 {\bf Math 4610 Fundamentals of Computational Mathematics  - Lecture 3.} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-In the last lesson algorithms for computing limitations on representation of
-numbers. This can be done for arbitrary precision. However, for most coding
-languages, like C, C++, Fortran, and so on, it is enough to establish the
-limitation for single and double precision. In the language of coding and
-computing it is typical to associate 32-bit word lengths with single precision
-and 64-bit word lengths with double precision. It should be noted that
-interpretted languages like Python allow users to work with arbitrary precision.
-However, the work is done with software and will produce inefficient computer
-codes.
-
-Another thing to note is in some programming languages, single and double
-precision may not be the same. For example, in older versions of C compilers
-the {\bf float} declaration may provide exactly the same precision as a double
-declaration. So, in spite of standardization and other assumptions, it is a
-good idea to test any computer that you will be using to perform lots of
-calculations. So, it makes sense to write a single code that you can use on any
-computer that will display how accurate numbers can be represented.
-
-\end{document}
-
-
-
-\begin{verbatim}
-
-  1. Explicit Euler method and error
-
-\end{verbatim}
-
-
-
-Representation of round off error and the analysis of how errors accumulate in
-complex computations. One way to proceed is through interval analysis applied to
-numbers that are approximated in machine arithmetic. A simple 
-example of how to build a shared library will also be discussed. This is an
-important skill to have in computational mathematics.
+The accumulation of round off error can be a serious problem in computational
+mathematics. The idea in this lecture is to focus on errors that occur in every
+arithmetic operation performed by a computer.  Some simple examples of how to
+mitigate inexact arithmetic interval analysis will be covered. Documentation of
+algorithms and computer codes is essential to any successful attempt to write
+reusable code. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
@@ -65,243 +37,29 @@ important skill to have in computational mathematics.
 \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
 \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
 \itemsep=2pt}
-  \item {\bf Homework repositories on Github:} - We will discuss how to create a
-     homework repository that each student must have to complete homework. The
-     homework repository should be a private repository with you instructor as
-     the only collaborator. Homework will be graded by first cloning the
-     repository and then your constructor can create a branch for grading. This
-     can be repeated by creating a pull request on the repository.
-     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework_structure)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
-
-        \href{https://jvkoebbe.github.io/math4610/syllabus/md/syllabus}
-
-  \item
-        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf}
-
-  \item {\bf Using Version Control Systems (VCS) - git:} A brief discussion of
-     \lq\lq git\rq\rq\ will be taken up in class to show how to work and
-     collaborate with other students and your instructor. The \lq\lq git\rq\rq\ 
-     platform allows you to work on a laptop at home and then \lq\lq push\rq\rq\ 
-     your work and any modifications to Github where the instructor can get to
-     the work.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-  \item {\bf Code for Determining Machine Precision:} A simple algorithm for
-     determining the precision for number representation will be covered. Two
-     different versions of the code will be presented that determine single and
-     double precision for your computer. Note that these two codes will be used
-     to show students how to build a shared library.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  \item {\bf Building a Shared Library for Reusing Code:} In important skill
-     that computational mathematicians should learn is the ability to take
-     relatively small codes and turning these into reusable object files and
-     then collecting the object files into a shared library. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf}
-
-  \item {\bf Testing the Codes in a Shared Library:} We will go over how to
-     write a code that uses the object routines in a shared library. Linking a
-     main code to a library will be covered.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  \item {\bf Floating Point Representation of Numbers on Computers:} The IEEE
-     standard for number representation will be covered. Number precision for
-     32-bit and 64-bit systems will be covered. 
-
-  \item {\bf Wrap up and Questions:} If there is time and anyone has questions
-        about the lecture, these will be addressed.
-
-\end{list}
-\vskip0.1in\hrule\vskip0.1in
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
-# Math 4610 Fundamentals of Computational Mathematics  - Lecture 3
-
-The accumulation of round off error can be a serious problem in computational
-mathematics. The idea in this lecture is to focus on errors that occur in every
-arithmetic operation performed by a computer.
-Some simple examples of how to
-mitigate inexact arithmetic interval analysis will
-be covered. Documentation of algorithms and computer codes is essential to any
-successful attempt to write reusable code. Finally, we will introduce the
-general mathematical problem of finding the roots of a nonlinear function of a
-single variable.
-
-<hr>
-
-## Content Items:
-
-  1. **Building a Shared Library for Reusing Code:** An important skill that
+  \item {Measuring Errors - Absolute and Relative Errors:} The usual way to
+     measure errors is either the absolute value of the difference between an
+     approximation and the exact value. Relative or percent error gives a
+     percent error relative to the exact value. These concepts will be defined
+     and examples will be given. It should be noted that in many algorithms,
+     how error is measured will determine stopping criteria for the algorithms.
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_03/html/absolute_relative_error.html}{$>$ $>$ go there}
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/absolute_relative_error.pdf}{(pdf)}
+  \item {\bf Types of Error:} There a number of sources of errors encountered in
+     scientific computation. A list of the types of errors will be covered in
+     this part of the lecture.
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_03/html/types_of_error.html}{$>$ $>$ go there}
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/types_of_error.pdf}{(pdf)}
+  \item{\bf Building a Shared Library for Reusing Code:} An important skill that
      computational mathematicians should learn is to take relatively small codes
      and turn these into reusable object files. These can be collected into a
      shared library. A shared library can be linked to by other programs from
      this point on. Note that the equivalent of a shared library in a Windows
      setting is called a DLL.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/md/shared_library_example)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.pdf)
-
-  2. **Roundoff Errors and Arithmetic Operations:** - Every computation done
-     combines two numbers that in general are only approximations of the exact
-     values. The errors in some cases result in catastrophic cancellation that
-     result in output that is garbage. We will look at the sum, difference,
-     product, and ratio of numbers. Note that all operations involve some
-     combination of these four operations.
-     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/precision_00.pdf)
-
-     * [**Intro:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
-     * [**Part 1:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_01.html)
-     * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
-     * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
-     * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
-
-  3. **Testing the Codes in a Shared Library:** We will go over how to write a
-     code that uses the object routines in a shared library. Linking a main
-     code to a library will be covered.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.p
-
-  4. **Analytic Fixes for Cancellation Errors:** In some cases, the arithmetic
-     operations needed in an algorithm can be rearranged through the use of
-     some mathematical manipulation to obtain an equivalent algorithm that is
-     more stable. A couple of examples will be treated.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  5. **An Introduction to Interval Analysis:** Interval analysis involves doing
-     arithmetic on intervals instead of numbers. This will be made a bit more
-     clear in the lecture. Sums, differences, products, and quotients are all
-     treated within the structre of intervals. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  4. **Documentation of Reusable Code:**  Each student will need to write a
-     software manual for the algorithms implemented in class. A template for the
-     software manual has been created by your instructor using Jekyll on Github.
-     Students are required to use the template and can look at the template and
-     download a copy of the template for their own use.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  5. **Statement of the Root Finding Problem:**  Many applied mathematics
-     problems can be stated in the form of a general root finding problem. In
-     this lecture the general root finding problem will be stated. Algorithms
-     for the root finding problem will be presented in the next few lectures.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  6. **Wrap up and Questions:**  If there is time and anyone has questions about
-     the lecture, these will be addressed.
-
----
-
-[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02) |
-[toc](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) |
-[next](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
-
----
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-
-
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
-
-\nofiles
-
-\pagestyle{empty}
-
-\setlength{\parindent}{0in}
-
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Lecture 2.} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-In this lesson, you will be introduced to simple algorithms for determining
-\lq\lq machine epsilon\rq\rq\ to quantify computer number precision. The output
-of these algorithms serve as a warning about using computers in the solution of
-real mathematical problems. In adition to finite precision in the representation
-of numbers on a computer, most approximation algorithms will require large
-numbers arithmetic operations to determine an appropriate approximation.
-
-Representation of round off error and the analysis of how errors accumulate in
-complex computations. One way to proceed is through interval analysis applied to
-numbers that are approximated in machine arithmetic. A simple 
-example of how to build a shared library will also be discussed. This is an
-important skill to have in computational mathematics.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Content Items:}
-\begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-\topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-\itemsep=2pt}
-  \item {\bf Homework repositories on Github:} - We will discuss how to create a
-     homework repository that each student must have to complete homework. The
-     homework repository should be a private repository with you instructor as
-     the only collaborator. Homework will be graded by first cloning the
-     repository and then your constructor can create a branch for grading. This
-     can be repeated by creating a pull request on the repository.
-     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework_structure)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
-
-        \href{https://jvkoebbe.github.io/math4610/syllabus/md/syllabus}
-
-  \item
-        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf}
-
-  \item {\bf Using Version Control Systems (VCS) - git:} A brief discussion of
-     \lq\lq git\rq\rq\ will be taken up in class to show how to work and
-     collaborate with other students and your instructor. The \lq\lq git\rq\rq\ 
-     platform allows you to work on a laptop at home and then \lq\lq push\rq\rq\ 
-     your work and any modifications to Github where the instructor can get to
-     the work.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-  \item {\bf Code for Determining Machine Precision:} A simple algorithm for
-     determining the precision for number representation will be covered. Two
-     different versions of the code will be presented that determine single and
-     double precision for your computer. Note that these two codes will be used
-     to show students how to build a shared library.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  \item {\bf Building a Shared Library for Reusing Code:} In important skill
-     that computational mathematicians should learn is the ability to take
-     relatively small codes and turning these into reusable object files and
-     then collecting the object files into a shared library. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf}
-
-  \item {\bf Testing the Codes in a Shared Library:} We will go over how to
-     write a code that uses the object routines in a shared library. Linking a
-     main code to a library will be covered.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  \item {\bf Floating Point Representation of Numbers on Computers:} The IEEE
-     standard for number representation will be covered. Number precision for
-     32-bit and 64-bit systems will be covered. 
-
-  \item {\bf Wrap up and Questions:} If there is time and anyone has questions
-        about the lecture, these will be addressed.
-
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/shared_library_example}{$>$ $>$ go there}
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/shared_library_example.pdf}{(pdf)}
+  \item{\bf Wrap up and Questions:}  If there is time and anyone has questions
+     about the lecture, these will be addressed.
 \end{list}
 \vskip0.1in\hrule\vskip0.1in
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

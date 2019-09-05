@@ -6,9 +6,7 @@ arithmetic operation performed by a computer.
 Some simple examples of how to
 mitigate inexact arithmetic interval analysis will
 be covered. Documentation of algorithms and computer codes is essential to any
-successful attempt to write reusable code. Finally, we will introduce the
-general mathematical problem of finding the roots of a nonlinear function of a
-single variable.
+successful attempt to write reusable code. 
 
 <hr>
 
