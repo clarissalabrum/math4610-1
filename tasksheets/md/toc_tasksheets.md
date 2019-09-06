@@ -6,8 +6,7 @@ task covers a bite-size chunk of the content covered in the
 [lectures](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) for the
 course.
 
-  * **Homework 1.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_01.html)
+  * **Homework 1.** [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_01.html) Due: date Friday September 13, 2019.
 
   * **Homework 2.**
    [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_02.html)
