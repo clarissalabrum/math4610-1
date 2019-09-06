@@ -6,32 +6,16 @@ task covers a bite-size chunk of the content covered in the
 [lectures](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) for the
 course.
 
-  * **Homework 1.** [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_01.html) Due: date Friday September 13, 2019.
-
-  * **Homework 2.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_02.html)
-
-  * **Homework 3.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_03.html)
-
-  * **Homework 4.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_04.html)
-
-  * **Homework 5.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_05.html)
-
-  * **Homework 6.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_06.html)
-
-  * **Homework 7.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_07.html)
-
-  * **Homework 8.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_08.html)
-
-  * **Homework 9.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_09.html)
-
-  * **Homework 10.**
-   [tasksheet](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_10.html)
+  | Tasksheets/Homework | Link to Tasksheet | Due Date |
+  | ------------------- | :---------------: | :------- |
+  | **Homework 1.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_01.html) | Friday September 13, 2019, 5:00pm |
+  | **Homework 2.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_02.html) |
+  | **Homework 3.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_03.html) |
+  | **Homework 4.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_04.html) |
+  | **Homework 5.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_05.html) |
+  | **Homework 6.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_06.html) |
+  | **Homework 7.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_07.html) |
+  | **Homework 8.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_08.html) |
+  | **Homework 9.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_09.html) |
+  | **Homework 10.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_10.html) |
 
