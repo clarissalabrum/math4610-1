@@ -237,7 +237,7 @@ $$
 $$
 Taking absolute values the last equation can be written as
 $$
-  | x_{k+1} - x^* | \leq | g'(x^*) | | x_k - x^* |
+  | x_{k+1} - x^* | \leq | g'(x^*) | \cdot | x_k - x^* |
 $$
 One can read the previous expression as the difference (or error) in $x_{k+1}$
 is less than the magnitude of the derivative of the fixed point iteration 
@@ -282,11 +282,327 @@ Let's apply functional iteration to this root finding problem. First, we will
 need to create an associated function that defines a fixed point problem. One
 possibility is to choose
 $$
-  g(x) = x - f(x) = x - ( e^x - \pi ) = x - e^x + \pi
+  g_1(x) = x - f(x) = x - ( e^x - \pi ) = x - e^x + \pi
 $$
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Let's check the condition for convergence by computing the derivative of $g$
+near at the solution above.
+$$
+  g_1'(x) = 1 - e^x = 1 - \pi \approx -2.14159245 \rightarrow 
+  | g_1'(x) | \approx 2.14159245
+$$
+The value is bigger than 1 which means the sequence of iterates is not going to
+converge. So, the choice of $g(x)$ will not work.
 
+As another option, consider a modification of the function. If
+$$
+  f(x) = e^x - \pi = 0
+$$
+then
+$$
+  f(x) = {1\over 5} ( e^x - \pi ) = 0
+$$
+which allows us to write
+$$
+  g_2(x) = x - {1\over 5} ( e^x - \pi )
+$$
+with derivative
+$$
+  g_2'(x) = 1 - {1\over 5} e^x 
+$$
+and near the solution
+$$
+  |g_2'(x)| = | 1 - {1\over 5} \pi | < 1.0
+$$
+So, we can expect better results in this case.
+
+For the two examples, the output for the two choices of the iteration function
+$g_1(x)$ or $g_2(x)$.
+\vskip0.1in\hrule\vskip0.1in
+\begin{table}
+\caption{Results for Functional Iteration for Two Different Iteration Functions}
+  \vskip0.1in
+  \begin{center}
+  \begin{tabular}{|c||c|c||c|c|}
+    \hline
+    Iteration No. & $g_2(x)=x-(e^x-\pi)$ & error
+                              & $g_1(x)=x-(e^x-\pi)$ & error \\
+    \hline
+        01 &  1.08466220  &  8.46621990E-02  & 1.42331100  & 0.423310995 \\
+    \hline
+        02 &  1.12129271  &  3.66305113E-02  & 0.41406250  & 1.00924850 \\
+    \hline
+        03 &  1.13584745  &  1.45547390E-02  & 2.04270363  & 1.62864113 \\
+    \hline
+        04 &  1.14140379  &  5.55634499E-03  &-2.52713394  & 4.56983757 \\
+    \hline
+        05 &  1.14349020  &  2.08640099E-03  & 0.53457117  & 3.06170511 \\
+    \hline
+        06 &  1.14426863  &  7.78436661E-04  & 1.96944773  & 1.43487656 \\
+    \hline
+        07 &  1.14455843  &  2.89797783E-04  &-2.05567694  & 4.02512455 \\
+    \hline
+        08 &  1.14466619  &  1.07765198E-04  & 0.95790958  & 3.01358652 \\
+    \hline
+        09 &  1.14470625  &  4.00543213E-05  & 1.49325967  & 0.535350084 \\
+    \hline
+        10 &  1.14472115  &  1.49011612E-05  & 0.18326997  & 1.30998969 \\
+    \hline
+        11 &  1.14472663  &  5.48362732E-06  & 2.12372398  & 1.94045401 \\
+    \hline
+  \end{tabular}
+  \end{center}
+\end{table}
+\vskip0.1in\hrule\vskip0.1in
+So, two completely different results are obtained. One converges with a slight
+modification to the first. The first function produces a sequence that does not
+converge and the second produces the correct result up to machine precision.
+That is, $x^*=1.14472663$ with absolute error $5.48362732E-06$. This is one of
+the reasons why functional iteration is not used as much. The problem is that
+there are infinitely many choices for the fixed point equation. Some will
+provide convergence and others will not come close.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Convergence of Functional Iteration}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If we end up using functional iteration, it will also pay to know how fast the
+sequence converges. Fewer iterations means faster results with few computations.
+The convergence of the sequence is determined by the same calculations as in
+the convergence justification above.
+$$
+  | x_{k+1} - x^* | \leq | g'(x^*) | \cdot| x_k - x^* |
+$$
+For functional iteration the convergence rate is defined by
+$$
+  \makebox{rate of convergence} = | g'(x^*) | 
+$$
+The smaller the magnitude of the derivative, $|g'(x^*)|$, the faster the
+convergence will be.
+
+As an example, consider changing the parameter ${1\over 5}$ used to modify the
+iteration function in the previous section. If the parameter is decreased, what
+happens to the convergence? This is covered in the homework tasks.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Continuous Functions and the Bisection Method}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Functional iteration is limited in applicability in the real world. So, we move
+on to the next algorithm for the root finding problem. In this section, we will
+assume that the function, $f$, is continuous on a closed and bounded interval
+$[a,b]$. The main mathematical tool used in this case is the Intermediate Value
+Theorem for continuous functions.
+\vskip0.1in\hrule\vskip0.1in
+{\bf Theorem:} Suppose the function, $f$, is continuous on the closed and
+boundaed interval $[a, b]$. If $M$ is any value between $f(a)$ and $f(b)$ then
+there exists a value $c\in(a,b)$ such that $f(c)=M$,
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Now, if $f(a)\geq 0\geq f(b)$ (or vice-versa) then there is at least one value,
+$c$ in the interval $(a,b)$ such that $f(c)=0$. If we determine end-points of
+an interval such that $f(a)\leq 0$ {\bf and} $0\leq f(b)$ (or vice versa), we
+know there is also a root of the function on the interval we have determined.  
+There is a simple condition that can be test to verify an interval will work.
+That is,
+$$
+   f(a)\cdot f(b) < 0
+$$
+This is enough to determine that the interval straddles the horizontal axis.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Bisection and Convergence}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If the original interval $[a, b]$ is bisected into two equal subintervals
+$$
+  [a, b] = [a, c] \cup [c, b]
+$$
+where
+$$
+  c = {{a+b}\over 2}
+$$
+Since there is at least one root on the interval there are three possibilities
+\begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
+\topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
+\itemsep=2pt}
+  \item $f(c) = 0$,
+  \item $f(a)\cdot f(c)<0$ which implies there is a root in $[a,c]$, or
+  \item $f(c)\cdot f(b)<0$ which implies there is a root in $[c,b]$.
+\end{list}
+If the first condition is true, twe have the root, $x^*=c$ and we are done
+searching. In the second case, we redefine the search interval to $[a,c]$ and
+in the third case, the search interval is redefined to be $[c,b]$. Once we have
+redefined the interval, we repeat the bisection on the new interval. The
+bisection will reduce the size of the search interval each time through. We just
+need to translate this into code.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Bisection and Convergence}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The following routine, written in something like C will implement the Bisection
+Method.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+double bisectionMethod(typedef'd f, double a, double b, double tol, int maxiter)
+{
+  // set up some parameters
+  double c;
+  double error;
+  int iter;
+ 
+  // check the endpoints
+  if(f(a)==0) return a;
+  if(f(b)==0) return b;
+
+  // check for a root in the interval
+  if(f(a)*f(b) >= 0.0) throw an error or print a message
+
+  //this part of the code will perform the iterations
+  error = 10.0 * tol;
+  iter = 0;
+  while(error > tol && iter < maxiter) {
+    iter++;
+    c = 0.5 * ( a + b );
+
+    // compute the sign change value
+    double val = f(a) * f(c);
+
+    // reassign the end point based on the location of the root
+    if(val<0.0) {
+      b = c;
+    } else {
+      a = c;
+    }
+
+    // compute the error in the approximation - this assumes a<b
+    error = b - a
+
+  }
+  
+  // return the midpoint as it is more accurate
+  return c;
+  
+}
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+It should be noted that once an interval has been determined for which the
+function value changes sign, the Bisection Method will continue until a root is
+found, at least up to machine precision. We can take advantage of this property
+to redesign the algorithm to take a specific number of iterations instead of
+checking the error.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: The Bisection Method and Error Reduction}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The fact the the interval size is being reduced in each iteration of bisection
+can be used as follows. The length of the original interval can be used to
+bound the error in any approximation of a root. That is,
+$$
+  | x - x^* | \leq | b - a |
+$$
+A sequence of intervals is created by the Bisection method that we can write as
+$[a_i, b_i]$, for $i=0,1,\ldots$ where each new interval shares an endpoint from
+the previous interval and the other end point is the midpoint of the previous
+interval. Note that $[a_0, b_0]=[a,b]$ in this argument. So, we can write the
+following set of inequalities
+$$
+  | x - x^* | < b_k - a_k < {1\over 2} ( b_{k-1} - a_{k-1} ) < \cdots
+                    < {1\over{2^k}} ( b_0 - a_0 ) = 2^{-k} ( b - a )  
+$$ 
+This means that once the interval $[a, b]$ has been determined, the amount of
+error in the approximation is computable at each iteration.
+
+Suppose that we specify an error tolerance that is acceptable, say $10^{-d}$
+where $d$ is the number of digits of accuracy. Then define the number of
+iterations to reduce the error to the desired tolerance
+$$
+  2^{-k} ( b - a ) < 10^{-d}
+$$
+Using a bit of algebra
+$$
+  2^{-k} < {{10^{-d}}\over{(b-a)}}
+   \rightarrow -k < log_2\left( {{10^{-d}}\over{(b-a)}}\right)
+$$
+or using the negattion of the inequality
+$$
+  - log_2\left( {{10^{-d}}\over{(b-a)}}\right) < k 
+$$
+This gives us the total number of iterations needed to reduce the error to the
+desired tolerance. So, we can rewrite the code.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: An Alternative Bisection Method Code}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The alternative code is the following.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+double bisectionMethod(typedef'd f, double a, double b, double tol) {
+  // set up some parameters
+  double c;
+  double error;
+ 
+  // check the endpoints
+  if(f(a)==0) return a;
+  if(f(b)==0) return b;
+
+  // check for a root in the interval
+  if(f(a)*f(b) >= 0.0) throw an error or print a message
+
+  //this part of the code will perform the iterations
+  maxiter = - 2.0 * log2( tol / ( b - a ) );
+  for(int i=0; i<maxiter; i++) {
+    c = 0.5 * ( a + b );
+    // compute the sign change value
+    double val = f(a) * f(c);
+    // reassign the end point based on the location of the root
+    if(val<0.0) {
+      b = c;
+    } else {
+      a = c;
+    }
+  }
+  
+  // return the midpoint as it is more accurate
+  return c;
+  
+}
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Note that the output value will be an approximation of a root in the original
+interval, $[a,b]$ that satisfies the desired tolerance.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Bisection Method Examples}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+It is always a good idea to test the code you write. Using the example from our
+tests of functional iteration we can detemine whether or not the Bisection 
+Method works and how this compares with the fixed point approach.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
