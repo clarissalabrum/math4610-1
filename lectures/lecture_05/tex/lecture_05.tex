@@ -1,5 +1,6 @@
 \documentclass[10pt,fleqn]{article}
-%\usepackage{graphicx}
+\usepackage{hyperref}
+
 
 
 \setlength{\topmargin}{-.75in}
@@ -7,9 +8,9 @@
 \setlength{\oddsidemargin}{.00in}
 \addtolength{\textwidth}{.75in}
 
-\title{Math 4610 Lecture Notes \\
+\title{ Math 4610 Fundamentals of Computational Mathematics  - Lecture 5 \\
             \ \\
-       Using Git to Work Locally
+  The Root Finding Problem for Functions of One Real Variable 
   \footnote{These notes are part of an Open Resource Educational project
             sponsored by Utah State University}}
 
@@ -26,13 +27,60 @@
 \begin{document}
 \maketitle
 \newpage
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The Root Finding Problem for Functions of One Real Variable 
+\vskip0.1in\hrule\vskip0.1in
+In this lecture we will take up one topic in how to work within the "git"
+framework and more on roundoff error, problems that arise in using arithmetic
+operations on machine numbers, and methods that can be used to modify algorithms
+and code to mitigate some of these problems. That is, we will talk about how to
+control the accumulation of roundoff errors for those sources of error that can
+be addressed by computational scientists.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Math 4610 Contents: Using Git to Work Locally.} 
+{\bf Content Items:}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
+There are a couple of features in the code that need to be explained.
+\begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
+\topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
+\itemsep=2pt}
+  \item {\bf Using Version Control Systems (VCS) - git:} A brief discussion of
+        \lq\lq git\rq\rq\ will be taken up in class to show how to work and
+        collaborate with other students and your instructor. The \lq\lq
+        git\rq\rq\ platform allows you to work on a laptop at home and then
+        \lq\lq push\rq\rq\ your work and any modifications to Github where the
+        instructor can get to the work.
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/git_primer}{$>$ $>$ go there}
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/git_primer.pdf}{(pdf)}
+  \item {\bf Statement of the Root Finding Problem:} Many applied mathematics
+     problems can be stated in the form of a general root finding problem. In
+     this lecture the general root finding problem will be stated. Algorithms
+     for the root finding problem will be presented in the next few lectures.
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_05/html/root_finding_problem.html}{$>$ $>$ go there}
+     \href{https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/root_finding_problem.pdf}{(pdf)}
+  \item {\bf Wrap up and Questions:}  If there is time and anyone has questions
+        about the lecture, these will be addressed.
+\end{list}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+\href{https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04}{[prev]}
+\href{https://jvkoebbe.github.io/math4610/lectures/toc_lectures}{[toc]}
+\href{https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06}{[next]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\end{document}
+
+
+
+
+
 In this part of the notes, a brief primer for {\bf git} that will help you get
 started using repositories locally. You will also learn to clone and pull
 repositories from Github to work on existing repositories.
@@ -43,15 +91,17 @@ repositories from Github to work on existing repositories.
 In order to efficiently use {\bf git} you will need to be working in a command
 terminal. You can use Cygwin or the command windows in Windows or on your Apple
 computer/laptop. This has already been covered in previous lectures. So, open
-a terminal and at the proompt, type the following command.
+a terminal and at the prompt, type the following version of the \lq\lq\ 
+which\rq\rq\ command.
 \begin{verbatim}
 
      % which git
 
 \end{verbatim}
 The reason for doing this is to determine if {\bf git} is installed on your
-computer. If so, we can proceed and if not, you will need to install {\bf git}
-on your compouter or use the computers in the Engineering lab.
+computer. If so, you can proceed and if not, you will need to install {\bf git}
+on your computer or use the computers in the Engineering lab. Note that there
+are a number of ways to install and access the software.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
@@ -80,7 +130,8 @@ with git. We will just use a few in this primer. So, type
 
 \end{verbatim}
 The command only takes a second or two and will identify the folder as a
-repository. The output of the command will look something like the following.
+repository folder. The output of the command will look something like the
+following.
 \begin{verbatim}
 
      Initialized empty Git repository in /cygdrive/m/gitexample/.git/
@@ -108,7 +159,7 @@ to display the hidden files. The command will show a subfolder named {\bf .git}
 that contains all of the repository bookkeeping for the repository. You never
 really need to know the contents of this folder and it is highly recommended
 that the contents are not modified. At least meke sure you know what you are
-doing in there.
+doing if you choose to poke around in there.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
@@ -149,8 +200,8 @@ include the file created.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-To add a file to the repository, the {\bf git} add and commit command are used
-to do the work.  That is,
+To add a file to the repository, the {\bf git} {\bf add} and {\bf commit}
+command are used to do the work.  That is,
 \begin{verbatim}
 
      % git add hello.f
@@ -158,17 +209,19 @@ to do the work.  That is,
      % git commit -a
 
 \end{verbatim}
-The -a tag is used to include all commits that are listed. The commit command
-has lots of options for being selective in how to add files and folders. The
-output looks like the following. During the execution of the commit command, 
-an editor session is started. You must include a comment to the commit to have
-the command complete the work. All you need is a short comment like
+During the execution of the commit command, an editor session is started. You
+must include a comment to the commit to have the command complete the work. All
+you need is a short comment like The -a tag is used to include all commits that
+are listed.
+
+The commit command has lots of options for being selective in how to add files
+and folders. The output looks like the following.
 \begin{verbatim}
 
      % adding hello.f to the repository
 
 \end{verbatim}
-The output after the editor comment is entered is the following.
+The output after the editor comment is entered is something like the following.
 \begin{verbatim}
 
      [master (root-commit) 6a6297f] aaaaaa
@@ -178,7 +231,9 @@ The output after the editor comment is entered is the following.
 \end{verbatim}
 This indicates a single file has been included. In the development of code and
 documentation the commands above are about all you will need to use {\bf git}.
-However, there is a lot more to the {\bf git} environment.
+However, there is a lot more to the {\bf git} environment. Also, note that the
+exact form of the output will change slightly due to the fact you are adding
+different bits of content on different machines.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
@@ -209,7 +264,7 @@ and then edit the file to do the hello world example. That is, using
      % vim hello.f
 
 \end{verbatim}
-and edit in the lines
+and edit in the lines as shown below.
 \begin{verbatim}
 
            program main
@@ -254,21 +309,25 @@ status command to see how things have changed. Use
 which results in
 \begin{verbatim}
 
-On branch master
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+     On branch master
+     Changes not staged for commit:
+       (use "git add/rm <file>..." to update what will be committed)
+       (use "git checkout -- <file>..." to discard changes in working directory)
 
-        deleted:    ../hello.f
+             deleted:    ../hello.f
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+     Untracked files:
+       (use "git add <file>..." to include in what will be committed)
 
-        ./
+             ./
 
-no changes added to commit (use "git add" and/or "git commit -a")
+     no changes added to commit (use "git add" and/or "git commit -a")
 
 \end{verbatim}
+It should be noted that the git VCS can be invoked in any folder within the
+repository folder. This allows you to continue to work without going back to the
+root folder for the repository.
+
 The result indicates that we need to add the current folder. So, type
 \begin{verbatim}
 
@@ -284,280 +343,164 @@ Finally, commit the changes using
 and adding a comment in the editor as above. Once this is done the work is now
 committed to the repository. It always is a good idea to use the status command
 to make sure everything has been included or excluded.
-\vskip0.1in\hrule\vskip0.1in
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 The second part of this lesson involves cloning a repository from Github. There
 are several steps that need to be taken care of first. There are a couple of
-configuration parameters that need to be set. First move to a directory
-
-\end{document}
-
-
-
-
-
-
-
-There are two topics that will be covered in this lecture.  These are how to use
-{\bf git} to create and work with repositories locally. The second topic
-involves development of algorithms to compute the roots of a real-valued
-function of a single independent variable. The most powerful property of the
-{\bf git} command platform allows users to create, develop, and modify the
-contents of repositories and then communicate the work with the outside world
-using Github or some other hosting Version Control System (VCS). This will
-allow users rapid deployment of all kinds of computational materials.
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-The part of the lecture dedicated to the solution of the root finding problem
-marks the first algorithm presented in class. The root finding problem can be
-stated as follows. Find a real number, $x$, such that a given function $f(x)$
-is zero at that point. The reader should note that this is a very common problem
-in almost every scientific discipline. In these lectures, only a small number of
-all possible methods will be covered. In addtion, some example problems will be
-presented from various applications in sicence and engineering.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Content Items:}
-\begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-\topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-\itemsep=2pt}
-  \item {\bf Building a Shared Library for Reusing Code:} (cont) An important
-     skill that computational mathematicians should learn is to take relatively
-     small codes and turn these into reusable object files. These can be
-     collected into a shared library. A shared library can be linked to by other
-     programs from this point on. Note that the equivalent of a shared library
-     in a Windows setting is called a DLL.
-
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/shared_library_example)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_04/pdf/shared_library_example.pdf)
-
-  \item {\bf Documentation of Reusable Code:}  Each student will need to write a
-     software manual for the algorithms implemented in class. A template for the
-     software manual has been created by your instructor using Jekyll on Github.
-     Students are required to use the template and can look at the template and
-     download a copy of the template for their own use.
-
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/softwaremanual_example)
-       | [(md)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/softwaremanual_example.md)
-
-  \item {\bf Link to the Software Manual Template:} The link for the software
-     maual is:
-
-     [link](https://jvkoebbe.github.io/math4610/softwareManual/softwareManualTemplate.md)
-
-  \item {\bf Wrap up and Questions:}  If there is time and anyone has questions
-     about the lecture, these will be addressed.
-
-\end{list}
-
----
-
-[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03) |
-[toc](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) |
-[next](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
-
----
-
-\end{document}
-
-
-
+configuration parameters that need to be set. First move to a clean directory -
+say we name it tempWork. We do not want to perform an initialization for the
+repository. Instead, we will need to configure some things in {\bf git}. In
+particular, you will need to configure the user name and email. So, type
 \begin{verbatim}
 
-  1. Explicit Euler method and error
+     % git config user.name yourChoice
 
 \end{verbatim}
+and
+\begin{verbatim}
 
+     % git config user.email yourChoice@some.email.isp
 
-
-Representation of round off error and the analysis of how errors accumulate in
-complex computations. One way to proceed is through interval analysis applied to
-numbers that are approximated in machine arithmetic. A simple 
-example of how to build a shared library will also be discussed. This is an
-important skill to have in computational mathematics.
-     homework repository that each student must have to complete homework. The
-     homework repository should be a private repository with you instructor as
-     the only collaborator. Homework will be graded by first cloning the
-     repository and then your constructor can create a branch for grading. This
-     can be repeated by creating a pull request on the repository.
-     [> > go there](https://www.github.io/jvkoebbe/math4610/lectures/lecture_02/homework_structure)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/homework.pdf)
-
-        \href{https://jvkoebbe.github.io/math4610/syllabus/md/syllabus}
-
-  \item
-        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf}
-
-  \item {\bf Using Version Control Systems (VCS) - git:} A brief discussion of
-     \lq\lq git\rq\rq\ will be taken up in class to show how to work and
-     collaborate with other students and your instructor. The \lq\lq git\rq\rq\ 
-     platform allows you to work on a laptop at home and then \lq\lq push\rq\rq\ 
-     your work and any modifications to Github where the instructor can get to
-     the work.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-  \item {\bf Code for Determining Machine Precision:} A simple algorithm for
-     determining the precision for number representation will be covered. Two
-     different versions of the code will be presented that determine single and
-     double precision for your computer. Note that these two codes will be used
-     to show students how to build a shared library.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  \item {\bf Building a Shared Library for Reusing Code:} In important skill
-     that computational mathematicians should learn is the ability to take
-     relatively small codes and turning these into reusable object files and
-     then collecting the object files into a shared library. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf}
-
-  \item {\bf Testing the Codes in a Shared Library:} We will go over how to
-     write a code that uses the object routines in a shared library. Linking a
-     main code to a library will be covered.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
-
-  \item {\bf Floating Point Representation of Numbers on Computers:} The IEEE
-     standard for number representation will be covered. Number precision for
-     32-bit and 64-bit systems will be covered. 
-
-  \item {\bf Wrap up and Questions:} If there is time and anyone has questions
-        about the lecture, these will be addressed.
-
-\end{list}
+\end{verbatim}
+You will need to fill in the names. Note that the user name is something you can
+choose. As your instructor, I would suggest something simple and all in lower
+case letters. It is a bit easier to remember this. For the email, choose an
+email address you read most often. That way you can monitor what, when, and
+where things are happening when you work with either {\bf git} locally, or
+with {\bf Github} out in the real world.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
+\noindent
+Once you have the configuration step done, you are ready to clone a repository
+locally. So, start by changing to a working directory. For example, you can
+create a directory, say
+\begin{verbatim}
+
+     % mkdir tempWork
+
+\end{verbatim}
+and then
+\begin{verbatim}
+
+     % cd tempWork
+
+\end{verbatim}
+Now for the cloning. Type in
+\begin{verbatim}
+
+     % git clone https://www.github.com/Github_username/Github_repository_name
+
+\end{verbatim}
+When the command is launched, the repository will be created locally and then
+will clone the entire contents of the repository you have chosen. For students
+in Math 4610, it would be a good idea to clone the \lq\lq\ math4610\rq\rq
+repository that you have started for the course. The command for the Math 4610
+repository should look like
+\begin{verbatim}
+
+     % git clone https://www.github.com/Github_username/math4610
+
+\end{verbatim}
+The result will be a repository that you can work on locally.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
-# Math 4610 Fundamentals of Computational Mathematics  - Lecture 3
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The last bit is to make sure you know how to make changes either locally or on
+your github account and make sure the local repository and the Github repository
+are exactly the same. If you make changes locally on your copy of the repository
+you should first add and remove any files using
+\begin{verbatim}
 
-The accumulation of round off error can be a serious problem in computational
-mathematics. The idea in this lecture is to focus on errors that occur in every
-arithmetic operation performed by a computer.
-Some simple examples of how to
-mitigate inexact arithmetic interval analysis will
-be covered. Documentation of algorithms and computer codes is essential to any
-successful attempt to write reusable code. Finally, we will introduce the
-general mathematical problem of finding the roots of a nonlinear function of a
-single variable.
+     % git add ...
+     % git remove ....
 
-<hr>
+\end{verbatim}
+following by a commit
+\begin{verbatim}
 
-## Content Items:
+     % git commit -a
 
-  1. **Building a Shared Library for Reusing Code:** An important skill that
-     computational mathematicians should learn is to take relatively small codes
-     and turn these into reusable object files. These can be collected into a
-     shared library. A shared library can be linked to by other programs from
-     this point on. Note that the equivalent of a shared library in a Windows
-     setting is called a DLL.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/md/shared_library_example)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.pdf)
+\end{verbatim}
+Then the big step is to use the {\bf push} command. The syntax is the following.
+\begin{verbatim}
 
-  2. **Roundoff Errors and Arithmetic Operations:** - Every computation done
-     combines two numbers that in general are only approximations of the exact
-     values. The errors in some cases result in catastrophic cancellation that
-     result in output that is garbage. We will look at the sum, difference,
-     product, and ratio of numbers. Note that all operations involve some
-     combination of these four operations.
-     [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
-     | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_02/pdf/precision_00.pdf)
+     % git push
 
-     * [**Intro:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/precision_00)
-     * [**Part 1:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_01.html)
-     * [**Part 2:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_02.html)
-     * [**Part 3:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_03.html)
-     * [**Part 4:**](https://jvkoebbe.github.io/math4610/lectures/lecture_02/html/precision_04.html)
+\end{verbatim}
+You will be prompted for your user name (on Github) and then your password.
+The command will then proceed to merge your local work with the repository on
+Github. If you modify your repository on Github, you pull content to the local
+repository using
+\begin{verbatim}
 
-  3. **Testing the Codes in a Shared Library:** We will go over how to write a
-     code that uses the object routines in a shared library. Linking a main
-     code to a library will be covered.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_03/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_03/pdf/git_primer.p
+     % git pull
 
-  4. **Analytic Fixes for Cancellation Errors:** In some cases, the arithmetic
-     operations needed in an algorithm can be rearranged through the use of
-     some mathematical manipulation to obtain an equivalent algorithm that is
-     more stable. A couple of examples will be treated.
-       [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/git_primer)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+\end{verbatim}
+This makes sure change on Github are reflected on the local repository.  Note
+that your will again be prompted for your user name and password on Github.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Students should note that there are a lot of git command with tons of options
+to do all kinds of modifications to your repositories. To find out what is
+available type
+\begin{verbatim}
 
-  5. **An Introduction to Interval Analysis:** Interval analysis involves doing
-     arithmetic on intervals instead of numbers. This will be made a bit more
-     clear in the lecture. Sums, differences, products, and quotients are all
-     treated within the structre of intervals. 
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+     % git
 
-  4. **Documentation of Reusable Code:**  Each student will need to write a
-     software manual for the algorithms implemented in class. A template for the
-     software manual has been created by your instructor using Jekyll on Github.
-     Students are required to use the template and can look at the template and
-     download a copy of the template for their own use.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+\end{verbatim}
+for a list of commands and options.
+The output from the command looks like the following.
+\begin{verbatim}
 
-  5. **Statement of the Root Finding Problem:**  Many applied mathematics
-     problems can be stated in the form of a general root finding problem. In
-     this lecture the general root finding problem will be stated. Algorithms
-     for the root finding problem will be presented in the next few lectures.
-       [> > go there](https://jvkoebbe.github.io/math4610/lecture_02/html/finite_precision)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lecture_02/pdf/git_primer.pdf)
+     usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+                [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+                [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+                [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+                <command> [<args>]
 
-  6. **Wrap up and Questions:**  If there is time and anyone has questions about
-     the lecture, these will be addressed.
+     These are common Git commands used in various situations:
 
----
+     start a working area (see also: git help tutorial)
+        clone      Clone a repository into a new directory
+        init       Create an empty Git repository or reinitialize an existing one
 
-[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_02/md/lecture_02) |
-[toc](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) |
-[next](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
+     work on the current change (see also: git help everyday)
+        add        Add file contents to the index
+        mv         Move or rename a file, a directory, or a symlink
+        reset      Reset current HEAD to the specified state
+        rm         Remove files from the working tree and from the index
 
----
+     examine the history and state (see also: git help revisions)
+        bisect     Use binary search to find the commit that introduced a bug
+        grep       Print lines matching a pattern
+        log        Show commit logs
+        show       Show various types of objects
+        status     Show the working tree status
 
+     grow, mark and tweak your common history
+        branch     List, create, or delete branches
+        checkout   Switch branches or restore working tree files
+        commit     Record changes to the repository
+        diff       Show changes between commits, commit and working tree, etc
+        merge      Join two or more development histories together
+        rebase     Reapply commits on top of another base tip
+        tag        Create, list, delete or verify a tag object signed with GPG
 
+     collaborate (see also: git help workflows)
+        fetch      Download objects and refs from another repository
+        pull       Fetch from and integrate with another repository or a local branch
+        push       Update remote refs along with associated objects
 
+     'git help -a' and 'git help -g' list available subcommands and some
+     concept guides. See 'git help <command>' or 'git help <concept>'
+     to read about a specific subcommand or concept.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\end{verbatim}
+There are also a wealth of on-line resources and books that you can get if you
+intend to do a lot more with this computational utility.
