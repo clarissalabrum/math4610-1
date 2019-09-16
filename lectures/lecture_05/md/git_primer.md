@@ -1,138 +1,95 @@
-\documentclass[10pt,fleqn]{article}
-%\usepackage{graphicx}
 
+# Math 4610 Lecture Notes 
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+## Using Git to Work Locally
 
-\title{Math 4610 Lecture Notes \\
-            \ \\
-       Using Git to Work Locally
-  \footnote{These notes are part of an Open Resource Educational project
+## Joe Koebbe
+
+These notes are part of an Open Resource Educational project
             sponsored by Utah State University}}
 
-\author{Joe Koebbe}
+---
 
-\nofiles
+## Math 4610 Contents: Using Git to Work Locally 
 
-\pagestyle{empty}
+---
 
-\setlength{\parindent}{0in}
-
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-\maketitle
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Math 4610 Contents: Using Git to Work Locally.} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-In this part of the notes, a brief primer for {\bf git} that will help you get
+In this part of the notes, a brief primer for **git** that will help you get
 started using repositories locally. You will also learn to clone and pull
 repositories from Github to work on existing repositories.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-In order to efficiently use {\bf git} you will need to be working in a command
+
+---
+
+In order to efficiently use **git** you will need to be working in a command
 terminal. You can use Cygwin or the command windows in Windows or on your Apple
 computer/laptop. This has already been covered in previous lectures. So, open
-a terminal and at the prompt, type the following version of the \lq\lq\ 
-which\rq\rq\ command.
-\begin{verbatim}
+a terminal and at the prompt, type the following version of the "which" command.
 
      % which git
 
-\end{verbatim}
-The reason for doing this is to determine if {\bf git} is installed on your
-computer. If so, you can proceed and if not, you will need to install {\bf git}
+The reason for doing this is to determine if **git** is installed on your
+computer. If so, you can proceed and if not, you will need to install **git**
 on your computer or use the computers in the Engineering lab. Note that there
 are a number of ways to install and access the software.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-Assuming {\bf git} is installed, in the command terminal make a temporary
+
+---
+
+Assuming **git** is installed, in the command terminal make a temporary
 folder using
-\begin{verbatim}
 
      % mkdir gitexample
 
-\end{verbatim}
 to create a temporary place to work. Then change directories and look at what is
 in the folder.
-\begin{verbatim}
 
      % cd gitexample
      % ls
 
-\end{verbatim}
 The folder should (but does not need to be) empty. Next, we will initialize a
 repository in the folder. There are lots of options and flags that can be used
 with git. We will just use a few in this primer. So, type
-\begin{verbatim}
 
      % git init
 
-\end{verbatim}
 The command only takes a second or two and will identify the folder as a
 repository folder. The output of the command will look something like the
 following.
-\begin{verbatim}
 
      Initialized empty Git repository in /cygdrive/m/gitexample/.git/
 
-\end{verbatim}
 Note that the path shown for the folder is dependent on your computer and where
 you are doing this work.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+---
+
 To see what has been put in the folder you can use the command
-\begin{verbatim}
 
      % ls
 
-\end{verbatim}
 Unless you have options set, the folder will still look empty. So, instead, type
-\begin{verbatim}
 
      % ls -a
 
-\end{verbatim}
-to display the hidden files. The command will show a subfolder named {\bf .git}
+to display the hidden files. The command will show a subfolder named **.git**
 that contains all of the repository bookkeeping for the repository. You never
 really need to know the contents of this folder and it is highly recommended
 that the contents are not modified. At least meke sure you know what you are
 doing if you choose to poke around in there.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-Now, let's put a file in the folder and see what happens in {\bf git}. Type the
+
+---
+
+Now, let's put a file in the folder and see what happens in **git**. Type the
 command
-\begin{verbatim}
 
      % touch hello.f
 
-\end{verbatim}
 This command creates an empty file that can be modified and worked with. Before
-modifying the file, type in the {\bf git} command
-\begin{verbatim}
+modifying the file, type in the **git** command
 
      % git status
 
-\end{verbatim}
 to determine how things are accounted for in the folder. The output from the
 status command is the following.
-\begin{verbatim}
 
      On branch master
 
@@ -145,22 +102,18 @@ status command is the following.
 
      nothing added to commit but untracked files present (use "git add" to track)
 
-\end{verbatim}
 The output shows that a file is waiting to be included in the repository. To
 include the file created.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-To add a file to the repository, the {\bf git} {\bf add} and {\bf commit}
+
+---
+
+To add a file to the repository, the **git** **add** and **commit**
 command are used to do the work.  That is,
-\begin{verbatim}
 
      % git add hello.f
 
      % git commit -a
 
-\end{verbatim}
 During the execution of the commit command, an editor session is started. You
 must include a comment to the commit to have the command complete the work. All
 you need is a short comment like The -a tag is used to include all commits that
@@ -168,56 +121,42 @@ are listed.
 
 The commit command has lots of options for being selective in how to add files
 and folders. The output looks like the following.
-\begin{verbatim}
 
      % adding hello.f to the repository
 
-\end{verbatim}
 The output after the editor comment is entered is something like the following.
-\begin{verbatim}
 
      [master (root-commit) 6a6297f] aaaaaa
       1 file changed, 0 insertions(+), 0 deletions(-)
       create mode 100644 hello.f
 
-\end{verbatim}
 This indicates a single file has been included. In the development of code and
-documentation the commands above are about all you will need to use {\bf git}.
-However, there is a lot more to the {\bf git} environment. Also, note that the
+documentation the commands above are about all you will need to use **git**.
+However, there is a lot more to the **git** environment. Also, note that the
 exact form of the output will change slightly due to the fact you are adding
 different bits of content on different machines.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+---
+
 For example, your entire repository can be pushed up to Github or other VCS
 sites. We will come back to this. Let's do one more example before continuing.
 Create a folder called src in the repository.
-\begin{verbatim}
 
      % mkdir src
 
-\end{verbatim}
 Next, move the file into the folder.
-\begin{verbatim}
 
      % mv hello.f src
 
-\end{verbatim}
 Move into the folder using
-\begin{verbatim}
 
      % cd src
 
-\end{verbatim}
 and then edit the file to do the hello world example. That is, using
-\begin{verbatim}
 
      % vim hello.f
 
-\end{verbatim}
 and edit in the lines as shown below.
-\begin{verbatim}
 
            program main
            print *, "hello world"
@@ -243,23 +182,17 @@ and edit in the lines as shown below.
      ~
      ~
 
-\end{verbatim}
 Save the file and then compile the file. That is,
-\begin{verbatim}
 
      % gfortran hello.f
 
-\end{verbatim}
-Note that another file will be created named {\bf a.exe} that can be executed
+Note that another file will be created named **a.exe** that can be executed
 as in earlier lectures. Now that we have done a little work, we can use the
 status command to see how things have changed. Use
-\begin{verbatim}
 
      % git status
 
-\end{verbatim}
 which results in
-\begin{verbatim}
 
      On branch master
      Changes not staged for commit:
@@ -275,140 +208,108 @@ which results in
 
      no changes added to commit (use "git add" and/or "git commit -a")
 
-\end{verbatim}
 It should be noted that the git VCS can be invoked in any folder within the
 repository folder. This allows you to continue to work without going back to the
 root folder for the repository.
 
 The result indicates that we need to add the current folder. So, type
-\begin{verbatim}
 
      % git add ./
 
-\end{verbatim}
 Finally, commit the changes using
-\begin{verbatim}
 
      % git commit -a
 
-\end{verbatim}
 and adding a comment in the editor as above. Once this is done the work is now
 committed to the repository. It always is a good idea to use the status command
 to make sure everything has been included or excluded.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+---
+
 The second part of this lesson involves cloning a repository from Github. There
 are several steps that need to be taken care of first. There are a couple of
 configuration parameters that need to be set. First move to a clean directory -
 say we name it tempWork. We do not want to perform an initialization for the
-repository. Instead, we will need to configure some things in {\bf git}. In
+repository. Instead, we will need to configure some things in **git**. In
 particular, you will need to configure the user name and email. So, type
-\begin{verbatim}
 
      % git config user.name yourChoice
 
-\end{verbatim}
 and
-\begin{verbatim}
 
      % git config user.email yourChoice@some.email.isp
 
-\end{verbatim}
 You will need to fill in the names. Note that the user name is something you can
 choose. As your instructor, I would suggest something simple and all in lower
 case letters. It is a bit easier to remember this. For the email, choose an
 email address you read most often. That way you can monitor what, when, and
-where things are happening when you work with either {\bf git} locally, or
-with {\bf Github} out in the real world.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+where things are happening when you work with either **git** locally, or
+with **Github** out in the real world.
+
+---
+
 Once you have the configuration step done, you are ready to clone a repository
 locally. So, start by changing to a working directory. For example, you can
 create a directory, say
-\begin{verbatim}
 
      % mkdir tempWork
 
-\end{verbatim}
 and then
-\begin{verbatim}
 
      % cd tempWork
 
-\end{verbatim}
 Now for the cloning. Type in
-\begin{verbatim}
 
      % git clone https://www.github.com/Github_username/Github_repository_name
 
-\end{verbatim}
 When the command is launched, the repository will be created locally and then
 will clone the entire contents of the repository you have chosen. For students
-in Math 4610, it would be a good idea to clone the \lq\lq\ math4610\rq\rq
-repository that you have started for the course. The command for the Math 4610
-repository should look like
-\begin{verbatim}
+in Math 4610, it would be a good idea to clone the "math4610" repository that
+you have started for the course. The command for the Math 4610 repository
+should look like
 
      % git clone https://www.github.com/Github_username/math4610
 
-\end{verbatim}
 The result will be a repository that you can work on locally.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+---
+
 The last bit is to make sure you know how to make changes either locally or on
 your github account and make sure the local repository and the Github repository
 are exactly the same. If you make changes locally on your copy of the repository
 you should first add and remove any files using
-\begin{verbatim}
 
      % git add ...
      % git remove ....
 
-\end{verbatim}
 following by a commit
-\begin{verbatim}
 
      % git commit -a
 
-\end{verbatim}
-Then the big step is to use the {\bf push} command. The syntax is the following.
-\begin{verbatim}
+Then the big step is to use the **push** command. The syntax is the following.
 
      % git push
 
-\end{verbatim}
 You will be prompted for your user name (on Github) and then your password.
 The command will then proceed to merge your local work with the repository on
 Github. If you modify your repository on Github, you pull content to the local
 repository using
-\begin{verbatim}
 
      % git pull
 
-\end{verbatim}
 This makes sure change on Github are reflected on the local repository.  Note
 that your will again be prompted for your user name and password on Github.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+---
+
 Students should note that there are a lot of git command with tons of options
 to do all kinds of modifications to your repositories. To find out what is
 available type
-\begin{verbatim}
 
      % git
 
-\end{verbatim}
 for a list of commands and options.
 The output from the command looks like the following.
-\begin{verbatim}
 
      usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
                 [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
@@ -453,9 +354,5 @@ The output from the command looks like the following.
      concept guides. See 'git help <command>' or 'git help <concept>'
      to read about a specific subcommand or concept.
 
-\end{verbatim}
 There are also a wealth of on-line resources and books that you can get if you
 intend to do a lot more with this computational utility.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
