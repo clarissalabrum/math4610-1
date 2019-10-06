@@ -24,15 +24,15 @@ be addressed by computational scientists.
      this lecture the general root finding problem will be stated. Algorithms
      for the root finding problem will be presented in the next few lectures.
        [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_05/html/root_finding_problem.html)
-       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/root_finding.pdf)
+       | [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/root_finding_problem.pdf)
 
   3. **Wrap up and Questions:**  If there is time and anyone has questions about
      the lecture, these will be addressed.
 
 ---
 
-[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_04) |
+[prev](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04) |
 [toc](https://jvkoebbe.github.io/math4610/lectures/toc_lectures) |
-[next](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_06)
+[next](https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06)
 
 ---

@@ -7,7 +7,7 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/lecture_01)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/lecture_01.pdf)
 
-     - The syllabus,
+     - The course syllabus,
      - command windows/terminals, Cygwin,
      - coding and compiling in an example: (hello world!),
      - Github and homework, and 
@@ -28,7 +28,7 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_03/md/lecture_03)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_03/pdf/lecture_03.pdf)
 
-     - Measureing errors using absolute and relative errors,
+     - Measuring errors using absolute and relative errors,
      - types of errors the arise for computational scientists must deal with,
        and
      - shared libraries an introduction
