@@ -47,7 +47,8 @@ The following list includes links to the lectures in Math 4610.
      - Using a Version Control System (VCS) to maintain codes,
      - using git for development of computer codes,
      - accessing content from Github using git, and
-     - coding up an approximation of the derivative of a function.
+     - coding up an approximation of the derivative of a real-valued function of
+       one independent variable.
 
   * **Lecture 6.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06)
@@ -57,100 +58,96 @@ The following list includes links to the lectures in Math 4610.
      - more on the approximation of the derivative of a real-valued function,
      - a brief review of Taylor series,
      - trunction error in the derivative approximation, and
-     - comparing roundoff error and truncation error the derivative
+     - comparing roundoff error and truncation error the in the derivative
        approximation.
-
-
-
-
-
-
-
-
-
-
 
   * **Lecture 7.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_07/md/lecture_07)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_07/pdf/lecture_07.pdf)
 
-     - A higher order approximation of ,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     - Coding up a fixed point iteration for the root finding problem,
-     - classes of functions in the general root finding problem, and
-     - continuity, the Intermediate Value Theorem and the Bisection method.
-
-
-
-     - The general root finding problem for functions of one variable,
-     - transformation of the root finding problem to a fixed point problem,
-     - lack of uniqueness of the fixed point equation, and
-     - convergence of fixed point iteration.
-
-     - Coding an approximation of the derivative of a real-valued function,
-     - definition of truncation error,
-     - comparing roundoff error and truncation error,
-     - a brief review of Taylor series expansion,
-     - alternative approximations of the derivative, and
-     - building a software manual.
-     - Some information on formatting results and output,
+     - Higher order approximation of the derivative of a function,
+     - impact of error on the higher order approximation of the derivative,
+     - some information on formatting results and output,
      - basics for html, xhtml, and markdown, LaTeX,
      - the software manual format/template and Jekyll, and
-     - using "git push" to make changes on Github.
+     - using "git push/pull" to make changes on Github.
 
   * **Lecture 8.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_08/md/lecture_08)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_08/pdf/lecture_06.pdf)
 
-     - Coding up a the Bisection Method for finding roots,
-     - a basic routine/method for bisection,
-     - stopping criteria for the Bisection, and
-     - a relationship between the number of iterations and error in the
-       approximation.
+     - The general root finding problem for functions of one variable,
+     - examples of root finding problems,
+     - general classes of functions (continuous or smooth) in the root finding
+       problem, and
+     - development of iterative methods for the root finding problem.
 
   * **Lecture 9.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_09/md/lecture_09)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_09/pdf/lecture_09.pdf)
-
-     - Differentiable functions in the root finding problem,
-     - more terms and Newton's Method for root finding,
-     - Newton's method and second order accuracy, and
-     - proving convergence.
+     - Transformation of the root finding problem into a fixed point problem,
+     - lack of uniqueness of the fixed point equation,
+     - definition of fixed point iteration,
+     - a simple code to implement fixed point iteration for finding roots, and
+     - convergence of fixed point iteration using Taylor series expansions,
 
   * **Lecture 10.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_10/md/lecture_10)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_10/pdf/lecture_10.pdf)
 
-     - Coding Newton's method,
-     - stopping criteria, and
-     - second order approximation of roots.
+     - The Intermediate Value Theorem and the Bisection Method,
+     - a code to implement the Bisection method,
+     - a software page for the Bisection method with formatting,
+     - convergence of the Bisection method, and
+     - an alternative methods that specifies the exact number of iterations of
+       bisection needed to achieve accuracy.
 
   * **Lecture 11.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_11/md/lecture_11)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_11/pdf/lecture_11.pdf)
+
+     - Differentiable functions in the root finding problem,
+     - approximation of functions using the tangent line,
+     - definition of Newton's Method for root finding,
+     - conditions needed for Newton's method to converge to a root, and
+     - writing code to implement Newton's method.
+
+  * **Lecture 12.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_12/md/lecture_12)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_12/pdf/lecture_12.pdf)
+
+     - Convergence of Newton's method and second order accuracy, and
+     - proving convergence.
+
+
+
+
+
+
+
+
+
+
+
+
+     - continuity, the Intermediate Value Theorem and the Bisection method.
+
+
+
+
+     - building a software manual.
+
+
+
+     - Coding Newton's method,
+     - stopping criteria, and
+     - second order approximation of roots.
 
      - Approximation of Newton's method using the Secant method,
      - coding the secant method, and
      - accuracy of the Secant method in comparison to Bisection and Newton's
        method, and
      - a summary of properties for root finding methods.
-
-  * **Lecture 12.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_12/md/lecture_12)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_12/pdf/lecture_12.pdf)
 
      - Finding multiple roots for functions of more than one variable,
      - divide and conquer strategies, and
