@@ -37,14 +37,70 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_04/md/lecture_04)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_04/pdf/lecture_04.pdf)
 
-     - More on shared libraries, and
+     - More on shared libraries - jar files, python, and other utilities, and
      - writing a software manual for the codes you create.
 
   * **Lecture 5.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_05/md/lecture_05)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_05/pdf/lecture_05.pdf)
 
-     - Coding the derivative example,
+     - Using a Version Control System (VCS) to maintain codes,
+     - using git for development of computer codes,
+     - accessing content from Github using git, and
+     - coding up an approximation of the derivative of a function.
+
+  * **Lecture 6.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_06/pdf/lecture_06.pdf)
+
+     - Definition of truncation error in approximations,
+     - more on the approximation of the derivative of a real-valued function,
+     - a brief review of Taylor series,
+     - trunction error in the derivative approximation, and
+     - comparing roundoff error and truncation error the derivative
+       approximation.
+
+
+
+
+
+
+
+
+
+
+
+  * **Lecture 7.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_07/md/lecture_07)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_07/pdf/lecture_07.pdf)
+
+     - A higher order approximation of ,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     - Coding up a fixed point iteration for the root finding problem,
+     - classes of functions in the general root finding problem, and
+     - continuity, the Intermediate Value Theorem and the Bisection method.
+
+
+
+     - The general root finding problem for functions of one variable,
+     - transformation of the root finding problem to a fixed point problem,
+     - lack of uniqueness of the fixed point equation, and
+     - convergence of fixed point iteration.
+
+     - Coding an approximation of the derivative of a real-valued function,
      - definition of truncation error,
      - comparing roundoff error and truncation error,
      - a brief review of Taylor series expansion,
@@ -54,23 +110,6 @@ The following list includes links to the lectures in Math 4610.
      - basics for html, xhtml, and markdown, LaTeX,
      - the software manual format/template and Jekyll, and
      - using "git push" to make changes on Github.
-
-  * **Lecture 6.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_06/md/lecture_06)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_06/pdf/lecture_06.pdf)
-
-     - The general root finding problem for functions of one variable,
-     - transformation of the root finding problem to a fixed point problem,
-     - lack of uniqueness of the fixed point equation, and
-     - convergence of fixed point iteration.
-
-  * **Lecture 7.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_07/md/lecture_07)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_07/pdf/lecture_07.pdf)
-
-     - Coding up a fixed point iteration for the root finding problem,
-     - classes of functions in the general root finding problem, and
-     - continuity, the Intermediate Value Theorem and the Bisection method.
 
   * **Lecture 8.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_08/md/lecture_08)
