@@ -116,9 +116,40 @@ The following list includes links to the lectures in Math 4610.
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_12/md/lecture_12)
 [(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_12/pdf/lecture_12.pdf)
 
-     - Convergence of Newton's method and second order accuracy, and
-     - proving convergence.
+     - Convergence of Newton's method and second order accuracy,
+     - definitions of linear convergence, quadratic convergence and super-linear
+       convergence, and
+     - proving convergence with Taylor series expansions.
 
+  * **Lecture 13.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_13/md/lecture_13)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_13/pdf/lecture_13.pdf)
+
+     - Approximation of Newton's method using the Secant method,
+     - reasons for using the Secant method instead of Newton's method,
+     - conditions for the secant method to work, and
+     - development of an algorithm for the secant method, along with code to
+       do the work.
+
+  * **Lecture 14.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_14/md/lecture_14)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_14/pdf/lecture_14.pdf)
+
+     - Hybrid methods for root finding,
+     - reduction of error in approximating the location of a root in the
+       Bisection method,
+     - using Bisection combined with Newton's method to find a root,
+     - using Bisection combined with the Secant method to find a root,
+     - coding hybrid methods for for root finding. 
+
+  * **Lecture 15.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_15/md/lecture_15)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_15/pdf/lecture_15.pdf)
+
+     - Finding multiple roots of a function using a divide and conquer approach,
+     - locating multiple roots, for a real-valued function, and
+     - an example of a function with multiple roots on a closed and bounded
+       interval.
 
 
 
@@ -139,11 +170,6 @@ The following list includes links to the lectures in Math 4610.
 
 
 
-     - Coding Newton's method,
-     - stopping criteria, and
-     - second order approximation of roots.
-
-     - Approximation of Newton's method using the Secant method,
      - coding the secant method, and
      - accuracy of the Secant method in comparison to Bisection and Newton's
        method, and
@@ -153,24 +179,12 @@ The following list includes links to the lectures in Math 4610.
      - divide and conquer strategies, and
      - application of multicore programming strategies.
 
-  * **Lecture 13.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_13/md/lecture_13)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_13/pdf/lecture_13.pdf)
 
      - Linaear systems of equations,
      - transforming a linear systems into a matrix equation,
      - solution of small linear systems using Gaussian elimination, and
      - elementary row operations.
-
-  * **Lecture 14.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_14/md/lecture_14)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_14/pdf/lecture_14.pdf)
-
      - Coding up Gaussian elimination for square linear systems of equations,
-
-  * **Lecture 15.**
-[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_15/md/lecture_15)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_15/pdf/lecture_15.pdf)
 
      - Exam I
 
