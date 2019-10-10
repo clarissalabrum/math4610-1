@@ -151,17 +151,89 @@ The following list includes links to the lectures in Math 4610.
      - an example of a function with multiple roots on a closed and bounded
        interval.
 
+  * **Lecture 16.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_16/md/lecture_16)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_16/pdf/lecture_16.pdf)
+
+     - Using the Intermediate Value Theorem to bracket roots on some interval,
+     - sampling the function on the interval in question, and
+     - turning the subintervals into input for the hybrid methods developed in
+       previous lectures, and
+     - refining the sampling to pick up more roots.
+
+  * **Lecture 17.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_17/md/lecture_17)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_17/pdf/lecture_17.pdf)
+
+     - Parallelizing the problem of locating multiple roots for a real-valued
+       function, and
+     - developing algorithms using multi-core programming environments, and
+     - using OpenMP to control parallelization of the algorithm and a meands to
+       write code to solve the problem.
+
+  * **Lecture 18.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_18/md/lecture_18)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_18/pdf/lecture_18.pdf)
+
+     - Accessing OpenMP functionality,
+     - OpenMP directives embedded in comment lines in codes,
+     - OpenMP runtime functions and linking the runtime library during
+       compilation, and
+     - setting environment variables outside the compilation and execution of
+       parallel codes using OpenMP.
+
+  * **Lecture 19.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_19/md/lecture_19)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_19/pdf/lecture_19.pdf)
+
+     - The Hello World application in OpenMP,
+     - a description parallel regions in codes through the Hello World example,
+       and
+     - a closer look at OpenMP directives. 
+
+  * **Lecture 20.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_20/md/lecture_20)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_20/pdf/lecture_20.pdf)
+
+     - The fork-join execution model used by OpenMP,
+     - generation of threads that work asynchronously, and
+     - synchronization of worker threads in OpenMP.
+
+  * **Lecture 21.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_21/md/lecture_21)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_21/pdf/lecture_21.pdf)
+
+     - The memory model used by OpenMP,
+     - shared variables,
+     - private variables, and
+     - memory models that obey consistency rules.
+
+  * **Lecture 22.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_22/md/lecture_22)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_22/pdf/lecture_22.pdf)
+
+     - Back to root finding problem,
+     - writing code that takes advantage of the independence of the searches
+       in the subintervals, and
+     - code to implement the algorithm for the multiple root finding problem.
+
+  * **Lecture 23.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_23/md/lecture_23)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_23/pdf/lecture_23.pdf)
+
+     - Another example, Monte Carlo integration over a finite interval,
+     - deriving a formula for the computing approximate values for a given
+       definite integral, 
+     - coding up this embarrasingly parallel algorithm, and
+     - some examples.
+
+  * **Lecture 24.**
+[> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_24/md/lecture_24)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_24/pdf/lecture_24.pdf)
 
 
 
 
-
-
-
-
-
-
-     - continuity, the Intermediate Value Theorem and the Bisection method.
 
 
 
