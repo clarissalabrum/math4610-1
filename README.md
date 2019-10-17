@@ -138,7 +138,7 @@ of content in the course.
 
 ## Table of Contents
 
-[Course Contents](https://jvkoebbe.github.io/math4610/tableOfContents): The
+[Course Contents](https://jvkoebbe.github.io/math4610/quickLinks): The
 previous link will take you to a Markdown (.md) file that contains a the table
 of contents for the course. For a one semester course, there may be more content
 than can be covered. The content can be used to give instructors/readers plenty
@@ -162,6 +162,6 @@ main algorithms presented in the course.
 The links below will take you to a software manual template in in a Markdown
 file for use by students in Math 4610.
 
-[Software Manual Template](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate)
-([download](https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate.md))
+[Software Manual Template](https://jvkoebbe.github.io/math4610/softwareManual/softwareManualTemplate)
+([download](https://jvkoebbe.github.io/math4610/softwareManual/softwareManualTemplate.md))
 
