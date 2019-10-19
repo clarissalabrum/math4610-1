@@ -74,13 +74,14 @@ The following list includes links to the lectures in Math 4610.
 
   * **Lecture 8.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_08/md/lecture_08)
-[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_08/pdf/lecture_06.pdf)
+[(pdf)](https://jvkoebbe.github.io/math4610/lectures/lecture_08/pdf/lecture_08.pdf)
 
      - The general root finding problem for functions of one variable,
      - examples of root finding problems,
      - general classes of functions (continuous or smooth) in the root finding
        problem, and
      - development of iterative methods for the root finding problem.
+
 
   * **Lecture 9.**
 [> > go there](https://jvkoebbe.github.io/math4610/lectures/lecture_09/md/lecture_09)

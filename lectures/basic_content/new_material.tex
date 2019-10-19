@@ -1,0 +1,272 @@
+\documentclass[10pt,fleqn]{article}
+%\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\title{Math 4610 Lecture Notes \\
+            \ \\
+        Errors and Computing the Rate of Convergence
+  \footnote{These notes are part of an Open Resource Educational project
+            sponsored by Utah State University}}
+
+\author{Joe Koebbe}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+\maketitle
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Errors and Rate of Convergence: Errors When a Solution is Known}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The basic mission in this section of the course notes is to determine
+convergence rates for various algorithms we use to compute approximate solutions
+in many mathematical problems. For example, we can consider applying the
+Bisection method for finding roots of real-valued functions of a real variable.
+The algorithm for computing approximate locations of roots amounts to an initial
+application of the Intermediate Value Theorem to a continuous function and then
+proceed by repeatedly halving the interval and determining which of the two
+subintervals contains a root for the function. In addition to the Bisection
+method, other methods, like Newton's method, can be applied to the same problem.
+
+Given that there are multiple methods that can be applied to obtain an 
+approximation for a root, it makes sense to determine which of these methods
+is \lq\lq best\rq\rq\ for a given function. One measurement of the effectiveness
+of a given method is whether or not the algorithm will converge to any type of
+solution. Another measure involves the rate at which a given method converges.
+For example, in the root finding method, if the function in question is
+continuous and an interval, $[a, b]$, exists such that $f(a)\cdot f(b)<0$, the
+Bisection method is guaranteed to converge. For Newton's method, the function
+needs to be twice continuously differentiable, the derivative cannot be zero at
+or near the root, and finally the initial guess at a solution must be
+sufficiently close to the root. The last condition is something that causes
+some issues with both Newton's method and the Secant method. In fact, if the
+initial guess is not close enough, there is no guarantee that a root can be
+found. From this point of view, the Bisection method seems to be better.
+However, the Bisection method reduces the error in successive iteration slower
+than either Newton's method of the Secant method.
+
+In this rest of this section of notes, we will investigate how to compute the
+rate of convergence for various methods to solve the same problem. Readers
+should realize that the same issue of convergence applies to just about any
+computational method for solving just about any type of mathematical problem.
+From root finding to solving linear systems of equations to image processing
+algorithms to numerical solution of differential equations, multiple methods
+have been developed to solve the same problem. We need ways to determine which
+method will be best for a given problem and conditions.
+
+It should also be noted that there are a lot of other considerations that
+cause practical problem. For example, limitations on processors, CPU speed, 
+and storage on a computer. We will consider these issues at another point in
+the course. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Errors and Rate of Convergence: Definition of Convergence and Rate of
+Convergence}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+To start a discussion about rate of convergence, we need some definitions. We
+have already defined the absolute and relative error. The formulas for these
+are
+$$
+  \makebox{absolute error} = | x - x^* |
+$$
+and 
+$$
+  \makebox{relative error} = {{| x - x^* |}\over{|x^*|}}
+$$
+for approximations and solution values that are real numbers. Suppose now that
+an algorithm (say the Bisection method) has created a sequence of approximations
+$$
+  \lbrace x_0, x_1, x_2, \ldots, x_k, \ldots \rbrace
+$$
+Note that it will be assumed that the approximations, $x_k$, are computed using
+the incerasing index. The error in each of these approximations is given by
+$$
+  e_k = x_k - x^*
+$$
+or
+$$
+  e_k = {{ x_k - x^* }\over{x^*}}
+$$
+depending on which error makes sense.
+
+The result will be a sequence of errors of the form
+$$
+  \lbrace |e_0|, |e_1|, |e_2|, \ldots, |e_k|, \ldots \rbrace
+$$
+The questions we need to answer as computational mathematicians are:
+
+{\bf Convergence Questions:}
+\begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
+\topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
+\itemsep=2pt}
+  \item {\bf Convergence to the Solution:} For convergence we must have the
+        following limit.
+        $$
+          \lim_{k\rightarrow\infty} |e_k| = 0
+        $$  
+  \item {\bf Reduction of Error per Iteration:} How much does the sequence of
+        approximations reduce in each iteration? We can state this as the
+        following inequality.
+        $$
+          |e_{k+1}| < |e_k|
+        $$
+  \item {\bf Rate of Convergence:} If the sequence of errors converges to zero,
+        how fast is the convergence?  We will measure this using the following
+        inequality.
+        $$
+          |e_{k+1}| < C\cdot |e_k|^r
+        $$
+\end{list}
+The power, $r$ in the last question about rate of convergence is called the rate
+of convergence for a given algorithm.
+
+There are several situations that we will need to consider. Firet, if we decide
+to test the algorithm, it makes sense to test the algorithm for a problem where
+the solution is known. For example, suppose we want to test some of our root
+finding methods. Then we may choose a function that has a root at a specifi
+point and then apply the algorithm through writing a piece of computer code.
+Then use the results to make sure we generate a sequence of approximations that
+converge to a known value. The second situation is when we are faced with
+computing a root when the exact solution is not known. The rest of notes in
+this section will treate these problems.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Errors and Rate of Convergence: Case 1. An Exact Solution is Known}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+For the case when we are testing a bit of computer code we will assume that the
+sequence of approximations is given and that given an exact solution, we can
+compute the errors from the given information
+
+As an example, let's apply this idea to the use of the Bisection method and a
+specific root finding problem.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Errors and Rate of Convergence: Case 2. An Exact Solution is Not Known}
+\vskip0.1in\hrule\vskip0.1in
+
+As an example, let's apply this idea to the use of the Bisection method.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Errors and Rate of Convergence: Stability of an Algorithm under Small
+Perturbation }
+\vskip0.1in\hrule\vskip0.1in
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\eject
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf GitHub Primer for Math 4610 at USU:} Setting up a Repository} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Once you log in, you will need to build a repository for use in the class and
+to turn in homework and completed tasks and projects. For the course, you will
+create a repository named the following:
+\begin{verbatim}
+
+    math4610
+
+\end{verbatim}
+Use only the characters above and using the following rules:
+\begin{enumerate}
+  \item Use only lower case characters - github is case senesitive.
+  \item Do not put any blanks in the name of the repository.
+\end{enumerate}
+Note that the instructor will use only this repository name in looking for your
+work.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/github_02.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Github Primer for Math 4610 at USU:} List the Contents of the Home
+    Directory} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If you have an account on GitHub, you will already know a lot about these
+things. However, when you are logged in you will see the main screen with any
+repositories you may already have created. We will go through the steps to
+build and name repositories in the next few pages.
+
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/github_03.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
