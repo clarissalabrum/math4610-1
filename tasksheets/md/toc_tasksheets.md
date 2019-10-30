@@ -11,8 +11,8 @@ course.
   | **Homework 1.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_01.html) | Friday September 13, 2019, 5:00pm |
   | **Homework 2.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_02.html) | Monday October 14, 2019, 5:00pm
   | **Homework 3.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_03.html) | Friday, October 25, 2019, 5:00pm
-  | **Homework 4.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_04.html) |
-  | **Homework 5.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_05.html) |
+  | **Homework 4.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_04.html) | Friday, November 1, 2019, 5:00pm
+  | **Homework 5.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_05.html) | Friday, November 8, 2019, 5:00pm
   | **Homework 6.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_06.html) |
   | **Homework 7.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_07.html) |
   | **Homework 8.** | [tasksheet link](https://jvkoebbe.github.io/math4610/tasksheets/html/tasksheet_08.html) |

@@ -21,19 +21,23 @@ c
 
       subroutine matmlt(a, x, y, n)
       real*8 a(n, n), x(n), y(n)
+!$OMP PARALLEL DO shared(a, y, x)
       do 1 i=1,n
          sum = 0.0
-!$OMP PARALLEL DO shared(i) private(j) firstprivate(sum, i)
          do 2 j=1,n
             sum = sum + a(i,j) * x(j)
     2    continue
-!$OMP END PARALLEL DO
       y(i) = sum
     1 continue
+!$OMP END PARALLEL DO
       return
       end
 
 
+
+c#pragma omp parallel shared(matrix,result,vector) private(i,j)
+c   {
+c#pragma omp for  schedule(static)
 
 c  printf("Max number of threads: %i \n",omp_get_max_threads());
 c  #pragma omp parallel
