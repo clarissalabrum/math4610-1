@@ -9,7 +9,7 @@
 
 \title{Math 4610 Lecture Notes \\
             \ \\
-        Matrix Operations in Computational Mathematics
+        Vector and Matrix Operations in Computational Mathematics
   \footnote{These notes are part of an Open Resource Educational project
             sponsored by Utah State University}}
 
@@ -31,55 +31,61 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Matrix Operations: Basic Operations on Vectors}
+{\bf Vector/Matrix Operations: Basic Operations on Vectors}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 The central algorithms used in most computer simulations involve computer codes
 that perform basic vector and matrix operations. Operations like matrix-vector
 multiplications are central to methods for solving linear systems of equations
 and determination of eigenvalues and eigenvectors. In this section of the class
-notes, we will cover a number of basic vector and matrix operations. Suppose
-that we want to compute the solution of a linear system of equations of the form
+notes, we will cover a number of basic vector and matrix operations.
+
+Suppose that we want to compute the solution of a linear system of equations in
+matrix form
 $$
   A\ {\bf x} = {\bf b}
 $$
-where $A$ is the coefficient matrix, ${\bf b}$ is an input vector, and we want
-to find ${\bf x}$ is the vector of unknowns that we are interested in finding.
-Knowing what we know about roundoff error and machine precision representation
-of numbers, any solution we obtain will most likely be an approximation of the
-solution.
+where $A$ is the coefficient matrix, ${\bf b}$ is an input or right hand side
+vector, and we want to determine ${\bf x}$, a vector of unknowns. Due to issues
+related to roundoff error and machine precision representation of numbers, any
+vector we obtain will most likely be at best an approximation of the solution.
 
-We will need some way to measure or compute the error associated with the
-approximation obtained. There are as many ways to measure errors as on can think
-of. However, we will settle for three standard meausres of error introduced in
-the next section of the notes. To implement the error definitions, we will need
-to write codes that perform basic vector operations one would learn about in a
-standard linear algebra course in a college curriculum. The vector operations
-we will begin with are (1) vector addition, (2) vector subtraction, (3) scalar
-multiplication, and (4) then to errors and other vector operations.
+Since we know there will be errors, we will need some way to measure or compute
+the error associated with any approximation obtained. As we will see, there are
+infinitely many ways to measure errors. However, we will settle for three
+standard meausres of error introduced in the next section of the notes. To
+implement the error definitions, we will need to write codes that perform basic
+vector operations one would learn in a standard linear algebra course in a
+college curriculum. We will begin with basic algebraic operations involvinv
+vectors such as addition and scalar multiplication and then will proceed with
+the development codes for computing the magnitude/length of a vector and will
+end up with matrix algebra and operations.
 \vskip0.1in\hrule\vskip0.1in
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Matrix Operations: Basic Operations on Vectors}
+{\bf Vector/Matrix Operations: Basic Operations on Vectors}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-For a set of objects to be a vector space we need to have closure of addition
-and scalar multiplication. In fact, if $V$ is a linear vector space, then for
-any ${\bf u}$ and ${\bf v}$ in the set, then the sum of the vectors is in $V$.
-That is ${\bf w}$, defined by
+For a set of objects to form a vector space a long list of properties must be
+satisfied. In these note, we will be working primarily with vectors in $\Re^n$
+or possibly the space of vectors with complex entries. As such, we will assume
+that we are working with standard vector spaces. Any vector space or subspace
+must satisfy closure of addition and closure of scalar multiplication. This
+means that if $V$ is a vector space and ${\bf u}$ and ${\bf v}$ are in the
+space, then the sum of the vectors is in $V$. That is, ${\bf w}$, defined by
 $$
   {\bf w} = {\bf u} + {\bf v}
 $$
-is also in the set of vectors. Also, if ${\bf v}\in V$ and $a$ is any real
-number then ${\bf v}$ defined by
+is also in the vector space. Also, if ${\bf v}\in V$ and $a$ is any 
+number/scalar then ${\bf u}$ defined by
 $$
-  {\bf v} = a\ {\bf v}
+  {\bf v} = a\ {\bf u}
 $$
 is also in $V$. Based on this idea, we should at least implement a pair of
-codes - one that compute the sum of two vectors and one that computes a scalar
+codes. One that computes the sum of two vectors and one that computes a scalar
 multiple of a vector. 
 
 Almost all of the work we will do will involve real vectors of length $n$. A
@@ -134,14 +140,14 @@ $$
          \end{array}
        \right]^T
      = \left[
-         v_1, v_2, \vdots v_n
+         v_1, v_2, \cdots v_n
        \right]
 $$
 and
 \noindent
 $$
-  \left[ v_1, v_2, \vdots v_n \right]^T
-       \left[
+  \left[ v_1, v_2, \cdots v_n \right]^T
+     = \left[
          \begin{array}{c}
            v_1 \\
            v_2 \\
@@ -151,9 +157,9 @@ $$
        \right] = {\bf v}
 $$
 This is one of the easiest operations that we can code. There are a few things
-that might need checking. For example, we need to check the dimension of the two
-vectors. Without any checks on dimensions, the code, written in Java might look
-like the following.
+that might need checking. For example, we might need to check the dimension of
+the two vectors. Without any checks on compabilitiy of dimensions, the code,
+written in Java might look like the following.
 \begin{verbatim}
 
      public double[] vecadd(double[] u, double[] v) {
@@ -237,11 +243,14 @@ change the addition to a subtraction. For exaxmple,
 
 \end{verbatim}
 This particular routine can be used as a means to compute the difference between
-two vectors as a part of measuring errors in vector approximations.
+two vectors as a part of measuring errors in vector approximations. Note that
+the dimensions of the two vectors in the subtraction of vectors has not been
+checked. This means it is up to the user to ensuere that the two vectors have
+the same length.
 
 The last code to write in this section is the scalar multiplication code. The
-vector operation is defined by the following. For any vector, ${\bf v}$, and
-number, $a$, scalar multiplication is defined by
+vector operation is defined as follows. For any vector, ${\bf v}$, and number,
+$a$, scalar multiplication is defined by
 $$
   a\ {\bf v} = 
        a\ \left[
@@ -287,28 +296,38 @@ and the code to implement this operation is given by
 
 \end{verbatim}
 \vskip0.1in\hrule\vskip0.1in
+In the scalar multiplication, the length of the vector can be any integer and as
+long as the vector is not null, the method will work. However, it might be
+necessary to test to see if the vector actually exists. If a null vector is
+passed to any method, there is likely to be a problem. So, in a software manual
+you would need to warn the user of this and any other assumptions that might
+cause problems.
+
 The methods developed in this section of the notes provides a starting point for
 a number of other methods. It will be easy to cut and paste and rename methods
-to do most of the basic matrix operations
+to do most of the basic matrix operations outlined in these notes.
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Matrix Operations: The Euclidean Length of a Vector}
+{\bf Vector/Matrix Operations: The Euclidean Length of a Vector}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 In many problems it will be necessary to measure the length or magnitude of a
-vector. So, we need some way to determine the length. Actually, there are
-infinitely many ways to do this. The approach most students see first involves
-the Euclidean distance between two points. From any standard linear algebra
-course, the Euclidean length can be defined as follows.
+vector (at least so say the villian in Despicable Me). So, we need some way to
+determine the length. Actually, there are infinitely many ways to do this. The
+approach most students see first involves using the Euclidean distance between
+two points used to define a vector. From any standard linear algebra course, the
+Euclidean length can be defined as follows.
 $$
   || v || = ( v_1^2 + v_2^2 + \cdots + v_n^2 )^{1/2}
 $$
 where the notation, $||*||$, provides a mathematical notation for the magnitude
-of the vector. This can be implemented easily into a method or routine that will
-return this length of a vector.
+of the vector. The notation emphasizes the difference between the absolute 
+value of the difference of two real numbers and the length of a vector. This can
+be implemented easily into a method or routine that will return this length of a
+vector.
 \begin{verbatim}
 
      public double l2norm(double[] v) {
@@ -332,46 +351,50 @@ return this length of a vector.
      }
 
 \end{verbatim}
-Note that the Java package including the square root function provides the last
-piece of the code.
+Note that the Java package including the square root function defines the last
+step in the code. It is best to use an intrinsic for the square root since
+implementing our own version of a square root method would take some time.
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Matrix Operations: Definition of the Norm of a Vector}
+{\bf Vector/Matrix Operations: Definition of the Norm of a Vector}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 There are many ways to compute the length of a vector. In this section we will
 consider several ways to do this. However, we need to have a general definition
-of the length of a vector. To start, the definition of a norm is given.
+of what is meant by the length of a vector. To start, the definition of a norm
+is given.
 \begin{definition}
    Suppose that $V$ is a vector space and ${\bf u}$ and ${\bf v}$ are any two
-   vectors in $V$. Also, assume $a$ is an arbitrary number. The norm of a vector
-   is a function
+   vectors in $V$. Also, assume $a$ is an arbitrary number/scalar. The norm of a
+   vector is a function
    $$
      || * || : V \rightarrow \Re
    $$
    such that
    \begin{enumerate}
-     \item $||v||=0$ if and only if ${\bf x} = {\bf 0}$,
+     \item $||v||=0$ if and only if ${\bf v} = {\bf 0}$,
      \item $||a{\bf v}|| = |a|\ ||{\bf v}||$, and
      \item $||{\bf u} + {\bf v} || \leq ||{\bf u}|| + ||{\bf v}||$.
    \end{enumerate}
 \end{definition}
-The Euclidean length of a vector can be shown to satisfy the definition of a
-norm. The norm as defined in the code written for the length and thus the name
-{\bf l2norm} for the method. There are an infinite number of ways to compute
-norms on vector spaces. A general definition for a norm on n-dimensional space
-is the following.
+The Euclidean magnitude/length of a vector can be shown to satisfy this
+definition of a norm. This means we can use the terms length, magnitude, and
+norm interchangeably. The term norm is used in the name, {\bf l2norm}, chosen
+for the method in the code above.
+
+There are an infinite number of ways to compute norms on vector spaces. A
+general definition for a norm on n-dimensional real space is the following.
 $$
   ||v||_p = \left( v_1^p + v_2^p + \cdots + v_n^p \right)^{1/p}
               = \left( \sum_{i=1}^n\ |v_i|^p \right)^{1/p}
 $$
-for any integer $p$. The Euclidean norm is obtained when $p=2$. The reality
-in computational mathematics, there are three norms of interest including the
-2-norm. The other two norms are the 1-norm and the other is the infinity-norm.
-The definitions for these two norms is given below.
+for any positive integer $p$. The Euclidean norm is obtained when $p=2$. The
+reality in computational mathematics is that there are three norms of interest
+including the 2-norm. The other two norms are the 1-norm and the other is the
+infinity-norm.  The definitions for these two norms are given below.
 $$
   ||v||_1 = | v_1 | + | v_2 | + \cdots + | v_n | = \sum_{i=1}^n\ |v_i|
 $$
@@ -391,7 +414,7 @@ of minor changes to implement the other two norms into their own methods.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Matrix Operations: Errors in Vector Approximations}
+{\bf Vector/Matrix Operations: Errors in Vector Approximations}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 Just as the errors in approximating roots of functions of a single variable,
