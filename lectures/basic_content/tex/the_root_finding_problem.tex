@@ -409,7 +409,6 @@ So, we can expect better results in this case.
 \noindent
 For the two examples, the output for the two choices of the iteration function
 $g_1(x)$ or $g_2(x)$.
-
 \vskip0.1in\hrule\vskip0.1in
 \begin{table}[h]
 \caption{Results for Functional Iteration for Two Different Iteration Functions}
@@ -476,9 +475,14 @@ $$
 The smaller the magnitude of the derivative, $|g'(x^*)|$, the faster the
 convergence will be.
 
-As an example, consider changing the parameter ${1\over 5}$ used to modify the
-iteration function in the previous section. If the parameter is decreased, what
-happens to the convergence? This is covered in the homework tasks.
+As an example, consider changing the parameter ${1\over 5}$used to modify the
+iteration function, 
+$$
+  g_2(x) = x - ( e^x - \pi ) \rightarrow\ g_2(x) = x - {1\over 5} ( e^x - \pi )
+$$
+to keep the original root the same in the previous section. If the parameter is
+decreased, the rate of convergence should be faster. This is covered in one of
+the homework tasks.
 \vskip0.1in\hrule\vskip0.1in
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -560,7 +564,7 @@ some language.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Root Finding Problems: A Simple Bisection Code in C}
+{\bf Root Finding Problems: A (First) Simple Bisection Code in C}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 The following routine, written in something like C implements the Bisection
@@ -704,8 +708,8 @@ calculation.
 {\bf Root Finding Problems: An Alternative Bisection Method Code}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-The alternative C code to implement the alternate Bisection method is the
-following.
+The alternative C code to implement the alternate Bisection method where the
+number of iterations is computed ahead of time is the following.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
@@ -783,7 +787,270 @@ interval, $[a,b]$ that satisfies the desired tolerance.
 \noindent
 It is always a good idea to test the code you write. Using the example from our
 tests of functional iteration we can detemine whether or not the Bisection 
-Method works and how this compares with the fixed point approach.
+Method works and how this compares with the fixed point approach. So, we will
+consider the example in the section on functional iteration. That way, we can
+compare the results using Bisection to our previous work.
+
+So, we will work with the easy example,
+$$
+  f(x) = e^x - \pi = 0
+$$
+and apply the Bisection method on the interval $[-2.2, 6.8]$. Note that we do
+not need to come up with an alternate definition of the problem as in the case
+of functional iteration. The results shown include functional iteration and the
+Bisection method and are computed towards a tolerance of $10^{-7}$. 
+\vskip0.1in\hrule\vskip0.1in
+\begin{table}[h]
+\caption{Results for Functional Iteration Compared to Bisection}
+  \vskip0.1in
+  \begin{center}
+  \begin{tabular}{|c||c|c||c|c|}
+    \hline
+    Iteration No. & Bisection & Bisection error & Functional Iteration
+                                                & Functional Iteration error \\
+    \hline
+      01 & 2.30000019  & 1.15527022 & 1.08466220 & 8.46621990E-02  \\
+    \hline
+      02 & 5.00000715E-02 & 1.09472990 & 1.12129271 & 3.66305113E-02  \\
+    \hline
+      03 & 1.17500019  &  3.02702188E-02 &  1.1358474 & 1.45547390E-02 \\
+    \hline
+      04 & 0.612500131 & 0.532229841 & 1.14140379 & 5.55634499E-03  \\
+    \hline
+      05 & 0.893750191 & 0.250979781 & 1.14349020 & 2.08640099E-03 \\
+    \hline
+      06 & 1.03437519  & 0.110354781 & 1.14426863 & 7.78436661E-04 \\
+    \hline
+      07  & 1.10468769  & 4.00422812E-02  &  1.14455843 & 2.89797783E-04 \\
+    \hline
+      08 & 1.13984394 & 4.88603115E-03  &  1.14466619 & 1.07765198E-04  \\
+    \hline
+      09 & 1.15742207 & 1.26920938E-02 &  1.14470625 & 4.00543213E-05  \\
+    \hline
+      10   & 1.14863300  & 3.90303135E-03  &  1.14472115 & 1.49011612E-05  \\
+    \hline
+      11 & 1.14423847 & 4.91499901E-04 &  1.14472663 & 5.48362732E-06  \\
+    \hline
+      12 & 1.14643574 & 1.70576572E-03 & No Data & No Data \\
+    \hline
+      13 & 1.14533710 & 6.07132912E-04 & No Data & No Data \\
+    \hline
+      14 & 1.14478779 & 5.78165054E-05 & No Data & No Data \\
+    \hline
+      15 & 1.14451313 & 2.16841698E-04 & No Data & No Data \\
+    \hline
+      16 & 1.14465046 & 7.95125961E-05 & No Data & No Data \\
+    \hline
+      17 & 1.14471912 & 1.08480453E-05 & No Data & No Data \\
+    \hline
+      18 & 1.14475346 & 2.34842300E-05 & No Data & No Data \\
+    \hline
+      19 & 1.14473629 & 6.31809235E-06 & No Data & No Data \\
+    \hline
+      20 & 1.14472771 & 2.26497650E-06 & No Data & No Data \\
+    \hline
+      21 & 1.14473200 & 2.02655792E-06 & No Data & No Data \\
+    \hline
+      22 & 1.14472985 & 1.19209290E-07 & No Data & No Data \\
+    \hline
+      23 & 1.14473093 & 9.53674316E-07 & No Data & No Data \\
+    \hline
+      24 & 1.14473033 & 3.57627869E-07 & No Data & No Data \\
+    \hline
+  \end{tabular}
+  \end{center}
+\end{table}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The results actually show that the functional iteration approach actually
+converges faster and is more efficient. However, as mentioned earlier, the 
+functional iteration approach requires the definition of an alternative problem.
+Bisection works as long as the function in question is continuous on a closed 
+and bounded interval. The guarantee is that once a root is bracketed the method
+will trdge along until an approximate value for the root is determined up to a
+a given tolerance.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Differentiable Functions}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The next method that we can cover is Newton's method. This method is based on
+using some simple calculus manipulations to determine an iterative method for
+approximating roots of a nonlinear function. So, consider a function $f(x)$ that
+is twice differentiable in some open interval containing a root of the function.
+There are a couple of ways to develop Newton's method. For this set of notes,
+suppose that, $x_0$, is provided as an approximation of the root. We can expand
+the function using the unknown root, $x^*$, and the approximation, $x_0$. That
+is, using $x_0$ as the center of the expansion, 
+$$
+  f(x^*) = f(x_0) + f'(x_0)\ \left( x^* - x_0 \right)
+                  + {1\over 2}\ f'(x_0)\ \left( x^* - x_0 \right)^2 + \cdots
+$$
+The expansion can be truncated using Taylor's theorem with remainder to write
+$$
+  f(x^*) = f(x_0) + f'(x_0)\ \left( x^* - x_0 \right)
+                  + {1\over 2}\ f'(\xi)\ \left( x^* - x_0 \right)^2
+$$
+where $\xi$ is between $x^*$ and $x_0$. This expansion works as long as the
+function, $f(x)$, is twice continuously differentiable. Mathematically, the
+differentiability condition implies that near $x_0$ (and $x^*$) the remainder
+term can be bounded as follows.
+$$
+  {1\over 2}\ f'(\xi)\ \left( x^* - x_0 \right)^2 \leq
+                                         C \left( x^* - x_0 \right)^2
+$$
+If $x^*$ and $x_0$ are sufficiently close, we can neglect this term and write
+the approximation
+$$
+  f(x^*) \approx f(x_0) + f'(x_0)\ \left( x^* - x_0 \right)
+$$
+Recall that $f(x^*)=0$. So, we can write
+$$
+  0 \approx f(x_0) + f'(x_0)\ \left( x - x_0 \right)
+$$
+for any $x$ near $x^*$. Using this, we can define another approximation using
+$$
+  x_1 = x_0 - {{f(x_0)}\over{f'(x_0)}}
+$$
+This formula suggests an iteration. Given the output, $x_1$, given the input
+$x_0$, we can continue this process and compute another approximation, $x_2$,
+using
+$$
+  x_2 = x_1 - {{f(x_1)}\over{f'(x_1)}}
+$$
+This leads to the definition of Newton's method.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Definition of Newton's Method}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Given the work in the previous section of these notes, we can define Newton's
+method as follows. Given an initial guess, $x_0$, the sequence of points,
+$x_k$, given by
+$$
+  x_k = x_{k-1} - {{f(x_{k-1})}\over{f'(x_{k-1})}}
+$$
+for $k=1,2,\ldots$ defines Newton's method for finding the roots of a function
+of a single variable.
+
+There are certain restrictions that must be met when using Newton's method.
+\vskip0.1in\hrule\vskip0.1in
+\begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
+\topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
+\itemsep=2pt}
+  \item The function must be twice continusously differentiable,
+  \item the derivative of the function cannot be zero at the root, $x^*$, and
+  \item the initial point must be chosen sufficiently close to the exact value
+        of the root.
+\end{list}
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Newton's Method Example and Comparison}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As in the development of fixed point iteration and the Bisection method, we will
+need to test out any code that we might write for implementing Newton's method.
+We will use the same example,
+$$
+  f(x) = e^x - \pi = 0
+$$
+to show how this compares to our previous methods we have tried. The simple
+problem specified above will not truely test a general Newton code. However, it
+makes for a quick comparison of the methods.
+\vskip0.1in\hrule\vskip0.1in
+\begin{table}[h]
+\caption{Results for Functional Iteration Compared to Bisection}
+  \vskip0.1in
+  \begin{center}
+  \begin{tabular}{|c||c|c||c|c|}
+    \hline
+    Iteration No. & Newton Method & Newton Method Error & Bisection Method
+                                                & Bisection Method \\
+    \hline
+      01 & 0.0000000000000000 & 1.1447299136769349 & 2.30000019 & 1.15527022 \\
+    \hline
+      02 & 2.1415927410125732 & 0.99686282733563836 & 5.00000715E-02
+              & 1.09472990 \\
+    \hline
+      03 & 1.5106280957127742 & 0.36589818203583935 & 1.17500019
+            & 3.02702188E-02 \\
+    \hline
+      04 & 1.2042015115607474 & 5.9471597883812510E-002 & 0.612500131
+            & 0.532229841 \\
+    \hline
+      05 & 1.1464638070151236 & 1.7338933381887411E-003 & 0.893750191
+            & 0.250979781 \\
+    \hline
+      06 & 1.1447314160015734 & 1.5023246384693323E-006 & 1.03437519 & 0.110354781 \\
+    \hline
+      07 & 1.1447299136780633 & 1.1284306822290091E-012 & 1.10468769 & 4.00422812E-02 \\
+    \hline
+      08 & No Data & No Data & 1.13984394 & 4.88603115E-03 \\
+    \hline
+      09 & No Data & No Data & 1.15742207 & 1.26920938E-02 \\
+    \hline
+      10 & No Data & No Data   & 1.14863300  & 3.90303135E-03  \\
+    \hline
+      11 & No Data & No Data & 1.14423847 & 4.91499901E-04 \\
+    \hline
+      12 & No Data & No Data & 1.14643574 & 1.70576572E-03 \\
+    \hline
+      13 & No Data & No Data & 1.14533710 & 6.07132912E-04 \\
+    \hline
+      14 & No Data & No Data & 1.14478779 & 5.78165054E-05 \\
+    \hline
+      15 & No Data & No Data & 1.14451313 & 2.16841698E-04 \\
+    \hline
+      16 & No Data & No Data & 1.14465046 & 7.95125961E-05 \\
+    \hline
+      17 & No Data & No Data & 1.14471912 & 1.08480453E-05 \\
+    \hline
+      18 & No Data & No Data & 1.14475346 & 2.34842300E-05 \\
+    \hline
+      19 & No Data & No Data & 1.14473629 & 6.31809235E-06 \\
+    \hline
+      20 & No Data & No Data & 1.14472771 & 2.26497650E-06 \\
+    \hline
+      21 & No Data & No Data & 1.14473200 & 2.02655792E-06 \\
+    \hline
+      22 & No Data & No Data & 1.14472985 & 1.19209290E-07 \\
+    \hline
+      23 & No Data & No Data & 1.14473093 & 9.53674316E-07 \\
+    \hline
+      24 & No Data & No Data & 1.14473033 & 3.57627869E-07 \\
+    \hline
+  \end{tabular}
+  \end{center}
+\end{table}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As we can easily see, Newton's method gives a good approximation within just a
+few iterations. In fact, in the next section, we will discuss how Newton's
+method converges along with definitions of different orders of convergence.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Root Finding Problems: Rate of Convergence Definitions}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Using iterative methods requires an understanding of convergence of the sequence
+of approximations generated. In this section several definitions will be...
+\vskip0.1in\hrule\vskip0.1in
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

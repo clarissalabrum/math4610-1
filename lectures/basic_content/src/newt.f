@@ -3,36 +3,38 @@ c
 c variables for the test
 c ----------------------
 c
-      real a, b, c(1000), pi, tol
-      real ek(1000)
-      real a11, a12, a22, b1, b2
-      real aval, rval
-      real detval
-      integer n
+      real*8 c(1000), pi, tol
+      real*8 x0, x1
+      real*8 ek(1000)
+      real*8 a11, a12, a22, b1, b2
+      real*8 aval, rval
+      real*8 detval
+      real*8 error
+      real*8 f, df
+      integer maxiter, n
+      integer iter
 c
 c initialize the interval and tolerance desired
 c ---------------------------------------------
 c
-      a = -2.2
-      b = 6.8
-      tol = 0.0000001
-c
-c compute the number of bisections needed for the given tolerance
-c ---------------------------------------------------------------
-c
-      n = alog10( (b-a) / tol ) / alog10( 2.0 )
+      maxiter = 25
+      x0 = 0.0
+      c(1) = x0
+      tol = 0.000000000001
+      error = 10.0 * tol
 c
 c do the bisection iterations needed
 c ----------------------------------
 c
-      do 1 i=1, n
-         c(i) = 0.5 * ( a + b )
-         if(f(a)*f(c(i)) .lt. 0.0) then
-            b = c(i)
-         else
-            a = c(i)
-         endif
-    1 continue
+      iter = 1
+      dowhile((error > tol) .and. (iter .lt. maxiter))
+         x1 = x0 - f(x0) / df(x0)
+         error = dabs( x1 - x0 )
+         x0 = x1
+         c(iter+1) = x1
+         iter = iter + 1
+      enddo
+      print *,"no. of iters = ", iter
 c
 c print out a header for the output
 c ---------------------------------
@@ -53,6 +55,7 @@ c
 c loop over the approximations computed computing the approximate errors
 c ----------------------------------------------------------------------
 c
+      n = iter
       do 2 i=1,n-1
          ek(i) = abs( c(n) - c(i) )
     2 continue
@@ -61,16 +64,15 @@ c
 c print out the next line in the table of errors
 c ----------------------------------------------
 c
-         print *, i, ek(i), ek(i+1), alog10(ek(i)), alog10(ek(i+1)),
-     1              c(i)
+         print *, i, c(i), ek(i)
 c
 c update the error variables in the normal equations
 c --------------------------------------------------
 c
-         a12 = a12 + alog10(ek(i))
-         a22 = a22 + alog10(ek(i)) * alog10(ek(i))
-         b1 = b1 + alog10(ek(i+1))
-         b2 = b2 + alog10(ek(i)) * alog10(ek(i+1))
+         a12 = a12 + dlog10(ek(i))
+         a22 = a22 + dlog10(ek(i)) * dlog10(ek(i))
+         b1 = b1 + dlog10(ek(i+1))
+         b2 = b2 + dlog10(ek(i)) * dlog10(ek(i+1))
 c
     3 continue
 c
@@ -97,9 +99,15 @@ c
 c a simple function used to test the bisection method
 c ---------------------------------------------------
 c
-      real function f(x)
-      real pi
+      real*8 function f(x)
+      real*8 x
+      real*8 pi
       pi = 3.141592653589793
-      f = exp(x) - pi
+      f = dexp(x) - pi
+      return
+      end
+      real*8 function df(x)
+      real*8 x
+      fp = dexp(x)
       return
       end

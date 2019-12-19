@@ -160,6 +160,7 @@ This is one of the easiest operations that we can code. There are a few things
 that might need checking. For example, we might need to check the dimension of
 the two vectors. Without any checks on compabilitiy of dimensions, the code,
 written in Java might look like the following.
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double[] vecadd(double[] u, double[] v) {
@@ -184,6 +185,7 @@ written in Java might look like the following.
      }
 
 \end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
 Before coding a scalar multiple method for our library, it would be best to
 write a code for computing the difference in a pair of vectors. Given two
 vectors ${\bf u}$ and ${\bf v}$, the formula for the difference is the
@@ -218,6 +220,7 @@ $$
 It is an easy exercise to write a code that will compute the difference of two
 vectors. All that needs to happen is to give the routine a unique name and
 change the addition to a subtraction. For exaxmple,
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double[] vecsub(double[] u, double[] v) {
@@ -242,6 +245,7 @@ change the addition to a subtraction. For exaxmple,
      }
 
 \end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
 This particular routine can be used as a means to compute the difference between
 two vectors as a part of measuring errors in vector approximations. Note that
 the dimensions of the two vectors in the subtraction of vectors has not been
@@ -271,6 +275,7 @@ $$
        \right]
 $$
 and the code to implement this operation is given by
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double[] scalvec(double a, double[] v) {
@@ -306,6 +311,7 @@ cause problems.
 The methods developed in this section of the notes provides a starting point for
 a number of other methods. It will be easy to cut and paste and rename methods
 to do most of the basic matrix operations outlined in these notes.
+\vskip0.1in\hrule\vskip0.1in
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -328,6 +334,7 @@ of the vector. The notation emphasizes the difference between the absolute
 value of the difference of two real numbers and the length of a vector. This can
 be implemented easily into a method or routine that will return this length of a
 vector.
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double l2norm(double[] v) {
@@ -351,9 +358,11 @@ vector.
      }
 
 \end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
 Note that the Java package including the square root function defines the last
 step in the code. It is best to use an intrinsic for the square root since
 implementing our own version of a square root method would take some time.
+\vskip0.1in\hrule\vskip0.1in
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -366,6 +375,7 @@ There are many ways to compute the length of a vector. In this section we will
 consider several ways to do this. However, we need to have a general definition
 of what is meant by the length of a vector. To start, the definition of a norm
 is given.
+\vskip0.1in\hrule\vskip0.1in
 \begin{definition}
    Suppose that $V$ is a vector space and ${\bf u}$ and ${\bf v}$ are any two
    vectors in $V$. Also, assume $a$ is an arbitrary number/scalar. The norm of a
@@ -380,6 +390,7 @@ is given.
      \item $||{\bf u} + {\bf v} || \leq ||{\bf u}|| + ||{\bf v}||$.
    \end{enumerate}
 \end{definition}
+\vskip0.1in\hrule\vskip0.1in
 The Euclidean magnitude/length of a vector can be shown to satisfy this
 definition of a norm. This means we can use the terms length, magnitude, and
 norm interchangeably. The term norm is used in the name, {\bf l2norm}, chosen
@@ -409,6 +420,7 @@ infinity-norm are easier to compute in many problems.
 The 1-norm and infinity-norm can easily be coded into methods as was done above
 to the 2-norm. Using the 2-norm code, the other two methods just need a couple
 of minor changes to implement the other two norms into their own methods.
+\vskip0.1in\hrule\vskip0.1in
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -434,6 +446,7 @@ These formulas should look familiar when compared to error measurement in root
 finding problems.
 
 A code that will implement the absolute error with the 2-norm might look like
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double absl2err(double[] u, double[] v) {
@@ -457,9 +470,11 @@ A code that will implement the absolute error with the 2-norm might look like
      }
 
 \end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
 Of course, we could reuse code that we have already written as follows. Provided
 that the methods have been created and test and inserted in some sort of archive
 that is available for our use. A first simpler version is the following.
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double absl2err(double[] u, double[] v) {
@@ -470,7 +485,9 @@ that is available for our use. A first simpler version is the following.
      }
 
 \end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
 An even more concise version of the method might like the following.
+\vskip0.1in\hrule\vskip0.1in
 \begin{verbatim}
 
      public double absl2err(double[] u, double[] v) {
@@ -478,5 +495,1685 @@ An even more concise version of the method might like the following.
      }
 
 \end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+Note that in most cases, calling another method or routine requires a bit of
+overhead. The first version of the code will be more efficient than the last
+version. However, it is a lot easier to maintain one version of a code than to
+modify multiple codes all of which have in-lined versions of any reusable code.
+In native languages like C or Fortran, you can always compile the code into a
+static executable that in-lines all of these types of codes just as if the code
+was all there.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Dot Products}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+There are several vector products that should also be included in any discussion
+of computational linear algebra. The first of these is the usual dot product or
+inner product on $\Re^n$. To start, suppose we have two vectors out of the same
+vector space. Then the dot product of the two vectors is given by
+$$
+  {\bf u} \cdot {\bf v} = u_1\ v_1 + u_2\ v_2 + u_3\ v_3 + \cdots + u_1\ v_1
+$$
+This product is about as easy to code as anything. In C, the code would look
+like
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
 
+     //
+     // dot product routine written in C
+     // --------------------------------
+     //
+     double dotprd(double u[], double v[], int n)
+     {
+       //
+       // some variable declarations
+       // --------------------------
+       //
+       double sum = 0.0;
+       //
+       // compute the dot product
+       // -----------------------
+       //
+       for(int i=0; i<n; i++) sum  = sum + u[i] * v[i];
+       //
+       // return the value
+       // ----------------
+       //
+       return sum;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+The code given above passes in the length of the arrays that represent the two
+vectors. Note that you can write code that will determine the size of the arrays
+internally using the {\it sizeof} operator. In other languages like Java there
+are operators for getting the size of the array. In the case above, the user
+would need to make sure things match up.
+
+There are weighted inner products that can be defined as modifications to the
+standard dot product. For example, the energy norm with respect to a given
+symmetric positive definite matrix, $A$. This type of inner product starts with
+the definition of an energy norem. So, suppose that the matrix, $A$, is 
+symmetric and positive definite. Then the energy norm is defined by
+$$
+  || {\bf x} ||_A = \sqrt{ {\bf x}^T\ A\ {\bf x} }
+$$
+The energy norm is used in some applications in the approximation of solutions
+of differential equations and in the development of the conjugate gradient
+method for iteratively solving linear systems of equations. These topics will be
+addressed later in these lectures.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: The Cross Product}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The second product that is used in some computational problems is the cross
+product of two vectors. If the cross product of two three dimensional vectors
+is computed, the result is another three dimensional vector. The formulas for
+the components of the output vector are the following. If ${\bf u}$ and
+${\bf v}$ are two three dimensional vectors, then
+$$
+  {\bf u} \times {\bf v} = 
+       \left[
+         \begin{array}{c}
+           u_1 \\
+           u_2 \\
+           u_3
+         \end{array}
+       \right]
+  \times \left[
+         \begin{array}{c}
+           v_1 \\
+           v_2 \\
+           v_3
+         \end{array}
+       \right]
+     = \left[
+         \begin{array}{c}
+           ( u_2\ v_3  - u_3\ v_2 ) \\
+         - ( u_1\ v_3  - u_3\ v_1 ) \\
+           ( u_1\ v_2  - u_2\ v_1 ) 
+         \end{array}
+       \right]
+$$
+Again, this is a relatively easy to program, but it should be noted that this
+product is valid only in three dimensions. One version of a code might look
+like the following. 
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // the cross product of two vectors
+     // --------------------------------
+     //
+     double [] crsprd(double u[], double v[])
+     {
+       //
+       // some variable declarations
+       // --------------------------
+       //
+       double cross[3];
+       cross[0] = u[1] * v[2] - u[2] * v[1];
+       cross[1] = u[2] * v[0] - u[0] * v[2];
+       cross[2] = u[0] * v[1] - u[1] * v[0];
+       //
+       // return the value
+       // ----------------
+       //
+       return cross;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+Note that the second component is written to absorb the negative in front of
+the second component. This will be slightly more efficient.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: The Vector Outer Product}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As we start into this type of vector product, the standard inner product can be
+easily written as
+$$
+   {\bf u}\ \cdot\ {\bf v} = {\bf u}^T\ {\bf v} = {\bf v}^T\ {\bf u} 
+$$
+That is, the dot product can be couched in terms of matrix/vector
+multiplication. This is just an interpretation of the dot product in terms of
+matrix multiplication - a $1\times n$ times a $n\times 1$ giving a one by one
+result or number.
+
+So, what happens if we reverse the product. That is,
+$$
+   A = {\bf u}\ {\bf v}^T 
+$$
+We use a matrix, $A$, as the output from the product. Note that this product is
+well defined. That is, $n\times 1$ times a $1\times n$ giving a matrix that is
+$n\times n$. This type of product is called an outer product and is a useful
+addition to a software library. Some forms of matrix multiplication can be
+written in terms of an outer product. In addition, whereas the dot product
+requires two vectors of the same length, the outer product is well defined for
+any pair of vectors.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // routine to compute the outer product of two vectors
+     // ---------------------------------------------------
+     //
+     double [] otrprd(double u[], double v[], int m, int n)
+     {
+       double A[m][n];
+       //
+       // a double loop is needed to compute the components
+       // -------------------------------------------------
+       //
+       for(int i=0; i<m; i++) {
+         for(int j=0; j<n; j++) {
+           a[i][j] = u[i] * v[j];
+         }
+       }
+       //
+       // return the value
+       // ----------------
+       //
+       return A;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+The result of this product is a matrix. It should be noted that the resulting
+matrix is a rank-1 matrix. This means that the output is a matrix with only
+one independdent vector. The rest of the vectors are a constant multiple of
+the first nonzero vector. If any of the components of either of the vectors is
+zero, then at least one row or column will be the zero vector.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix Addition}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The next step is to work through matrix algebra that help define sets of
+matrices that form linear vector spaces. The first operation is matrix
+addition. So, given two matrices, $A$ and $B$, that are the same size - same
+number of rows and columns in both matrices, matrix multiplication is defined
+using the following. 
+$$
+  A + B =
+   \left[
+     \begin{array}{cccc}
+       a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+       a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+       \vdots  & \vdots  &  \    & \vdots  \\
+       a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+     \end{array}
+   \right] 
+ + \left[
+     \begin{array}{cccc}
+       b_{1,1} & b_{1,2} & \cdots & b_{1,n} \\
+       b_{2,1} & b_{2,2} & \cdots & b_{2,n} \\
+       \vdots  & \vdots  &  \    & \vdots  \\
+       b_{m,1} & b_{m,2} & \cdots & b_{m,n}
+     \end{array}
+   \right] 
+$$
+$$
+ \ \ \ \ \ \ \ 
+ = \left[
+     \begin{array}{cccc}
+       ( a_{1,1} + b_{1,1} ) & ( a_{1,2} + b_{1,2} )
+                             & \cdots & ( a_{1,n} + b_{1,n} ) \\
+       ( a_{2,1} + b_{2,1} ) & ( a_{2,2} + b_{2,2} )
+                             & \cdots & ( a_{2,n} + b_{2,n} ) \\
+       \vdots  & \vdots  &  \ 
+                         & \vdots  \\
+       ( a_{m,1} + b_{m,1} ) & ( a_{m,2} + b_{m,2} )
+                             & \cdots & ( a_{m,n} + b_{m,n} )
+     \end{array}
+   \right] 
+$$
+The formula is just an extension of vector addition. The only restriction on the
+operation of matrix addition is that the two matrices, $A$ and $B$, must be the
+same size. We can rewrite the formula for addition as follows: If $C$ is a
+matrix that is the result of adding matrices, $A$ and $B$, then the components
+of $C$ satisfy
+$$
+  (C)_{i,j} = c_{i,j} = a_{i,j} + b_{i,j} = (A)_{i,j} + (B)_{i,j}
+$$
+In the previous equation, there are a couple of things going on. First, the
+notation using $(A)_{i,j}$ refers to the component in the $i^{th}$ row and
+$j^{th}$ column of $A$. We will also use lower cased letters to indicate the
+same thing. The second thing to notice is that the component-wise formula just
+given provides the formula we need in a routine that will add two matrices. A
+code that provides the sum of two matrices is the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // matrix addition code in C
+     // -------------------------
+     //
+     double [][] matadd(double A[][], double B[][], int m, int n)
+     {
+       double C[m][n];
+       //
+       // a double loop is needed to compute the components of the sum of two
+       // matrices
+       // --------
+       //
+       for(int i=0; i<m; i++) {
+         for(int j=0; j<n; j++) {
+           C[i][j] = A[i][j] + B[i][j];
+         }
+       }
+       //
+       // return the value
+       // ----------------
+       //
+       return C;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Keep in mind that C/C++ and linux and Unix are in general case-sensittive. In
+many applications, capitalized letters are assumed to be environment or global
+variables. So, it might be a good idea to rewrite the code with different
+variable names. For example,
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // an alternate version of doing a matrix addition
+     // -----------------------------------------------
+     //
+     double [][] matadd(double amat[][], double bmat[][], int m, int n)
+     {
+       double cmat[m][n];
+       //
+       // a double loop is needed to compute the components of the sum of two
+       // matrices
+       // --------
+       //
+       for(int i=0; i<m; i++) {
+         for(int j=0; j<n; j++) {
+           cmat[i][j] = amat[i][j] + bmat[i][j];
+         }
+       }
+       //
+       // return the value
+       // ----------------
+       //
+       return cmat;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+There are also some things that can be done to speed these types of operations
+up through parallelism or using the ordering of values in the rows and columns
+of a matrix stored in a specific programming language like C or Fortran. 
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix Subtraction}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Matrix subtraction involves a trivial modification of the matrix addition method
+given in the previous section of these notes. The shorthand notation is the
+following. A matrix, $C$, is the difference of two matrices $A$ and $B$ if we
+write $c_{i,j}$ is the entry in $i^{th}$ row and $j^{th}$ column of $C$, then
+$$
+  c_{i,j} = a_{i,j} - b_{i,j}
+$$
+A code that will work using lower case variable names is the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // code to compute the difference of two matrices of the same dimension
+     // --------------------------------------------------------------------
+     //
+     double [][] matsub(double amat[][], double bmat[][], int m, int n)
+     {
+       double cmat[m][n];
+       //
+       // a double loop is needed to compute the components of the sum of two
+       // matrices
+       // --------
+       //
+       for(int i=0; i<m; i++) {
+         for(int j=0; j<n; j++) {
+           cmat[i][j] = amat[i][j] - bmat[i][j];
+         }
+       }
+       //
+       // return the value
+       // ----------------
+       //
+       return cmat;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The modifications to matrix addition involve a name change and a single change
+in the code.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Scalar Matrix Multiplication}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+This operation multiplies a scalar into a matrix by multiplying the number into
+each entry in the matrix as follows.
+$$
+  \alpha\ A =
+   \alpha\ \left[
+     \begin{array}{cccc}
+       a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+       a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+       \vdots  & \vdots  &  \    & \vdots  \\
+       a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+     \end{array}
+   \right] 
+ = \left[
+     \begin{array}{cccc}
+       \alpha\ a_{1,1} & \alpha\ a_{1,2} & \cdots & \alpha\ a_{1,n} \\
+       \alpha\ a_{2,1} & \alpha\ a_{2,2} & \cdots & \alpha\ a_{2,n} \\
+       \vdots  & \vdots  &  \ & \vdots  \\
+       \alpha\ a_{m,1} & \alpha\ a_{m,2} & \cdots & \alpha\ a_{m,n}
+     \end{array}
+   \right] 
+$$
+In terms of the components of the output, assume that a matrix, $B$, is the
+result of multipling a matrix $A$ by a number. This implies
+$$
+  b_{i,j} = \alpha\ a_{i,j}
+$$
+and a code to complete this task might look like the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // routine to compute a constant/scalar multiple of a matrix
+     // ---------------------------------------------------------
+     //
+     double [][] scalmat(double alpha, double amat[][], int m, int n)
+     {
+       double bmat[m][n];
+       //
+       // a double loop is needed to compute the components of the sum of two
+       // matrices
+       // --------
+       //
+       for(int i=0; i<m; i++) {
+         for(int j=0; j<n; j++) {
+           bmat[i][j] = alpha * amat[i][j];
+         }
+       }
+       //
+       // return the value
+       // ----------------
+       //
+       return bmat;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The mathematical importance of matrix addition and scalar multiplication imply
+that the set of all $m\times n$ real matrices is closed under these operations
+which gives consistency of these operations.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: The Determinant of a Matrix}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The determinant of a matrix is presented in most linear algebra courses and is
+an indispensible tool in analyzing the properties of matrices. The standard way
+of computing the determinant of a matrix is to use cofactor expansion. We will
+review a couple of examples of computing determinants, but determinants are
+computationally intensive and should not be computed unless it is absolutely
+necessary. In some cases, the matrix has a special structure which lends itself
+to an easy computation of the determinant. For example, the determinant of any
+upper or lower triangular or is a diagonal matrix, the determinant is the
+product of the diagonal values of the matrix. In general, the work needed
+depends on the size of the matrix. If a matrix, $A$, is square with the number
+of rows and columns is some integer, $n$. Then, the number of flops needed to
+complete the computation of a determinant is $n!$. This is a large number of
+flops.
+
+For example, for a $2\times 2$ matrix, say
+$$
+  A = \left[
+        \begin{array}{cc}
+          a_{1,1} & a_{1,2}  \\
+          a_{2,1} & a_{2,2} 
+        \end{array}
+      \right]
+$$
+the determinant is computed as
+$$
+  det(A) = \left| A \right| = a_{1,1}\ a_{2,2} - a_{1, 2} a_{2,1}
+$$
+and for the $3\times 3$ case, 
+$$
+  A = \left[
+        \begin{array}{ccc}
+          a_{1,1} & a_{1,2} & a_{1,3} \\
+          a_{2,1} & a_{2,2} & a_{2,3} \\
+          a_{3,1} & a_{3,2} & a_{3,3}
+        \end{array}
+      \right]
+$$
+the result is
+$$
+  det(A) = a_{1,1}\ \left( a_{2,2}\ a_{3, 3} - a_{3,2}\ a_{2,3} \right)
+         - a_{2,1}\ \left( a_{1,2}\ a_{3, 3} - a_{3,2}\ a_{2,3} \right)
+         + a_{3,1}\ \left( a_{1,2}\ a_{2, 3} - a_{2,2}\ a_{1,3} \right)
+$$
+The result can be extended to any size matrix, but that is the topic for a
+linear algebra course. It is rarely the case that we will need to evaluate or
+compute a determinant beyond a $3\times 3$ matrix. The main issue that we are
+faced in computing determinants is the sheer amount of work needed to complete
+the computation. The number of flops need is $O(n!)$ and we already know that
+$n!$ gets large relatively quickly.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: The Transpose of a Matrix}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+For any matrix, we can compoute the transpose a matrix, $A\in\Re^{n\times n}$,
+by interchanging rows and columns of the matrix. The shorthand definition of the
+transpose is if $A\in\Re^{n\times n}$ is any matrix, then $B=A^T$ using the
+definition
+$$
+  b_{i,j} = a_{j,i} 
+$$
+So, a routine for computing the transpose of a matrix will look like the
+following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // computing the transpose of a matrix
+     // -----------------------------------
+     //
+     double [][] mattrns(double amat[][], int m, int n)
+     {
+       double bmat[n][m];
+       //
+       // a double loop is needed to compute the components of the sum of two
+       // matrices
+       // --------
+       //
+       for(int i=0; i<m; i++) 
+         for(int j=0; j<n; j++)
+           bmat[j][i] = amat[i][j];
+       //
+       // return the value
+       // ----------------
+       //
+       return bmat;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+The code clearly switches the roles of the rows and columns in the output matrix
+by interchanging the indices in the loop. Note also that the dimensions of the
+temporary storage, {\bf bmat}, are switched when used to allocate enough space
+to do the operation.
+
+Note that this routine returns a matrix with the same number of entries as the
+original. This may cause some issues when a code to solve problems with large
+matrices is considered. As an example, suppose that we need to compute the
+action of the tranpose on a vector. That is, something like
+$$
+  {\bf y} = A^T\ {\bf x}
+$$
+Even though it might be tempting to do the transpose first, physically
+exchanging the rows and columns is not necessary. A code to do complete the
+multiplication operation is the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+      double [] atrnx(double A[][], double x[], int m, int n)
+      {
+        double output[n];
+        //
+        // loop over the rows in the matrix A - columns of the transpose of A
+        // ------------------------------------------------------------------
+        //
+        for(int i=0; i<n; i++) {
+          //
+          // initialize the output value
+          // ---------------------------
+          //
+          output[i] = 0.0;
+          //
+          // loop over the columns of the matrix A.....
+          // ------------------------------------------
+          //
+          for(int j=0; j<m; j++)
+          {
+            //
+            // add the appropriate contribution
+            // --------------------------------
+            //
+            output[i] = output[i] + a[j][i] * x[j];
+          }
+        }
+        //
+        return output;
+      }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+Note the change in the order of the indices used from the input matrix,
+{\bf amat}, to the output matrix, {\bf bmat}. The main advantages are that we
+do not need to double the storage in the process of explicitly storing the
+transpose of the original matrix. In addition, the original matrix is retained
+and can be resused for any other computations. Note that we will revisit matrix
+multiplication later in this set of notes. You may need to review this after
+visiting the section on matrix vector multiplication.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: The Trace of a Matrix}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The trace of a matrix is just the sum of the entries on the main diagonal of
+the matrix. This is useful in a limited number of computational codes, but is
+presented for completeness of the presentation.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     //
+     // this is a simple routine to add up the diagonal entries in a square
+     // matrix
+     // ------
+     //
+     double [][] mattrc(double amat[][], int n)
+     {
+       double output;
+       //
+       // a single loop is enough to grab and add the diagonal values
+       // -----------------------------------------------------------
+       //
+       for(int i=0; i<m; i++) output = output + amat[i][i];
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+One property of square matrices is that the trace of the matrix is the same as
+the sum of the eigenvalues of the matrix. However, the trace, besides being
+trivial to code up, is not used very often in computational mathematics.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix-Norms}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+An important concept in computational linear algebra is that of matrix norms.
+Most error estimates in computational linear algebra are stated in terms of
+inequalities involving the norm of a matrix. There are an infinite number of
+measures of the norm or size of a matrix. One example of a norm is the Frobenius
+norm. Given a square matrix, $A\in\Re^{n\times n}$, the definition of the norm
+is
+$$
+  || A || = \left( \sum_{i=1}^n\ \sum_{j=1}^n | a_{i,j} |^2 \right)^{1/2}
+$$
+The Frobenius norm looks a bit like the $2$-norm for a vector. The similarity is
+that you can think of concatenating the rows (or columns) of the matrix and then
+apply the vector $2$-norm to the $n\times n$ length vector that results. The
+Frobenius norm is used sparingly in computational linear algebra.
+
+The main norms that are used are called induced norms and are defined in terms
+of vector norms. Recall that the $p$-norm of a vector of length $n$ is defined
+by
+$$
+  || {\bf v} ||_p = \left( \sum_{i=1}^n | v_i |^p \right)^{1/p}
+$$
+for $p=1, 2, \ldots$ and any vector, ${\bf v}\in\Re^n$. Note that the definition
+changes slightly if we allow $p=\infty$. In this case
+$$
+  || {\bf v} ||_\infty = \max_{1\leq n} | v_i |
+$$
+The $p$-norms can be used to define norms of matrices. The induced $p$-norm of a
+matrix, $A\in\Re^{m\times n}$, is defined by
+$$
+  || A ||_p = \max_{ || {\bf x} ||_p \neq 0 }
+      {{
+        || A\ {\bf x} ||_p
+      }\over{
+        || {\bf x} ||_p
+      }}
+$$ 
+This definition is based on vector $p$-norms. Note that the $p$-norm in the
+numerator of the expression is applied to vectors of length $m$, while the norm
+in the denominator is applied to vectors of length $n$.
+
+With a bit of work, we can prove that the induced matrix norms can be written 
+as
+$$
+  || A ||_p = \max_{ || {\bf x} ||_p = 1 } || A\ {\bf x} ||_p
+$$ 
+This means that matrix norm can be determined on vectors of length one in the
+corresponding $p$-norm. The set of vectors of length one identifies the
+\lq\lq\ unit ball\rq\rq\ for the norm.
+
+Although any $p\in (0,\infty)$ can be used, the most commonly used norms in
+computational work are $p=1$, $p=2$, and $p=\infty$. These will be referred to
+as the $1$-norm, the $2$ or Euclidean norm, and the $\infty$ or
+\lq\lq\ sup\rq\rq-norm, respectively. For completeness, the $1$-norm defined
+by
+$$
+  || A ||_1 = \max_{ || {\bf x} ||_1 = 1 } || A\ {\bf x} ||_1
+$$
+the $2$-norm or Euclidean norm is defined by
+$$
+  || A ||_2 = \max_{ || {\bf x} ||_2 = 1 } || A\ {\bf x} ||_2
+$$
+and the $\infty$-norm or sup-norm is defined by
+$$
+  || A ||_\infty = \max_{ || {\bf x} ||_\infty = 1 } || A\ {\bf x} ||_\infty
+$$
+The definitions of these norms are not necessarily very helpful. However, the
+$1$-norm and the $\infty$-norm can be computed for any matrix. The $2$-norm
+requires the computation of eigenvalues or singular values of the matrix. This
+computation will be taken up in a later section in the lectures. 
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Two Important Computable Matrix Norms}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+A formula that allows us to compute the $1$-norm of a matrix, $A$, involves the
+determination of the maximum absolute column sum. That is,
+$$
+  || A ||_1 = \max_{1\leq j\leq n} \sum_{i=1}^m\ | a_{i,j} |
+$$
+and the formula for the $\infty$-norm of the same matrix involves the
+determination of the maximum absolute row sum. That is,
+$$
+  || A ||_\infty = \max_{1\leq i\leq m} \sum_{j=1}^n\ | a_{i,j} |
+$$
+Both of these norms can be computed with nothing more than the entries of the
+matrix.
+
+A code for computing the $1$-norm of a matrix might look like the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double l1matnrm(double a[][], int m, int n)
+     {
+       double output = 0.0;
+       //
+       // loop over the columns of the matrix
+       // -----------------------------------
+       //
+       for(int j=0; j<n; j++) {
+         //
+         // provide a temporary storage value
+         // ---------------------------------
+         //
+         double tmpval = 0.0;
+         //
+         // loop over the entries in the column adding in the absolute value
+         // ----------------------------------------------------------------
+         //
+         for(int i=0; i<m; i++)
+            tmpval = tmpval + abs( a[i][j];
+         //
+         // test this column sum for the maximum value so far
+         // -------------------------------------------------
+         //
+         if(tmpval > output) output = tmpval;
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+The algorithm for the $\infty$-norm is just as easy to write and might look like
+the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double linfmatnrm(double a[][], int m, int n)
+     {
+       double output = 0.0;
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0; i<m; i++) {
+         //
+         // provide a temporary storage value
+         // ---------------------------------
+         //
+         double tmpval = 0.0;
+         //
+         // loop over the entries in the row adding in the absolute value
+         // -------------------------------------------------------------
+         //
+         for(int j=0; j<m; j++)
+            tmpval = tmpval + abs( a[i][j];
+         //
+         // test this column sum for the maximum value so far
+         // -------------------------------------------------
+         //
+         if(tmpval > output) output = tmpval;
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+All we needed to do is switch the order of the two loops to move from the
+matrix $1$-norm to the matrix $\infty$-norm.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Formal Matrix Norm Definition, Consistent Norms}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+In the case of vector norms, we have definition of a norm that requires three
+properties must be satisfied. Matrix norms also satisfy these requirements.
+\vskip0.1in\hrule\vskip0.1in
+\begin{definition}
+   Suppose that $V$ is a vector space of matrices and ${\bf A}$ and ${\bf B}$
+   are any two matrices in $V$. Also, assume $c$ is an arbitrary number/scalar.
+   The norm of a matrix is a function
+   $$
+     || * || : V \rightarrow \Re
+   $$
+   such that
+   \begin{enumerate}
+     \item $||A||=0$ if and only if $A = 0$,
+     \item $||c\ A|| = |c|\ ||A||$, and
+     \item $||A + B || \leq ||A|| + ||B||$.
+   \end{enumerate}
+\end{definition}
+\vskip0.1in\hrule\vskip0.1in
+There are a lot of ways to define a norm for matrices. In many results in linear
+algebra an additional property for a matrix norm is helpful. The following
+definition adds a fourth property to the norm.
+\begin{definition}
+   Suppose that $V$ is a vector space of matrices and ${\bf A}$ and ${\bf B}$
+   are any two matrices in $V$. Also, assume that the function
+   $|| * || : V \rightarrow \Re$ is a norm. The norm is a consistent norm if the
+   following additional property is satisfied
+   $$
+     || A\ B || \leq || A ||\ || B ||
+   $$
+\end{definition}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Note that all matrix $p$-norms as have already been defined are consistent
+norms.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Comparison/Equivalence of Norms in Finite
+Dimensions}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+In previous sections of these lectures, we learned that the norm of a vector or
+matrix is not a unique function. For example, the $p$-norms of vectors all give
+a value that represents the length of a vector. In fact, there are infinitely
+many norms that we can choose from. A valid question is which one should we use
+or maybe, which norm is the best norm to use for a specific problem? In
+computational mathematics, we will work in finite dimensional vector spaces. The
+finite precision of number representation and finite precision of computer
+arithmetic guarantee that this will always be the case. It turns out that the
+answer to the question of which norm should be used is that it does not matter
+due to the concept of equivalence of norms.
+
+\vskip0.1in\hrule\vskip0.1in
+\begin{definition}
+  Two norms $||\cdot||_A$ and $||\cdot||_B$ are equivalent if there exist
+  positive constants, $C_1$ and $C_2$, such that
+  $$
+    C_1\ ||{\bf x}||_A \leq ||{\bf x}||_B \leq C_2 ||{\bf x}||_A
+  $$
+  for all ${\bf x}$ in the underlying vector space. Note that this means that we
+  can bound one of the norms in terms of the other. It can be shown that if the
+  above inequalities are true, one can write.
+  $$
+    C_3\ ||{\bf x}||_B \leq ||{\bf x}||_A \leq C_4 ||{\bf x}||_B
+  $$
+  for positive constants, $C_3$ and $C_4$.
+\end{definition}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+An important result for our work is contained in the following theorem.
+\begin{theorem}
+  Suppose $V$ is a finite-dimensional matrix and $||\cdot ||_\alpha$ and
+  $||\cdot ||_\beta$ are any two norms defined on $V$. Then the two norms are
+  equivalent. That is, there exist two positive constants, $C_1$ and $C_2$, such
+  that
+  $$
+    C_1 ||{\bf u}||_\alpha \leq ||{\bf u}||_\beta \leq C_2 ||{\bf u}||_\alpha
+  $$
+  for all ${\bf u}\in V$.
+\end{theorem}
+It is important to have some estimate of the relationahips between the norms in
+terms of the bounding coefficients, $C_1$ and $C_2$.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Bounds Relating $p=1$, $p=\infty$, and $p=2$
+Norms}
+\vskip0.1in\hrule\vskip0.1in
+As mentioned previously, the norms we use are basically the same up to constant
+bounds. The $1$-norm, $2$-norm, and $\infty$-norm can be used to bound each
+other as follows. In general, for the vector norms and any vector, ${\bf x}$.
+$$
+  || {\bf x} ||_\infty \leq || {\bf x} ||_2 \leq || {\bf x} ||_1
+$$
+and equivalence relationships
+$$
+  || {\bf x} ||_\infty \leq || {\bf x} ||_2 \leq \sqrt{n}\ || {\bf x} ||_\infty
+$$
+and
+$$
+  || {\bf x} ||_\infty \leq || {\bf x} ||_1 \leq n\ || {\bf x} ||_\infty
+$$
+Since the matrix $p$-norms are constructed from the vector $p$-norms, analogous
+inequalities can be written down for matrices. For a matrix
+$A\in\Re^{m\times n}$ some important inequalties are the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{enumerate}
+  \item
+    $$
+      || A ||_2 \leq || A ||_F \leq \sqrt{n}\ || A ||_2
+    $$
+  \item
+    $$
+      \max_{i,j} | a_{i,j} | \leq || A ||_2
+                         \leq \sqrt{mn}\ | \max_{i,j} | a_{i,j} |
+    $$
+  \item
+    $$
+      {1\over{\sqrt{n}}}\ || A ||_\infty\ \leq || A ||_2
+                              \leq \sqrt{m}\ || A ||_\infty
+    $$
+  \item
+    $$
+      {1\over{\sqrt{m}}}\ || A ||_1\ \leq || A ||_2
+                              \leq \sqrt{n}\ || A ||_1
+    $$
+\end{enumerate}
+\vskip0.1in\hrule\vskip0.1in
+where the subscript $F$ denotes the Frobenius norm. We should keep in mind that
+the matrix $2$-norm is the norm that is being bounded by the matrix $1$-norm and
+matrix $\infty$-norm. Since we can compute the other two norms this makes sense.
+In addition, the matrix $2$-norm requires computing the eigenvalues or singular
+values of the matrix. This take a lot of computational effort.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix Condition Number}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+A great many problems in computational linear algebra involve the solution of a
+linear system of equations
+$$
+  A\ {\bf x} = {\bf b}
+$$
+where $A\in\Re^{n\times n}$ and ${\bf b}\in\Re^n$ are a given matrix and right
+hand side for the linear system. From a theoretical point of view, if the
+coefficient matrix, $A$, has an inverse, then a solution exists for the linear
+system. Normally, we will use $A^{-1}$ to denote the inverse of $A$ and we can
+write the equation
+$$
+  {\bf x} = A^{-1}\ {\bf b}
+$$ 
+Computationally, we (almost) never compute the inverse of the coefficient matrix
+explicitly. Instead, we compute the action of the inverse of the matrix without
+actually computing $A^{-1}$.
+
+We would still like to have a measure how well an algorithm will work in the
+solution of some linear algebra problem. Suppose that ${\bf x^*}$ is the exact
+solution of the linear system above. That is,
+$$
+  A\ {\bf x^*} = {\bf b}\ \ \ \ \rightarrow\ \ \ \ {\bf x^*} = A^{-1}\ {\bf b}
+$$
+and suppose that ${\bf x}$ is an approximate solution for the linear system. 
+The residual vector for the approximation is given by
+$$
+  {\bf r} = {\bf b} - A\ {\bf x}
+$$
+Subtracting the original linear system equation from the equation for the
+residual vector equation just defined gives
+$$
+  {\bf r} - {\bf 0}
+    = \left( {\bf b} - A\ {\bf x} \right)
+                           - \left( {\bf b} - A\ {\bf x^*} \right)
+    = A\ \left( {\bf x^*} - A\ {\bf x} \right)
+$$
+or rewriting gives the equation
+$$
+  A \left( {\bf x^*} - {\bf x} \right) = {\bf r}
+   \ \ \ \ \rightarrow \ \ \ \ {\bf x^*} - {\bf x} = A^{-1}\ {\bf r}
+$$
+This gives a measure of the absolute error when we apply a vector norm to both
+sides of the equation. That is,
+$$
+  \makebox{absolute error }\ \ || {\bf x^*} - {\bf x} || = || A^{-1}\ {\bf r} ||
+$$
+If we want to use the relative error measure, we will write
+$$
+  \makebox{relative error }\ \ {{
+                                 || {\bf x^*} - {\bf x} ||
+                               }\over{
+                                 || {\bf x^*} ||
+                               }}
+$$
+We need an estimate of the denominator.
+
+To do this, consider the original system of equations
+$$
+  A\ {\bf x^*} = {\bf b}
+$$
+Taking vector norms of both sides of the equation using a consistent matrix 
+norm gives
+$$
+  || {\bf b} || = || A\ {\bf x} || \leq || A ||\ ||{\bf x} ||
+$$
+Using some arithmetic and the fact the norm is consistnt, we can write
+$$
+  {1\over{|| {\bf x} ||}} \leq {{ || A || }\over{ || {\bf b} || }}
+$$
+So, the relative error can be bounded as follows.
+$$
+  {{ || {\bf x^*} - {\bf x} || }\over{ || {\bf x^*} || }}
+    \leq {{
+           || A^{-1} ||\ || {\bf r} ||\ || A ||
+         }\over{
+           || {\bf b} ||
+         }}
+     = || A^{-1} ||\ || A || \ 
+         {{
+           || {\bf r} ||
+         }\over{
+           || {\bf b} ||
+         }}
+$$
+The product of the matrix norms is called the condition number of the matrix,
+$A$.
+\vskip0.1in\hrule\vskip0.1in
+  \begin{definition}
+    Suppose that $A$ is an invertible matrix. The condition number, $\kappa$,
+    is defined by
+    $$
+      \kappa_\alpha(A) = || A^{-1} ||_\alpha\ || A ||_\alpha
+    $$
+    The value of the condition number is dependent on the norm chosen.
+  \end{definition}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+It should be noted that $\kappa_\alpha(A)$ is always greater than or equal to
+one. Values of $\kappa\alpha(A)$ closer to one indicate that the matrix is
+well-conditioned. The larger $\kappa_\alpha(A)$ is, the more poorly conditioned
+the matrix is. One can take a look at the Hilbert matrix as an example of a
+poorly conditioned matrix.
+
+As an example, let's compute the condition number of a matrix using the matrix
+$\infty$-norm. ..... need a matrix for the example
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix-Vector Multiplication}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Suppose that we are asked to solve a system of three linear equations that can
+be written in the fowm
+$$
+  \begin{array}{rcl}
+    a_{1,1}\ x_1\ + a_{1,2}\ x_2 + a_{1,3}\ x_3 & = & b_1 \\
+    a_{2,1}\ x_1\ + a_{2,2}\ x_2 + a_{2,3}\ x_3 & = & b_2 \\
+    a_{3,1}\ x_1\ + a_{3,2}\ x_2 + a_{3,3}\ x_3 & = & b_3 
+  \end{array}
+$$
+where the coefficients, $a_{i,j}$, are given real numbers, $b_i$, are real
+numbers, and the unknown variables are $x_i$ all of these for $i=1,2,3$. The
+system of equations can be translated into a matrix-vector equation as follows.
+$$
+  A\ {\bf x} = {\bf b}
+$$
+where
+$$
+  A = \left[
+        \begin{array}{ccc}
+          a_{1,1}\ & a_{1,2}\ & a_{1,3} \\
+          a_{2,1}\ & a_{2,2}\ & a_{2,3} \\
+          a_{3,1}\ & a_{3,2}\ & a_{3,3}
+        \end{array}
+      \right], \ \ \ \ 
+  {\bf x} = \left[
+        \begin{array}{c}
+          x_1 \\
+          x_2 \\
+          x_3
+        \end{array}
+      \right], \ \ \ \ 
+  {\bf b} = \left[
+        \begin{array}{c}
+          b_1 \\
+          b_2 \\
+          b_3
+        \end{array}
+      \right]
+$$
+This is a place where a matrix-vector multiplication $A\ {\bf x}$ is part of the
+expression.
+
+In this section of the notes, we will see how to compute a matrix-vector
+product. The operation basically, computes the (dot) product of each row and the
+column vector ${\bf x}$. We can define this operation in terms of the output we
+expect. For a general matrix-vector product
+$$
+  {\bf y} = A\ {\bf x}
+$$
+where $A\in\Re^{m\times n}$, $x\in\Re^n$, and $y\in\Re^m$. Thus the output is a
+vector of length $m$ where
+$$
+  y_i = a_{i,1}\ x_1 + a_{i,2}\ x_2 + \cdots + a_{i,n}\ x_n = b_i
+$$
+for $i=1,2,\ldots,m$. This dot product definition can be translated into a
+computer code as follows.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double matvecmlt(double a[][], double x[], int m, int n)
+     {
+       double output[m];
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0; i<m; i++) {
+         //
+         // iniitalize the component of the output vector, y
+         // ------------------------------------------------
+         //
+         output[i] = 0.0;
+         //
+         // loop over the entries in the row each new contribution to the output
+         // --------------------------------------------------------------------
+         //
+         for(int j=0; j<m; j++) {
+           output[i] = output[i] + a[i][j] * x[j];
+         }
+         //
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+There are a couple of things to notice in this definition. The inner loop
+computes the dot product of the $i^{th}$ row in the coefficient matrix with the
+column vector, ${\bf x}$. One thing that can be done would be to initialize the
+first value of ${\bf y}$ to the initial product. That is, write a code that
+looks like the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double matvecmlt(double a[][], double x[], int m, int n)
+     {
+       double output[m];
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0 i<m; i++) {
+         //
+         // iniitalize the component of the output vector, y
+         // ------------------------------------------------
+         //
+         output[i] = a[i][0] * x[0];
+         //
+         // loop over the entries in the row each new contribution to the output
+         // --------------------------------------------------------------------
+         //
+         for(int j=1; j<m; j++) {
+           output[i] = output[i] + a[i][j] * x[j];
+         }
+         //
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+All that this new routine does is to eliminate one extra computation by using
+the first product in the dot product computing each new component. It might save
+a little computation time to do this. Now that we have a code written for
+computing a matrix vector product, you should go back to the section on the
+transpose of a matrix, $A$, and review the example where the matrix of a
+transpose was needed to compute a matrix vector product.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix-Matrix Multiplication}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The ideas in the matrix-vector multiplication can be used easily to define
+matrix-matrix multiplication. Suppose $A\in\Re^{m\times n}$ and
+$B\in\Re^{n\times r}$ are two matrices, then the product
+$$
+  C = A\ B
+$$
+where $C\in\Re^{m\times r}$ is determined by the following formula.
+$$
+   C_{i,j} = \sum_{k=1}^n\ a_{i,k}\ b_{k,j}
+$$
+This is a formula that is covered in most linear algebra courses. The product
+formula involves the computation of $m\times r$ dot products. As in the
+matrix-vector multiplication the formula for $C_{i,j}$ can be used to build a
+computer code to do this work.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double matmatmlt(double a[][], double b[][], int m, int n, int r)
+     {
+       double output[m][r];
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0 i<m; i++) {
+         for(int j=0 j<r; j++) {
+           //
+           // initial this component of the output
+           // ------------------------------------
+           //
+           output[i][j] = 0.0;
+           //
+           // loop over the entries in the output matrix
+           // ------------------------------------------
+           //
+           for(int k=1; k<n; k++) {
+             output[i][j] = output[i][j] + a[i][k] * b[k][j];
+           }
+         }
+         //
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+There are a number of ways to structure this code. In fact, there are 6 ways to
+write this code. For this section, the code above will provide the product of
+two matrices. The next section will reorder the loops in the original,
+{\it matmatmlt}, to come up with alternate codes for the same operation that
+may or may not improve performance.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Some Building Blocks for Computational Linear
+Algebra - SAXPY}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+In the world of computational mathematics, one approaches the construction of
+complicated algorithms by starting out with simple building block algorithms and
+codes to match. We have already covered a number of these in previous sections.
+However, there are some algorithms that come standard with packages designed to
+solve computational linear algebra problems. The examples in this and the next
+section can be found in just about any document that covers Linpack or LAPACK.
+In this section, we will consider the SAXPY operation for updating
+a vector within a loop structure.
+
+The moniker \lq\lq\ SAXPY\rq\rq\ stands for {\bf S}calar {\bf A} {\bf X}
+{\bf P}lus {\bf Y} and is defined by the assignment operation
+$$
+  {\bf y} \leftarrow a\ {\bf x} + {\bf y}
+$$ 
+that can be written component-wise as
+$$
+  y_i \leftarrow a\ x_i + y_i
+$$ 
+for $i=1,2,\ldots, n$. This last form gives the inner most statement of a loop
+for performing the update. So, a code can be constructed using the last formula
+and might look like the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * saxpy(double y[], double x[], double a, int n)
+     {
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0; i<n; i++)
+         y[i] = a * x[i] + y[i];
+       //
+       return y;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+This may seem very simple. However, this operation can be used in all kinds of
+computational linear algorithms and as such this code provides a building block
+for other computational algorithms to use. Note that this is an update operation
+for the vector ${\bf y}$. This means ${\bf y}$ will be overwritten each and
+every time the routine is called. This is useful in algorithms that involve
+iterating on a matrix form.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: The GAXPY Operation}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Another standard operation is a generalization of the SAXPY operation that was
+discussed in the last section of these notes. A formula that defines this
+operation is
+$$
+  {\bf y} = A\ {\bf x} + {\bf y}
+$$
+So, instead of updating a vector ${\bf y}$ with a scalar multiple of another
+vector, $a{\bf x}$, the formula will update a vector with $A{\bf x}$, output
+from a matrix-vector multiplication operation. A component form of the GAXPY
+operation is the following.
+$$
+  y_i = \sum_{j=1}^n\ a_{i,j}\ x_j + y_i
+$$
+Note that this version of the update does the work row by row in the column
+vector, ${\bf y}$. A code to perform a GAXPY updata operation might look like
+the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * gaxpy(double y[], double a[][], double x[], int m, int n)
+     {
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0; i<n; i++) {
+         for(int j=0; j<n; j++) y[i] = a[i][j] * x[j] + y[i];
+       }
+       //
+       return y;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Using today's computational hardware, a great deal of emphasis involves the use
+of parallel computer hardware. This includes multi-core programming, GPU
+programming, and other parallel and vector computer resources. The code listing
+above may need some work in order to create a parallel version of the algorithm.
+An alternative code mught look like
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * gaxpy(double y[], double a[][], double x[], int m, int n)
+     {
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0; i<n; i++) {
+         #pragma omp parallel for
+         for(int j=0; j<n; j++) y[i] += a[i][j] * x[j];
+       }
+       //
+       return y;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+There is a minor difference in how the code is written. The increment operator
+is used and when combined with the OpenMp construct, the code can be compiled
+with multi-core coding features. The extra line in the code,
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+         #pragma omp parallel for
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+is a compiler directive for OpenMP. The content on how to implement the code
+using OpenMP (and other parallel programming constructs) will be covered in
+other places in the notes.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix Outer-Product Update}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+An outer product update for a matrix involves two vectors, ${\bf u}\in\Re^{m}$,
+and ${\bf v}\in\Re^{n}$ and computes the update
+$$
+  A\ \leftarrow\ A + {\bf u}\ {\bf v}^T
+$$
+The second term in the update creates a matrix of the same size as the matrix
+$A$. The result of this operation is a matrix that is stored back into $A$. Of
+course, this means that $A$ is overwritten in the update process.
+
+Component-wise, we can write
+$$
+  A_{i,j} = A_{i,j} + u_i\ v_j
+$$
+A C code for implementing this algorithm is the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * matupdate(double a[][], double u[], double v[], int m, int n)
+     {
+       double output[m,n];
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0 i<m; i++) {
+         for(int j=0; j<n; j++) output[i][j] = a[i][k] + u[i] * v[j];
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+We will use this type of outer-product update for implementing a matrix-matrix
+update in the next section of these notes.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Vector/Matrix Operations: Matrix Multiplication Update Code}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As a last example of how to write codes that are helpful in computational
+linear algebra problems, we consider a matrix update formula involving the
+computation of a matrix-matrix product. Given matrices $A\in\Re^{m\times p}$,
+$B\in\Re^{p\times n}$, and $C\in\Re^{m\times n}$ a useful update formula in
+computational mathematics is
+$$
+  C\ \leftarrow\ A\ B + C
+$$
+This is a recursive formula for updating the matrix $C$. The number of flops
+needed to update $C$ is order $n^3$ for square matrices.
+
+A component-wise formula for the update can be written as
+$$
+  C_{i,j}\ = \sum{i=1}^k\ A_{i,k}\ B_{k,j} + C_{i,j}
+$$
+for $i=1,2,\ldots,m$ and $j=1,2,\ldots, n$. A code to perform this operation
+might look like the following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * matupdate(double c[][], double a[][], double b[][],
+                        int m, int p, int n)
+     {
+       double output[m,n];
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0 i<m; i++) {
+         //
+         // loop through the columns in the output matrix
+         // ---------------------------------------------
+         //
+         for(int j=0; j<n; j++) {
+           //
+           // iniitalize the component of the output vector, y
+           // ------------------------------------------------
+           //
+           for(int k=0; k<p; k++)
+                       output[i][j] = a[i][k] * b[k][j] + c[i][j];
+         }
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+This version of the code is called a dot-product implementation of the
+algorithm. This is due to the inner most of the triple-nested loop in the code
+is a dot product of a row in $A$ and a column of $B$. There are actually a total
+of six  different versions of this code. The different versions of the algorithm
+are created by interchanging the three loops. In exact arithmetic, all six of
+the code will produce the same result. If the computations are rearranged the
+output will change slightly due to round-off error. In addition, due to the way
+computer languages set up storage of arrays, most notably C and Fortran, one of
+the codes will run faster than another version.
+
+One rearrangement of the loops just interchanges the outer most loops and looks
+like
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * matupdate(double c[][], double a[][], double b[][],
+                        int m, int p, int n)
+     {
+       double output[m,n];
+       //
+       // loop over the rows of the matrix
+       // --------------------------------
+       //
+       for(int i=0 i<m; i++) {
+         //
+         // loop through the columns in the output matrix
+         // ---------------------------------------------
+         //
+         for(int j=0; j<n; j++) {
+           //
+           // loop over the inner dimension of the matrix-matrix multipliction
+           // ----------------------------------------------------------------
+           //
+           for(int k=0; k<p; k++)
+                       output[i][j] = a[i][k] * b[k][j] + c[i][j];
+         }
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As we can see, the inner most loop does not change. This gives a second
+dot-product version of the algorithm due to the fact that the inner most loop is
+still just a dot product operation. The difference is in the order in which the
+components of the output matrix are compouted.
+
+Another version of the same code is the following changes the loop structure so
+that the inner most loop is a matrix outer-product update operation. 
+versions
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * matupdate(double c[][], double a[][], double b[][],
+                        int m, int p, int n)
+     {
+       double output[m,n];
+       //
+       // loop over the inner dimension of the matrix-matrix multiplication
+       // -----------------------------------------------------------------
+       //
+       for(int k=0 k<p; k++) {
+         //
+         // loop through the columns in the output matrix
+         // ---------------------------------------------
+         //
+         for(int j=0; j<n; j++) {
+           //
+           // loop over the row entries
+           // -------------------------
+           //
+           for(int i=0; i<m; i++)
+                       output[i][j] = a[i][k] * b[k][j] + c[i][j];
+         }
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+We can see that the only change in the code is the order of the loops. As
+mentioned in Matrix Computations by Golub and Van Loan the difference is in the
+data flow within the code. How the entries are accessed in the code is the only
+feature that can change the code. The same number of operations are performed,
+just ordered differently. There are differences in how different hardware and
+software access data and thus the different versions may provide different
+levels of performance.
+
+A final SAXPY version of the matrix update in this section looks like the
+following.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     double * matupdate(double c[][], double a[][], double b[][],
+                        int m, int p, int n)
+     {
+       double output[m,n];
+       //
+       // loop over the columns of the matrix
+       // -----------------------------------
+       //
+       for(int j=0; j<n; j++) {
+         //
+         // loop over the inside dimension in the matrix-matrix multiplication
+         // ------------------------------------------------------------------
+         //
+         for(int k=0 k<p; k++) {
+           //
+           // loop through the rows in the output matrix
+           // ------------------------------------------
+           //
+           for(int i=0; i<m; i++)
+                       output[i][j] = a[i][k] * b[k][j] + c[i][j];
+         }
+       }
+       //
+       return output;
+       //
+     }
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Note that there are two dot-product versions, two SAXPY versions, and two
+outer-product versions of this algorithm. Any of these six codes can be written
+to implement the given matrix-matrix multiplication update. However, if
+performance increases with one of the forms over the others, it should make
+sense to take advantage of that difference. The coding difference is just
+swapping three loops in the code.
+\vskip0.1in\hrule\vskip0.1in
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
