@@ -3,24 +3,46 @@
 <head>
   <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
   <link href="homework.css" rel="stylesheet" type="text/css" />
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    }
   </script>
-  <script type="text/javascript" async
-    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js">
   </script>
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+    window.MathJax = {
+      startup: {
+        ready: () => {
+          console.log('MathJax is loaded, but not yet initialized');
+          MathJax.startup.defaultReady();
+          console.log('MathJax is initialized, and initial typeset is queued');
+        }
+      }
+    };
   </script>
-<style type="text/css">
-  table, th, td {
-         padding: 5px 15px 5px 15px;
-         border: 1px solid black;
-         text-align: center;
-         }
-</style>
+  <style type="text/css">
+    table, th, td {
+           padding: 5px 15px 5px 15px;
+           border: 1px solid black;
+           text-align: center;
+           }
+  </style>
 </head>
 <body>
+  \begin{align}
+    x + y &= 7 \\
+    x - y &= 5 \\
+  \end{align}
+  
   <hr>
   <h1>
     Math 4610 Fundamentals of Computational Mathematics: Root Finding for
@@ -35,8 +57,8 @@
     is zero. In a standard first semester calculus course find extreme values of
     a function of one variable amounts to determining locations where the
     derivative of the function is zero. That is, a necessary condition for the
-    existence of a local minimum or local maximum at a point $x^8$ is that the
-    derivative is zero at $x^*$ or
+    existence of a local minimum or local maximum at a point \(x^*\) is that the
+    derivative is zero at \(x^*\) or
     $$
       f'(x_0)=0.
     $$
@@ -45,10 +67,10 @@
     $$
       sin(x)=0
     $$
-    is easy from an analytic point of view, the zeros are $x_n=n\ \pi$ where $n$
-    can be any integer. If $n$ is not equal to zero, the root is an irrational
-    number and cannot be represented exactly. So, we will need to settle for an
-    approximation.
+    is easy from an analytic point of view, the zeros are \(x_n=n\ \pi\) where
+    \(n\) can be any integer. If \(n\) is not equal to zero, the root is an
+    irrational number and cannot be represented exactly. So, we will need to
+    settle for an approximation.
   </p>
   <hr>
   <p>
