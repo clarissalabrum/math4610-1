@@ -129,7 +129,7 @@ numbers. The Riemann-Zeta function is
 where \(s\) represents an arbitrary complex number. This function is at the heart
 of the Riemann-conjecture and the distribution of prime numbers. This innocent
 looking formula is still not completely understood and the Riemann conjecture
-has elluded all efforts at a solution for more than 100 years. It should be
+has eluded all efforts at a solution for more than 100 years. It should be
 noted that the distribution of primes is central in the development of data
 encryption strategies in cyber-security applications.
 \vskip0.1in\hrule\vskip0.1in
@@ -181,7 +181,7 @@ Even though we can generate any number of approximations of the solution of the
 fixed point problem in this way, there is no guarantee that any of these
 approximations are close to the solution we desire. If a tolerance is specified
 apriori there is no guarantee that the sequence will be close to anything. In
-mathmatical terms, what we want is
+mathematical terms, what we want is
 \[
   \lim_{k\rightarrow\infty} x_k = x^*
 \]
@@ -525,8 +525,8 @@ mathematical tool used in this case is the Intermediate Value Theorem for
 continuous functions.
 \vskip0.1in\hrule\vskip0.1in
 {\bf Theorem:} Suppose the function, \(f\), is continuous on the closed and
-boundaed interval \([a, b]\). If \(M\) is any value between \(f(a)\) and \(f(b)\) then
-there exists a value \(c\in(a,b)\) such that \(f(c)=M\),
+bounded interval \([a, b]\). If \(M\) is any value between \(f(a)\) and
+\(f(b)\) then there exists a value \(c\in(a,b)\) such that \(f(c)=M\),
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 Now, if \(f(a)\geq 0\geq f(b)\) (or vice-versa) then there is at least one value,
@@ -803,7 +803,7 @@ interval, \([a,b]\) that satisfies the desired tolerance.
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 It is always a good idea to test the code you write. Using the example from our
-tests of functional iteration we can detemine whether or not the Bisection 
+tests of functional iteration we can determine whether or not the Bisection 
 Method works and how this compares with the fixed point approach. So, we will
 consider the example in the section on functional iteration. That way, we can
 compare the results using Bisection to our previous work.
@@ -884,7 +884,7 @@ converges faster and is more efficient. However, as mentioned earlier, the
 functional iteration approach requires the definition of an alternative problem.
 Bisection works as long as the function in question is continuous on a closed 
 and bounded interval. The guarantee is that once a root is bracketed the method
-will trdge along until an approximate value for the root is determined up to a
+will trudge along until an approximate value for the root is determined up to a
 a given tolerance.
 \vskip0.1in\hrule\vskip0.1in
 \newpage
@@ -963,7 +963,7 @@ There are certain restrictions that must be met when using Newton's method.
 \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
 \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
 \itemsep=2pt}
-  \item The function must be twice continusously differentiable,
+  \item The function must be twice continuously differentiable,
   \item the derivative of the function cannot be zero at the root, \(x^*\), and
   \item the initial point must be chosen sufficiently close to the exact value
         of the root.
@@ -1150,8 +1150,8 @@ The next definition gives terms for different types of convergence.
 \vskip0.1in\hrule\vskip0.1in
 \begin{definition}
   Suppose that an algorithm produces a sequence of approximations, \(\{x_k\}\),
-  thet converges to a value \(x^*\). Then if the rate of convergence is \(r=1\) the
-  algorithm is tsaid to be linearly convergent. If the rate of convergence is
+  that converges to a value \(x^*\). Then if the rate of convergence is \(r=1\)
+  the algorithm is said to be linearly convergent. If the rate of convergence is
   \(r=2\), the algorithm is said to be quadratically convergent. If the rate of
   convergence is between \(r=1\) and \(r=2\), the algorithm is said to be
   super-linearly convergent.
@@ -1197,7 +1197,8 @@ method to obtain
                                 }}
 \]
 The result of this approximation is the Secant method that can be written in the
-folloaing form. Given two initial values, \(x_0\) and \(x_1\), compute the ssequence
+following form. Given two initial values, \(x_0\) and \(x_1\), compute the
+sequence
 \(\{ x_k\}\) using
 \[
   x_{k+1} = x_k - f(x_k)\ {{
@@ -1219,15 +1220,15 @@ the analysis of convergence of the Secant method a few remarks are in order.
 \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
 \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
 \itemsep=2pt}
-  \item The secant method is used when it is not possible to compoute the
+  \item The secant method is used when it is not possible to compute the
         derivative of the function. It might be the case the no closed formula
-        is avaialable for use in Newton's method.
+        is available for use in Newton's method.
   \item Another issue involves the complexity of the derivative. In some
         problems the derivative may be too complex for evaluation  and the use
         of an approximation may result in a more efficient algorithm.
   \item In multi-dimensional problems, such as multivariable optimization
         problems, extensions of the secant method produce more efficient
-        algorithms. In fact, many mutivariable algorithms use some modification
+        algorithms. In fact, many multivariable algorithms use some modification
         of the Secant method as a starting point.
 \end{list}
 \vskip0.1in\hrule\vskip0.1in
@@ -1557,7 +1558,7 @@ to get started, while Newton's method requires a single starting point.
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 Comparing the results in the previous problem we can see that the results are
-roughly the same for both methods. The error in the Newton metho approximation
+roughly the same for both methods. The error in the Newton method approximation
 is just a little better than the Secant method. In this example, the computed
 convergence rate using the data generated is $r\approx 1.678$ which is a bit
 higher than predicted in the previous section.
@@ -1617,16 +1618,25 @@ Bisection method, (3) Newton's method, and (4) the Secant method.
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 In a real root finding problem, the location of the root may not be easy to
-estimate. This may cause the Newton method and Secant method to fail due to the
+estimate. This may cause the Newton and Secant methods to fail due to the
 requirement of starting sufficiently close to the exact value of the root.
 However, if we can determine an interval, \([a,b]\), where $f(a)f(b)<0$, the
 Bisection method will converge albeit slowly. A strategy that starts with a few
 steps of Bisection to get closer to the root and then trying a Newton or Secant
-step might be a good alternatice. This brings us to the idea of Hybrid root
+step might be a good alternative. This brings us to the idea of Hybrid root
 finding methods.
 
+\noindent
+The following piece of code, written in Fortran, carries out this algorithm.
+Given the code for a function and it's derivative, the hybrid algorithm starts
+by taking a Newton step. If the Newton step stays in an initial interval, the
+code will continue on using Newton's method. If not, the code will take exactly
+four steps of Bisection to reduce the error in the approximate root by an order
+of magnitude in. We can guarantee Bisection will reduce the error as desired
+due to calculations in the section on the analysis of the Bisection method.  
+
 There are any number of strategies for development of Hybrid methods. We will
-develop a stratefy based on the following.
+develop a strategy based on the following.
 \begin{enumerate}
   \item Find an interval \([a,b]\) on which $f(a)f(b)<0$. If $f$ is continuous
         on the interval, there must be root in the interval due to an
@@ -1635,31 +1645,180 @@ develop a stratefy based on the following.
         \[
            e_0 = | b - a |
         \]
-  \item Next, reduce the error in the approximation one order of magnitdue using
-        the Bisection method. This will be fleshed out below.
   \item Try a step of Newton's method.
         \begin{enumerate}
           \item If the Newton step stays in the same interval we can continue
                 with Newton steps until convergence.
           \item If the Newton step fails to stay in the interval from the
-                Bisection iterations, go back to Bisection.
+                Bisection iterations, do a few iterations of the Bisection
+                method. To reduce the error by an order of magnitude, four
+                iterations of the Bisection method will work.
         \end{enumerate}
-  \item Output the value after Newton's method converges.
+  \item Compute the error using either the midpoint in the Bisection method or
+        the next iterate in Newton's method.
 \end{enumerate}
-Now to how to reduce the error by an order of magnitude.
+The following code will do the work.
+\vskip0.1in\hrule\vskip0.1in
+\begin{verbatim}
+
+     c
+     c a do while loop for the iterations
+     c ----------------------------------
+     c
+           do while(error .gt. tol .and. iter .le. maxiter)
+     c
+     c try a newton step before anything else
+     c --------------------------------------
+     c
+             xnew = xold - f(xold) / df(xold)
+     c
+     c if the newton step goes outside the interval, use 4 iters of Bisection
+     c ----------------------------------------------------------------------
+     c
+             if(xnew .lt. a .or. xnew .gt. b) then
+     c
+     c 4 iterations drops the error by one order of magnitude in base 10
+     c -----------------------------------------------------------------
+     c
+               do 1 i=1,4
+                  iter = iter + 1
+     c
+     c compute the midpoint of the interval
+     c ------------------------------------
+     c
+                  xm = 0.5 * ( a + b )
+     c
+     c check for which half contains a root
+     c ------------------------------------
+     c
+                  if(f(a)*f(xm) .lt. 0.0) then
+                    b = xm
+                  else
+                    a = xm
+                  end if
+     c
+     c store the values
+     c ----------------
+     c
+                  c(iter) = xm
+     c
+         1     continue
+     c
+     c keep the last value as an approximation
+     c ---------------------------------------
+     c
+               xnew = xm
+     c
+     c done with the iterations
+     c ------------------------
+     c
+             end if
+     c
+     c compute the latest error
+     c ------------------------
+     c
+             error = abs(xnew-xold)
+     c
+     c overwrite the old values
+     c ------------------------
+     c
+             xold = xnew
+             iter = iter + 1
+             c(iter) = xold
+     c
+           enddo
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\begin{table}[h]
+\caption{Results for a Hybrid Method using Bisection and Newton's Method}
+  \vskip0.1in
+  \begin{center}
+  \begin{tabular}{|c||c|c|}
+    \hline
+    Iteration No. & Approximation Value & Error       \\
+    \hline
+      01 &       25.0000000     &     23.8552704      \\    
+    \hline
+      02 &      -12.5000000     &     13.6447296      \\
+    \hline
+      03 &        6.2500000     &      5.10526991     \\
+    \hline
+      04 &       -3.1250000     &      4.26973009     \\
+    \hline
+      05 &       -3.1250000     &      4.26973009     \\
+    \hline
+      06 &        1.5625000     &      0.417770028    \\
+    \hline
+      07 &       -0.7812500     &      1.92597997     \\
+    \hline
+      08 &        0.3906250     &      0.754104972    \\
+    \hline
+      09 &        0.9765625     &      0.168167472    \\
+    \hline
+      10 &        0.9765625     &      0.168167472    \\
+    \hline
+      11 &        1.1596970     &      1.49670839E-02 \\
+    \hline
+      12 &        1.1448414     &      1.11460686E-04 \\
+    \hline
+      13 &        1.1447298     &      1.19209290E-07 \\
+    \hline
+      14 &        1.1447299     &      0.00000000     \\
+    \hline
+  \end{tabular}
+  \end{center}
+\end{table}
+
+\noindent
+One can either stuff the code into a Fortran code or translate the logic into
+another language. For the same test problem, as used in the rest of the methods,
+the results are in the following table. Note that it makes no sense to compare
+this with other methods since we are using a combination of two different
+methods.
+
+\noindent
+When looking through the results created by the hybrid method, the error in the
+first few iterations is reduced linearly. There are no big reductions in the
+error until the last few iterations. Once the iterations are close enough to the
+exact root, the error is reduced quadratically. This represents a good result
+in that initially the first few steps converge slowly, but the Bisection method
+makes progress towards the root. Without the first few steps of Bisection, the
+root may not be found.
 \vskip0.1in\hrule\vskip0.1in
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Root Finding Problems: Multiple Root Example:}
+{\bf Root Finding Problems: A Multiple Root Example:}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-This example,...
+The work so far has involved locating the root(s) of a simple function
+\[
+  f(x) = e^x - \pi
+\]
+where these is only one root to worry about. In the previous section the initial
+point was chosen so that the function evaluation for Newton's method was almost
+undefined. This lead to a situation where Newton's method would not work. So,
+the hybrid method provides a means to narrow down the interval on which the root
+exists.
+
+So, what happens when a function has a number of roots that are not evenly
+distributed in a nice interval. Consider the function
 \[
    f(x) = sin(10\ x^2 + 3)
 \]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+that looks reasonably simple. However, as $x$ increases more roots are
+encountered and the roots become more and more clustered together. So, any
+method that searches for roots will need to isolate a root within a single
+interval. Suppose we start with the interval $[0,10]$ as an example. Then one
+could evenly divide the interval into smaller subintervals and then search each
+subinterval separately.
+
+This is left as an exercise for those interested. In another section of these
+notes will develop a parallel algorithm using OpenMP. Since each of these
+problems is independent of each other, the problems can be solved in parallel
+once the intervals are determined.
+\vskip0.1in\hrule\vskip0.1in
 \end{document}
