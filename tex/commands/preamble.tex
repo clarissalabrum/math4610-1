@@ -1,0 +1,91 @@
+%\documentclass{amsart}
+	\usepackage{amsthm}
+	\usepackage{amsmath}
+	% \usepackage{amssymb}
+	\usepackage{esint}
+	\usepackage{mathtools}
+	\usepackage{tikz} % Custom diagrams
+	\usepackage{tikz-cd} % Commutative diagrams
+		\usetikzlibrary{arrows}
+		\usetikzlibrary{knots, intersections, decorations.pathreplacing, decorations.pathmorphing, hobby}
+		\tikzset{
+			commutative diagrams/.cd,
+			arrow style=tikz,
+			diagrams={>=Computer Modern Rightarrow},
+			path details/.style={ 
+				every node/.style={
+									midway, 
+									sloped, 
+									font=\footnotesize
+								}
+				}
+		}
+		% \usetikzlibrary{knots,intersections,decorations.pathreplacing,hobby}
+		% \tikzset{
+		%   path details/.style={
+		%     >=stealth, 
+		%     every node/.style={
+		%       midway, 
+		%       sloped, 
+		%       font=\tiny
+		%     },
+		%   }
+		% }
+	\usepackage{tabu}
+
+	% Figure support
+	\usepackage{float}
+
+	% Supplemental support - table of contents, appendix, bibliography, etc.
+	% \usepackage{tocloft}
+	% \usepackage[square, sort, numbers]{natbib}
+	% 	\bibliographystyle{plainnat}
+	\usepackage[title]{appendix}
+	\usepackage{hyperref}
+		\hypersetup{
+			colorlinks,
+			citecolor=black,
+			filecolor=black,
+			linkcolor=black,
+			urlcolor=black
+		}
+	\usepackage{multicol}
+	\usepackage{caption}
+	\makeatletter
+
+	% Math environment definitions
+	\theoremstyle{plain} \newtheorem*{thm*}{\protect\theoremname}
+	\theoremstyle{plain} \newtheorem{thm}{\protect\theoremname}
+	\theoremstyle{definition} \newtheorem{defn}[thm]{\protect\definitionname}
+	\theoremstyle{definition} \newtheorem*{defn*}{\protect\definitionname}
+	\theoremstyle{definition} \newtheorem*{exercise*}{\protect\exercisename}
+	\theoremstyle{definition} \newtheorem{exercise}{\protect\exercisename}%[section]
+	\theoremstyle{definition} \newtheorem{claim}{\protect\claimname}
+	\theoremstyle{definition} \newtheorem*{claim*}{\protect\claimname}
+	\theoremstyle{plain} \newtheorem*{prop*}{\protect\propname}
+	\theoremstyle{plain} \newtheorem{prop}{\protect\propname}
+	\theoremstyle{plain} \newtheorem*{lem*}{\protect\lemmaname}
+	\theoremstyle{plain} \newtheorem{lem}{\protect\lemmaname}
+	\theoremstyle{plain} \newtheorem{cor}{\protect\corollaryname}
+	\theoremstyle{plain} \newtheorem*{cor*}{\protect\corollaryname}
+	\theoremstyle{definition} \newtheorem{remark}[thm]{\protect\remarkname}
+	\theoremstyle{definition} \newtheorem*{remark*}{\protect\remarkname}
+%   \theoremstyle{definition} \newtheorem{example}[thm]{\protect\examplename}
+	\theoremstyle{definition} \newtheorem*{example*}{\protect\examplename}
+%   \theoremstyle{definition} \newtheorem{problem}{\protect\problemname}
+	\theoremstyle{definition} \newtheorem{concept}[thm]{\protect\conceptname}
+	\theoremstyle{definition} \newtheorem*{concept*}{\protect\conceptname}
+
+	\providecommand{\theoremname}{Theorem}
+	\providecommand{\definitionname}{Definition}
+	\providecommand{\exercisename}{Exercise}
+	\providecommand{\claimname}{Claim}
+	\providecommand{\propname}{Proposition}
+	\providecommand{\lemmaname}{Lemma}
+	\providecommand{\corollaryname}{Corollary}
+	\providecommand{\remarkname}{Remark}
+%  \providecommand{\examplename}{Example}
+%  \providecommand{\problemname}{Problem}
+	\providecommand{\conceptname}{Concept}
+
+	\makeatother

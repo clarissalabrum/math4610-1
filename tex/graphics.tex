@@ -1,0 +1,298 @@
+
+\usepackage[pdftex]{graphicx}
+
+\begin{document}
+
+\includegraphics[width=3.0in]{./usu_logo.png}
+
+
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\epstopdfDeclareGraphicsRule{.gif}{png}{.png}{convert gif:#1 png:\OutputFile}
+\AppendGraphicsExtensions{.gif}
+
+\begin{document}
+
+  \includegraphics{demo.eps}\qquad
+  \includegraphics{knuth-tex.gif}
+
+\end{document}
+
+
+Including graphics in a LaTeX document
+There are two ways to incorporate images into your LaTeX document, and
+both use the graphicx package by means of putting the command
+\usepackage{graphicx} near the top of the LaTeX file, just after the
+documentclass command. 
+
+The two methods are
+1. include only PostScript images (esp. ``Encapsulated PostScript'')
+   if your goal is a PostScript document using dvips 
+2. include only PDF, PNG, JPEG and GIF images if your goal is a PDF
+   document using pdflatex, TeXShop, or other PDF-oriented compiler. 
+
+In all cases, each image must be in an individual 1-image file; no
+animation files or multipage documents. 
+
+Only PostScript Images
+
+Most mathematical/scientific graphics software allows you to save
+graphics (figures, diagrams, graphs) in PostScript form; this includes
+Mathematica, Maple, Matlab, IDL, and xfig (a marvelous X figure-drawing
+program). Even bitmap images like JPEG and PNG files can be converted
+to PostScript form with programs like ``xv'' or ``convert''. 
+
+Where you want a PostScript image to appear, use the \includegraphics
+command, possibly with scaling or rotation options, e.g.,
+
+  \includegraphics{myfig.eps}
+  \includegraphics[width=60mm]{myfig.eps}
+  \includegraphics[height=60mm]{myfig.eps}
+  \includegraphics[scale=0.75]{myfig.eps}
+  \includegraphics[angle=45,width=52mm]{myfig.eps}
+
+Of course, any of these can be inserted into a figure environment,
+and/or a centering environment or a framebox. Then you must compile
+the document with latex followed by dvips -Ppdf, which produces a
+PostScript document with embedded PostScript images. You can convert
+the PostScript document to PDF using ``ps2pdf'' or ``dvipdf''. 
+
+Two characteristics which the component (Encapsulated) PostScript
+image files must have are Ú no file contains more than one page 
+Ú each has a valid BoundingBox line If the PostScript file does not
+include a bounding box line, you can insert it using the text editor
+of your choice. 
+
+Only non-PostScript images
+
+The compiler pdflatex (Unix) and TeXShop (Macintosh) convert LaTeX source
+directly to PDF, and do not accept PostScript images. Instead, they take
+PDF images, as well as bitmap pictures in PNG or JPEG or GIF format. So
+to use pdflatex, you must convert any PostScript images to one of these
+other forms. For photos, JPEG is best. For other bitmap images, PNG is best.
+For non-bitmap images (e.g., graphs, drawings, stuff with text and symbols)
+it is best to convert to PDF, using the command epstopdf (in the usual TeX
+bin directory, e.g., /usr/local/tex/bin/epstopdf). The
+
+commandunix> epstopdf myfig.eps
+
+produces the file myfig.pdf, which can then be used in the command
+\includegraphics{myfig.pdf}. for compilation with pdflatex or TeXShop. 
+The possible \includegraphics options with PDF/PNG/JPEG images are much
+the same as with PostScript, e.g.,
+
+  \includegraphics{myfig.pdf}
+  \includegraphics[width=60mm]{myfig.png}
+  \includegraphics[height=60mm]{myfig.jpg}
+  \includegraphics[scale=0.75]{myfig.pdf}
+  \includegraphics[angle=45,width=52mm]{myfig.jpg}
+
+With PNG or JPEG you should specify an explicit width or height rather
+than "scale", since bitmap images have no intrinsic size, nothing
+corresponding to Bounding Box information, although graphicx seems to
+use 72 pixels per inch as a default size for bitmap images. 
+
+LaTeX slide presentations 
+
+
+This exposition is a HOWTO for including graphics in LATEX. Many
+techniques and tools discussed here have alternatives that may be
+preferred by other TEXperts; however, this document outlines my preferences
+which arise from years of experience trying many tools and techniques.
+
+Feel free to email me if you would like to offer any suggestions. I
+will be glad to (at least) listen to your suggestions, but I make no
+promises that you will change my mind without sufficient evidence. 
+
+1  Personal Preference
+
+Even though LATEX supports several graphic formats, I prefer ONLY two of
+these formats, namely Ú Encapsulated PostScript (EPS) when using LATEX 
+Ú Portable Document Format (PDF) when using PDFLATEX
+
+Since LATEX cannot compute the CropBox of a PDF graphic in order to
+allocate space in the document, EPS is my preferred format when using
+LATEX. Similarly, since PDFLATEX can do (virtually) no PostScript
+processing, PDF graphics are my preferred format when using PDFLATEX.
+I often have both formats of the same graphic available to my document so
+that the same source code can be built using both LATEX and PDFLATEX. 
+
+2  Inclusion
+
+Inclusion of EPS/PDF graphics in LATEX/PDFLATEX is trivial using the
+graphicx package. If foo.eps and foo.pdf are the filenames of the EPS
+and PDF versions, respectively, then the graphic can be included in the
+LATEX document by using the following minimal template:  
+
+\documentclass{minimal} 
+  ‡ 
+\usepackage{graphicx} 
+  ‡ 
+\begin{document} 
+  ‡ 
+\includegraphics{foo} 
+  ‡ 
+\end{document} 
+
+Notice that the file extension is not specified in the filename argument
+of the \includegraphics command. The purpose of this omission is that .eps
+will be assumed when the document is built with LATEX and .pdf when it is
+built with PDFLATEX. 
+
+
+
+3  Raster Graphics
+
+Raster graphics are graphics that are described by painting each individual
+element of a grid a particular color. A finer grid will constitute a
+Ùbetterˆ looking image because the colors will appear to be more
+continuous. Human eyes naturally see objects in this way except that the grid
+is radial and extremely dense. Computer screens rasterize all graphics since
+the screen is composed of pixels that are each painted a particular color.
+Higher resolution screens equate to a finer grid and thus display
+Ùbetterˆ looking images. Also, digital cameras capture natural images
+and rasterize these images for storage onto the camera∆s memory card. 
+
+One disadvantage of raster graphics is its lack of scalability. Raster
+graphics cannot be scaled to higher resolutions since such scaling essentially
+increases the size of each grid element. This scaling produces a larger image,
+but the image looks no better than the original. 
+
+Another disadvantage of raster graphics is its large file sizes. Since each
+element of the grid must be painted its own color and since each color is
+typically described with 24 bits (or 3 bytes) of storage, a 1 megapixel image
+would require 3 megabytes or storage in its uncompressed form. Although lossy
+techniques may be used to compress the data, they often degrade the quality
+of the image. 
+
+Common raster formats include BMP, GIF, JPG, PNG, et. al. 
+
+4  Vector Graphics
+
+Vector graphics are graphics that are described using pre-defined objects,
+transformations, colors, strings, and other mathematical and programmatic
+primitives. Unlike raster graphics, grid elements are not painted, and
+therefore vector graphics require a less naève method for constructing
+them. Virtually all mathematical drawings and graphs are (naturally) in vector
+format. However, as discussed above, many applications (such as digital
+cameras, computer screens, printers, etc.) in their final output rasterize
+all graphics. 
+
+The primary advantage of vector graphics is its scalability. An example of
+this would be in order to scale a circle centered at the origin to 200% of
+its original size, it is enough to simply multiply the radius of the circle
+by 2 and the new description is complete. Therefore, there is no loss in quality
+in performing such scalings. 
+
+Another advantage of vector graphics is its small filesize. Again, since the
+graphics are described by mathematical primitives, the storage required to
+denote this description is minimal. 
+
+Common vector formats include EPS, PDF, PS, SVG, et. al. 
+
+5  Vectorizing Raster Graphics
+
+As mentioned above, EPS and PDF are the ONLY formats that I prefer to use with
+LATEX and PDFLATEX. Furthermore, EPS and PDF are both vector graphic formats.
+Therefore, in order to include raster graphics in my LATEX documents, I always
+do one of two things: 
+
+ÚTrace the raster graphic either manually or automatically 
+ÚPlace a vector Ùwrapperˆ around the raster graphic
+
+The former of these is performed when the raster image originates from line art
+graphics for which its original vector format is not available. There are
+several tools that can automatically trace these type of graphics including
+AutoTrace, Potrace, and VectorMagic; however, their results may be less than
+desirable. 
+
+The most common method of vectorizing a raster image is performed when the
+raster image comes from a photograph or a screenshot. In this case, a vector
+Ùwrapperˆ is placed around the raster graphic to transform the raster
+into a vector format. Consequently, the resulting vector graphic will maintain
+the same scalability and filesize limitations of the original raster version,
+but the work of transforming the graphic into EPS or PDF will already have been
+done. This new graphic is not a true vector graphic, but it will possess a
+convenient vector wrapper. Because it produces little overhead in filesize and
+maintains the image∆s original quality, sam2p is my preferred application 
+for this scenerio, and my web interface is useful when converting only a few
+graphics. 
+
+6  Generating Vector Graphics
+
+Applications such as Adobe Photoshop, Corel Paint Shop Pro, Gimp, etc. are
+raster graphic editors. They generally can import vector graphics, but these
+graphics are rasterized the moment they are imported. There are a plethora of
+graphics programs designed to generate vector graphics. Among these include
+Microsoft Visio, CorelDraw, Inkscape, Dia, MetaPost, et. al. Furthermore, most
+mathematics software including Matlab, Octave, Maple, Mathematica, Maxima, et.
+al., can export graphics in at least an EPS vector format. 
+
+Most modern TEX distributions should contain epstopdf which is used to convert
+EPS graphics into PDF so that the BoundingBox of the EPS is preserved as the
+CropBox of the resulting PDF. For users that have command-line phobia, GSview
+is a nice tool for, among other things, converting EPS into PDF. GSview relies
+on Ghostscript to perform much of its backend processing. 
+
+A common problem that Microsoft Windows users often encounter is the inability
+of their applications to export EPS or PDF graphics. If these graphics are
+not raster in nature, then a simple solution to this problem is to install a
+generic PostScript printer driver and print to this printer. Any PostScript
+printer driver, e.g., the Apple Color LaserWriter 12/600, may be used, but the
+driver should be instructed to print to FILE instead of a physical printer port.
+Once this is configured, printing to this Ùprinterˆ will prompt for a
+filename to save the resulting PostScript document. This PostScript document
+will generally not be an EPS since it will lack a BoundingBox. This problem
+can be solved using GSview by selecting ÙPS to EPSˆ. The user will then
+have the option of having GSview automatically compute the BoundingBox or
+manually specifying it. 
+
+7  MetaPost
+
+MetaPost is a powerful graphics language based on Knuth∆s METAFONT, but
+with PostScript output and facilities for including typeset text. There are
+many MetaPost resources available, but this section will highlight the
+fundamentals of including MetaPost graphics in a LaTeX document. I use the
+following minimal MetaPost template when labels exist and LATEX is used to
+process these labels.  
+
+prologues:=3; 
+filenametemplate "%j_%c.mps"; 
+verbatimtex 
+%&latex 
+\documentclass{minimal} 
+\begin{document} 
+etex 
+beginfig(0); 
+  ‡ 
+endfig; 
+end 
+
+As of version 0.970 of MetaPost, the prologues:=3 feature provides embedding
+of used fonts into the MetaPost output. I generally set this variable when
+desigining my graphics, but when I include them into my LATEX document, I
+remove this line since LATEX will include the fonts itself anyway. Also, as of
+version 0.920 of MetaPost, the filenametemplate allows the user to set the
+naming scheme of MetaPost graphics. The graphicx package identifies a graphic
+with a .mps file extension as originating from MetaPost. If the example code
+above was saved as foo.mp, then the output would be foo_0.mps and the command 
+
+\includegraphics{foo_0.mps}
+
+can be processed by both LATEX and PDFLATEX (thanks to Hans Hagan∆s mptopdf).
+Both of the aforementioned new features of MetaPost are available in TEXLive 2007
+as well as MiKTEX 2.6. 
+
+8  Conclusion
+
+Vector graphics should always be used whenever the graphic is not raster in
+nature. The vector formats that I prefer are EPS and PDF depending on whether
+LATEX or PDFLATEX is used to typeset the document. If the graphic is
+characteristically raster, then the optimal method for vectorizing it usually
+involves placing a EPS or PDF wrapper around it using sam2p. Taking these steps
+to place graphics in a LATEX document requires a slightly more than naève
+solution, but the results should be of higher quality. 
+

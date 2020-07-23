@@ -1,0 +1,152 @@
+% new math commands
+
+
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{6.75in}
+\setlength{\headheight}{0.0in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textheight}{9.00in}
+
+\makeindex
+
+\usepackage{mathrsfs}
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+
+\newcounter{beans}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\limit}[2]{\displaystyle\lim_{#1\to#2}}
+
+\newcommand{\binomial}[2]{\ \left( \begin{array}{c}
+                                  #1 \\
+                                  #2
+                                 \end{array}
+                            \right) \
+                         }
+\newcommand{\ExampleRule}[2]
+  {
+  \noindent
+  \rule{\linewidth}{1pt}
+  \begin{example}
+    #1
+    \label{#2}
+  \end{example}
+  \rule{\linewidth}{1pt}
+  \vskip0.125in
+  }
+
+\newcommand{\defbox}[1]
+  {
+   \ \\
+   \noindent
+   \setlength\fboxrule{1pt}
+   \fbox{
+        \begin{minipage}{6.5in}
+          #1
+        \end{minipage}
+        }
+   \ \\
+  }
+\newcommand{\verysmallworkbox}[1]
+  {
+   \ \\
+   \noindent
+   \setlength\fboxrule{1pt}
+   \fbox{
+        \begin{minipage}{6.5in}
+           #1
+           \ \\
+           \vskip0.5in \ \\
+           \ \\
+        \end{minipage}
+        }
+   \ \\
+  }
+\newcommand{\smallworkbox}[1]
+  {
+   \ \\
+   \noindent
+   \setlength\fboxrule{1pt}
+   \fbox{
+        \begin{minipage}{6.5in}
+           #1
+           \ \\
+           \vskip2.5in \ \\
+           \ \\
+        \end{minipage}
+        }
+   \ \\
+  }
+\newcommand{\halfworkbox}[1]
+  {
+   \ \\
+   \noindent
+   \setlength\fboxrule{1pt}
+   \fbox{
+        \begin{minipage}{6.5in}
+           #1 \hfill
+           \ \\
+           \vskip3.25in \ \\
+           \ \\
+        \end{minipage}
+        }
+   \ \\
+  }
+\newcommand{\largeworkbox}[1]
+  {
+   \ \\
+   \noindent
+   \setlength\fboxrule{1pt}
+   \fbox{
+        \begin{minipage}{6.5in}
+           #1
+           \ \\
+           \vskip7.5in \ \\
+           \ \\
+        \end{minipage}
+        }
+   \ \\
+  }
+\newcommand{\flexworkbox}[2]
+  {
+   \ \\
+   \noindent
+   \setlength\fboxrule{1pt}
+   \fbox{
+        \begin{minipage}{6.5in}
+           #1
+           \ \\
+
+           \vskip#2 \ \\
+           \ \\
+        \end{minipage}
+        }
+   \ \\
+  }
+
+
+% symbols for sets of numbers
+
+\newcommand{\natnumb}{$\cal N$}
+\newcommand{\whonumb}{$\cal W$}
+\newcommand{\intnumb}{$\cal Z$}
+\newcommand{\ratnumb}{$\cal Q$}
+\newcommand{\irrnumb}{$\cal I$}
+\newcommand{\realnumb}{$\cal R$}
+\newcommand{\cmplxnumb}{$\cal C$}
+
+% misc. commands
+
+\newcommand{\mma}{{\it Mathematica}}
+\newcommand{\sech}{\mbox{ sech}}
+ 
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+\newtheorem{problem}{Problem}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{4}
