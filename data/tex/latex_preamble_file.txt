@@ -1,0 +1,42 @@
+\documentclass[10pt,fleqn]{article}                       % latex_preamble_start
+\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+\title{Math 4610 Lecture Notes \\
+           \ \hfill 
+            \ \\
+      Root Finding Problems for Real Values Function of One Variable
+  \footnote{These notes are part of an Open Resource Educational project
+            sponsored by Utah State University}}
+
+\author{Joe Koebbe}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+\maketitle
+
+%\begin{figure}
+%    \centering
+%    \def\svgwidth{\columnwidth}
+%    \input{image.pdf_tex}
+%\end{figure}
+%
+%\begin{verbatim}
+%<a href="https://www.mathjax.org">
+%    <img title="Powered by MathJax"
+%    src="https://www.mathjax.org/badge/badge.gif"
+%    border="0" alt="Powered by MathJax" />
+%</a>
+%\end{verbatim}
+

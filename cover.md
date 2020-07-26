@@ -24,6 +24,6 @@ processing units, threads in Java, and other topics.
 
 <hr>
 
-[Table of Contents for Lectures](https://jvkoebbe.github.io/math4610/lectures/toc_lectures)
+[Table of Contents for Lectures](./lectures/toc_lectures.md)
 
 <hr>

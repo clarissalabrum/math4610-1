@@ -163,7 +163,7 @@ or after class, or during office hours.
 
 <hr>
 
-## Why No Matlab or Mathematica:
+## Why No Mathematica or Matlab:
 
 <hr>
 
@@ -224,7 +224,7 @@ Your grade in the course will be determined by the following:
    your software manual. The format for the software manual pages will be fixed.
    An example of the format can be found at the following link:
 
-   https://jvkoebbe.github.io/math4610/appendix02/softwareManualTemplate
+   [Software Manual Template](../../softwareManual/softwareManualTemplate.md)
 
    We will discuss this in some detail during the first week of the semester. 
 

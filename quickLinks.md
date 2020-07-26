@@ -6,29 +6,31 @@ computational mathematics.
 
 ## Quick Links to Math 4610 Content:
 
-* [Math 4610 Home](https://jvkoebbe.github.io/math4610)
+* [Math 4610 Home](./README.md)
 
-* [Syllabus](https://jvkoebbe.github.io/math4610/syllabus/md/syllabus)
+* [Syllabus](./syllabus/md/syllabus.md)
 
-* [Lectures](https://jvkoebbe.github.io/math4610/lectures/toc_lectures)
+* [Lectures](./lectures/toc_lectures.md)
 
-* [Homework/Tasks](https://jvkoebbe.github.io/math4610/tasksheets/md/toc_tasksheets)
+* [Homework/Tasks](./tasksheets/md/toc_tasksheets.md)
 
-* [Project Descriptions](https://jvkoebbe.github.io/math4610/projects/indexOfProjects)
+* [Project Descriptions](./projects/indexOfProjects.md)
 
 ## Review Materials:
 
-* [Basic Algebra Content Review](https://jvkoebbe.github.io/math4610/basicReview/algebra.html)
+* [Basic Algebra Content Review](./basicReview/algebra.html)
 
 ## Other Links:
 
 * [Joe Koebbe's Repositories on Github](https://github.com/jvkoebbe)
 
-* [Joe Koebbe's Web Site](http://www.math.usu.edu/~koebbe)
+* [Joe Koebbe's Web Site](https://www.math.usu.edu/~koebbe)
 
-* [Department of Mathematics and Statistics](http://www.math.usu.edu/)
+* [Department of Mathematics and Statistics](https://www.math.usu.edu/)
 
-* [USU](http://www.usu.edu/)
+* [College of Science](https://www.usu.edu/science)
+
+* [USU](https://www.usu.edu/)
 
 ## Links to Other Course Materials:
 

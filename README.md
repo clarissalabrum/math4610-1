@@ -5,17 +5,17 @@
 This course was developed by [Joe Koebbe](http://www.math.usu.edu/~koebbe) at
 [Utah State University](http://www.usu.edu) in the [Department of Mathematics
 and Statistics](http://www.math.usu.edu/). The course is intended for students
-in the [College of Science](https://www.usu.edu/science), the College of
-Engineering, and any other students who have completed a basic course in linear
-algebra (e.g, Math 2270 Linear Algebra) AND ordinary differential equations
-(e.g, Math 2280 Ordinary Differential Equations). Students who have completed
-the combined course Math 2250 are also well qualified to be in this course.
-Primarily, the course presents computational methods for the approximate
-solution of a number of mathematical problems. The amount of analysis needed is
-minimal (e.g, Taylor series and knowledge of results from Linear Algebra). The
-goal is to introduce students into the world of computer coding and simulation. 
-Later courses (e.g, Math 5610 and Math 6610) treat analysis of the methods at
-a more advanced level.
+in the [College of Science](https://www.usu.edu/science), the
+[College of Engineering](https://engineering.usu.edu), and any other students
+who have completed a basic course in linear algebra (e.g, Math 2270 Linear
+Algebra) AND ordinary differential equations (e.g, Math 2280 Ordinary
+Differential Equations). Students who have completed the combined course Math
+2250 are also well qualified to be in this course. Primarily, the course
+presents computational methods for the approximate solution of a number of
+mathematical problems. The amount of analysis needed is minimal (e.g, Taylor
+series and knowledge of results from Linear Algebra). The goal is to introduce
+students into the world of computer coding and simulation. Later courses (e.g,
+Math 5610 and Math 6610) treat analysis of the methods at a more advanced level.
 
 ## Quick Links to Content for the Course
 
@@ -23,11 +23,11 @@ The following link gives access to the content of Math 4610 including the
 syllabus, a table of contents to the lectures in the course, and other class
 materials.
 
-[https://jvkoebbe.github.io/math4610/quickLinks](https://jvkoebbe.github.io/math4610/quickLinks)
+[Quick Links](./quickLinks.md)
 
 ## Course Syllabus
 
-[Course Syllabus](https://jvkoebbe.github.io/math4610/syllabus/md/syllabus):
+[Course Syllabus](./syllabus/md/syllabus.md):
 This link provides access to a pdf file that contains a current of the syllabus
 for the course as taught at Utah State University. This should give the reader
 some idea of how the materials are covered at USU.
@@ -138,9 +138,8 @@ of content in the course.
 
 ## Table of Contents
 
-[Course Contents](https://jvkoebbe.github.io/math4610/quickLinks): The
-previous link will take you to a Markdown (.md) file that contains a the table
-of contents for the course. For a one semester course, there may be more content
+[Course Contents](./quickLinks.md): The previous link will take you to a
+Markdown (.md) file that contains a the table of contents for the course. For a one semester course, there may be more content
 than can be covered. The content can be used to give instructors/readers plenty
 to do.
 
@@ -162,6 +161,6 @@ main algorithms presented in the course.
 The links below will take you to a software manual template in in a Markdown
 file for use by students in Math 4610.
 
-[Software Manual Template](https://jvkoebbe.github.io/math4610/softwareManual/softwareManualTemplate)
-([download](https://jvkoebbe.github.io/math4610/softwareManual/softwareManualTemplate.md))
+[Software Manual Template](softwareManual/softwareManualTemplate.md)
+([download](softwareManual/softwareManualTemplate.md))
 

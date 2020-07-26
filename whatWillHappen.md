@@ -1,4 +1,5 @@
-# This page will present the content of the course in terms of some broad computational issues. These include
+# This page will present the content of the course in terms of some broad
+computational issues. These include
 
 1. General Skills for Writing codes that work,
 
