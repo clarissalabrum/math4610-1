@@ -1,0 +1,17 @@
+\begin{center}
+  \
+  \vskip1.5in
+  {\Large{\bf
+    Math 4610 Fundamentals of Computational Mathematics \\
+  \ \\
+  \ \\
+  \ \\
+  }}
+  \vskip1.5in
+  Joe Koebbe \\
+  Department of Mathematics and Statistics \\
+  Utah State University \\
+  Logan, Utah 84322-3900 \\
+   \ \\
+  \today
+\end{center}

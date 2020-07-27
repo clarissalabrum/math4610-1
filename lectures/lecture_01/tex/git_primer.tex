@@ -9,7 +9,7 @@
 
 \title{Math 4610 Lecture Notes \\
             \ \\
-       A Brief Introduction to Github Usage
+       A Brief Introduction to Git Usage
   \footnote{These notes are part of an Open Resource Educational project
             sponsored by Utah State University}}
 
@@ -21,7 +21,7 @@
 
 \setlength{\parindent}{0in}
 
-\input{../../../../../../tex/commands/commands}
+\input{../../../../../tex/commands/commands}
 
 \begin{document}
 \maketitle
@@ -33,25 +33,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Github Primer for Math 4610 at USU: Get an Account} 
+{\bf Git Primer for Math 4610 at USU: What is \lq git\rq ?} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-To create an account on GitHub, go to the Github site
+When programmers are working on large complex software projects, it is
+important to keep all people involved on the same page.
 \begin{verbatim}
 
-    https://github.com
+   which git
 
 \end{verbatim}
-The following shows what will pop up when you use a browser to get to the site.
-You will need to set up a free student account for use in the course. In
-addition, it is important that you choose a user name that will be easy to
-recall. Note the use of a secure connection using https.
 \vskip0.1in\hrule\vskip0.1in
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/github_01.png}
+\includegraphics{../images/cygwin_00.png}
 \vskip0.1in
+\includegraphics{../images/cygwin_icon.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -60,17 +58,23 @@ recall. Note the use of a secure connection using https.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{{\bf GitHub Primer for Math 4610 at USU:} Getting a Cygwin Terminal Up and
+{{\bf Cygwin Primer for Math 4610 at USU:} Getting a Cygwin Terminal Up and
    Running} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-Once you have an account established, you can sign in to your account. This is
-a normal type of login prompt for any online account.
+Cygwin can be installed on just about any computer. If you are working on a
+Linux or Unix system you won't need to install Cygwin. Cygwin can be a huge
+storage hog if you install everything in the package. You can install a basic
+version that takes up less disk space. Also, the computer lab on the third
+floor of the Engineering  Building has Cygwin installed and running if this
+option is needed. Once you have a version of Cygwin available, you can double
+click the icon on the Desktop or in the list apps on a Windows machine to
+obtain a terminal to work in, see below.
 \vskip0.1in\hrule\vskip0.1in
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_02.png}
+\includegraphics{../images/cygwin_01.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
@@ -83,10 +87,11 @@ a normal type of login prompt for any online account.
     Directory} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-If you have an account on GitHub, you will already know a lot about these
-things. However, when you are logged in you will see the main screen with any
-repositories you may already have created. We will go through the steps to
-build and name repositories in the next few pages.
+The first thing to look at is what is in a directory. It is important to know
+where you are at in a directory and the like. This also serves as a first linux
+or unix command. In the screenshot below there are a couple of versions of a
+command that will list files and folders with more or less information. Note
+that most linux commands look like the following:
 \begin{verbatim}
 
    % command [options] [input parameters]
@@ -96,7 +101,7 @@ build and name repositories in the next few pages.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/cygwin_03.png}
+\includegraphics{../images/cygwin_02.png}
 \caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
          my Windows 10 box}
 \end{figure}
