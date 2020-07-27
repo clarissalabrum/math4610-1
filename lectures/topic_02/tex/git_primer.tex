@@ -1,0 +1,327 @@
+\documentclass[10pt,fleqn]{article}
+%\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\title{Math 4610 Lecture Notes \\
+            \ \\
+       A Brief Introduction to Git Usage
+  \footnote{These notes are part of an Open Resource Educational project
+            sponsored by Utah State University}}
+
+\author{Joe Koebbe}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{../../../../../tex/commands/commands}
+
+\begin{document}
+\maketitle
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Git Primer for Math 4610 at USU: What is \lq git\rq ?} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+When programmers are working on large complex software projects, it is
+important to keep all people involved on the same page.
+\begin{verbatim}
+
+   which git
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_00.png}
+\vskip0.1in
+\includegraphics{../images/cygwin_icon.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} Getting a Cygwin Terminal Up and
+   Running} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Cygwin can be installed on just about any computer. If you are working on a
+Linux or Unix system you won't need to install Cygwin. Cygwin can be a huge
+storage hog if you install everything in the package. You can install a basic
+version that takes up less disk space. Also, the computer lab on the third
+floor of the Engineering  Building has Cygwin installed and running if this
+option is needed. Once you have a version of Cygwin available, you can double
+click the icon on the Desktop or in the list apps on a Windows machine to
+obtain a terminal to work in, see below.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_01.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} List the Contents of the Home
+    Directory} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The first thing to look at is what is in a directory. It is important to know
+where you are at in a directory and the like. This also serves as a first linux
+or unix command. In the screenshot below there are a couple of versions of a
+command that will list files and folders with more or less information. Note
+that most linux commands look like the following:
+\begin{verbatim}
+
+   % command [options] [input parameters]
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_02.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} Directory Commands} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+You will need to create, move, remove, and other things to directories to keep
+work organized. The {\bf mkdir} command allows a persion to create a new
+directory in the current working directory. This is the same thing tha Windows
+Explorer allows you to do with a popup menu. There will be many places where
+a directory structure will be required. You can remove a directory with the
+{\bf rmdir} command. The {\bf cd} command can be used to navigate through a
+directory structure. Finally, on this screen capture, the {\bf pwd} command is
+used to determine the current working directory. This can be used to figure out
+where you are in a directory structure.
+\begin{verbatim}
+
+    % pwd                 current working directory
+    % cd                  change working directory
+    % mkdir               make a new directory
+    % rmdir               remove an existing directory
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_03.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} Which Command} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+You will want to know what is available for doing work within Cygwin or any
+other platform. The which command will let you know if apps or other executables
+are available on your version of Cygwin. In particular, it is important to know
+if certain compilers (e.g, javac, gcc, f77) are available. A significant number
+of tasks you will be asked to complete will require the use of a compiler and
+Cygwin has a number of (good) standard compilers for C, C++, and fortran. The
+syntax for the command is the following.
+\begin{verbatim}
+
+    % which command
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_04.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} A Simple Editing Program} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+You will need an editor to create text files. There are a number of editors that
+can be downloaded and used in any Cygwin installation. The standard editor that
+is always available for linux and unix boxes is \lq vi\rq\. This editor is a bit
+rudimentary, but works. Another editor which will be used in by the instructor
+in the course is \lq vim\rq. The syntax for starting the editor in a window is
+the following.
+\begin{verbatim}
+
+    % vim filename
+
+\end{verbatim}
+There are a lot of escape sequences it insert text, write a file and so on. If
+you are new to vim, you will need to learn at least a few of these editing
+commands.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_05.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} First View of the vim Editor} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Below is what the terminal will turn into when you start up the editor on a new
+file. To get out of the editor, you can use any of the following commands inside
+the editor.
+\begin{verbatim}
+
+    :x                  write and exit the editor - saves changes in the file
+    :q                  exit the editor if no changes have been made
+    :x!                 force a write and exit the editor - saves the file
+    :q!                 force an exit of the editor - no changes are saved
+
+\end{verbatim}
+Note that there are a few other commands that can be used to save changes. For
+example
+\begin{verbatim}
+
+    :w                  write and stay in the editor
+    :w!                 force a write and stay in the editor
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_06.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} An Example of a Text File/Program} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The following screenshot shows a few lines that have been typed into vim that
+deinfes a standard hello world example for C. To insert/append characters in the
+text file, you can use the following commands to do this. Note that the commands
+below do not show up on the screen and the chnages are made where the cursor is
+currently located.
+\begin{verbatim}
+
+    a                     append text at this point in the file
+    o                     open a line after the current line
+    O                     open a line before the current line
+
+\end{verbatim}
+To end adding or inserting text, use the escape character. Again, the commands
+will not show up on screen. Learning everything about vi or vim is a time
+consuming process. It is one of those things that you figure out as you go.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_07.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} Compiling a Program} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Compiling a program is relatively easy at this point in time. To compile the
+program on the previous page you should type in
+\begin{verbatim}
+
+    % gcc hello.c
+
+\end{verbatim}
+The result is an exeutable as seen below. If you want to name the executable
+something besides \lq a\rq\ then type the following.
+\begin{verbatim}
+
+    % gcc -o hello hello.c
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_08.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Cygwin Primer for Math 4610 at USU:} Keeping Track of Working Code}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+It is a good idea to organize your work within assignments and projects. There
+is a standard set of folders/directories in linux and unix that most have
+adopted. Your instructor follows this idea and usually creates a list of
+folders including /src, /data, /bin, and /doc. When computer literate folks see
+these folders, they know what is stored in the folders. As an example,
+\begin{verbatim}
+
+    % mkdir src
+    % mkdir bin
+
+\end{verbatim}
+can be used and then the executable the text file can be put into /src and the
+binary can be copied into /bin. 
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/cygwin_09.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
