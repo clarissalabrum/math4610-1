@@ -1,4 +1,4 @@
-# Introduction to the Course
+# Markdown Wrapper for Embedding pdf files.
 
 <hr>
 
@@ -13,6 +13,8 @@
 
 <hr>
 
-[Next Topic: >> go there](../../topic_02/pdf/topic_02.md)
+[Previous](../../toc/pdf/embed_toc.md)
+| [TOC](../../toc/pdf/embed_toc.md)
+| [Next](../../topic_02/pdf/embed_02.md)
 
 <hr>

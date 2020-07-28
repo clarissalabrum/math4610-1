@@ -11,114 +11,103 @@
 
 \setlength{\parindent}{0in}
 
-\input{../../../../tex/commands/commands}
+\input{../../../tex/commands/commands}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{\bf Math 4610 Table of Contents for Lectures:}
+{\bf Math 4610 Table of Contents for Lectures by Topic:}
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-The following list includes links to the lectures in Math 4610.
-\vskip0.1in\hrule\vskip0.1in
+The topics listed below form the content for lectues in the class. The course
+will start with the first topic and will move through each topic in order. The
+idea is to go through as many topics as possible. If a topic is not needed, it
+can be skipped or maybe come back during a leter lecture. The topics are
+self-contained. There is no set number of topics that can/will be covered in a
+single lecture. For example, during the first class it is likely that three or
+four topics will be covered based on the instructor and how many questions are
+being asked.
+
+The contents will likely change from semester to semester. So, the guide for
+this course is the table of contents listed here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
-  1. **Lecture 1.** Syllabus, Command terminals, Cygwin, coding and compiling,
-     Github, etc.
-[> > go there](https://jvkoebbe.github.io/lectures/lecture_01/md/lecture_01.md)
-  2. **Lecture 2.** Repositories, Sharing Libraries, and Test Codes} 
-[> > go there](https://jvkoebbe.github.io/lectures/lecture_01/md/lecture_01.md)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item {\bf Lecture: Accuracy Using the Difference Quotient for the Derivative}
-    \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-    \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-    \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item A mathematical example of errors in the determination of an
-            approximate formula for the derivative of a function in one
-            independent variable.
-      \item Definition of truncation error when using approximations of analytic
-            formulas. The definition of the derivative will be reviewed and used
-            as a means to obtain an approximation of the derivative.
-      \item Analysis of the difference quotient as an approximation of the
-            first derivative using Taylor series expansions. We will briefly
-            review Taylor series normally presented in the second semester of an
-            engineering calculus sequence. At USU, the prerequisite course is
-            Math 1220 Calculus II.
-      \item Coding up the approximation of the finite difference approximation
-            and testing the code. Note that the code will produce a numerical
-            value and the results will be \lq\lq verified\rq\rq\ using a known
-            derivative. A general discussion of the computation of the error
-            will start with this example.
-      \item The end of class will be used to go over any details from previous
-            classes.
-    \end{list}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item {\bf Lecture: The Bisection Method:}
-    \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-    \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-    \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item Definition of the root finding problem for one variable will be
-            stated mathematically.
-      \item A brief version of the Intermediate Value Theorem for continuous
-            functions of a single real variable will be given.
-      \item The next step will be to develop and code the Bisection method based
-            on what the Intermediate Value Theorem states. 
-      \item Using recursion to define an implementation of the Bisection Method.
-      \item An alternate way to write the Bisection method using a specified
-            number of iterations based on interval size reduction.
-    \end{list}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item {\bf Lecture: Truncation Error versus Roundoff Error} 
-    \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-    \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-    \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item Formally define truncation error and roundoff error related to
-            machine precision.
-      \item Define the terms absolute error and relative (or percent) error.
-            This part of the lecture will include examples involving
-            sensitivity of errors to small changes or perturbations in the
-            numerical computations.
-      \item How roundoff errors can be accumulate through computationally
-            intensive algorithms. One example involves the approximate solution
-            of linear systems of equations or systems of differential equations.
-      \item Discussion of the two sources of error in the context of a finite
-            difference approximation from the previous lecture. Students will
-            see how to compute both absolute error and relative error for this
-            example.
-      \item Interval Analysis and the accumulation of roundoff error. Interval
-            analysis allows a computational mathematicians to determine bounds
-            on how errors accumulate over a large number of computations.
-      \item Another related topic involves selecting \lq\lq stable\rq\rq
-            algorithms for solution of real problems. Stable algorithms are less
-            sensitive to accumulation of errors.
-      \item Determining the efficiency of an algorithm. An effective means for
-            determining efficiency is to count the number of Floating Point
-            OPerations (flops) it takes to complete the algorithm.
-      \item Tradeoffs between accuracy of an approximation versus efficiency of
-            the algorithm used to compute the approximation will be discussed in
-            terms of the examples already presented to this point.
-      \item Ideas on practical methods to efficiently compute the number of
-            flops needed to complete an algorithm. 
-    \end{list}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \item {\bf Lecture: Solution of Linear Systems of Equations} 
-    \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt
-    \topsep=0pt \rightmargin=.35in \leftmargin=.35in \labelsep=5 pt
-    \itemsep=2pt}
-      \item Questions from the previous lecture.
-      \item Gaussian elimination and implementation of row reduction operations.
-    \end{list}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+  \item Introductory Comments: This course presents fundamental content from
+        numerical methods/analysis....
+  \item The Syllabus for Math 4610 Fundamentals of Numerical Analysis: This
+        course presents fundamental topics and algorithms that are common to
+        many areas of computational mathematics....
+  \item Github Account: You will create a repository with a specific name. The
+        name will be 
+        \begin{verbatim}
+ 
+          math4610
+
+        \end{verbatim}
+  \item Building a Github Repository for Math 4610: You will learn how to build
+        a repository on Github that will be used to turn in your homework and
+        projects.
+  \item Using a Terminal: It will be imperative that you are able to work in a
+        terminal. There are a number of applications that can be used to bring
+        up a terminal running a Linux/Unix operating system or an emulater. A
+        few of these are PowerShell, Cygwin/MinGW terminals, Bash on Windows.
+  \item A Few Shell Commands: A brief primer on how to use commands in a
+        terminal are necessary.
+  \item A coding example in C and Fortran: This example will show you how to use
+        a command line terminal to write, compile, and execute a program.
+  \item How to Build Shared Libraries: Reuse of code requires a way to store and
+        link to the code.
+  \item Testing the Library: 
+  \item Using git to work locally: Having a repository on Github is great.
+        However, to work locally, git, will let you work locally and easily
+        transfer files to/from your repositories.
+  \item Taylor Series Review: In an initial course in numerical analysis, Taylor
+        series are used in the evaluation of accuracy.
+  \item Compiling and Executing Computer Programs:
+  \item Creating a Shared Library:
+  \item Linking to a Shared Library:
+  \item An Example of Arithmetic Accuracy - Approximating the Value of a
+        Derivative: We will analyze the approximation of a first derivative with
+        a finite difference quotient.
+  \item Taylor Series Analysis of the Difference Quotient:
+  \item Testing the Difference Quotient Example: We will write a code to test
+        the difference quotient approximation.
+  \item An Introduction to the Root Finding Problem:
+  \item The Intermediate Value Theorem for Continuous Functions:
+  \item The Bisection Method: A simple application of the Intermediate Value
+        Theorem results in a root finding method.
+  \item A Recursive Definition for the Bisection Method:
+  \item Rewriting the Bisection Method for Efficiency:
+  \item Truncation Error: A definition of truncation error is ....
+  \item Roundoff Error:
+  \item Absolute and Relative Error:
+  \item Examples of Roundoff Error in Real Life: Roundoff error can accumulate
+        in computationally intensive algorithms.
+  \item Solving a linear system using Gaussian Elimination and Roundoff Error:
+  \item Truncation Error vs. Roundoff Error in the Finite Difference
+        Approximation:
+  \item Bounds on Error: Interval Analysis and Accumulation of Roundoff Error:
+  \item Stable Algorithms and Computation: related topic involves selecting
+       \lq\lq stable\rq\rq algorithms for solution of real problems. Stable
+        algorithms are less sensitive to accumulation of errors.
+  \item FLOPS:
+  \item Efficiency of an Algotihm: Counting the number of computations in the
+        execution of an algorithm.
+  \item Tradeoffs between Accuracy and Efficiency:
+  \item Number of Operations for Bisection:
+  \item Newton's Method for Finding Roots:
+  \item The Secant Method:
+  \item Review of Linear Systems: Gaussian Elimination:
+  \item Review of Linear Systems: Back Substitution:
+  \item Direct Methods versus Iterative Methods for Solving Linear Systems:
+\end{enumerate}
+\vskip0.1in\hrule\vskip0.1in
+\end{document}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item {\bf Lecture: Solution of Linear Systems of Equations} 
     \begin{list}{$\bullet$}{\usecounter{beans} \parsep=0pt \listparindent=0pt

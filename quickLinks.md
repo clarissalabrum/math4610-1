@@ -8,13 +8,13 @@ computational mathematics.
 
 * [Math 4610 Home](./README.md)
 
-* [Syllabus](./syllabus/md/syllabus.md)
+* [Math 4610 Syllabus](./syllabus/md/syllabus.md)
 
-* [Lectures](./lectures/toc_lectures.md)
+* [Math 4610 Lectures](./lectures/toc/md/topic_toc.md)
 
-* [Homework/Tasks](./tasksheets/md/toc_tasksheets.md)
+* [Math 4610 Homework/Tasks](./tasksheets/md/toc_tasksheets.md)
 
-* [Project Descriptions](./projects/indexOfProjects.md)
+* [Math 4610 Project Descriptions](./projects/indexOfProjects.md)
 
 ## Review Materials:
 

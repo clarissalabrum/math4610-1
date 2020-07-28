@@ -42,7 +42,8 @@ errors (e.g, Taylor series expansion and computation of eigenvalues and
 eigenvectors), and (3) build shared libraries based on the code written (e.g,
 archives on Linux or DLLs on Windows), (4) document the work done in a software
 manual, and (5) implement efficient versions of algorithms using parallel
-programming techniques (e.g, OpenMP and OpenACC).
+programming techniques (e.g, [OpenMP](https://openmp.org) and
+[OpenACC](https://openacc.org)).
 
 Each of the items just listed is viewed as an important part of being a
 computational mathematics/scientific computing expert. There are also real
@@ -138,10 +139,10 @@ of content in the course.
 
 ## Table of Contents
 
-[Course Contents](./quickLinks.md): The previous link will take you to a
-Markdown (.md) file that contains a the table of contents for the course. For a one semester course, there may be more content
-than can be covered. The content can be used to give instructors/readers plenty
-to do.
+[Course Contents](./lectures/toc/md/topic_toc.md): The previous link will take
+you to a Markdown (.md) file that contains a the table of contents for the
+course. For a one semester course, there may be more content than can be
+covered. The content can be used to give instructors/readers plenty to do.
 
 ## Software Manual Description and Template
 
@@ -162,5 +163,7 @@ The links below will take you to a software manual template in in a Markdown
 file for use by students in Math 4610.
 
 [Software Manual Template](softwareManual/softwareManualTemplate.md)
-([download](softwareManual/softwareManualTemplate.md))
+
+You can download the file above for your own use using the save as feature on
+any web browser out there.
 
