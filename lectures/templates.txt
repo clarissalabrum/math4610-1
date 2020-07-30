@@ -1,0 +1,54 @@
+
+
+--------------------------------------------------------------------------------
+Links to url's from within a .tex file
+--------------------------------------------------------------------------------
+
+        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/cygwin_primer}{$>$ $>$ go there}
+        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/cygwin_primer.pdf}{(pdf)}
+
+
+--------------------------------------------------------------------------------
+Figure environment in .tex files
+--------------------------------------------------------------------------------
+
+
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=6.0in]{../images/cygwin_00.png}
+\vskip0.1in
+\caption{Website for installation of Cygwin. {Screenshot} taken using
+         {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
+\end{figure}
+\eject
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+
+--------------------------------------------------------------------------------
+previous - toc - next navigation in markdown
+--------------------------------------------------------------------------------
+
+<hr>
+
+[Previous](../../topic_03/pdf/embed_03.md)
+| [Table of Contents](../../toc/pdf/embed_toc.md)
+| [Next](../../topic_05/pdf/embed_05.md)
+
+<hr>
+
+--------------------------------------------------------------------------------
+previous - toc - next navigation in html
+--------------------------------------------------------------------------------
+
+<hr>
+
+<a href="../../topic_03/html/topic_03.html"> Previous </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../toc/html/topic_toc.html"> Table of Contents  </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../topic_05/html/topic_05.html"> Next </a>
+
+<hr>
+

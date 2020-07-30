@@ -1,5 +1,6 @@
 \documentclass[10pt,fleqn]{article}
-%\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{graphicx}
 
 
 \setlength{\topmargin}{-.75in}
@@ -13,48 +14,107 @@
 
 \setlength{\parindent}{0in}
 
-\input{../../../../../../tex/commands/commands}
+\input{/cygdrive/m/tex/commands/commands}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{{\bf Linux/Unix Primer for Math 4610 at USU:} List the Contents of the Home
-    Directory} 
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 5.}
 \vskip0.1in\hrule\vskip0.1in
-\noindent
-The first thing to look at is what is in a directory. It is important to know
-where you are at in a directory and the like. This also serves as a first linux
-or unix command. In the screenshot below there are a couple of versions of a
-command that will list files and folders with more or less information. Note
-that most linux commands look like the following:
+
+This topic covers information on how to work once a terminal is up and running
+on your computer. A Linux/Unix operating system should be running in the
+terminal. In most real computational settings, it is important to be able to
+work using a command line to create files, modify these files, compile
+code, and a number of other tasks. You can invoke multiple terminals and work on
+multiple files at the same time. Your instructor has three or four terminals
+open at any given time. One to edit files, one to compile and execute code, and
+the third to display results. The homework and projects assigned in the class
+will typically require the use of a terminal to complete the work.
+
+We will eventually use High Performance Computing (HPC) resources at the Center
+for High Performance Computing (CHPC) at the University of Utah to work on a
+project or two. The access we will have will be through the terminals or
+terminal emulators running Linux/Unix operating systems. So, it is important to
+be familiar with at least a few basic Linux/Unix commands. In this section of
+the notes we will work through a few of the more important commands needed. We
+will also introduce more commands with options as we work through the semester.
+
+In general, a Linux/Unix command can be written in the form:
 \begin{verbatim}
 
-    % command [options] [input parameters]
+   % command [options] [input parameters]
 
 \end{verbatim}
+where the \% is the prompt for entering a command and \lq\lq command\rq\rq\ is
+replaced with the command. For example, replacing \lq\lq command\rq\rq with
+the string \lq\lq pwd\rq\rq gives
+\begin{verbatim}
+
+   % pwd 
+
+\end{verbatim}
+The options and parameters in the general form may or may not be needed
+depending on what you are trying to do. Note that the pwd command will display
+the (p)resent (w)orking (d)irectory. In most cases, the pwd command will not
+need any options or parameters. When we compile code, it is common to use a
+number of options on the compiler commands.
+
+Each of the subsections below will cover a single command to help you get
+started. There are hundreds of commands that can be used from within a terminal.
+Some of these commands can be unforgiving - there is not trash folder that will
+save you from accidently removing a file. Note that there are some safety
+measures that one can add. See the file remove command (rm) below.
+
+Another important issue that any computational person should be aware of is that
+there are a number of shells that you can work in. A command shell, say bash,
+will have a slightly different flavor of commands and syntac. The shells that
+most use are bash, csh, tcsh, and ksh. It is probably best to select a shell,
+like bash or tcsh, and stick with that throughout the semester. Finally, a good
+computational person is able to chain together a set of commands to perform a
+sequence of commands. This sometimes referred to as shell programming. It is an
+incredibly useful skill to have. However, shell programming is beyond the scope
+of this course - meaning we can get by without it.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\large{\bf
+Linux Commands for Math 4610 at USU:} List the Contents of the Home Folder}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Once a terminal is running, the first thing we probably want to do is to look at
+what is in a the directory we are in. It is important to know where you are at
+in a directory tree and the like. This also serves as a first linux or unix
+command. In the screenshot below there are a couple of versions of a command
+that will list files and folders with more or less information. Note that most
+linux commands look like the general command form given above.
 \vskip0.1in\hrule\vskip0.1in
 \vfill
 \begin{figure}[h]
 \centering
 \includegraphics{../images/cygwin_02.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\caption{Two versions of the ls command used to list the contents of the curtent
+         directory. Screenshot taken using {\bf Snip \& Sketch}. This is an app
+         on my Windows 10 box}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-{{\bf Cygwin Primer for Math 4610 at USU:} Directory Commands} 
+{{\bf
+Cygwin Primer for Math 4610 at USU:} Directory Commands} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-You will need to create, move, remove, and other things to directories to keep
-work organized. The {\bf mkdir} command allows a persion to create a new
-directory in the current working directory. This is the same thing tha Windows
-Explorer allows you to do with a popup menu. There will be many places where
-a directory structure will be required. You can remove a directory with the
+You will need to create files and folders, move files and folders, remove files,
+and perform other operations to directories to keep work organized. The
+{\bf mkdir} command allows a persion to create a new directory in the current
+working directory. This is the same thing tha Windows Explorer allows you to do
+with a popup menu (New Folder). There will be many places where a directory
+structure will be required. You can remove a directory with the
 {\bf rmdir} command. The {\bf cd} command can be used to navigate through a
 directory structure. Finally, on this screen capture, the {\bf pwd} command is
 used to determine the current working directory. This can be used to figure out
@@ -72,8 +132,10 @@ where you are in a directory structure.
 \begin{figure}[h]
 \centering
 \includegraphics{../images/cygwin_03.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\caption{
+  Commands for making and removing folders, changing the working directory and
+  checking the location of the current folder files and folders. Screenshot
+  taken using {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

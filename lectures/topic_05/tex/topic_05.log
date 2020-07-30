@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  29 JUL 2020 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Cygwin) (preloaded format=pdflatex 2019.5.11)  30 JUL 2020 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**topic_04.tex
-(./topic_04.tex
+**topic_05
+(./topic_05.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -200,7 +200,7 @@ e
 \c@definition=\count101
 \c@problem=\count102
 )
-No file topic_04.aux.
+No file topic_05.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
@@ -229,7 +229,7 @@ LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
 
-! I can't write on file `topic_04.pdf'.
+! I can't write on file `topic_05.pdf'.
 (Press Enter to retry, or Control-D to exit; default file extension is `.pdf')
 Please type another file name for output: 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -247,18 +247,22 @@ Please type another file name for output:
 \everyMPtoPDFconversion=\toks16
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 57.
+(Font)              <7> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 57.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 57.
+(Font)              <5> on input line 51.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 51.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<../images/cygwin_00.png, id=4, 501.37312pt x 327.47343pt>
-File: ../images/cygwin_00.png Graphic file (type png)
-<use ../images/cygwin_00.png>
-Package pdftex.def Info: ../images/cygwin_00.png  used on input line 77.
-(pdftex.def)             Requested size: 433.62pt x 283.23564pt.
+<../images/cygwin_02.png, id=6, 502.12593pt x 321.45094pt>
+File: ../images/cygwin_02.png Graphic file (type png)
+<use ../images/cygwin_02.png>
+Package pdftex.def Info: ../images/cygwin_02.png  used on input line 84.
+(pdftex.def)             Requested size: 502.12471pt x 321.45015pt.
+
+Overfull \hbox (14.30222pt too wide) in paragraph at lines 84--86
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -266,55 +270,143 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<../images/cygwin_icon.png, id=15, 48.93282pt x 59.47218pt>
-File: ../images/cygwin_icon.png Graphic file (type png)
-<use ../images/cygwin_icon.png>
-Package pdftex.def Info: ../images/cygwin_icon.png  used on input line 92.
-(pdftex.def)             Requested size: 144.54pt x 175.71pt.
+<../images/cygwin_03.png, id=17, 499.11469pt x 317.68687pt>
+File: ../images/cygwin_03.png Graphic file (type png)
+<use ../images/cygwin_03.png>
+Package pdftex.def Info: ../images/cygwin_03.png  used on input line 117.
+(pdftex.def)             Requested size: 499.11345pt x 317.68608pt.
+
+Overfull \hbox (11.29095pt too wide) in paragraph at lines 117--119
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2
 
- <../images/cygwin_00.png>]
-<../images/cygwin_01.png, id=22, 499.8675pt x 315.42844pt>
-File: ../images/cygwin_01.png Graphic file (type png)
-<use ../images/cygwin_01.png>
-Package pdftex.def Info: ../images/cygwin_01.png  used on input line 105.
-(pdftex.def)             Requested size: 433.62pt x 273.63599pt.
+ <../images/cygwin_02.png>]
+<../images/cygwin_04.png, id=24, 498.36188pt x 316.93407pt>
+File: ../images/cygwin_04.png Graphic file (type png)
+<use ../images/cygwin_04.png>
+Package pdftex.def Info: ../images/cygwin_04.png  used on input line 145.
+(pdftex.def)             Requested size: 498.36066pt x 316.93329pt.
+
+Overfull \hbox (10.53816pt too wide) in paragraph at lines 145--147
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3
 
- <../images/cygwin_icon.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
- [4
+ <../images/cygwin_03.png>]
+<../images/cygwin_05.png, id=31, 500.62032pt x 316.93407pt>
+File: ../images/cygwin_05.png Graphic file (type png)
+<use ../images/cygwin_05.png>
+Package pdftex.def Info: ../images/cygwin_05.png  used on input line 175.
+(pdftex.def)             Requested size: 500.6191pt x 316.93329pt.
 
- <../images/cygwin_01.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 123.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
+Overfull \hbox (12.7966pt too wide) in paragraph at lines 175--177
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4
+
+ <../images/cygwin_04.png>]
+<../images/cygwin_06.png, id=38, 499.11469pt x 316.18124pt>
+File: ../images/cygwin_06.png Graphic file (type png)
+<use ../images/cygwin_06.png>
+Package pdftex.def Info: ../images/cygwin_06.png  used on input line 210.
+(pdftex.def)             Requested size: 499.11345pt x 316.18047pt.
+
+Overfull \hbox (11.29095pt too wide) in paragraph at lines 210--212
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5
+
+ <../images/cygwin_05.png>]
+<../images/cygwin_07.png, id=45, 502.12593pt x 320.69812pt>
+File: ../images/cygwin_07.png Graphic file (type png)
+<use ../images/cygwin_07.png>
+Package pdftex.def Info: ../images/cygwin_07.png  used on input line 241.
+(pdftex.def)             Requested size: 502.12471pt x 320.69733pt.
+
+Overfull \hbox (14.30222pt too wide) in paragraph at lines 241--243
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6
+
+ <../images/cygwin_06.png>]
+<../images/cygwin_08.png, id=52, 500.62032pt x 318.43968pt>
+File: ../images/cygwin_08.png Graphic file (type png)
+<use ../images/cygwin_08.png>
+Package pdftex.def Info: ../images/cygwin_08.png  used on input line 271.
+(pdftex.def)             Requested size: 500.6191pt x 318.4389pt.
+
+Overfull \hbox (12.7966pt too wide) in paragraph at lines 271--273
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7
+
+ <../images/cygwin_07.png>]
+<../images/cygwin_09.png, id=60, 497.60907pt x 315.42844pt>
+File: ../images/cygwin_09.png Graphic file (type png)
+<use ../images/cygwin_09.png>
+Package pdftex.def Info: ../images/cygwin_09.png  used on input line 300.
+(pdftex.def)             Requested size: 497.60785pt x 315.42766pt.
+
+Overfull \hbox (9.78535pt too wide) in paragraph at lines 300--302
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8
+
+ <../images/cygwin_08.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
+ [9
+
+ <../images/cygwin_09.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 307.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 5067 strings out of 492632
- 75054 string characters out of 6136088
- 163051 words of memory out of 5000000
- 8956 multiletter control sequences out of 15000+600000
+ 5103 strings out of 492632
+ 75742 string characters out of 6136088
+ 162051 words of memory out of 5000000
+ 8977 multiletter control sequences out of 15000+600000
  4611 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,5n,25p,225b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,5n,25p,221b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb>
-Output written on topic_04.pdf (4 pages, 100569 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb>
+Output written on topic_05.pdf (9 pages, 145842 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
