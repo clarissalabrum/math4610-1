@@ -14,7 +14,7 @@
 <hr>
 
 [Previous](../../../README.md)
-| [TOC](../../toc/pdf/embed_toc.md)
+| [Table of Contents](../../toc/pdf/embed_toc.md)
 | [Next](../../topic_01/pdf/embed_01.md)
 
 <hr>
