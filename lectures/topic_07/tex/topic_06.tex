@@ -1,0 +1,248 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 4.}
+\vskip0.1in\hrule\vskip0.1in
+
+  \item {\bf Compiling and Running a Simple Code - Hello World:} As a simple
+        example, how to compile and run a simple code in the C programming
+        language will be presented. This will be related to the command window
+        primer in the lecture.
+        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/coding_example}{$>$ $>$ go there}
+        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/coding_example}{(pdf)}
+  \item {\bf Github and Homework:} You will need to create a student account on
+        Github for this course. You will be required to build and maintain a
+        software manual for the computer codes you will write. A specific format
+        for your homework repository and the software manual will be discussed.
+        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/md/github_primer}{$>$ $>$ go there}
+        \href{https://jvkoebbe.github.io/math4610/lectures/lecture_01/pdf/github_primer.pdf}{(pdf)}
+  \item {\bf Homework Tasksheets:} Homework for the course will be given via
+        tasksheets for students to complete. These task sheets will appear on
+        Github for this course. The table of contents for the tasksheets can be
+        found through the following links.
+        \href{https://jvkoebbe.github.io/math4610/tasksheets/md/toc_tasksheets}{$>$ $>$ go there}
+        \href{https://jvkoebbe.github.io/math4610/tasksheets/pdf/toc_tasksheet.pdf}{(pdf)}
+  \item {\bf Using Version Control Systems (VCS) - git:} A brief discussion of
+        \lq git\rq\ will be discussed in class to show how to work and
+        collaborate with other students and your instructor.
+  \item {\bf Github and Homework:} You will need to create a student account on
+        Github for this course. You will be required to build and maintain a
+        software manual for the computer codes you will write. A specific format
+        for your homework repository and the software manual will be discussed.
+\end{list}
+\vskip0.1in\hrule\vskip0.1in
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\documentclass[10pt,fleqn]{article}
+%\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\title{Math 4610 Lecture Notes \\
+            \ \\
+       A Brief Coding/Compilation Example
+  \footnote{These notes are part of an Open Resource Educational project
+            sponsored by Utah State University}}
+
+\author{Joe Koebbe}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+%\input{../../../../../../../../../tex/commands/commands}
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+\maketitle
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Coding Example for Math 4610 at USU: Creation of a sub-directory.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+First start up a terminal to do the work to create a file with code in it. For
+Cygwin, double click on the Cygwin Icon on your desktop or click on the the
+icon in the task bar.
+
+A terminal as shown below will appear. Type in the command shown to create a
+new subfolder in the current directory. In the window, the command that does
+the work is:
+\begin{verbatim}
+
+    mkdir src
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/coding_01.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Coding Example for Math 4610 at USU: Change Directory and Edit} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+To change the directory, use the command
+\begin{verbatim}
+
+    cd src
+
+\end{verbatim}
+Once in the new directory, the next step is to edit a file to implement some
+sort of action for the computer. So, type:
+\begin{verbatim}
+
+    vim hello.c
+
+\end{verbatim}
+The editor, \lq\lq vim\rq\rq\ is a very standard editor and comes with the
+installation of Cygwin.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/coding_02.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Coding Example for Math 4610 at USU: Typing in a Program in C} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+The lines in the terminal shown below define a C program for doing a very simple
+task. Namely, to print the string
+
+\begin{verbatim}
+
+hello world!
+
+\end{verbatim}
+to the screen.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/coding_03.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Coding Example for Math 4610 at USU: Getting Back to the Command Prompt} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+To exit the vim session and save the file, type in a colon character
+\lq\lq :\rq\rq\ followed by x and return. The terminal will revert to a command
+terminal ready to type in commands.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/coding_04.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Coding Example for Math 4610 at USU: Compiling the Code} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+At the command prompt, the first two lines will be as they were to start. The
+next line is used to compile the code. That is,
+\begin{verbatim}
+
+    gcc -o hello hello.c
+
+\end{verbatim}
+will compile the program and create an executable file for you. The last part
+below is used to see what is in the directory. The executable file is
+\begin{verbatim}
+
+    hello.exe
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/coding_05.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Coding Example for Math 4610 at USU: Final Step - Run the Code} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Once we have an executable file, hello.exe, the code can be run as follows.
+\begin{verbatim}
+
+    ./hello.exe
+
+\end{verbatim}
+The output from this command will be as shown in the image below. The output is
+printed on the first line.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/coding_06.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

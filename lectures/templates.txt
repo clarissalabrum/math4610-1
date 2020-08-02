@@ -26,6 +26,28 @@ Figure environment in .tex files
 \vskip0.1in\hrule\vskip0.1in
 \noindent
 
+
+--------------------------------------------------------------------------------
+figure environment from within .htmlfiles
+--------------------------------------------------------------------------------
+
+<figure>
+<img src="../images/cygwin_00.png" width=680
+     alt = "image not found">
+     <figcaption>
+       The Cygwin home page with installation instructions. Screenshot taken
+       using Snip & Sketch. This is an app on my Windows 10 box
+     </figcaption>
+</figure>
+
+
+--------------------------------------------------------------------------------
+figure environment from within .md files
+--------------------------------------------------------------------------------
+
+
+![The Cygwin home page with installation instructions. Screenshot taken using Snip & Sketch. This is an app on my Windows 10 box](../images/cygwin_00.png)
+
 --------------------------------------------------------------------------------
 previous - toc - next navigation in markdown
 --------------------------------------------------------------------------------
@@ -51,4 +73,31 @@ previous - toc - next navigation in html
 <a href="../../topic_05/html/topic_05.html"> Next </a>
 
 <hr>
+
+
+--------------------------------------------------------------------------------
+preamble for html documents
+--------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+
+</body>
+</html>
 

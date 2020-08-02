@@ -1,28 +1,27 @@
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-\usepackage{graphicx}
 
+<!DOCTYPE html>
+<html>
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
 
-\nofiles
+<hr>
 
-\pagestyle{empty}
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 5.  </h1>
 
-\setlength{\parindent}{0in}
-
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 5.}
-\vskip0.1in\hrule\vskip0.1in
+<hr>
 
 This topic covers information on how to work once a terminal is up and running
 on your computer. A Linux/Unix operating system should be running in the
@@ -44,19 +43,18 @@ needed. We will also introduce more commands with options as we work through the
 semester.
 
 In general, a Linux/Unix command can be written in the form:
-\begin{verbatim}
+<pre>
 
     koebbe% command [options] [input parameters]
 
-\end{verbatim}
-where koebbe\% is the prompt for entering a command and \lq\lq command\rq\rq\ is
-replaced with a command. For example, replacing \lq\lq command\rq\rq with
-the string \lq\lq pwd\rq\rq gives
-\begin{verbatim}
+</pre>
+where koebbe\% is the prompt for entering a command and "command" is replaced
+with a command. For example, replacing "command" with the string "pwd" gives
+<pre>
 
     koebbe% pwd 
 
-\end{verbatim}
+</pre>
 The options and parameters in the general form may or may not be needed
 depending on what you are trying to do. Note that the pwd command will display
 the (p)resent (w)orking (d)irectory. In most cases, the pwd command will not
@@ -82,95 +80,100 @@ of commands to perform a sequence of commands. This sometimes referred to as
 shell programming or shell scripting. This is an incredibly useful skill to
 have. However, shell programming is beyond the scope of this course - meaning we
 can get by without it.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf List the Contents of the Home Folder} }
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+<hr>
+
+<h2> List the Contents of the Home Folder </h2>
+
+<hr>
+
 Once a terminal is running, the first thing we probably want to do is to look at
 what is in a the directory we are in. It is also important to know where you are
 in a directory tree and the like. This also serves as a first linux or unix
 command. In the screenshot below there are a couple of versions of a command
 that will list files and folders with more or less information. Note that most
 linux commands look like the general command form given above. The example in
-the figure shows to versions of the \lq\lq ls\rq\rq\ command. The first is a
+the figure shows to versions of the "ls" command. The first is a
 simple version that lists files in the folder. The second example adds the
-\lq\lq\ -a\rq\rq\ flag. This results in a list of all files including hidden
+"-a" flag. This results in a list of all files including hidden
 files in the folder. The output shows a couple more files. The last example
-uses the flag(s) \lq\lq\ -al\rq\rq\ which gives a long listing for the files in
+uses the flag(s) "-al" which gives a long listing for the files in
 the folder. There are lots of variations that can be used to obtain information
 about the files in a folder.
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_02.png}
-\caption{Three versions of the ls command used to list the contents of the
-         curtent directory. Screenshot taken using {\bf Snip \& Sketch}. This is
-         an app on my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf Directory/Folder Commands}} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_02.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Three versions of the ls command used to list the contents of the curtent
+       directory. Screenshot taken using Snip & Sketch. This is an app on my
+       Windows 10 box.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> Directory/Folder Commands </h2> 
+
+<hr>
+
 You will need to create files and folders, move files and folders, remove files,
 and perform other operations to directories to keep work organized. The
-{\bf mkdir} command allows a persion to create a new directory in the current
+**mkdir** command allows a persion to create a new directory in the current
 working directory. This is the same thing tha Windows Explorer allows you to do
 with a popup menu (New Folder). There will be many places where a directory
-structure will be required. You can remove a directory with the {\bf rmdir}
-command. The {\bf cd} command can be used to navigate through a directory
-structure. Finally, on this screen capture, the {\bf pwd} command is used to
+structure will be required. You can remove a directory with the **rmdir**
+command. The **cd** command can be used to navigate through a directory
+structure. Finally, on this screen capture, the **pwd** command is used to
 determine the current working directory. This can be used to figure out where
 you are in a directory structure.
-\begin{verbatim}
+<pre>
 
     koebbe% pwd                 current working directory
     koebbe% cd                  change working directory
     koebbe% mkdir               make a new directory
     koebbe% rmdir               remove an existing directory
 
-\end{verbatim}
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_03.png}
-\caption{
-  Commands for making and removing folders, changing the working directory and
-  checking the location of the current folder files and folders. Screenshot
-  taken using {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
-\end{figure}
-\eject
-\noindent
+</pre>
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_03.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Commands for making and removing folders, changing the working directory 
+       and checking the location of the current folder files and folders.
+       Screenshot taken using Snip & Sketch. This is an app on my Windows 10
+       box.
+     </figcaption>
+</figure>
+
+<hr>
+
 There are a few short cut commands for moving around your directory structure in
 Linux. Here are a few that may save you some time.
-\begin{verbatim}
+<pre>
 
     koebbe% cd ~                change working directory to the home directory
     koebbe% cd ..               change working directory to the parent directory
     koebbe% cd ../subfolder     change working directory up one folder and then
-                                to subfolder 
+                                to subfolder
     koebbe% cd subfolder        change working directory to a subfolder of the
                                 current folder
     koebbe% cd ./subfolder      same as above
     koebbe% mkdirs folder       make the specfied folder and all subfolders
     koebbe% rmdir -rf folder    remove an existing directory with prejudice
 
-\end{verbatim}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf The which and man Commands}} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+</pre>
+<hr>
+
+<h2> The which and man Commands </h2>
+
+<hr>
+
 You will probably want to know what is available for doing work within Cygwin
 or any other terminal emulator. The which command allows you determine if apps
 or other executables are available on your version of Cygwin. In particular, it
@@ -178,11 +181,11 @@ is important to know if certain compilers (e.g, javac, gcc, f77) are available.
 A significant number of tasks you will be asked to complete will require the use
 of a compiler and Cygwin has a number of (good) standard compilers for C, C++,
 and fortran. The syntax for the command is the following.
-\begin{verbatim}
+<pre>
 
     koebbe% which command-name
 
-\end{verbatim}
+</pre>
 If the command results in command not found, this means that you typed the name
 incorrectly (a constant source of frustration for your instructor) or the app
 or command has not been installed. If in Cygwin, you can use the setup script to
@@ -192,183 +195,197 @@ In the example shown below, the which command is used to test for 4 different
 compilers. In each case, the location of the file associated with the command is
 given. Once you know a command is available, you can use the man command to get
 information about command usage. For example, typing
-\begin{verbatim}
+<pre>
 
     koebbe% man gcc
 
-\end{verbatim}
+</pre>
 will display information on the gcc compiler along with explanations and
 documentation on how to specify flags and options for the compiler.
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_04.png}
-\caption{Using the which command to determine if compilers are installed.
-         Screenshot taken using {\bf Snip \& Sketch}. This is an app on my
-         Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf A Simple Editing Program}} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_04.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Using the which command to determine if compilers are installed.
+       Screenshot taken using Snip & Sketch. This is an app on my Windows 10
+       box.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> A Simple Editing Program </h2>
+
+<hr>
+
 You will need an editor to create text files. There are a number of editors that
 can be downloaded and used in any Cygwin installation. The standard editor that
-is always available for linux and unix boxes is \lq vi\rq\. This editor is a bit
+is always available for linux and unix boxes is "vi". This editor is a bit
 rudimentary, but works. Another editor which will be used in by the instructor
-in the course is \lq vim\rq, a modified and improved version of vi. The syntax
+in the course is "vim", a modified and improved version of vi. The syntax
 for starting the editor in a window is the following.
-\begin{verbatim}
+<pre>
 
     koebbe% vim filename
 
-\end{verbatim}
+</pre>
 There are a lot of escape sequences vim uses to insert text, write a file and
 so on. If you are new to vim, you will need to learn at least a few of these
 editing commands.
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_05.png}
-\caption{How to start the vim editor. Screenshot taken using vim. The name of 
-         the file being edited is hello.c. {\bf Snip \& Sketch}. This is an app
-         on my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf First View of the vim Editor}} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_05.png" width=680
+     alt = "image not found">
+     <figcaption>
+       How to start the vim editor. Screenshot taken using vim. The name of the
+       file being edited is hello.c. Snip \& Sketch. This is an app on my
+       Windows 10 box.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> First View of the vim Editor </h2>
+
+<hr>
+
 The terminal will turn what is shown below into when you start up the editor on
 a new file. To get out of the editor, you can use any of the following commands
 inside the editor.
-\begin{verbatim}
+<pre>
 
     :x                  write and exit the editor - saves changes in the file
     :q                  exit the editor if no changes have been made
     :x!                 force a write and exit the editor - saves the file
     :q!                 force an exit of the editor - no changes are saved
 
-\end{verbatim}
+</pre>
 You need to type in the colon, :, to indicate you want to enter a command. Note
 that there are a few other commands that can be used to save changes. For
 example
-\begin{verbatim}
+<pre>
 
     :w                  write and stay in the editor
     :w!                 force a write and stay in the editor
 
-\end{verbatim}
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_06.png}
-\caption{Opening up a new file in vim. Screenshot taken using
-         {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf An Example of a Text File/Program}}
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+</pre>
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_06.png" width=680
+     alt = "image not found">
+     <figcaption>
+        Opening up a new file in vim. Screenshot taken using Snip & Sketch. This
+        is an app on my Windows 10 box.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> An Example of a Text File/Program </h2>
+
+<hr>
+
 The following screenshot shows a few lines that have been typed into vim that
 deinfes a standard hello world example for C. To insert/append characters in the
 text file, you can use the following commands to do this. Note that the commands
 below do not show up on the screen and the chnages are made where the cursor is
 currently located.
-\begin{verbatim}
+<pre>
 
     a                     append text at this point in the file
     o                     open a line after the current line
     O                     open a line before the current line
 
-\end{verbatim}
+</pre>
 To end adding or inserting text, use a single escape character. Again, the
 commands will not show up on screen. Learning everything about vi or vim is a
 time consuming process. It is one of those things that you figure out as you go.
 The advantage of vi is that it exists on every flavor of Linux/Unix.
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_07.png}
-\caption{Adding lines to a text file. The text gives an example of the \lq\lq
-         hello world\rq\rq\ program from a C course. Screenshot taken using
-         {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf Compiling a Program}}
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_07.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Adding lines to a text file. The text gives an example of the "hello
+       world" program from a C course. Screenshot taken using Snip & Sketch.
+       This is an app on my Windows 10 box.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> Compiling a Program </h2>
+
+<hr>
+
 Compiling a program is relatively easy at this point in time. To compile the
 program shown in the previous section you can type:
-\begin{verbatim}
+<pre>
 
     koebbe% gcc hello.c
 
-\end{verbatim}
+</pre>
 The result is an exeutable as seen below. If you want to name the executable
-something besides \lq a\rq\ then type the following.
-\begin{verbatim}
+something besides "a" then type the following.
+<pre>
 
     koebbe% gcc -o hello hello.c
 
-\end{verbatim}
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_08.png}
-\caption{Compiling the hello.c program. Screenshot taken using
-        {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\large{\bf Keeping Track of Working Code}}
-\vskip0.1in\hrule\vskip0.1in
-\noindent
+</pre>
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_08.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Compiling the hello.c program. Screenshot taken using Snip & Sketch. This
+       is an app on my Windows 10 box.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> Keeping Track of Working Code </h2>
+
+<hr>
+
 It is a good idea to organize your work within assignments and projects. There
 is a standard set of folders/directories in linux and unix that most have
 adopted. Your instructor follows this idea and usually creates a list of
 folders including /src, /data, /bin, and /doc. When computer literate folks see
 these folders, they know what is stored in the folders. As an example, type the
 commands
-\begin{verbatim}
+<pre>
 
     koebbe% mkdir src
     koebbe% mkdir bin
 
-\end{verbatim}
+</pre>
 to create folders for the executable the text file: src for the text files and
 bin for the binary/executable files. 
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/cygwin_09.png}
-\caption{Some commands to reorganize files. Screenshot taken using
-         {\bf Snip \& Sketch}. This is an app on my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
+
+<hr>
+
+<figure>
+<img src="../images/cygwin_09.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Some commands to reorganize files. Screenshot taken using Snip & Sketch
+       This is an app on my Windows 10 box.
+     </figcaption>
+</figure>
+
+<hr>
+
+</body>
+</html>

@@ -6,25 +6,31 @@ to the [Introduction to Math 4610](../../../README.md) if needed to restart from
 the beginning.
 
   * **Topic 1.** [Introductory Comments:](../../topic_01/md/topic_01.md) This
-    course presents fundamental content from numerical methods/analysis....
+                 course presents fundamental content from numerical
+                 methods/analysis and and introductory computational skills.
 
   * **Topic 2.** The [Syllabus](../../topic_02/pdf/embed_02.md) for Math 4610
-    Fundamentals of Numerical Analysis: This course presents fundamental topics
-    and algorithms that are common to many areas of computational
-    mathematics....
+                 This topic involves covering the syllabus for the semester.
 
-  * **Topic 3.** [Github Accounts:](../../topic_03/md/topic_03.md)
-    course presents fundamental content from numerical methods/analysis....
+  * **Topic 3.** [Github Accounts:](../../topic_03/md/topic_03.md) We will be
+                 using git and Github to do almost all of our work. This
+                 includes setting up a place store and retrieve files, save
+                 code, assignments, and your software manual.
+
+  * **Topic 4.** [Opening a Terminal:](../../topic_04/md/topic_04.md) This topic
+                 covers information on how to work with terminals and using a
+                 Linux or Unix environment.
+
+  * **Topic 5.** [Linux/Unix Commands:](../../topic_05/md/topic_05.md) This
+                 topic covers information on how to work once a terminal is up
+                 and running on your computer.
+
+  * **Topic 6.** [A Simple Programming Example:](../../topic_06/md/topic_06.md)
+
+  * **Topic 7.** [Building a Github Repository:](../../topic_07/md/topic_07.md)
 
 NNNNNNNNNNNNNNNNNNNNN
 
-  \item Github Account: You will create a repository with a specific name. The
-        name will be 
-        \begin{verbatim}
- 
-          math4610
-
-        \end{verbatim}
   \item Building a Github Repository for Math 4610: You will learn how to build
         a repository on Github that will be used to turn in your homework and
         projects.
