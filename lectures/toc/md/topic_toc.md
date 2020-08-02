@@ -29,8 +29,17 @@ the beginning.
 
   * **Topic 7.** [Building a Github Repository:](../../topic_07/md/topic_07.md)
 
+  * **Topic 8.** [Using git to Work Locally:](../../topic_08/md/topic_08.md)
+
+  * **Topic 9.** [Approximation of the Derivative:](../../topic_09/md/topic_09.md)
+
+  * **Topic 10.** [Computational Accuracy:](../../topic_08/md/topic_08.md)
+
 NNNNNNNNNNNNNNNNNNNNN
 
+  \item Using git to work locally: Having a repository on Github is great.
+        However, to work locally, git, will let you work locally and easily
+        transfer files to/from your repositories.
   \item Building a Github Repository for Math 4610: You will learn how to build
         a repository on Github that will be used to turn in your homework and
         projects.
@@ -40,14 +49,9 @@ NNNNNNNNNNNNNNNNNNNNN
         few of these are PowerShell, Cygwin/MinGW terminals, Bash on Windows.
   \item A Few Shell Commands: A brief primer on how to use commands in a
         terminal are necessary.
-  \item A coding example in C and Fortran: This example will show you how to use
-        a command line terminal to write, compile, and execute a program.
   \item How to Build Shared Libraries: Reuse of code requires a way to store and
         link to the code.
   \item Testing the Library: 
-  \item Using git to work locally: Having a repository on Github is great.
-        However, to work locally, git, will let you work locally and easily
-        transfer files to/from your repositories.
   \item Taylor Series Review: In an initial course in numerical analysis, Taylor
         series are used in the evaluation of accuracy.
   \item Compiling and Executing Computer Programs:

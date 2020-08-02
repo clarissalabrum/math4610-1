@@ -42,26 +42,32 @@ the work we do in Math 4610 and also the projects in the course. Then it would
 make sense to have a subfolder for the class, say math4610, and subfolders
 contained in math4610 for each project. One way to do this involves a sequence
 of three commands.
+<pre>
 
     koebbe% mkdir math4610
     koebbe% cd math4610
     koebbe% mkdir project
 
+</pre>
 This will create the subfolder, math4610, change the working directory to
 math4610 and then make a subfolder named project.
 
 Let's consider the hello world example from the previous topic. The commands
 to set this up would be
+<pre>
 
     koebbe% mkdir math4610
     koebbe% cd math4610
     koebbe% mkdir hello_world 
 
+</pre>
 Most Linux/Unix commands have shortcuts for operations like this. We could just
 as easily used the following command to get the same two subfolders.
+<pre>
 
     koebbe% mkdir -p math4610/hello_world
 
+</pre>
 The -p flag will create parent directories as needed. In our case, if the folder
 ./math4610 does not exist, the folder will be created and then the
 ./math4610//hello_world/ is created if it does not already exist. If the parent
@@ -69,14 +75,18 @@ folders exist, the command will continue down through the folders. This command
 will not change existing files and folders in the folder tree.
 
 To see that this has worked, list the files in the current folder.
+<pre>
 
     koebbe% ls
 
+</pre>
 Now, let's get to the appropriate folder using the cd or change directory
 command.
+<pre>
 
     koebbe% cd math4610/hello_world
 
+</pre>
 Notice the folder name we are using is a subfolder and the Linux/Unix file
 separator is the "/" character between the folder names. In any
 case, our terminal session should be in the appropriate subfolder.
@@ -84,9 +94,11 @@ case, our terminal session should be in the appropriate subfolder.
 Within the project folder, we should try to be organized in the development of
 the code. Type in the command shown below to create a new subfolder in the
 current directory where we can store the program file we are going to create.
+<pre>
 
     koebbe% mkdir src
 
+</pre>
 The commands to this point in the process are shown in the following figure.
 
 <hr>
@@ -107,14 +119,18 @@ The commands to this point in the process are shown in the following figure.
 <hr>
 
 To change the directory, use the command
+<pre>
 
     koebbe% cd src
 
+</pre>
 Once in the new directory, the next step is to edit a file to implement some
 sort of action for the computer. So, to edit a file, type:
+<pre>
 
     koebbe% vim hello.c
 
+</pre>
 The editor, "vim", is a very standard editor and comes with the
 installation of Cygwin.
 
@@ -147,9 +163,11 @@ To get a program into a text file, start by typing in the vim command
 commands will not explicitly show up unless input is needed. The lines in the
 terminal shown below define a C program for doing a very simple task. Namely, to
 print the string
+<pre>
 
     Hello World!
 
+</pre>
 to the screen.
 
 <figure>
@@ -197,9 +215,11 @@ exists in the folder.
 After this, the next thing to do is to compile the code. The compiler we will
 use is gcc which comes along with Cygwin and many other computer platforms.
 That is,
+<pre>
 
     koebbe% gcc hello.c
 
+</pre>
 will compile the program and create an executable file for you. The last part
 below is used to see what is in the directory. The command does not create a
 response unless there is an error occurs. This will produce an executable file. If a name is not specified for the executable, gcc produces a file with a
@@ -216,19 +236,25 @@ default name, a.out.
 <h2> Running the Code </h2>
 
 To run the computer code, use the following command.
+<pre>
 
     koebbe% a.out
 
+</pre>
 or
+<pre>
 
     koebbe% ./a.out
 
+</pre>
 The "./" will execute a binary in the current directory.
 
 Once we have an executable file, hello.exe, the code can be run as follows.
+<pre>
 
     koebbe% ./hello.exe
 
+</pre>
 The output from this command will be as shown in the image below. The output is
 printed on the first line.
 
@@ -244,19 +270,24 @@ printed on the first line.
 
 Next, let's use an appropriate name for the executable. We can use the mv
 command as follows:
+<pre>
 
     koebbe% mv a.out hello.exe
 
+</pre>
 or we can use a flag on gcc to rename the executable as follows.
 
     koebbe% rm a.out
     koebbe% gcc -o hello hello.c
 
+</pre>
 This will produce an executable with name "hello" in the current
 folder. To test the new executable file we can try
+<pre>
 
     koebbe% ./hello.exe
 
+</pre>
 to obtain the same result as before.
 
 <figure>
@@ -274,6 +305,7 @@ executable files. In a lot of Linux/Unix platforms, the folder "bin"
 is used to contain all executable files. So, the last thing to do would be to
 create a bin folder and place our executable hello.exe in that folder. To that
 end we can use the following commands.
+<pre>
 
     koebbe% mkdir ../bin
     koebbe% mv hello.exe ../bin
@@ -281,6 +313,7 @@ end we can use the following commands.
     koebbe% ls
     koebbe% ./bin/hello.exe
 
+</pre>
 The last command of the three is included to test the binary in its new
 location. Since the cd command moves us up one level, the src and bin folders
 are a subfolder of hello_world.
@@ -292,6 +325,16 @@ are a subfolder of hello_world.
       Organizing a File Structure to keep Track of binaries and source files.]
      </figcaption>
 </figure>
+
+<hr>
+
+<a href="../../topic_05/html/topic_05.html"> Previous </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../toc/html/topic_toc.html"> Table of Contents  </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../topic_07/html/topic_07.html"> Next </a>
+
+<hr>
 
 </body>
 </html>
