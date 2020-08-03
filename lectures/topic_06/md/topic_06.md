@@ -93,8 +93,12 @@ sort of action for the computer. So, to edit a file, type:
 The editor, "vim", is a very standard editor and comes with the
 installation of Cygwin.
 
+<hr>
+
 ![The next step is to list the current folder, change into the \/src folder, and
 start up an editor to build the program](../images/hello_world_02.png)
+
+<hr>
 
 ## Typing in a Program in C with vim
 
@@ -102,8 +106,12 @@ When the vim command is executed, the terminal you are using will look like the
 following screenshot. Since the file, hello.c, did not exist, the view that you
 see is an empty file ready to be modified.
 
+<hr>
+
 ![For a new/empty file, when the vim command executes the terminal will look
 like the screenshot in this figure.](../images/hello_world_03.png)
+
+<hr>
 
 To get a program into a text file, start by typing in the vim command
 "a" to append characters to the file we are creating. The vim
@@ -115,8 +123,12 @@ print the string
 
 to the screen.
 
+<hr>
+
 ![One version of how to write the code to print the Hello World! string is
 shown in this figure.](../images/hello_world_04.png)
+
+<hr>
 
 ## Saving the File and Getting Back to the Command Prompt 
 
@@ -125,7 +137,11 @@ To exit the vim session and save the file, type in a colon character
 command terminal ready to type in commands. The "x" vim command
 tells vim to exit the edit session and save the file.
 
+<hr>
+
 ![Once the characters are all typed in, the next step is to save and exit vim.](../images/hello_world_05.png)
+
+<hr>
 
 ## Making sure the File Exists 
 
@@ -133,7 +149,11 @@ At the command prompt, the first two lines will be as they were to start. The
 next command lists the directory and shows the file "hello.c" now
 exists in the folder.
 
+<hr>
+
 ![Using ls to make sure hello.c has been created.](../images/hello_world_06.png)
+
+<hr>
 
 ## Compiling the Code in C 
 
@@ -148,7 +168,11 @@ below is used to see what is in the directory. The command does not create a
 response unless there is an error occurs. This will produce an executable file. If a name is not specified for the executable, gcc produces a file with a
 default name, a.out.
 
+<hr>
+
 ![The commands for compiling the code is shown in this figure.](../images/hello_world_07.png)
+
+<hr>
 
 ## Running the Code 
 
@@ -169,7 +193,11 @@ Once we have an executable file, hello.exe, the code can be run as follows.
 The output from this command will be as shown in the image below. The output is
 printed on the first line.
 
+<hr>
+
 ![The command to execute the computer code you have written.](../images/hello_world_08.png)
+
+<hr>
 
 ## Changing the Name of an Executable
 
@@ -190,7 +218,11 @@ folder. To test the new executable file we can try
 
 to obtain the same result as before.
 
+<hr>
+
 ![How to Rename the Executable for Future Use](../images/hello_world_09.png)
+
+<hr>
 
 ## A Slight Change to the Directory Structure 
 
@@ -210,5 +242,15 @@ The last command of the three is included to test the binary in its new
 location. Since the cd command moves us up one level, the src and bin folders
 are a subfolder of hello_world.
 
+<hr>
+
 ![Organizing a File Structure to keep Track of binaries and source files](../images/hello_world_10.png)
+
+<hr>
+
+[Previous](../../topic_05/md/topic_05.md)
+| [Table of Contents](../../toc/pdf/embed_toc.md)
+| [Next](../../topic_07/md/topic_07.md)
+
+<hr>
 

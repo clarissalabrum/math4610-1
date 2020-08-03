@@ -291,3 +291,12 @@ bin for the binary/executable files.
 
 ![Some commands to reorganize files. Screenshot taken using Snip & Sketch}.
 This is an app on my Windows 10 box](../images/cygwin_09.png)
+
+<hr>
+
+[Previous](../../topic_04/md/topic_04.md)
+| [Table of Contents](../../toc/pdf/embed_toc.md)
+| [Next](../../topic_06/md/topic_06.md)
+
+<hr>
+

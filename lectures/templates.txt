@@ -46,7 +46,11 @@ figure environment from within .md files
 --------------------------------------------------------------------------------
 
 
-![The Cygwin home page with installation instructions. Screenshot taken using Snip & Sketch. This is an app on my Windows 10 box](../images/cygwin_00.png)
+![
+   text
+](
+  ../images/name
+)
 
 --------------------------------------------------------------------------------
 previous - toc - next navigation in markdown
@@ -54,9 +58,9 @@ previous - toc - next navigation in markdown
 
 <hr>
 
-[Previous](../../topic_03/pdf/embed_03.md)
+[Previous](../../topic_03/md/topic_03.md)
 | [Table of Contents](../../toc/pdf/embed_toc.md)
-| [Next](../../topic_05/pdf/embed_05.md)
+| [Next](../../topic_05/md/topic_05.md)
 
 <hr>
 
