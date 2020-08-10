@@ -27,33 +27,37 @@
 \vskip0.1in\hrule\vskip0.1in\noindent\noindent
 {\bf Using git to Work Locally on Your Computer} 
 \vskip0.1in\hrule\vskip0.1in\noindent
-You can chose to work on projects on Github by logging onto the Github web site.
-However, if your internet connection is not as good as you might like, you can
-use \lq\lq git\rq\rq\ to synchronize the work on your project. The git
-environment is a Version Control System (VCS) which allows different groups to
-work on the same project without stepping on each other's toes. In this topic
-we will learn a bit about git and start using git to synchronize your work on
-Github. Your work will be downloaded from Github for grading. 
+You can chose to work on projects on Github by logging onto the Github web site
+with your username and password. However, if your internet connection is not as
+good as you might like, you can use \lq\lq git\rq\rq\ to synchronize the work
+on your project. The git environment is a Version Control System (VCS) which
+allows different groups to work on the same project without stepping on each
+other's toes. In addition, the software keeps track of versions of the software
+that you can revert to if something goes wrong. In this topic we will learn a
+bit about git and start using git to synchronize your work on Github. Your work
+will be downloaded from Github for grading. So, you will need to learn how to
+push and pull versions of your work as it changes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent\noindent
 {\bf Using git to Work Locally on Your Computer} 
 \vskip0.1in\hrule\vskip0.1in\noindent
 The first thing to do is to make sure that git is available within your terminal
-or terminal emulator. To do this use the following command:
+or terminal emulator. After opening a terminal, use the following command:
 \begin{verbatim}
 
     koebbe% which git
 
 \end{verbatim}
 If git is available, you will see output like that in the following figure. In
-this case, the executable for git is in the folder /usr/bin. If git is not
-available, you can install the software on most computers. If you need some help
-getting the sofware installed, talk to your instructor.
+this case, the executable for git is in the folder /usr/bin.
+
+If git is not available, you can install the software on most computers. If you
+need some help getting the software installed, talk to your instructor.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_01.png}
+\includegraphics[width=5.0in]{../images/git_01.png}
 \vskip0.1in
 \caption{Checking for git using the which command.}
 \end{figure}
@@ -61,7 +65,7 @@ getting the sofware installed, talk to your instructor.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Command in the git VCS} 
+{\bf Commands in the git VCS} 
 \vskip0.1in\hrule\vskip0.1in\noindent
 This section of notes will not cover all possible ways to use and modify git.
 Instead, we will look at some basic commands that git uses to share the data in
@@ -79,13 +83,13 @@ To start, we can type in the command
 \end{verbatim}
 This produces a couple of screens of output. Another way to display the same
 output, one screen at a time, is to pipe the output from the command above into
-another Unix command. The result is
+another Unix command, more. The result is
 \begin{verbatim}
 
     koebbe% git --help | more
 
 \end{verbatim}
-The concept of a pipe in Unix is to take the output from one command and use
+The concept of pipes in Unix is to take the output from one command and use
 this as input to another command. So, the output from
 \begin{verbatim}
 
@@ -93,16 +97,24 @@ this as input to another command. So, the output from
 
 \end{verbatim}
 is piped into the more command. The more command will display output one screen
-at a time. You should try this some time.
+at a time. You should try this on any file in your folder some time to see how
+is works. Something like
+\begin{verbatim}
+
+    koebbe% more myfile.txt
+
+\end{verbatim}
+will display the contents of the file named, myfile.txt. If you do this on a
+binary file, the output will not be readable.
 
 What you should notice is all of the options for running commands within git.
 The end result is that you can read the first screen and then hit a space bar
 to read the next screen. The rest of this section of notes will go over a bare
-minimum of git so that you can work on your own computer.
+minimum of git so that you can work on your own computer at home.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_02.png}
+\includegraphics[width=5.0in]{../images/git_02.png}
 \vskip0.1in
 \caption{The first part of the output gives about half of the possible options
          we can use with git.}
@@ -111,9 +123,10 @@ minimum of git so that you can work on your own computer.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_03.png}
+\includegraphics[width=5.0in]{../images/git_03.png}
 \vskip0.1in
-\caption{Checking for git using the which command.}
+\caption{The second part of the output from piping into the more command is
+shown in this figure.}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,8 +134,8 @@ minimum of git so that you can work on your own computer.
 \vskip0.1in\hrule\vskip0.1in\noindent
 {\bf Initializing a Folder Using the git init} 
 \vskip0.1in\hrule\vskip0.1in\noindent
-To start, there are two ways to initialize a git folder. The first is to take
-a new folder and initialize the folder using
+To start, there are two ways to initialize a git folder. The first is to create
+a new folder and initialize the folder using the following three commands.
 \begin{verbatim}
 
     koebbe% mkdir tempdir
@@ -131,15 +144,16 @@ a new folder and initialize the folder using
 
 \end{verbatim}
 As the output states, the result is an empty Git repository. The other method
-will work well for making a copy of the Github repository named math4610. You
-can clone a repository from another site. To do this, change into the folder
-where the repository folder will end up.
+will work well when making a copy of the Github repository that already exists.
+You can clone a repository from another site - Github. To do this, change into
+the folder where the repository folder will end up.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_04.png}
+\includegraphics[width=5.0in]{../images/git_04.png}
 \vskip0.1in
-\caption{Creation of a local repository using the git init command.}
+\caption{Creation of a local repository using the git init command. This
+requires a folder to initialize.}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -147,17 +161,17 @@ where the repository folder will end up.
 \vskip0.1in\hrule\vskip0.1in\noindent
 {\bf Initializing a Folder Using the git clone} 
 \vskip0.1in\hrule\vskip0.1in\noindent
-We can use the clone command in git.
-
-To do this, type
+We can use the clone command in git to make a copy of a repository on Github.
+To do this, start by changing folders to the location where you want a copy of
+the repository to be cloned. This can be done as follows.
 \begin{verbatim}
 
     koebbe% cd foldername
     koebbe% git clone https://www.github.com/username/repositoryname
 
 \end{verbatim}
-So, if Fred has chosen fred as a username on Github, the pair of commands would
-be
+So, if Fred has chosen fred as a username and the repository, math4610, on
+Github, the pair of commands would be
 \begin{verbatim}
 
     koebbe% cd repository_location
@@ -170,9 +184,11 @@ repository is too large and takes a bit of time to clone.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_05.png}
+\includegraphics[width=5.0in]{../images/git_05.png}
 \vskip0.1in
-\caption{Creation of a local repository using the git clone command.}
+\caption{How to create a local repository using the git clone command. The
+output of the command indicates that a folder was created. In this case the
+name is gambelersruin.}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,75 +197,182 @@ repository is too large and takes a bit of time to clone.
 {\bf Using the git status Command} 
 \vskip0.1in\hrule\vskip0.1in\noindent
 One of the most used commands in git is the status command. This will tell you
-about any changes that have been made. For example,
+about any changes that have been made by you between sessions. For example,
 \begin{verbatim}
 
     koebbe% git status
 
 \end{verbatim}
 You will use this command over and over if you are being efficient. An example
-of the output is shown in the next figure when working in repository.
+of the output is shown in the next figure when working in repository. Note that
+the git status command is embedded in the work shown in the figure below.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_06.png}
+\includegraphics[width=5.0in]{../images/git_06.png}
 \vskip0.1in
 \caption{Using the git status command to List Changes.}
 \end{figure}
 \eject
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent
 {\bf The git commit Command} 
 \vskip0.1in\hrule\vskip0.1in\noindent
-
+Once the status command has been invoked, we will want to commit the changes so
+that they can be copied back to our main working project. If files have been
+added or removed, the output from the status command will produce a message to
+that effect. So, we will need to add/remove the files to this branch of the
+repository. The following figure shows. this. Note that the last command will 
+commit the changes. We will see the results of the commit command below.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_07.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\includegraphics[width=5.0in]{../images/git_07.png}
+\caption{Using git status to identify changes and then add a file named
+hello\_world.txt to the repository. Output from the git add command is shown in
+the following factor.}
 \end{figure}
 \eject
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent
 {\bf The git push Command} 
 \vskip0.1in\hrule\vskip0.1in\noindent
+In the last figure, the git commit command has been typed in to complete the
+status change. The command is
+\begin{verbatim}
 
+    koebbe% git commit -a
+
+\end{verbatim}
+The output from the command will be inside an editor. You will need to enter a
+comment to document the changes that have been made. If no comment is added the
+commit command will be aborted. All you need is to add a single line to the file
+that pops up for the commit to take place.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_08.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\includegraphics[width=5.0in]{../images/git_08.png}
+\caption{In this figure an editor window is displayed where a comment about the
+changes must be included. Usually, the comment should indicate what was changed
+and how. If no change is made to the file, the commit will be aborted}
 \end{figure}
-\eject
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf The git pull Command} 
-\vskip0.1in\hrule\vskip0.1in\noindent
-
-
-
-
+%\eject
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/git_09.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\includegraphics[width=5.0in]{../images/git_09.png}
+\caption{Once done editing the comment file, control is returned to the
+terminal.}
 \end{figure}
 \eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Running the Git Status Command Again} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+Using the git status again will show that everything is up to date. So, the
+message we see indicates the Master Branch has nothing to commit. We can see
+this in the next figure.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_10.png}
+\caption{Using the git status command to see that no more commits need to be
+done.}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Using The README.md File As A Starting Point} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+When you access your repository from the outside world, a browser will actually
+find the README.md file. So, when a repository is created, it is a good idea
+to create and modify this file with a basic description for the repository. An
+example is given in the next two figures that show how to change into the main
+folder for a repository on your computer and then edit the README.md file.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_11.png}
+\caption{Changing into a main folder for a repository and then....}
+\end{figure}
+%\eject
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_12.png}
+\caption{...editing the README.md file to include basic details about the
+contents of the repository.}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Modification of the README file} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+In this and the next section of this topic, we will see how to include the
+modifications on a repository on Github. The next two figures show how to check
+the status of the repository, include modifications to the repository, and then
+push those back to the main repository on Github.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_13.png}
+\caption{Changes to the README.md file that git status sees and....}
+\end{figure}
+%\eject
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_14.png}
+\caption{... followed by a comment entered into the documentation file.}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Using Git Push to Merge Changes} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+The next step is to merge any changes locally with the repository on Github.
+The command central to doing this is is
+\begin{verbatim}
+
+    koebbe% git push
+
+\end{verbatim}
+You will need to enter your Github user id and password to be able to complete
+the command. The next figures use the following git commands to do the work.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_15.png}
+\caption{Using git status to identify the file that has been modified and to
+commit the change locally followed by a message to indicate the next step....}
+\end{figure}
+%\eject
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_16.png}
+\caption{... which is to use the git push command.}
+\end{figure}
+\eject
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf ...And One Last Check of Status} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+Finally, we check the status of the repository which shows everything is clean.
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.0in]{../images/git_15.png}
+\caption{... one last status check to complete the whole process. }
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
