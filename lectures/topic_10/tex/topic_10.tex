@@ -1,0 +1,126 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 10.}
+\vskip0.1in\hrule\vskip0.1in \noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Computational Accuracy: Machine Precision} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+In this topic the subjsct of finite representation of numbers and finite
+precision of arithmetic will be considered. In most advanced mathematics
+courses, one starts with the simplest sets of numbers and successively include
+more and more types of numbers. It is typical to start out with the natural
+numbers, \(\mathbb{N}\). This set can be defined by
+\[
+  \mathbb{N} = \left\lbrace 1, 2, 3, \ldots \right\rbrace
+\]
+If we stopped here we would still use the set of natural numbers in many
+computational problems. The natural numbers or subsets of the natural numbers
+are used to increment recursive process through looping structures.
+
+The next set of number comes from adding the number zero to the set of natural
+numbers. That is, define \(\mathbb{W}\) as
+\[
+  \mathbb{W} = \left\lbrace 0\right\rbrace \cub\mathbb{N}
+             = \left\lbrace 0, 1, 2, 3, \ldots \right\rbrace 
+\]
+This set of numbers allows C, Python and other languages to start all arrays at
+0 instead of 1, like Fortran.
+
+Adding in the negatives of the natural numbers gives the set of integers defined
+by
+\[
+  \mathbb{Z} = \left\lbrace \ldots, -2, -1, 0, 1, 2, \ldots \right\rbrace 
+\]
+The negative numbers in \(\mathbb{Z}\) can arise when doing index arithmetic in
+arrays. Sometimes it may be a way of detecting an error in code.
+
+At this point, all of the numbers considered, \(\mathbb{Z}\), can be represented
+on a computer up to a upper limit on the value. 
+
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/github_01.png}
+\vskip0.1in
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf :} Setting up a Repository} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Once you log in, you will need to build a repository for use in the class and
+to turn in homework and completed tasks and projects. For the course, you will
+create a repository named the following:
+\begin{verbatim}
+
+    math4610
+
+\end{verbatim}
+Use only the characters above and using the following rules:
+\begin{enumerate}
+  \item Use only lower case characters - github is case senesitive.
+  \item Do not put any blanks in the name of the repository.
+\end{enumerate}
+Note that the instructor will use only this repository name in looking for your
+work.
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/github_02.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Github Primer for Math 4610 at USU:} List the Contents of the Home
+    Directory} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If you have an account on GitHub, you will already know a lot about these
+things. However, when you are logged in you will see the main screen with any
+repositories you may already have created. We will go through the steps to
+build and name repositories in the next few pages.
+
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics{../images/github_03.png}
+\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+         my Windows 10 box}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

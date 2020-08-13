@@ -33,7 +33,11 @@ the beginning.
 
   * **Topic 9.** [Approximation of the Derivative:](../../topic_09/md/topic_09.md)
 
-  * **Topic 10.** [Computational Accuracy:](../../topic_08/md/topic_08.md)
+  * **Topic 10.** [Computational Accuracy: Machine Precision](../../topic_10/md/topic_08.md)
+
+  * **Topic 11.** [Absolute and Relative Error:](../../topic_08/md/topic_11.md)
+
+  * **Topic 12.** [Truncation Error:](../../topic_08/md/topic_12.md)
 
 NNNNNNNNNNNNNNNNNNNNN
 
