@@ -5,12 +5,15 @@ The following list includes links to the lectures in Math 4610. You can go back
 to the [Introduction to Math 4610](../../../README.md) if needed to restart from
 the beginning.
 
-  * **Topic 1.** [Introductory Comments:](../../topic_01/md/topic_01.md) This
-                 course presents fundamental content from numerical
-                 methods/analysis and and introductory computational skills.
+  * **Topic 1.** [Introductory Comments:](../../topic_01/md/topic_01.md)
 
-  * **Topic 2.** The [Syllabus](../../topic_02/pdf/embed_02.md) for Math 4610
-                 This topic involves covering the syllabus for the semester.
+        This course presents fundamental content from numerical methods/analysis
+        and introductory computational skills concepts....
+
+  * **Topic 2.** [Syllabus](../../topic_02/pdf/embed_02.md)
+
+        The syllabus for Math 4610 does not include any content, but time will
+        be spent on all the details of grading and the work in the course.
 
   * **Topic 3.** [Github Accounts:](../../topic_03/md/topic_03.md) We will be
                  using git and Github to do almost all of our work. This
@@ -31,7 +34,7 @@ the beginning.
 
   * **Topic 8.** [Using git to Work Locally:](../../topic_08/md/topic_08.md)
 
-  * **Topic 9.** [Approximation of the Derivative:](../../topic_09/md/topic_09.md)
+  * **Topic 9.** [An Example: Approximation of the Derivative:](../../topic_09/md/topic_09.md)
 
   * **Topic 10.** [Computational Accuracy: Machine Precision](../../topic_10/md/topic_08.md)
 
@@ -39,62 +42,83 @@ the beginning.
 
   * **Topic 12.** [Truncation Error:](../../topic_08/md/topic_12.md)
 
+  * **Topic 13.** [Review of Taylor Series:](../../topic_08/md/topic_12.md)
+
+  * **Topic 14.** [Shared Libraries:](../../topic_08/md/topic_12.md)
+                    Linking and such
+
+  * **Topic 15.** [Introduction to Root Finding:](../../topic_08/md/topic_12.md)
+
+  * **Topic 16.** [Functional Iteration:](../../topic_08/md/topic_12.md)
+
+  * **Topic 17.** [Convergence of Functional Iteration:](../../topic_08/md/topic_12.md)
+
+  * **Topic 18.** [The Intermediat Value Theorem:](../../topic_08/md/topic_12.md)
+
+  * **Topic 19.** [The BisectionMethod:](../../topic_08/md/topic_12.md)
+
+  * **Topic 20.** [A Recursive Defniition for Bisection:](../../topic_08/md/topic_12.md)
+
+  * **Topic 21.** [Rewriting the Bisection Method:](../../topic_08/md/topic_12.md)
+
+  * **Topic 22.** [Analyzing Error in the Bisection Method:](../../topic_08/md/topic_12.md)
+
+  * **Topic 23.** [Roundoff Error:](../../topic_08/md/topic_12.md)
+
+  * **Topic 24.** [Example of Roundoff Error:](../../topic_08/md/topic_12.md)
+          Examples of Roundoff Error in Real Life: Roundoff error can accumulate
+              in computationally intensive algorithms.
+
+  * **Topic 25.** [Newton's Method:](../../topic_08/md/topic_12.md)
+
+  * **Topic 26.** [Convergence of Newton's Method:](../../topic_08/md/topic_12.md)
+
+  * **Topic 27.** [The Secant Method:](../../topic_08/md/topic_12.md)
+
+  * **Topic 28.** [Secant Method and Computational Convergence:](../../topic_08/md/topic_12.md)
+
+  * **Topic 29.** [Floating Point Operations (FLOPS):](../../topic_08/md/topic_12.md)
+
+  * **Topic 30.** [Number of Operations in Bisection:](../../topic_08/md/topic_12.md)
+
+  * **Topic 31.** [FLOPS vs. :](../../topic_08/md/topic_12.md)
+
+  * **Topic 32.** [Parallel Computing using OpenMP:](../../topic_08/md/topic_12.md)
+
+  * **Topic 33.** [Hello World in OpenMP:](../../topic_08/md/topic_12.md)
+
+  * **Topic 34.** [Introduction to Computational Linear Algebra:](../../topic_08/md/topic_12.md)
+
+  * **Topic 34.** [Review of Matrix Operations::](../../topic_08/md/topic_12.md)
+
+  * **Topic 35.** [Matrix Operations using OpenMP::](../../topic_08/md/topic_12.md)
+
+  * **Topic 35.** [Direct Methods for Solving Linear Systems of Equations::](../../topic_08/md/topic_12.md)
+
+  * **Topic 36.** [Stable Algorithms for Linear Systems::](../../topic_08/md/topic_12.md)
+
+  * **Topic 37.** [Number of FLOPS for Direct Methods::](../../topic_08/md/topic_12.md)
+
+  * **Topic 38.** [Efficient Methods Linear Systems::](../../topic_08/md/topic_12.md)
+
+  * **Topic 39.** [Accuracy vs. Efficiiency::](../../topic_08/md/topic_12.md)
+
+  * **Topic 40.** [Iterative Methods for Linear Systems::](../../topic_08/md/topic_12.md)
+
+  * **Topic 41.** [The Eigenvalue Problem::](../../topic_08/md/topic_12.md)
+
+  * **Topic 42.** [Power Iteration::](../../topic_08/md/topic_12.md)
+
+  * **Topic 43.** [Speeding up Power Iteration in OpenMP::](../../topic_08/md/topic_12.md)
+
+  * **Topic 44.** [Inverse Power Iteration::](../../topic_08/md/topic_12.md)
+
 NNNNNNNNNNNNNNNNNNNNN
 
-  \item Using git to work locally: Having a repository on Github is great.
-        However, to work locally, git, will let you work locally and easily
-        transfer files to/from your repositories.
-  \item Building a Github Repository for Math 4610: You will learn how to build
-        a repository on Github that will be used to turn in your homework and
-        projects.
-  \item Using a Terminal: It will be imperative that you are able to work in a
-        terminal. There are a number of applications that can be used to bring
-        up a terminal running a Linux/Unix operating system or an emulater. A
-        few of these are PowerShell, Cygwin/MinGW terminals, Bash on Windows.
-  \item A Few Shell Commands: A brief primer on how to use commands in a
-        terminal are necessary.
-  \item How to Build Shared Libraries: Reuse of code requires a way to store and
-        link to the code.
-  \item Testing the Library: 
-  \item Taylor Series Review: In an initial course in numerical analysis, Taylor
-        series are used in the evaluation of accuracy.
-  \item Compiling and Executing Computer Programs:
-  \item Creating a Shared Library:
-  \item Linking to a Shared Library:
-  \item An Example of Arithmetic Accuracy - Approximating the Value of a
-        Derivative: We will analyze the approximation of a first derivative with
-        a finite difference quotient.
-  \item Taylor Series Analysis of the Difference Quotient:
-  \item Testing the Difference Quotient Example: We will write a code to test
-        the difference quotient approximation.
-  \item An Introduction to the Root Finding Problem:
-  \item The Intermediate Value Theorem for Continuous Functions:
-  \item The Bisection Method: A simple application of the Intermediate Value
-        Theorem results in a root finding method.
-  \item A Recursive Definition for the Bisection Method:
-  \item Rewriting the Bisection Method for Efficiency:
-  \item Truncation Error: A definition of truncation error is ....
-  \item Roundoff Error:
-  \item Absolute and Relative Error:
-  \item Examples of Roundoff Error in Real Life: Roundoff error can accumulate
-        in computationally intensive algorithms.
-  \item Solving a linear system using Gaussian Elimination and Roundoff Error:
-  \item Truncation Error vs. Roundoff Error in the Finite Difference
-        Approximation:
   \item Bounds on Error: Interval Analysis and Accumulation of Roundoff Error:
-  \item Stable Algorithms and Computation: related topic involves selecting
-       \lq\lq stable\rq\rq algorithms for solution of real problems. Stable
-        algorithms are less sensitive to accumulation of errors.
-  \item FLOPS:
-  \item Efficiency of an Algotihm: Counting the number of computations in the
-        execution of an algorithm.
-  \item Tradeoffs between Accuracy and Efficiency:
-  \item Number of Operations for Bisection:
-  \item Newton's Method for Finding Roots:
-  \item The Secant Method:
-  \item Review of Linear Systems: Gaussian Elimination:
-  \item Review of Linear Systems: Back Substitution:
-  \item Direct Methods versus Iterative Methods for Solving Linear Systems:
+
+NNNNNNNNNNNNNNNNNNNNN
+
 
 NNNNNNNNNNNNNNNNNNNNN
 
