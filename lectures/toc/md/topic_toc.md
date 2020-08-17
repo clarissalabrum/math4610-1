@@ -13,28 +13,63 @@ the beginning.
   * **Topic 2.** [Syllabus](../../topic_02/pdf/embed_02.md)
 
         The syllabus for Math 4610 does not include any content, but time will
-        be spent on all the details of grading and the work in the course.
+        be spent on all the details of grading and the work in the course....
 
-  * **Topic 3.** [Github Accounts:](../../topic_03/md/topic_03.md) We will be
-                 using git and Github to do almost all of our work. This
-                 includes setting up a place store and retrieve files, save
-                 code, assignments, and your software manual.
+  * **Topic 3.** [Github Accounts:](../../topic_03/md/topic_03.md) 
 
-  * **Topic 4.** [Opening a Terminal:](../../topic_04/md/topic_04.md) This topic
-                 covers information on how to work with terminals and using a
-                 Linux or Unix environment.
+        We will be using git and Github to do almost all of our work. This
+        includes setting up a place store and retrieve files, save code,
+        assignments, and your software manual....
 
-  * **Topic 5.** [Linux/Unix Commands:](../../topic_05/md/topic_05.md) This
-                 topic covers information on how to work once a terminal is up
-                 and running on your computer.
+  * **Topic 4.** [Opening a Terminal:](../../topic_04/md/topic_04.md)
+
+        This topic covers information on how to work with terminals and using a
+        Linux or Unix environment. In most real computational settings, it is
+        important to be able to work using a command line to create files,
+        modify these files, compile code, and a number of other tasks....
+
+  * **Topic 5.** [Linux/Unix Commands:](../../topic_05/md/topic_05.md) 
+
+        This topic covers information on how to work once a terminal is up and
+        running on your computer. A Linux/Unix operating system should be
+        running in the terminal. In most real computational settings, it is
+        important to be able to work using a command line to create files,
+        modify these files, compile code, and a number of other tasks....
 
   * **Topic 6.** [A Simple Programming Example:](../../topic_06/md/topic_06.md)
 
+        This section will give a simple example of writing a code, compiling a
+        code, and executing a code in a terminal. First start up a terminal to
+        do the work to create a file with code in it. For Cygwin, double click
+        on the Cygwin Icon on your desktop or click on the the icon in the task
+        bar if the app is pinned to the taskbar....
+
   * **Topic 7.** [Building a Github Repository:](../../topic_07/md/topic_07.md)
+
+        We will need to communicate through Github for most of the semester.
+        Github is a site where you can store/share all kinds of computational
+        data, programs, and documents....
 
   * **Topic 8.** [Using git to Work Locally:](../../topic_08/md/topic_08.md)
 
+        You can chose to work on projects on Github by logging onto the Github
+        web site with your username and password. However, if your internet
+        connection is not as good as you might like, you can use "git" to
+        synchronize the work on your project.
+
   * **Topic 9.** [An Example: Approximation of the Derivative:](../../topic_09/md/topic_09.md)
+
+        In this section we will see an example of an approximation of a
+        derivative that produces errors in the value of the derivative no matter
+        what we do with the limit approximation. The difference between the
+        exact and approximate value will reduce at first and then will start to
+        grow.
+
+  * **Topic 10.** [2D Graphics Shareware](../../topic_10/md/topic_08.md)
+
+
+
+
 
   * **Topic 10.** [Computational Accuracy: Machine Precision](../../topic_10/md/topic_08.md)
 

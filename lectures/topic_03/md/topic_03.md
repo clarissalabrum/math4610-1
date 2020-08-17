@@ -104,8 +104,8 @@ build and name repositories in the next few pages.
 <hr>
 
 [Previous](../../topic_02/pdf/embed_02.md)
-| [Table of Contents](../../toc/pdf/embed_toc.md)
-| [Next](../../topic_04/pdf/embed_04.md)
+| [Table of Contents](../../toc/md/topic_toc.md)
+| [Next](../../topic_04/md/topic_04.md)
 
 <hr>
 

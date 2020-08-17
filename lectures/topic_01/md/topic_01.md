@@ -25,7 +25,10 @@ methods course.
 
 The next step by going over a syllabus for the course.
 
+<hr>
+
 [Previous](../../toc/md/topic_toc.md) | 
-[Table of Contents:](../../toc/md/topic_toc.md) | 
-[Next Topic:](../../topic_02/md/topic_02.md)
+[Table of Contents](../../toc/md/topic_toc.md) | 
+[Next](../../topic_02/md/topic_02.md)
+
 <hr>

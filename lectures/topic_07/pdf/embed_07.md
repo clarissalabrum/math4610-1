@@ -13,8 +13,8 @@
 
 <hr>
 
-[Previous](../../topic_06/pdf/embed_06.md)
-| [Table of Contents](../../toc/pdf/embed_toc.md)
-| [Next](../../topic_08/pdf/embed_08.md)
+[Previous](../../topic_06/md/topic_06.md)
+| [Table of Contents](../../toc/md/topic_toc.md)
+| [Next](../../topic_08/md/topic_08.md)
 
 <hr>

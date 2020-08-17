@@ -295,7 +295,7 @@ This is an app on my Windows 10 box](../images/cygwin_09.png)
 <hr>
 
 [Previous](../../topic_04/md/topic_04.md)
-| [Table of Contents](../../toc/pdf/embed_toc.md)
+| [Table of Contents](../../toc/md/topic_toc.md)
 | [Next](../../topic_06/md/topic_06.md)
 
 <hr>

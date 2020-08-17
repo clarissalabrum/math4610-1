@@ -1,10 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+
 <hr>
 
-# Math 4610 Fundamentals of Computational Mathematics  - Topic 8.
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 8.  </h1>
 
 <hr>
 
-## Using git to Work Locally on Your Computer 
+<h2> Using git to Work Locally on Your Computer </h2> 
 
 <hr>
 
@@ -21,56 +39,76 @@ push and pull versions of your work as it changes.
 
 <hr>
 
-## Using git to Work Locally on Your Computer
+<h2> Using git to Work Locally on Your Computer </h2>
 
 <hr>
 
 The first thing to do is to make sure that git is available within your terminal
 or terminal emulator. After opening a terminal, use the following command:
+<pre>
 
     koebbe% which git
 
+</pre>
 If git is available, you will see output like that in the following figure. In
 this case, the executable for git is in the folder named, /usr/bin.
 
 If git is not available, you can install the software on most computers. If you
 need some help getting the software installed, talk to your instructor.
 
-![Checking for git using the which command.](../images/git_01.png)
+<hr>
+
+<figure>
+<img src="../images/git_01.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Checking for git using the which command.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Commands in the git VCS 
+<h2> Commands in the git VCS </h2> 
 
 <hr>
 
 This section of notes will not cover all possible ways to use and modify git.
 Instead, we will look at some basic commands that git uses to share the data in
 a repository. The general form for a command using git is the following:
+<pre>
 
     % git command [options]
 
+</pre>
 To start, we can type in the command
+<pre>
 
     koebbe% git --help
 
+</pre>
 This produces a couple of screens of output. Another way to display the same
 output, one screen at a time, is to pipe the output from the command above into
 another Unix command, more. The result is
+<pre>
 
     koebbe% git --help | more
 
+</pre>
 The concept of pipes in Unix is to take the output from one command and use
 this as input to another command. So, the output from
+<pre>
 
     koebbe% git --help
 
+</pre>
 is piped into the more command. The more command will display output one screen
 at a time. You should try this on any file in your folder some time to see how
 is works. Something like
+<pre>
 
     koebbe% more myfile.txt
 
+</pre>
 will display the contents of the file named, myfile.txt. If you do this on a
 binary file, the output will not be readable.
 
@@ -79,14 +117,28 @@ The end result is that you can read the first screen and then hit a space bar
 to read the next screen. The rest of this section of notes will go over a bare
 minimum of git so that you can work on your own computer at home.
 
-![The first part of the output gives about half of the possible options we can use with git.](../images/git_02.png}
+<figure>
+<img src="../images/git_02.png" width=680
+     alt = "image not found">
+     <figcaption>
+       The first part of the output gives about half of the possible options we
+       can use with git.
+     </figcaption>
+</figure>
 
 
-![The second part of the output from piping into the more command is shown in this figure.](../images/git_03.png)
+<figure>
+<img src="../images/git_03.png" width=680
+     alt = "image not found">
+     <figcaption>
+       The second part of the output from piping into the more command is shown
+       in this figure.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Initializing a Folder Using the git init 
+<h2> Initializing a Folder Using the git init </h2> 
 
 <hr>
 
@@ -94,11 +146,13 @@ The git command platform is used to create folders that mirror repositories like
 those created on Github. To start, there are two ways to initialize a git
 folder. The first is to create a new folder and initialize the folder using the
 following three commands.
+<pre>
 
     koebbe% mkdir tempdir
     koebbe% cd tempdir
     koebbe% git init
 
+</pre>
 The first command makes a directory which will be initialized to a git folder.
 The next command changes the working directory to be the new directory, and the
 last does the initialization. As the output shows, the result is an empty git
@@ -107,45 +161,68 @@ repository that already exists. You can clone a repository from another site,
 like Github. To do this, change into the folder where the repository folder will
 end up.
 
-![Creation of a local repository using the git init command. This requires a folder to initialize.](../images/git_04.png)
+
+<figure>
+<img src="../images/git_04.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Creation of a local repository using the git init command. This requires
+       a folder to initialize.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Initializing a Folder Using the git clone 
+<h2> Initializing a Folder Using the git clone </h2> 
 
 <hr>
 
 We can use the clone command in git to make a copy of a repository on Github.
 To do this, start by changing folders to the location where you want a copy of
 the repository to be cloned. This can be done as follows.
+<pre>
 
     koebbe% cd foldername
     koebbe% git clone https://www.github.com/username/repositoryname
 
+</pre>
 for an existing folder. So, if Fred has chosen fred as a username and the
 repository, math4610, on Github, the pair of commands would be
+<pre>
 
     koebbe% cd repository_location
     koebbe% git clone https://www.github.com/fred/math4610
 
+</pre>
 This will put a copy of everything in math4610 in a directory on your computer
 along with a subfolder named .git. Note that in the figure below a different
 repository was used. The math4610 repository for the course is too large and
 takes a bit of time to clone.
 
-![How to create a local repository using the git clone command. The output of the command indicates that a folder was created. In this case the name is gambelersruin.](../images/git_05.png)
+
+<figure>
+<img src="../images/git_05.png" width=680
+     alt = "image not found">
+     <figcaption>
+       How to create a local repository using the git clone command. The output
+       of the command indicates that a folder was created. In this case the name
+       is gambelersruin.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Using the git status Command 
+<h2> Using the git status Command </h2> 
 
 <hr>
 
 One of the most used commands in git is the status command. This will tell you
 about any changes that have been made by you between sessions. For example,
+<pre>
 
     koebbe% git status
 
+</pre>
 will produce a list of files and folders to which changes have been made. Note
 that the git commands can be run from the main folder or any subfolder within
 the git folder tree structure. You will use this command over and over if you
@@ -153,11 +230,17 @@ are being efficient. An example of the output is shown in the next figure when
 working in repository. Note that the git status command is embedded in the work
 shown in the figure below.
 
-![Using the git status command to List Changes.](../images/git_06.png)
+<figure>
+<img src="../images/git_06.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Using the git status command to List Changes.
+     </figcaption>
+</figure>
 
 <hr>
 
-## The git commit Command 
+<h2> The git commit Command </h2> 
 
 <hr>
 
@@ -168,31 +251,57 @@ that effect. So, we will need to add/remove the files to this branch of the
 repository. The following figure shows this. Note that the last command will 
 commit the changes. We will see the results of the commit command below.
 
-![Using git status to identify changes and then add a file named hello_world.txt to the repository. Output from the git add command is shown in the following factor.](../images/git_07.png)
+
+<figure>
+<img src="../images/git_07.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Using git status to identify changes and then add a file named
+       hello_world.txt to the repository. Output from the git add command is
+       shown in the following factor.
+     </figcaption>
+</figure>
 
 <hr>
 
-## The git push Command 
+<h2> The git push Command </h2> 
 
 <hr>
 
 In the last figure, the git commit command has been typed in to complete the
 changes identified by the git status command. The command is
+<pre>
 
     koebbe% git commit -a
 
+</pre>
 The output from the command will be inside an editor. You will need to enter a
 comment to document the changes that have been made. If no comment is added the
 commit command will be aborted. All you need is to add a single line (or just
 one character) to the file that pops up for the commit to take place.
 
-![In this figure an editor window is displayed where a comment about the changes must be included. Usually, the comment should indicate what was changed and how. If no change is made to the file, the commit will be aborted](../images/git_08.png)
+<figure>
+<img src="../images/git_08.png" width=680
+     alt = "image not found">
+     <figcaption>
+       In this figure an editor window is displayed where a comment about the
+       changes must be included. Usually, the comment should indicate what was
+       changed and how. If no change is made to the file, the commit will be
+       aborted
+     </figcaption>
+</figure>
 
-![Once done editing the comment file, control is returned to the terminal.](../images/git_09.png)
+<figure>
+<img src="../images/git_09.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Once done editing the comment file, control is returned to the terminal.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Running the Git Status Command Again 
+<h2> Running the Git Status Command Again </h2> 
 
 <hr>
 
@@ -200,11 +309,18 @@ Using the git status again will show that everything is up to date. So, the
 message we see indicates the Master Branch has nothing to commit. We can see
 this in the next figure.
 
-![Using the git status command to see that no more commits need to be done.](../images/git_10.png)
+
+<figure>
+<img src="../images/git_10.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Using the git status command to see that no more commits need to be done.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Using The README File As A Starting Point 
+</h2> Using The README File As A Starting Point </h2> 
 
 <hr>
 
@@ -214,14 +330,26 @@ to create and modify this file with a basic description for the repository. An
 example is given in the next two figures that show how to change into the main
 folder for a repository on your computer and then edit the README file.
 
-![Changing into a main folder for a repository and then....](../images/git_11.png)
+<figure>
+<img src="../images/git_11.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Changing into a main folder for a repository and then....
+     </figcaption>
+</figure>
 
-![...editing the README file to include basic details about the contents of
-the repository.](../images/git_12.png)
+<figure>
+<img src="../images/git_12.png" width=680
+     alt = "image not found">
+     <figcaption>
+       ...editing the README file to include basic details about the contents of
+       the repository.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Modification of the README file 
+<h2> Modification of the README file </h2> 
 
 <hr>
 
@@ -230,50 +358,85 @@ on a repository on Github. The next two figures show how to check the status of
 the repository, include modifications to the repository, and then push those
 back to the main repository on Github.
 
-![Changes to the README file that git status sees and....](../images/git_13.png)
+<figure>
+<img src="../images/git_13.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Changes to the README file that git status sees and....
+     </figcaption>
+</figure>
 
-
-![... followed by a comment entered into the documentation file.](../images/git_14.png)
+<figure>
+<img src="../images/git_14.png" width=680
+     alt = "image not found">
+     <figcaption>
+        ... followed by a comment entered into the documentation file.
+     </figcaption>
+</figure>
 
 <hr>
 
-## Using Git Push to Merge Changes
+<h2> Using Git Push to Merge Changes </h2>
 
 <hr>
 
 The next step is to merge any changes locally with the repository on Github.
 The command central to doing this is is
+<pre>
 
     koebbe% git push
 
+</pre>
 You will need to enter your Github user id and password to be able to complete
 the command. The next figures use the following git commands to do the work.
 
-![Using git status to identify the file that has been modified and to commit the change locally followed by a message to indicate the next step....](../images/git_15.png)
+<figure>
+<img src="../images/git_15.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Using git status to identify the file that has been modified and to
+       commit the change locally followed by a message to indicate the next
+       step....
+     </figcaption>
+</figure>
 
-![... which is to use the git push command.](../images/git_16.png)
+<figure>
+<img src="../images/git_16.png" width=680
+     alt = "image not found">
+     <figcaption>
+       ... which is to use the git push command.
+     </figcaption>
+</figure>
 
 <hr>
 
-## ...And One Last Check of Status
+<h2> ...And One Last Check of Status </h2>
 
 <hr>
 
 Finally, we check the status of the repository which shows everything is clean.
 
-![... one last status check to complete the whole process.](../images/git_17.png)
+<figure>
+<img src="../images/git_17.png" width=680
+     alt = "image not found">
+     <figcaption>
+       ... one last status check to complete the whole process.
+     </figcaption>
+</figure>
 
 <hr>
 
-## The git pull command
+<h2> The git pull command </h2>
 
 <hr>
 
 If you or anyone else has made changes to a repository on Github. You can pull
 those changes to your local copy using the following git command.
+<pre>
 
     koebbe% git pull
 
+</pre>
 The clone command starts a new copy of the repository from Github on your local
 machine. The pull command only makes changes to a local repository using those
 on a site like Github. You will need to type in your user id and password like
@@ -282,8 +445,13 @@ push command regularly.
 
 <hr>
 
-[Previous](../../topic_07/md/topic_07.md)
-| [Table of Contents](../../toc/md/topic_toc.md)
-| [Next](../../topic_09/md/topic_09.md)
+<a href="../../topic_07/md/topic_07.md"> Previous </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../toc/md/topic_toc.md"> Table of Contents  </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../topic_09/md/topic_09.md"> Next </a>
 
 <hr>
+
+</body>
+</html>

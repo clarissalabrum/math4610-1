@@ -249,7 +249,7 @@ are a subfolder of hello_world.
 <hr>
 
 [Previous](../../topic_05/md/topic_05.md)
-| [Table of Contents](../../toc/pdf/embed_toc.md)
+| [Table of Contents](../../toc/md/topic_toc.md)
 | [Next](../../topic_07/md/topic_07.md)
 
 <hr>

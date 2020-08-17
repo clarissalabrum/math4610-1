@@ -15,9 +15,9 @@ to display and print if needed.
 
 <hr>
 
-[Previous](../../topic_01/md/topic_01.md)
-| [Table of Contents](../../toc/md/topic_toc.md)
-| [Next](../../topic_03/md/topic_03.md)
+[Previous](../../topic_01/md/topic_01.md) |
+[Table of Contents](../../toc/md/topic_toc.md) |
+[Next](../../topic_03/md/topic_03.md)
 
 <hr>
 

@@ -88,9 +88,9 @@ do real work for the course.
 
 <hr>
 
-[Previous](../../topic_03/pdf/embed_03.md)
-| [Table of Contents](../../toc/pdf/embed_toc.md)
-| [Next](../../topic_05/pdf/embed_05.md)
+[Previous](../../topic_03/md/topic_03.md)
+| [Table of Contents](../../toc/md/topic_toc.md)
+| [Next](../../topic_05/md/topic_05.md)
 
 <hr>
 

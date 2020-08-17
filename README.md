@@ -68,9 +68,9 @@ implementation. However, if a student is hired into a software development
 company or a position within a large company to write software, Matlab is
 usually too expensive to use. In an academic setting Matlab is usually a great
 way to prototype ideas. The built in functionality and graphical interfaces are
-great for testing ideas in many areas of mathematics and sience. However,
+great for testing ideas in many areas of mathematics and science. However,
 incorporating Matlab and any other of these platforms requires a larger
-financial committment. More importantly, computational mathematicians are
+financial commitment. More importantly, computational mathematicians are
 constantly faced with problems where it is important to be able to debug and
 write new code that modifies an existing piece of software. For example, it
 might be important to rewrite code to work on multiple cores on a desktop. This
@@ -103,10 +103,11 @@ any code. However, most compilers these days, are smart enough to in-line codes
 through some compiler options. In fortran, most compilers allow the user to put
 in something like a -Bstatic flag to create a static image of the executable
 code. The tradeoff in this case is the size of the binary image of the
-application versus the speed of executation. Static images are typically larger
-than images that link to shared libraries. Inlining a code reduces the execution
-time due to the reduction of references to shared libraries. Ultimately, a
-computational mathematician should know how to take advantage of this balance.
+application versus the speed of execution. Static images are typically larger
+than images that link to shared libraries. In-lining a code reduces the
+execution time due to the reduction of references to shared libraries.
+Ultimately, a computational mathematician should know how to take advantage of
+this balance.
 
 Documentation of work is fundamental to any scientific endeavor. So, students
 at USU are asked to created a software manual for the code they write. The
@@ -133,7 +134,7 @@ CPUs) and Graphics Computing Units (GPUs) that provide a wealth of additional
 computational horsepower. In recent years, limitations of a single CPU have
 stopped the every advancing performance of computers. To aid in the performance
 of hardware, computer vendors have started producing more performance through
-the addition of multiple cores and GPUs for enhancing graphcial displays. These
+the addition of multiple cores and GPUs for enhancing graphical displays. These
 resources can be used by computational mathematicians to improve the
 computational efficiency of the software they develop. In the past few years
 language extensions, such as OpenMP and OpenACC, have been developed to take
