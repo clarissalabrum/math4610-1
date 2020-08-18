@@ -22,105 +22,226 @@
 \vskip0.1in\hrule\vskip0.1in \noindent
 {\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 10.}
 \vskip0.1in\hrule\vskip0.1in \noindent
+It is very important as a computational mathematician that we use computational
+resources to visualize data or output from simulations. This means producing
+graphics codes that can display output from simulations or visualization of data
+sets measured in the real world. We could go back to basic principles and write
+software from scratch. This is time consuming and is basically a digital
+exercise in reinventing the wheel.
+
+At least initially, we should take advantage of the many software packages and
+codes that produce graphics. The idea in this section of the couse is to come up
+with a way to display 2-d graphical output. For example, we may want to graph a
+set of ordered pairs that represent data or output of a simulation. We will have
+plenty of examples and problems in this course that will be aided by having a
+code that will do some simple graphs of functions and data.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Computational Accuracy: Machine Precision} 
+{\bf Visualizing Results: 2D Plotting} 
 \vskip0.1in\hrule\vskip0.1in\noindent
-In this topic the subjsct of finite representation of numbers and finite
-precision of arithmetic will be considered. In most advanced mathematics
-courses, one starts with the simplest sets of numbers and successively include
-more and more types of numbers. It is typical to start out with the natural
-numbers, \(\mathbb{N}\). This set can be defined by
+We can start in several places, but the ideas are all centered around plotting
+points in the plane and connecting the plots with curves of some kind to display
+the behavior of an underlying function that may represent the data. So, suppose
+that we have generated a list of ordered pairs and want to plot these values. As
+an example, the content in \href{../../topic_09/html/topic_09.html}{Topic 09}
+includes a couple of 2-d plots displaying the behavior of the error in
+approximating a derivative with a difference quotient. In that example, a source
+of bad behavior in the approximation was instantly displayed. 
+
+In a general setting, suppose that data in the form of a set of ordered pairs is
+given. That is,
 \[
-  \mathbb{N} = \left\lbrace 1, 2, 3, \ldots \right\rbrace
+  f = \left\lbrace 
+       (x_0, y_0), (x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)
+      \right\rbrace 
 \]
-If we stopped here we would still use the set of natural numbers in many
-computational problems. The natural numbers or subsets of the natural numbers
-are used to increment recursive process through looping structures.
+This is a set of \(n+1\) data points. There is a reason for starting at zero
+with our indices. That will be described when we fit a polynomial through the
+data points - more on this later in the semester.
 
-The next set of number comes from adding the number zero to the set of natural
-numbers. That is, define \(\mathbb{W}\) as
+Another thing to note is that we could also take a function, say
 \[
-  \mathbb{W} = \left\lbrace 0\right\rbrace \cub\mathbb{N}
-             = \left\lbrace 0, 1, 2, 3, \ldots \right\rbrace 
+   P(t) = {{400\ e^{0.2 t}}\over{1 + 3\ e^{0.2 t}}}
 \]
-This set of numbers allows C, Python and other languages to start all arrays at
-0 instead of 1, like Fortran.
-
-Adding in the negatives of the natural numbers gives the set of integers defined
-by
+and sample the function at a set of input value, \(t_i\), for
+\(i=0,1,\ldots,n\). The function under consideration is a solution of the
+logistic differential equation for population growth. We can generate a set of
+ordered pairs by choosing values of the input (time) and computing the values of
+$P(t)$ using the formula above. That is,
 \[
-  \mathbb{Z} = \left\lbrace \ldots, -2, -1, 0, 1, 2, \ldots \right\rbrace 
+  P = \left\lbrace 
+       (t_0, P(t_0)), (t_1, P(t_1)), (t_2, P(t_2)), \ldots, (t_n, P(t_n))
+      \right\rbrace 
 \]
-The negative numbers in \(\mathbb{Z}\) can arise when doing index arithmetic in
-arrays. Sometimes it may be a way of detecting an error in code.
-
-At this point, all of the numbers considered, \(\mathbb{Z}\), can be represented
-on a computer up to a upper limit on the value. 
-
+Now, let's figure out a way to get a simple graph of this function. A 2-d plot
+of the population density above is given in the following graph.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/github_01.png}
+\includegraphics[width=6.0in]{../images/2dplot_01.png}
 \vskip0.1in
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\caption{A 2-d plot of a population density function. This is just a simple
+         example of a plot that shows the results of sampling a function.}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{{\bf :} Setting up a Repository} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-Once you log in, you will need to build a repository for use in the class and
-to turn in homework and completed tasks and projects. For the course, you will
-create a repository named the following:
+
+For the example above, a module was written in Python. In addition, the
+development was done in an Integrated Development Environment (IDE) named
+Integrated Development and Learning Environment (IDLE) that can be used to
+develop bits of code into useful applications. If you have installed a fairly
+recent version of Python on your compouter, you should have a version of IDLE
+that will come with the installation bundle. To start IDLE, you can type
 \begin{verbatim}
 
-    math4610
+    koebbe% idle&
 
 \end{verbatim}
-Use only the characters above and using the following rules:
-\begin{enumerate}
-  \item Use only lower case characters - github is case senesitive.
-  \item Do not put any blanks in the name of the repository.
-\end{enumerate}
-Note that the instructor will use only this repository name in looking for your
-work.
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics{../images/github_02.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{{\bf Github Primer for Math 4610 at USU:} List the Contents of the Home
-    Directory} 
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-If you have an account on GitHub, you will already know a lot about these
-things. However, when you are logged in you will see the main screen with any
-repositories you may already have created. We will go through the steps to
-build and name repositories in the next few pages.
+Note that there is an ampersand at the end of the command. This tells the
+operating system to run the command in the background. This is a Unix feature
+that allows you to run multiple processes in a single window.
 
-\vskip0.1in\hrule\vskip0.1in
+In a terminal emulator, invoking the IDLE application looks like the window
+displayed in the following figure.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics{../images/github_03.png}
-\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
-         my Windows 10 box}
+\includegraphics[width=6.0in]{../images/2dplot_02.png}
+\vskip0.1in
+\caption{Starting IDLE in a terminal emulator.}
 \end{figure}
 \eject
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Opening a New File to Write Code} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+To get the editor up and running, you can click on the file menu in the IDLE
+window and click on the New File item in the drop down menu. The window
+containing IDLE will look like the next figure. 
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=6.0in]{../images/2dplot_03.png}
+\caption{Opening a New File to write code in Python.}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf The Final Version of the Plotting Code in Python} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+The next step is to type in a code that will provide the 2-d plot that we want.
+The figure below shows the final code in the IDLE new file window. The code can
+be run using the Run menu at the top of the window. When the code is run you
+will be asked if you want to save any changes. It is usually a good thing to do
+to save the changes.
+
+\vskip0.1in\hrule\vskip0.1in\noindent
+
+\begin{verbatim}
+
+    #
+    # import some stuff
+    # -----------------
+    #
+    from matplotlib import pyplot as plt
+    import numpy as np
+    #
+    # this is hardwired for a logistic function - so give initial time and final
+    # time
+    # ----
+    #
+    start = 0.0
+    end = 20.0
+    #
+    # set an array of input/time values
+    # ---------------------------------
+    #
+    t = []
+    #
+    # initialize a variable to keep track of the time at each iteration and append
+    # the initial value to the array
+    # ------------------------------
+    #
+    x = 0.0
+    t.append(x)
+    #
+    # compute the time increment between samples
+    # ------------------------------------------
+    #
+    dx = ( end - start ) / 201.
+    #
+    # set the functional form for the logistic solution
+    # -------------------------------------------------
+    #
+    expression  = '(400.0 * np.exp(0.8*x)) / (500.0 + 3.0 * np.exp(0.8*x) )'
+    #
+    # initialize an array for the output/population density values
+    # ------------------------------------------------------------
+    #
+    p = []
+    p.append(eval(expression))
+    #
+    # set the loop iterator and start the while loop
+    # ----------------------------------------------
+    #
+    l = 0
+    while l < 200:
+        #
+        # compute the current value of the expression
+        # -------------------------------------------
+        #
+        p.append(eval(expression))
+        #
+        # move on to the next value of the input
+        # --------------------------------------
+        #
+        x = x + dx
+        #
+        # append the new value to the input array
+        # ---------------------------------------
+        #
+        t.append(x)
+        #
+        # plus one the iterator
+        # ---------------------
+        #
+        l += 1
+    #
+    # do the plot thing in matplotpy
+    # ------------------------------
+    #
+    plt.xlabel('time values')
+    plt.ylabel('population density values')
+    plt.title('Logistic Population Growth Example')
+    plt.plot(t, p)
+    plt.show()
+
+\end{verbatim}
+\vskip0.1in\hrule\vskip0.1in
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=6.0in]{../images/2dplot_05.png}
+\caption{The final code in the window to produce a 2d-plot of a logistic
+         population model.}
+\end{figure}
+\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf The Final Result} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+When the Run menu item is selected, the result will be a new window popping up
+that will display the graph in the first figure of this section of the notes.
+The nice thing is that you can save a copy of the figure in several formats.
+Your instructor usually likes a Portable Network Graphics (png) format.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} 

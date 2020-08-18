@@ -57,7 +57,7 @@ the beginning.
         connection is not as good as you might like, you can use "git" to
         synchronize the work on your project.
 
-  * **Topic 9.** [An Example: Approximation of the Derivative:](../../topic_09/md/topic_09.md)
+  * **Topic 9.** [An Example: Approximation of the Derivative:](../../topic_09/html/topic_09.html)
 
         In this section we will see an example of an approximation of a
         derivative that produces errors in the value of the derivative no matter
