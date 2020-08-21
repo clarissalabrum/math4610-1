@@ -1,27 +1,29 @@
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-\usepackage{graphicx}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
 
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+<hr>
 
-\nofiles
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 10. </h1>
 
-\pagestyle{empty}
+<hr>
 
-\setlength{\parindent}{0in}
-
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 10.}
-\vskip0.1in\hrule\vskip0.1in \noindent
 It is very important as a computational mathematician that we use computational
 resources to visualize data or output from simulations. This means producing
 graphics codes that can display output from data sets in real world problems or
@@ -44,11 +46,13 @@ ideas and produce a Python module/script that will produce 2D graphics. The code
 will become useful in all kinds of applications, from plotting the error in 
 approximations to solutions of differential equations. We will reuse the code in
 some form or another throughout the semester.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Visualizing Results: 2D Plotting} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Visualizing Results: 2D Plotting </h2> 
+
+<hr>
+
 We can start in several places, but the ideas are all centered around plotting
 points in the plane and connecting the plotted points with curves of some kind
 to display the behavior of an underlying function. It should be noted that no
@@ -90,77 +94,91 @@ and computing values of $P(t)$ (population density). That is,
 \]
 Now, let's figure out a way to get a simple graph of this function. A 2-d plot
 of the population density above is given in the following graph.
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2dplot_01.png}
-\vskip0.1in
-\caption{A 2-d plot of a population density function. This is just a simple
-         example of a plot that shows the results of sampling a function.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Visualizing Results: 2D Plotting} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+<figure>
+<img src="../images/2dplot_01.png" width=680
+     alt = "image not found">
+     <figcaption>
+       A 2-d plot of a population density function. This is just a simple
+       example of a plot that shows the results of sampling a function.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> Visualizing Results: 2D Plotting </h2>
+
+<hr>
+
 To create the graph shown above, a module/script was written in Python. In
 addition, the development was done in an Integrated Development Environment
 (IDE) named Integrated Development and Learning Environment (IDLE) that can be
 used to develop bits of code into useful applications. If you have installed a
 fairly recent version of Python on your computer, you should have a version of
 IDLE that will come with the installation bundle. To start IDLE, you can type
-\begin{verbatim}
+<pre>
 
     koebbe% idle&
 
-\end{verbatim}
+</pre>
 Note that there is an ampersand at the end of the command. This tells the
-operating system to run the command in the background. This is a Unix feature
+operating system to run the command in the background.  This is a Unix feature
 that allows you to run multiple processes in a single terminal.
+<figure>
+<img src="../images/2dplot_02.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Starting IDLE in the background in a terminal emulator.
+     </figcaption>
+</figure>
+The output is a Python Shell terminal as shown in the next figure. In a terminal
+emulator, invoking the IDLE application looks like the window displayed in the
+following figure.
+<figure>
+<img src="../images/2dplot_03.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Starting IDLE in the background in a terminal emulator.
+     </figcaption>
+</figure>
 
-In a terminal emulator, invoking the IDLE application looks like the window
-displayed in the following figure.
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2dplot_02.png}
-\vskip0.1in
-\caption{Starting IDLE in a terminal emulator.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
-\noindent
-{\bf Opening a New File to Write Code} 
-\vskip0.1in\hrule\vskip0.1in
+<hr>
+
+<h2> Opening a New File to Write Code </h2>
+
+<hr>
+
 \noindent
 To get the editor up and running, you can click on the file menu in the IDLE
 window and click on the New File item in the drop down menu. The window
 containing IDLE will look like the next figure. 
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2dplot_03.png}
-\caption{Opening a New File to write code in Python.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in
+
+<hr>
+
+<figure>
+<img src="../images/2dplot_04.png" width=680
+     alt = "image not found">
+     <figcaption>
+       Opening a New File to write code in Python.
+     </figcaption>
+</figure>
+
+<hr>
+
 \noindent
-{\bf The Final Version of the Plotting Code in Python} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+<h2> The Final Version of the Plotting Code in Python </h2>
+
+<hr>
+
 The next step is to type in Python code that will provide the 2-d plot that we
 want.  The figure below shows the final code in the IDLE new file window. The
 code can be run using the Run menu at the top of the window. When the module is
 running you will be prompted to see if you want to save any changes to the code.
 It is usually a good thing to save the changes.
-\vskip0.1in\hrule\vskip0.1in\noindent
 
-\begin{verbatim}
+<hr>
+
+
+<pre>
 
     #
     # import some stuff
@@ -239,44 +257,52 @@ It is usually a good thing to save the changes.
     plt.plot(t, p)
     plt.show()
 
-\end{verbatim}
-\vskip0.1in\hrule\vskip0.1in\noindent
+</pre>
+
+<hr>
+
 The code can be copied from these lecture notes and saved into a file. The
 Python code is a hardwired version to graph the single expression
-\begin{verbatim}
+<pre>
 
     expression  = '(400.0 * np.exp(0.8*x)) / (500.0 + 3.0 * np.exp(0.8*x) )'
 
-\end{verbatim}
+</pre>
 in python. It might be a good idea to write a general code. This will be done
 in the next topic.
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2dplot_05.png}
-\caption{The final code in the window to produce a 2d-plot of a logistic
-         population model.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf The Final Result} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+<figure>
+<img src="../images/2dplot_05.png" width=680
+     alt = "image not found">
+     <figcaption>
+       The final code in the window to produce a 2d-plot of a logistic
+       population model.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> The Final Result </h2>
+
+<hr>
+
 When the Run menu item is selected, the result will be a new window popping up
 that displays the graph in the first figure of this section of the notes.
 The nice thing is that you can save a copy of the figure in several formats.
 Your instructor usually likes a Portable Network Graphics (png) format. 
-\vskip0.1in\hrule\vskip0.1in
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2dplot_06.png}
-\caption{The output from the 2d plotting script is a window that shows the plot
-         with a toolbar at the bottom of the window. The controls on the
-         toolbar can be used to save a copy among other options.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document} 
+
+<hr>
+
+<figure>
+<img src="../images/2dplot_06.png" width=680
+     alt = "image not found">
+     <figcaption>
+       The output from the 2d plotting script is a window that shows the plot
+       with a toolbar at the bottom of the window. The controls on the toolbar
+       can be used to save a copy among other options.
+     </figcaption>
+</figure>
+
+<hr>
+
+</body>
+</html>

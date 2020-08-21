@@ -65,52 +65,78 @@ the beginning.
         exact and approximate value will reduce at first and then will start to
         grow.
 
-  * **Topic 10.** [2D Graphics Shareware](../../topic_10/md/topic_08.md)
+  * **Topic 10.** [2D Graphics Shareware](../../topic_10/html/topic_10.html)
+
+        It is very important as a computational mathematician that we use
+        computational resources to visualize data or output from simulations.
+        This means producing graphics codes that can display output from
+        simulations or visualization of data sets measured in the real world.
+
+  * **Topic 11.** [Reusable Graphics Applications in Python](../../topic_11/html/topic_11.html)
+
+  * **Topic 11.** [Computational Accuracy: Machine Precision](../../topic_11/md/topic_11.md)
+
+  * **Topic 12.** [Absolute and Relative Error:](../../topic_12/md/topic_12.md)
+
+  * **Topic 13.** [Review of Taylor Series:](../../topic_13/md/topic_13.md)
+
+  * **Topic 14.** [Error Analysis of Derivative Approximations:](../../topic_14/md/topic_14.md)
+
+  * **Topic 15.** [Truncation Error:](../../topic_15/md/topic_15.md)
+
+  * **Topic 16.** [Documentation: A Software Manual](../../topic_16/md/topic_16.md)
+
+  * **Topic 17.** [Shared Libraries:](../../topic_17/md/topic_17.md)
+
+  * **Topic 18.** [Introduction to Root Finding:](../../topic_18/md/topic_18.md)
+
+  * **Topic 19.** [Functional Iteration and Fixed Points:](../../topic_19/md/topic_19.md)
+
+  * **Topic 20.** [Convergence of Functional Iteration:](../../topic_20/md/topic_20.md)
+
+  * **Topic 21.** [The Intermediate Value Theorem for Continuous Functions:](../../topic_21/md/topic_21.md)
+
+  * **Topic 22.** [The Bisection Method:](../../topic_22/md/topic_22.md)
+
+  * **Topic 23.** [Analyzing Convergence of the Bisection Method:](../../topic_23/md/topic_23.md)
+
+  * **Topic 24.** [Rewriting the Bisection Method with No Conditionals:](../../topic_24/md/topic_24.md)
+
+  * **Topic 25.** [Newton's Method:](../../topic_25/md/topic_25.md)
+
+  * **Topic 26.** [Analysis of Newton's Method:](../../topic_26/md/topic_26.md)
+
+  * **Topic 27.** [The Secant Method:](../../topic_27/md/topic_27.md)
+
+  * **Topic 28.** [Secant Method and Computational Convergence:](../../topic_08/md/topic_12.md)
+
+  * **Topic 27.** [Parallel Hello World Using OpenMP:](../../topic_27/md/topic_27.md)
+
+  * **Topic 27.** [OpenMP Directive Based Parallelism:](../../topic_27/md/topic_27.md)
+
+  * **Topic 28.** [The OpenMP Library:](../../topic_28/md/topic_28.md)
+
+  * **Topic 29.** [The OpenMP Environment Variables:](../../topic_29/md/topic_29.md)
+
+  * **Topic 30.** [Matrices and Matrix Operations:](../../topic_30/md/topic_30.md)
 
 
 
 
 
-  * **Topic 10.** [Computational Accuracy: Machine Precision](../../topic_10/md/topic_08.md)
 
-  * **Topic 11.** [Absolute and Relative Error:](../../topic_08/md/topic_11.md)
 
-  * **Topic 12.** [Truncation Error:](../../topic_08/md/topic_12.md)
 
-  * **Topic 13.** [Review of Taylor Series:](../../topic_08/md/topic_12.md)
-
-  * **Topic 14.** [Shared Libraries:](../../topic_08/md/topic_12.md)
-                    Linking and such
-
-  * **Topic 15.** [Introduction to Root Finding:](../../topic_08/md/topic_12.md)
-
-  * **Topic 16.** [Functional Iteration:](../../topic_08/md/topic_12.md)
-
-  * **Topic 17.** [Convergence of Functional Iteration:](../../topic_08/md/topic_12.md)
-
-  * **Topic 18.** [The Intermediat Value Theorem:](../../topic_08/md/topic_12.md)
-
-  * **Topic 19.** [The BisectionMethod:](../../topic_08/md/topic_12.md)
 
   * **Topic 20.** [A Recursive Defniition for Bisection:](../../topic_08/md/topic_12.md)
 
   * **Topic 21.** [Rewriting the Bisection Method:](../../topic_08/md/topic_12.md)
-
-  * **Topic 22.** [Analyzing Error in the Bisection Method:](../../topic_08/md/topic_12.md)
 
   * **Topic 23.** [Roundoff Error:](../../topic_08/md/topic_12.md)
 
   * **Topic 24.** [Example of Roundoff Error:](../../topic_08/md/topic_12.md)
           Examples of Roundoff Error in Real Life: Roundoff error can accumulate
               in computationally intensive algorithms.
-
-  * **Topic 25.** [Newton's Method:](../../topic_08/md/topic_12.md)
-
-  * **Topic 26.** [Convergence of Newton's Method:](../../topic_08/md/topic_12.md)
-
-  * **Topic 27.** [The Secant Method:](../../topic_08/md/topic_12.md)
-
-  * **Topic 28.** [Secant Method and Computational Convergence:](../../topic_08/md/topic_12.md)
 
   * **Topic 29.** [Floating Point Operations (FLOPS):](../../topic_08/md/topic_12.md)
 
