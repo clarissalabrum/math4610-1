@@ -20,107 +20,172 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 10.}
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 11.}
 \vskip0.1in\hrule\vskip0.1in \noindent
-It is very important as a computational mathematician that we use computational
-resources to visualize data or output from simulations. This means producing
-graphics codes that can display output from data sets in real world problems or
-from computer codes that simulate real world problems. We could go back to basic
-principles and write software from scratch, say using Open Graphics Library
-(OpenGL) or some other set of libraries. This is time consuming and is basically
-a digital exercise in reinventing the wheel.
-
-At least initially, we should take advantage of the many software packages and
-codes that produce graphics. The idea in this section of the course is to come
-up with a way to display 2-d graphical output. For example, we may want to graph
-a set of ordered pairs that represent data or output of a simulation. We will
-have plenty of examples and problems in this course that will be aided by having
-a code that will do some simple graphs of functions and/or data.
-
-Note that there are a lot of other graphical representations of data that we
-could consider. For example, surfaces, barcharts, contours and level sets, and
-beyond. In this first shot a displaying graphics, we will stick to the simplest
-ideas and produce a Python module/script that will produce 2D graphics. The code
-will become useful in all kinds of applications, from plotting the error in 
-approximations to solutions of differential equations. We will reuse the code in
-some form or another throughout the semester.
+In the last topic, a means for producing graphs for a single function that has
+been hardwired into the Python module. It would be a lot better to have a module
+or modules that can handle a little more generality in the function being
+graphed. For this example, we might want to be able to enter a string that can
+be used in place of the hardwired function with a general expression. The work
+from the previous topic can be modified a bit to create a more general plotting
+tool. In this topic, we will produce a couple of Python modules that will plot
+(1) data from an input file and (2) use an input expression to produce a plot.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Visualizing Results: 2D Plotting} 
+{\bf Plotting Data From An Existing File: } 
 \vskip0.1in\hrule\vskip0.1in\noindent
-We can start in several places, but the ideas are all centered around plotting
-points in the plane and connecting the plotted points with curves of some kind
-to display the behavior of an underlying function. It should be noted that no
-matter how accurate the graph is, there will always be some error due to
-screen resolution and finite precision in the representation of numbers. So,
-suppose that we have generated a list of ordered pairs and want to plot these
-values.
+In this example, we will open and read a file into arrays of the coordinates
+that represent ordered pairs. There is an age-old problem in the process of
+loading data from a file system into a format that is recognized by the coding
+language you use. As a simple example, Windows machines end lines using a
+carriage return and Linux operating systems end lines in data files using the
+new line character. These characters are usually hidden from you, but they are
+really there. If you edit a file created using something like Notepad and then
+open the file in vim the carriage return characters show up. If you go the other
+way the new line characters are ignored and the lines are put one after the
+other without breaks. There are a couple of commands that will transform back
+and forth in this case. For example
+\begin{verbatim}
 
-As an example, the content in \href{../../topic_09/html/topic_09.html}{Topic 09}
-includes a couple of 2-d plots displaying the behavior of the error in
-approximating a derivative with a difference quotient. In that example, a source
-of some bad behavior in the derivative approximation was instantly manifested in
-the graph. 
+    koebbe% dos2unix filename
 
-In a general setting, suppose that data in the form of a set of ordered pairs is
-given. That is,
-\[
-  f = \left\lbrace 
-       (x_0, y_0), (x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)
-      \right\rbrace 
-\]
-This is a set of \(n+1\) data points. There is a reason for starting at zero
-with our indices. That will be described when we fit a polynomial through given
-data points - more on this later in the semester.
+\end{verbatim}
+will transform the file and change carriage returns into new line characters.
+This aside does not help with plotting functions. However, it is another little
+trick that is worth knowing.
 
-Another thing to note is that we could also take a function, say
-\[
-   P(t) = {{400\ e^{0.2 t}}\over{1 + 3\ e^{0.2 t}}}
-\]
-and sample the function at a set of input values, \(t_i\), for
-\(i=0,1,\ldots,n\). The function under consideration is a solution of the
-logistic differential equation for population growth. Using the formula above,
-we can generate a set of ordered pairs by choosing values of the input (time)
-and computing values of $P(t)$ (population density). That is,
-\[
-  P = \left\lbrace 
-       (t_0, P(t_0)), (t_1, P(t_1)), (t_2, P(t_2)), \ldots, (t_n, P(t_n))
-      \right\rbrace 
-\]
-Now, let's figure out a way to get a simple graph of this function. A 2-d plot
-of the population density above is given in the following graph.
+So, let's consider an input file that looks like:
+\begin{verbatim}
+
+      1, 3
+      2, 4
+      3, 17
+      4, 2
+      5, -3
+      6, 4
+      7, 6
+      8, -2
+      9, 3
+     10, 0
+
+\end{verbatim}
+Each line in the file represents an ordered pair. So, the third line in the file
+represents the ordered pair \((3, 17)\). So, the trick is to read in the ordered
+pairs and use them to generate a plot.
+
+A Python code that will do just that is included here. Note that there are a few
+inputs that are required.
+\begin{verbatim}
+
+      from matplotlib import pyplot as plt
+      import numpy as np
+      #
+      # initialize two arrays to store the data in
+      # ------------------------------------------
+      #
+      xpts=[]
+      ypts=[]
+      #
+      # user inputs a string for the name of the file containing the data
+      # -----------------------------------------------------------------
+      #
+      datafilename = input('Enter the name of a data file:\n')
+      #
+      # the code expects ordered pairs, one per line in the file with a comma
+      # separator - this is a very simple format
+      # ----------------------------------------
+      #
+      xpts, ypts = np.loadtxt(datafilename, delimiter=',', unpack=True)
+      #
+      # the next block will ask for an expression for the data generation
+      # ------------------------------------------
+      #
+      # now that the data is set up, we can do the graphics in the lines below
+      #
+      # set the maximum and minimum values for the graphing below
+      # ---------------------------------------------------------
+      #
+      xmin = np.min(xpts)
+      xmax = np.max(xpts)
+      #
+      # set the limits on the plot on the horizontal axis
+      # -------------------------------------------------
+      #
+      plt.xlim(xmin, xmax)
+      #
+      # plot the data using matplotlib.pyplot
+      # -------------------------------------
+      #
+      plt.plot(xpts, ypts, label='plot from data')
+      #
+      # create labels for the two axes in the 2-d plot
+      # ----------------------------------------------
+      #
+      hlabel = input('Enter the label for the horizontal axis:\n')
+      plt.xlabel(hlabel)
+      vlabel = input('Enter the label for the vertical axis:\n')
+      plt.ylabel(vlabel)
+      #
+      # create a title for the plot
+      # ---------------------------
+      #
+      ptitle = input('Enter the title for the plot:\n')
+      plt.title(ptitle)
+      #
+      # create a legend for the plot, if needed
+      # ---------------------------------------
+      #
+      plt.legend()
+      #
+      # show the plot of the data
+      # -------------------------
+      #
+      plt.show()
+      #
+
+\end{verbatim}
+Once the data file is identified, there are a couple of important lines that
+transform the input into actual numerical values. The use of the numpy package
+will cast the strings read from the file into numerical values. This is done
+as the file is read, in the code line
+\begin{verbatim}
+
+      xpts, ypts = np.loadtxt(datafilename, delimiter=',', unpack=True)
+
+\end{verbatim}
+Note that the syntax in Python allows the multiple assignment of array values.
+xpts and ypts are initalized as arrays that allow an arbitrary number of values
+to be appended to each.
+
+In looking at the code, 4 inputs are required in order to have the code run to
+completion. The one necessary input is the file name. The other three can be
+anything including a blank string. So, as shown in the following figure, a file
+name is input that accesses the ordered pairs given above. The labels are not
+actually necessary. However, having labels always helps with graphs of
+functions.
 \vfill
 \begin{figure}[h]
 \centering
-\includegraphics[width=6.0in]{../images/2dplot_01.png}
+\includegraphics[width=6.0in]{../images/2ddataplot_01.png}
 \vskip0.1in
-\caption{A 2-d plot of a population density function. This is just a simple
-         example of a plot that shows the results of sampling a function.}
+\caption{A simple 2-d plot of data in an external file.
 \end{figure}
 \eject
+The input needed to create the graph of the ordered pairs in the file are shown
+in the following figure. Note that the 
+\vfill
+\begin{figure}[h]
+\centering
+\includegraphics[width=6.0in]{../images/2ddataplot_02.png}
+\vskip0.1in
+\caption{The input needed to run the module and produce the plot of the data.}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Visualizing Results: 2D Plotting} 
+{\bf Plotting Data from an Input String:} 
 \vskip0.1in\hrule\vskip0.1in\noindent
-To create the graph shown above, a module/script was written in Python. In
-addition, the development was done in an Integrated Development Environment
-(IDE) named Integrated Development and Learning Environment (IDLE) that can be
-used to develop bits of code into useful applications. If you have installed a
-fairly recent version of Python on your computer, you should have a version of
-IDLE that will come with the installation bundle. To start IDLE, you can type
-\begin{verbatim}
-
-    koebbe% idle&
-
-\end{verbatim}
-Note that there is an ampersand at the end of the command. This tells the
-operating system to run the command in the background. This is a Unix feature
-that allows you to run multiple processes in a single terminal.
-
-In a terminal emulator, invoking the IDLE application looks like the window
-displayed in the following figure.
 \vfill
 \begin{figure}[h]
 \centering
@@ -136,9 +201,6 @@ displayed in the following figure.
 {\bf Opening a New File to Write Code} 
 \vskip0.1in\hrule\vskip0.1in
 \noindent
-To get the editor up and running, you can click on the file menu in the IDLE
-window and click on the New File item in the drop down menu. The window
-containing IDLE will look like the next figure. 
 \vskip0.1in\hrule\vskip0.1in
 \vfill
 \begin{figure}[h]
