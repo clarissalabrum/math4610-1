@@ -74,31 +74,41 @@ the beginning.
 
   * **Topic 11.** [Reusable Graphics Applications in Python](../../topic_11/html/topic_11.html)
 
-  * **Topic 11.** [Computational Accuracy: Machine Precision](../../topic_11/md/topic_11.md)
+        In the last topic, a means for producing graphs for a single function
+        that has been hardwired into the Python module. It would be a lot better
+        to have a module or modules that can handle a little more generality in
+        the function being graphed.
 
-  * **Topic 12.** [Absolute and Relative Error:](../../topic_12/md/topic_12.md)
+  * **Topic 12.** [Computational Accuracy: Machine Precision](../../topic_12/md/topic_12.md)
 
-  * **Topic 13.** [Review of Taylor Series:](../../topic_13/md/topic_13.md)
+  * **Topic 13.** [Absolute and Relative Error:](../../topic_13/md/topic_13.md)
 
-  * **Topic 14.** [Error Analysis of Derivative Approximations:](../../topic_14/md/topic_14.md)
 
-  * **Topic 15.** [Truncation Error:](../../topic_15/md/topic_15.md)
 
-  * **Topic 16.** [Documentation: A Software Manual](../../topic_16/md/topic_16.md)
 
-  * **Topic 17.** [Shared Libraries:](../../topic_17/md/topic_17.md)
 
-  * **Topic 18.** [Introduction to Root Finding:](../../topic_18/md/topic_18.md)
 
-  * **Topic 19.** [Functional Iteration and Fixed Points:](../../topic_19/md/topic_19.md)
+  * **Topic 14.** [Review of Taylor Series:](../../topic_13/md/topic_13.md)
 
-  * **Topic 20.** [Convergence of Functional Iteration:](../../topic_20/md/topic_20.md)
+  * **Topic 15.** [Error Analysis of Derivative Approximations:](../../topic_14/md/topic_14.md)
 
-  * **Topic 21.** [The Intermediate Value Theorem for Continuous Functions:](../../topic_21/md/topic_21.md)
+  * **Topic 16.** [Truncation Error:](../../topic_15/md/topic_15.md)
 
-  * **Topic 22.** [The Bisection Method:](../../topic_22/md/topic_22.md)
+  * **Topic 17.** [Documentation: A Software Manual](../../topic_16/md/topic_16.md)
 
-  * **Topic 23.** [Analyzing Convergence of the Bisection Method:](../../topic_23/md/topic_23.md)
+  * **Topic 18.** [Shared Libraries:](../../topic_17/md/topic_17.md)
+
+  * **Topic 19.** [Introduction to Root Finding:](../../topic_18/md/topic_18.md)
+
+  * **Topic 20.** [Functional Iteration and Fixed Points:](../../topic_19/md/topic_19.md)
+
+  * **Topic 21.** [Convergence of Functional Iteration:](../../topic_20/md/topic_20.md)
+
+  * **Topic 22.** [The Intermediate Value Theorem for Continuous Functions:](../../topic_21/md/topic_21.md)
+
+  * **Topic 23.** [The Bisection Method:](../../topic_22/md/topic_22.md)
+
+  * **Topic 24.** [Analyzing Convergence of the Bisection Method:](../../topic_23/md/topic_23.md)
 
   * **Topic 24.** [Rewriting the Bisection Method with No Conditionals:](../../topic_24/md/topic_24.md)
 

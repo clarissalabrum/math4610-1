@@ -1,27 +1,27 @@
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-\usepackage{graphicx}
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+<hr>
 
-\nofiles
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 11. </h1>
 
-\pagestyle{empty}
+<hr>
 
-\setlength{\parindent}{0in}
-
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 11.}
-\vskip0.1in\hrule\vskip0.1in \noindent
 In the last topic, a means for producing graphs for a single function that has
 been hardwired into the Python module. It would be a lot better to have a module
 or modules that can handle a little more generality in the function being
@@ -37,19 +37,23 @@ is how do you write a quick code to address the request made. In this topic, we
 will consider two of these types of applications. The homework will ask students
 to write code that will produce the requested plots. Students should be able to
 modify the code in the two examples below to do the homework tasks. 
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2ddataplot_01.png}
-\vskip0.1in
-\caption{A simple plot of two functions.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Plotting Data From An Existing File: } 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<figure>
+<img src="../images/2ddataplot_01.png" width=680
+     alt = "image not found">
+     <figcaption>
+        A simple plot of two functions.
+     </figcaption>
+</figure>
+
+<hr>
+
+<h2> Plotting Data From An Existing File:  </h2>
+
+<hr>
+
 In this example, we will open and read a file into arrays of the coordinates
 that represent ordered pairs. There is an age-old problem in the process of
 loading data from a file system into a format that is recognized by the coding
@@ -61,17 +65,17 @@ open the file in vim the carriage return characters show up. If you go the other
 way the new line characters are ignored and the lines are put one after the
 other without breaks. There are a couple of commands that will transform back
 and forth in this case. For example
-\begin{verbatim}
+<pre>
 
     koebbe% dos2unix filename
 
-\end{verbatim}
+</pre>
 will transform the file and change carriage returns into new line characters.
 This aside does not help with plotting functions. However, it is another little
 trick that is worth knowing.
 
 So, let's consider an input file that looks like:
-\begin{verbatim}
+<pre>
 
       1, 3
       2, 4
@@ -84,14 +88,14 @@ So, let's consider an input file that looks like:
       9, 3
      10, 0
 
-\end{verbatim}
+</pre>
 Each line in the file represents an ordered pair. So, the third line in the file
 represents the ordered pair \((3, 17)\). So, the trick is to read in the ordered
 pairs and use them to generate a plot.
 
 A Python code that will do just that is included here. Note that there are a few
 inputs that are required.
-\begin{verbatim}
+<pre>
 
       from matplotlib import pyplot as plt
       import numpy as np
@@ -159,16 +163,16 @@ inputs that are required.
       plt.show()
       #
 
-\end{verbatim}
+</pre>
 Once the data file is identified, there are a couple of important lines that
 transform the input into actual numerical values. The use of the numpy package
 will cast the strings read from the file into numerical values. This is done
 as the file is read, in the code line
-\begin{verbatim}
+<pre>
 
       xpts, ypts = np.loadtxt(datafilename, delimiter=',', unpack=True)
 
-\end{verbatim}
+</pre>
 Note that the syntax in Python allows the multiple assignment of array values.
 xpts and ypts are initialized as arrays that allow an arbitrary number of values
 to be appended to each.
@@ -179,48 +183,60 @@ anything including a blank string. So, as shown in the following figure, a file
 name is input that accesses the ordered pairs given above. The labels are not
 actually necessary. However, having labels always helps with graphs of
 functions.
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2ddataplot_02.png}
-\vskip0.1in
-\caption{A simple 2-d plot of data in an external file.}
-\end{figure}
-\eject
+
+<hr>
+
+<figure>
+<img src="../images/2ddataplot_02.png" width=680
+     alt = "image not found">
+     <figcaption>
+       A simple 2-d plot of data in an external file.
+     </figcaption>
+</figure>
 
 The input needed to create the graph of the ordered pairs in the file are shown
 in the following figure. Note that the data file is named
-\begin{verbatim} 
+<pre>
 
       ../data/test_data.txt
 
-\end{verbatim} 
+</pre>
 This means that the data is stored in a file one level up from the current
 folder and in a folder named data. The name of the file is
-\lq\lq test\_data.txt\rq\rq. This is the structure of the folders in the Math
+"test_data.txt". This is the structure of the folders in the Math
 4610 repository.
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2ddataplot_03.png}
-\vskip0.1in
-\caption{The input needed to run the module and produce the plot of the data.}
-\end{figure}
-\eject
+
+<hr>
+
+<figure>
+<img src="../images/2ddataplot_03.png" width=680
+     alt = "image not found">
+     <figcaption>
+         The input needed to run the module and produce the plot of the data.
+     </figcaption>
+</figure>
+
+<hr>
+
 Note that the code can be run on any data file that includes two columns of
 numerical values with the two values separated by a single comma. The file is
 known as a comma separated value (.csv) file and is common in many applications.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Plotting Data from an Input String:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Plotting Data from an Input String: </h2>
+
+<hr>
+
 When graphing a function using a string, the code in the previous topic can be
 used as a starting point. Instead of using a single hardwired expression (the
 logistic function) can be replaced with code to accept input from the user when
 the plotting script is executed. A code written in Python that will do the work
 is given below.
-\vskip0.1in\hrule\vskip0.1in\noindent
-\begin{verbatim}
+
+<hr>
+
+<pre>
 
       from matplotlib import pyplot as plt
       import numpy as np
@@ -301,39 +317,46 @@ is given below.
       plt.show()
       #
 
-\end{verbatim}
-\vskip0.1in\hrule\vskip0.1in\noindent
+</pre>
+
+<hr>
+
 The inputs needed for the code are a bit different. In the code above, the user
 is prompted for the minimum and maximum coordinates from the domain of the
 function. The next thing that is needed is the number of points that will be
 used to create the plot. The next crucial part of the code is the prompt for the
 expression that defines the function. An example of the input needed is shown in
 the next figure. Note that the input looks like the following line:
-\begin{verbatim}
+<pre>
 
       np.sin(4.0*x)
 
-\end{verbatim}
-The \lq\lq\ np\rq\rq in front of the sine function indicates that the numpy
+</pre>
+The "np" in front of the sine function indicates that the numpy
 package is used to evaluate the sine function. The input of labels is the same
 as the data file example earlier in this topic. The results of running the
 script are shown in the last figure below.
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2ddataplot_04.png}
-\vskip0.1in
-\caption{Starting IDLE in a terminal emulator.}
-\end{figure}
-\vfill
-\begin{figure}[h]
-\centering
-\includegraphics[width=6.0in]{../images/2ddataplot_05.png}
-\vskip0.1in
-\caption{The plot generated by the Python code that accepts a string expression
-         that represents a function.}
-\end{figure}
-\eject
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document} 
+
+<hr>
+
+<figure>
+<img src="../images/2ddataplot_04.png" width=680
+     alt = "image not found">
+     <figcaption>
+        Starting IDLE in a terminal emulator.
+     </figcaption>
+</figure>
+
+<hr>
+
+<figure>
+<img src="../images/2ddataplot_05.png" width=680
+     alt = "image not found">
+     <figcaption>
+        The plot generated by the Python code that accepts a string expression
+        that represents a function.
+     </figcaption>
+</figure>
+
+</body>
+</html>
