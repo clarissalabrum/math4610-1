@@ -1,0 +1,200 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 12.}
+\vskip0.1in\hrule\vskip0.1in \noindent
+Most mathematical problems require the use of approximations as a part of the
+solution process. For example, the solution of the simple ordinary differential
+equation
+\[
+  {{dy}\over{dt}} = -2\ y
+\]
+with initial condition, \(y(0)=1\), is the function
+\[
+  y(t) = e^{-2t}
+\]
+You can check this on your own. This is a single term that seems nice and tidy
+for predicting value of the solution to the differential equation. However, due
+to the fact that the number \(e=2.71828...\) is an irractional number. For
+certain values like \(t=0\) the exponential can be evaluated exactly. However,
+for just about any other number all we can do is approximate the value based on
+our mathematica knowledge.
+
+From any standard second semester engineering calculus course, a series 
+representation of the exponential function is given by
+\[
+  e^x = 1 + x + {1\over 2} x^2 + {1\over 6} x^3 + \cdots
+      = \sum_{k=0}^\infty {{x^k}\over{k!}}
+\]
+Of course this is an infinite series and the best we can do is sum a finite
+number of terms.
+
+Mathematically, we know that the series converges rapidly to
+a value. It may take a few terms, but a truncated series
+\[
+  e^x \approx \sum_{k=0}^N {{x^k}\over{k!}}
+\]
+for some, \(N>0\), can be used to approximate the exponential function. In this
+example, there are a couple of problems that still need to be addressed. First,
+if we truncate the infinite sum to a finite value, \(N>0\), how good is the
+approximation. The truncation of the series can be analyzed mathematically using
+Taylor series.
+
+The second problem involves errors in number representation. That is, due to the
+finite number of digits available on a computer, we will run into problems for
+either very small values or very large values input to the exponential function.
+
+The first problme is due to truncation error which is an artifact of
+approximating the mathematical model. Truncation error in any given problem 
+needs to be analyzed mathematically. The second problem is really beyond our
+control since it is due to the particular computer and operating system we are
+using. We will treat the problem of truncation error in this topic and save the
+problem of round off error and machine precision for another topic in the near
+future.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf A Brief Review of Taylor Series} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+In just about any calculus sequence, the topic of Taylor series is discussed. A
+definition for this concept is the following.
+\begin{definition}
+  Suppose that the function, \(f\), is a function with derivatives of all
+  orders at a point, \(a\) in the domain of \(f\). Then the Taylor series of
+  \(f\) about the point \(a\) is given by
+  \[
+    f(x) \sim f(a) + f'(a) ( x - a ) + {1\over 2} f''(a) ( x - a )^2 + \cdots
+          = \sum_{k=0}^\infty\ {{f^{(k)}}\over{k!}}\ ( x - a )^k
+  \]
+  where \(f^{(k)}(a)\) is the \(k^{th}\) derivative of \(f\) at \(a\) and
+  \(k!=k(k-1)(k-2)\ldots (2)(1)\) with the assumption that \(0!=1\).
+\end{definition}
+Students should be able to produce the Taylor series of simple functions like
+the trigonometric functions or examples like \(f(x)=ln(1+x)\). If you are a
+little foggy on the details, there are examples all over the internet or you can
+refer to any book the presents topics in engineering calculus.
+
+It is also important to know how to apply the Taylor series with remainder. The
+definition we need is the following.
+\begin{definition}
+  Suppose that the function, \(f\), is a function with \(n+1\) continuous
+  derivatives at a point, \(a\), in the domain of the function. Then, the Taylor
+  series with remainder is
+  \[
+    f(x) \sim \sum_{k=0}^n\ {{f^{(k)}(a)}\over{k!}}\ ( x - a )^k
+                   + R_f(a,n)
+  \]
+  where
+  \[
+    R_f(a,n) = {{f^{n+1}(\xi)}\over{(n+1)!}}\ ( x - a )^{n+1}
+  \]
+  and \(\xi\) is a point between \(x\) and \(a\).
+\end{definition}
+The remainder in this definition can be used to establish the truncation error
+and upper bounds for the truncation error as will be seen in some examples in
+this topic.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf \(h\) Form of the Taylor Series:} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+Computational mathematicians should be able to use Taylor series with ease in
+the analysis of numerical methods. There are several different, but equivalent
+forms of the Taylor series. For the purposes in this course, we will use the
+\(h\) or increment form for Taylor series expansions. To get to the appropriate
+form, letting \(h=x-a\) doing some simplification gives
+\[
+  f(a+h) \sim f(a) + f'(a) h + {1\over 2} f''(a) h^2 + \cdots
+          = \sum_{k=0}^\infty\ {{f^{(k)}(a)}\over{k!}}\ h^k
+\]
+or using the Taylor series with remainder
+\[
+    f(a+h) \sim \sum_{k=0}^n\ {{f^{(k)}(a)}\over{k!}}\ h^k
+                   + R_f(a,n)
+\]
+where
+\[
+  R_f(a,n) = {{f^{n+1}(\xi)}\over{(n+1)!}}\ h^{n+1}
+\]
+It should
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf } 
+\vskip0.1in\hrule\vskip0.1in\noindent
+To create an account on GitHub, go to the Github site on any browser. I you
+already have an account, you can skip this step.
+\begin{verbatim}
+
+    https://github.com
+
+\end{verbatim}
+This site will display a place to create an account or sign in to an existin
+account.
+%\vskip0.1in\hrule\vskip0.1in
+%\vfill
+%\begin{figure}[h]
+%\centering
+%\includegraphics{../images/github_01.png}
+%\vskip0.1in
+%\caption{{Screenshot} taken using {\bf Snip \& Sketch}. This is an app on
+%         my Windows 10 box}
+%\end{figure}
+%\eject
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf GitHub Primer for Math 4610 at USU:} Setting up a Repository} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+Once you log in, you will need to build a repository for use in the class and
+to turn in homework and completed tasks and projects. For the course, you will
+create a repository named the following:
+\begin{verbatim}
+
+    math4610
+
+\end{verbatim}
+Use only the characters above and using the following rules:
+\begin{enumerate}
+  \item Use only lower case characters - github is case senesitive.
+  \item Do not put any blanks in the name of the repository.
+\end{enumerate}
+Note that the instructor will use only this repository name in looking for your
+work.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{{\bf Github Primer for Math 4610 at USU:} List the Contents of the Home
+    Directory} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If you have an account on GitHub, you will already know a lot about these
+things. However, when you are logged in you will see the main screen with any
+repositories you may already have created. We will go through the steps to
+build and name repositories in the next few pages.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

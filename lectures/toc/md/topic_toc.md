@@ -79,6 +79,12 @@ the beginning.
         to have a module or modules that can handle a little more generality in
         the function being graphed.
 
+  * **Topic 12.** [Truncation Error: Taylor Series](../../topic_12/md/topic_12.md)
+
+        Most mathematical problems require the use of approximations as a part
+        of the solution process. For example, the solution of the simple
+        ordinary differential equation
+
   * **Topic 12.** [Computational Accuracy: Machine Precision](../../topic_12/md/topic_12.md)
 
   * **Topic 13.** [Absolute and Relative Error:](../../topic_13/md/topic_13.md)
