@@ -95,12 +95,6 @@ Github site with link given above. Also, note that the syllabus will change from
 year to year based on how the course evolves and the instructor teaching the
 course in a current semester.
 
-
-
-
-
-
-
 <hr>
 
 ## Additional Computer Skills:
