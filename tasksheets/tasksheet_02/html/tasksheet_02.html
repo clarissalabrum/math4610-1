@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
   <link href="homework.css" rel="stylesheet" type="text/css" />
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -14,72 +15,92 @@
   </script>
 </head>
 <body>
-  <hr>
-  <h1>
-    Math 4610 Fundamentals of Computational Mathematics:
-                         Tasksheet 2 Problem/Questions
-  </h1>
-  <hr>
-  <ul>
-    <hr>
-    <li> Task 1: Consider the nonlinear equation
-         $$x \cosh(x) + x^3 = \pi$$.
-         Set up a root finding problem for this equation. This task does not
-         require any code.
-    </li>
-    <hr>
-    <li> Task 2: Consider the nonlinear equation
-         $$x \cosh(x) + x^3 = \pi$$.
-         Set up at least two associated fixed point iteration for this equation.
-         You do not need to write a code for this problem.
-    </li>
-    <hr>
-    <li> Task 3: Write code that implements fixed point iteration for the
-         equation defined in the previous two tasks. Try out the method on the
-         fixed point iteration equations in Task 1 and Task 2. Make sure that
-         the code you write is in the form of a method or subroutine that can
-         be added to your shared library. You should also write a main program
-         to test the code.
-    </li>
-    <hr>
-    <li> Task 4: Write a code that computes the roots of a function of one
-         variable using the Bisection method. The algorithm should be written
-         into a subroutine or method that can be called from a main program.
-         Include the routine in the shared library that you are creating for the
-         course.
-    </li>
-    <hr>
-    <li> Task 5: Start your software manual by including the routines you have
-         written for computing the single precision machine epsilon and double
-         precision machine epsilon. Use the template provided in the math4610
-         repository for the course. 
-    </li>
-    <hr>
-    <li> Task 6: Add pages in your software manual that document the routines
-         created for absolute error and relative error.
-    </li>
-    <hr>
-    <li> Task 7: Complete pages in your software manual that document the
-         code written for functional iteration for finding the roots of a
-         function of a single real variable. Use the results in Task 3 as
-         examples for the software page.
-    </li>
-    <hr>
-    <li> Task 8: Repeat Task 7 for the Bisection method.
-    </li>
-    <hr>
-    <li> Task 9: Compare the results from functional iteration and Bisection
-         on the problems in Tasksheet 2, Task 1 and Task2. Which provides a
-         better approximation and on the efficiency of the methods. 
-    </li>
-    <hr>
-    <li> Task 10: Search the internet for sites that discuss functional
-         iteration for root finding. Try to find sites that show the effective
-         use of this method in real problems. Write a brief paragraph (3 or 4
-         sentences) that describe your findings. Include links to the sites you
-         cite.
-    </li>
-    <hr>
-  </ul>
+
+<hr>
+
+<h1> Math 4610 Fundamentals of Numerical Analysis Tasksheet 2 </h1>
+
+<hr>
+
+The problems for the Tasksheet 02 are included below. The deadline for turning
+in your work on these problems will be posted on the repository. In addition,
+you will turn in your work through the math4610 repository. A directory will be
+constructed that will be used as a place to store your work.
+
+<hr>
+
+<h2> Tasks </h2>
+
+<hr>
+
+<ul>
+  <li> Task 1: After deciding which programming language you will use, write a
+       program that provides a response to the "Hello World!" output. Provide
+       details of the compilation and execution of the code you write. You can
+       choose a suitable response - say something like "...it's only a bunny..."
+  </li>
+<hr>
+  <li> Task 2: Edit the main README.md file in your Math 4610 repository on
+       Github using your favorite browser. In the README.md file, create an
+       introduction that describes what the repository is being created for and
+       put in a link to the table of contents for the homework problems and a
+       link to the software manual you will create. Do this in Markdown - not
+       html.
+  </li>
+<hr>
+
+  <li> Task 3: Create the table of contents in a file with a name like
+       <pre>
+
+          task_toc.md
+
+        </pre>
+        or something like this. After completing the tasks to this point, clone
+        the repository to a local directory on a local computer using git. If
+        you have already cloned the repository, use a
+        <pre>
+
+           koebbe% git pull
+
+        </pre>
+        command to do this.
+  </li>
+<hr>
+  <li> Task 4: Write out the analysis for the centered difference approximation
+       in a Taylor series expansions. Show that the approximation is second
+       order.
+  </li>
+<hr>
+  <li> Task 5: Determine the order of accuracy of the central difference
+        approximation of the second derivative. That is, analyze
+        \[
+          f''(x) \approx {{f(x+h) - 2 f(x) + f(x-h)}\over{h}}
+        \]
+        Write a code that approximates the second derivative of the function
+        \[
+          f(x) = cos(x)
+        \] 
+        at the point, \(x=2.0\).
+  </li>
+<hr>
+  <li> Task 6: Search the internet for information regarding finite difference
+       approximations of derivatives of different orders. Give examples of these
+       types of approximations. You should be able to find many such examples.
+       Write a brief paragraph (3 or 4 sentences) that describe your findings.
+       Include links to the sites you cite.
+  </li>
+<hr>
+</ul>
+
+<hr>
+
+<a href="../../tasksheet_01/html/tasksheet_01.html"> Previous </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../toc/md/tasksheet_toc.md"> Table of Contents  </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../tasksheet_03/html/tasksheet_03.html"> Next </a>
+
+<hr>
+
 </body>
 </html>

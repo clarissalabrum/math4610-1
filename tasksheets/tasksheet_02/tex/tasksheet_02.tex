@@ -1,0 +1,89 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf{\Large Math 4610 Fundamentals of Numerical Analysis Tasksheet 2}}
+\vskip0.1in\hrule\vskip0.1in \noindent
+The problems for the Tasksheet 02 are included below. The deadline for turning
+in your work on these problems will be posted on the repository. In addition,
+you will turn in your work through the math4610 repository. A directory will be
+constructed that will be used as a place to store your work.
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf{\large Tasks}}
+\vskip0.1in\hrule\vskip0.1in \noindent
+\begin{trivlist}
+  \item[\bf Task 1:] After deciding which programming language you will use,
+        write a program that provides a response to the "Hello World!" output.
+        Provide details of the compilation and execution of the code you write.
+        You can choose a suitable response - say something like "...it's only a
+        bunny..."
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \item[\bf Task 2:] Edit the main README.md file in your Math 4610 repository
+        on Github using your favorite browser. In the README.md file, create an
+        introduction that describes what the repository is being created for and
+        put in a link to the table of contents for the homework problems and a
+        link to the software manual you will create. Do this in Markdown - not
+        html.
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \item[\bf Task 3:] Create the table of contents in a file with a name like
+        \begin{verbatim}
+
+          task_toc.md
+
+        \end{verbatim}
+        or something like this. After completing the tasks to this point, clone
+        the repository to a local directory on a local computer using git. If
+        you have already cloned the repository, use a
+        \begin{verbatim}
+
+           koebbe% git pull
+
+        \end{verbatim}
+        command to do this.
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \item[\bf Task 4:] Write out the analysis for the centered difference
+        approximation in a Taylor series expansions. Show that the approximation
+        is second order.
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \item[\bf Task 5:] Determine the order of accuracy of the central difference
+        approximation of the second derivative. That is, analyze
+        \[
+          f''(x) \approx {{f(x+h) - 2 f(x) + f(x-h)}\over{h}}
+        \]
+        Write a code that approximates the second derivative of the function
+        \[
+          f(x) = cos(x)
+        \] 
+        at the point, \(x=2.0\).
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \item[\bf Task 6:] Search the internet for information regarding finite
+        difference approximations of derivatives of different orders. Give
+        examples of these types of approximations. You should be able to find
+        many such examples. Write a brief paragraph (3 or 4 sentences) that
+        describe your findings. Include links to the sites you cite.
+\end{trivlist}
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \href{../../tasksheet_01/html/tasksheet_01.html}{Previous}
+  \href{../../toc/md/tasksheet_toc.md}{Table of Contents} |
+  \href{../../tasksheet_03/html/tasksheet_03.html}{Next}
+\vskip0.1in\hrule\vskip0.1in \noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

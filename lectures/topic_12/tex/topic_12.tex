@@ -34,10 +34,10 @@ with initial condition, \(y(0)=1\), is the function
 \]
 You can check this on your own. This is a single term that seems nice and tidy
 for predicting value of the solution to the differential equation. However, due
-to the fact that the number \(e=2.71828...\) is an irractional number. For
-certain values like \(t=0\) the exponential can be evaluated exactly. However,
-for just about any other number all we can do is approximate the value based on
-our mathematica knowledge.
+to the fact that the number \(e=2.71828...\) is an irrational number any
+evaluation will be an approximation at best. For certain values like \(t=0\) the
+exponential can be evaluated exactly. However, for just about any other number
+all we can do is approximate the value based on our mathematica knowledge.
 
 From any standard second semester engineering calculus course, a series 
 representation of the exponential function is given by
@@ -45,25 +45,27 @@ representation of the exponential function is given by
   e^x = 1 + x + {1\over 2} x^2 + {1\over 6} x^3 + \cdots
       = \sum_{k=0}^\infty {{x^k}\over{k!}}
 \]
-Of course this is an infinite series and the best we can do is sum a finite
-number of terms.
+Of course, this is an infinite series and the best we can do is sum a finite
+number of terms and neglect/truncate the infinite series.
 
-Mathematically, we know that the series converges rapidly to
-a value. It may take a few terms, but a truncated series
+Mathematically, we know that the series converges rapidly to an output value
+given any reasonable value. It may take a few (or a lot of) terms, but a
+truncated series
 \[
   e^x \approx \sum_{k=0}^N {{x^k}\over{k!}}
 \]
 for some, \(N>0\), can be used to approximate the exponential function. In this
 example, there are a couple of problems that still need to be addressed. First,
 if we truncate the infinite sum to a finite value, \(N>0\), how good is the
-approximation. The truncation of the series can be analyzed mathematically using
-Taylor series.
+approximation? As we will see, the truncation of the series can be analyzed
+mathematically using Taylor series.
 
-The second problem involves errors in number representation. That is, due to the
-finite number of digits available on a computer, we will run into problems for
-either very small values or very large values input to the exponential function.
+The second problem involves errors in finite number representation on anu
+computer. That is, due to the finite resources (memory/disk space)available on
+a computer, we will run into problems for either very small values or very large
+input values to the exponential function.
 
-The first problme is due to truncation error which is an artifact of
+The first problem is due to truncation error which is an artifact of
 approximating the mathematical model. Truncation error in any given problem 
 needs to be analyzed mathematically. The second problem is really beyond our
 control since it is due to the particular computer and operating system we are
