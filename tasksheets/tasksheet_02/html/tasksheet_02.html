@@ -18,7 +18,7 @@
 
 <hr>
 
-<h1> Math 4610 Fundamentals of Numerical Analysis Tasksheet 2 </h1>
+<h1> Math 4610 Fundamentals of Numerical Analysis: Tasksheet 2 Problems/Questions</h1>
 
 <hr>
 
@@ -37,7 +37,8 @@ constructed that will be used as a place to store your work.
   <li> Task 1: After deciding which programming language you will use, write a
        program that provides a response to the "Hello World!" output. Provide
        details of the compilation and execution of the code you write. You can
-       choose a suitable response - say something like "...it's only a bunny..."
+       choose a suitable response - say something like "...it's only a
+       <a href="../audio/mp11.wav"> bunny </a> ..."
   </li>
 <hr>
   <li> Task 2: Edit the main README.md file in your Math 4610 repository on
@@ -63,7 +64,8 @@ constructed that will be used as a place to store your work.
            koebbe% git pull
 
         </pre>
-        command to do this.
+        command to do this. You will need to put a link from the README.md file
+        to your table of contents file.
   </li>
 <hr>
   <li> Task 4: Write out the analysis for the centered difference approximation
@@ -76,11 +78,14 @@ constructed that will be used as a place to store your work.
         \[
           f''(x) \approx {{f(x+h) - 2 f(x) + f(x-h)}\over{h}}
         \]
-        Write a code that approximates the second derivative of the function
+        via Taulor series expansions. Write a code that approximates the second
+        derivative of the function
         \[
           f(x) = cos(x)
-        \] 
-        at the point, \(x=2.0\).
+        \]
+        at the point, \(x=2.0\). Create a table of difference values between the
+        "exact" value of the second derivative. Use,
+        \(h=1.0,0.5,0.1,0.01,0.001,\ldots,10^{-16}\).
   </li>
 <hr>
   <li> Task 6: Search the internet for information regarding finite difference

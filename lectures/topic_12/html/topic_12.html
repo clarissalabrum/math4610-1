@@ -1,27 +1,28 @@
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-\usepackage{graphicx}
 
+<!DOCTYPE html>
+<html>
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
 
-\nofiles
+<hr>
 
-\pagestyle{empty}
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 12. </h1>
 
-\setlength{\parindent}{0in}
+<hr>
 
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 12.}
-\vskip0.1in\hrule\vskip0.1in \noindent
 Most mathematical problems require the use of approximations as a part of the
 solution process. For example, the solution of the simple ordinary differential
 equation
@@ -75,14 +76,19 @@ mathematically. The second problem is really beyond our control since it is due
 to the particular computer and operating system we are using. We will treat the
 problem of truncation error in this section and save the problem of round off
 error and machine precision for another topic in the near future.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf A Definition Of Taylor Series And Taylor Series With Remainders:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Definition Of Taylor Series And Taylor Series With Remainders: </h2>
+
+<hr>
+
 In almost any calculus sequence, the topic of infinite series and in particular
 Taylor series is discussed. A definition for Taylor series is the following.
-\begin{definition}
+
+<hr>
+
+<dfn> <bold> Definition: </bold>
   Suppose that the function, \(f\), is a function with derivatives of all
   orders at a point, \(a\), in the domain of \(f\). Then the Taylor series of
   \(f\) about the point \(a\) is given by
@@ -93,7 +99,10 @@ Taylor series is discussed. A definition for Taylor series is the following.
   where \(f^{(k)}(a)\) denotes the \(k^{th}\) derivative of \(f\) at \(a\) and
   \(k!=k(k-1)(k-2)\ldots (2)(1)\) is the \(k^{th}\) factorial and we use
   \(0!=1\).
-\end{definition}
+</dfn>
+
+<hr>
+
 Students should be able to produce the Taylor series of simple functions like
 the trigonometric functions or examples like \(f(x)=ln(1+x)\). If you are a
 little foggy on the details, there are examples all over the internet or you can
@@ -110,7 +119,10 @@ calculus seems to be in the distant past.
 
 For some of the analysis of approximations it will be important to know how to
 apply the Taylor series with remainder. The definition we need is the following.
-\begin{definition}
+
+<hr>
+
+<dfn> <bold> Definition: </bold>
   Suppose that the function, \(f\), is a function with \(n+1\) continuous
   derivatives at a point, \(a\), in the domain of the function. Then, the Taylor
   series with remainder is
@@ -123,14 +135,19 @@ apply the Taylor series with remainder. The definition we need is the following.
     R_f(a,n) = {{f^{n+1}(\xi)}\over{(n+1)!}}\ ( x - a )^{n+1}
   \]
   and \(\xi\) is a point between \(x\) and \(a\).
-\end{definition}
+</dfn>
+
+<hr>
+
 The remainder in this definition can be used to establish upper bounds on the
 truncation error as will be seen in the examples in this topic.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Increment Form of the Taylor Series:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Increment Form of the Taylor Series: </h2> 
+
+<hr>
+
 Computational mathematicians should be able to use Taylor series with ease in
 the analysis of numerical methods. There are several different, but equivalent
 forms of the Taylor series. For the purposes in this course, we will use the
@@ -197,8 +214,9 @@ we are neglecting the remainder term. The error in this approximation is
 obtained by determining an upper bound on the absolute value of the remainder
 term. So, for our example with \(E\) denoting the error at \(t=1\),
 \[
-  E = | {1\over{24}}\ e^{\xi}\ h^4 | =
-          {1\over{24}}\ | e^{\xi}\ |\ h^4 \leq {1\over{24}}\ | e^0\ |\ h^4
+  E = \left| {1\over{24}}\ e^{\xi}\ h^4 \right| =
+          {1\over{24}}\ \left| e^{\xi}\ \right|\ h^4 
+                \leq {1\over{24}}\ \left| e^0\ \right|\ h^4
 \]
 Note that \(0<e^-2<e^0\). As \(h\) is pushed towards zero, the error will be
 reduced proportional to \(h^4\). If we were to choose \(h=0.1\) then the error
@@ -213,6 +231,6 @@ We will do a lot of these types of computations throughout the semester. In
 particular, when we analyze root finding problems, we will use Taylor series to
 determine whether or not the truncation error will be reduced to zero in some
 sense and if this is the case, how fast the error is reduced.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
+
+</body>
+</html>

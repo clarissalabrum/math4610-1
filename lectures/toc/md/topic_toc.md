@@ -79,13 +79,13 @@ the beginning.
         to have a module or modules that can handle a little more generality in
         the function being graphed.
 
-  * **Topic 12.** [Truncation Error and Taylor Series](../../topic_12/md/topic_12.md)
+  * **Topic 12.** [Truncation Error and Taylor Series](../../topic_12/html/topic_12.html)
 
         Most mathematical problems require the use of approximations as a part
         of the solution process. For example, the solution of the simple
         ordinary differential equation
 
-  * **Topic 13.** [Review of Taylor Series:](../../topic_13/md/topic_13.md)
+  * **Topic 13.** [Review of Taylor Series: Some Examples](../../topic_13/md/topic_13.md)
 
   * **Topic 14.** [Error Analysis of Derivative Approximations:](../../topic_14/md/topic_14.md)
 

@@ -19,7 +19,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip0.1in\hrule\vskip0.1in \noindent
-{\bf{\Large Math 4610 Fundamentals of Numerical Analysis Tasksheet 2}}
+{\bf{\Large Math 4610 Fundamentals of Numerical Analysis: Tasksheet 2 Problems/Questions}}
 \vskip0.1in\hrule\vskip0.1in \noindent
 The problems for the Tasksheet 02 are included below. The deadline for turning
 in your work on these problems will be posted on the repository. In addition,
@@ -32,8 +32,9 @@ constructed that will be used as a place to store your work.
   \item[\bf Task 1:] After deciding which programming language you will use,
         write a program that provides a response to the "Hello World!" output.
         Provide details of the compilation and execution of the code you write.
-        You can choose a suitable response - say something like "...it's only a
-        bunny..."
+        You can choose a suitable response - say something like
+        "...it's only a \href{../audio/mp11.wav}{bunny} ..."
+
 \vskip0.1in\hrule\vskip0.1in \noindent
   \item[\bf Task 2:] Edit the main README.md file in your Math 4610 repository
         on Github using your favorite browser. In the README.md file, create an
@@ -53,7 +54,7 @@ constructed that will be used as a place to store your work.
         you have already cloned the repository, use a
         \begin{verbatim}
 
-           koebbe% git pull
+          koebbe% git pull
 
         \end{verbatim}
         command to do this.
@@ -67,11 +68,14 @@ constructed that will be used as a place to store your work.
         \[
           f''(x) \approx {{f(x+h) - 2 f(x) + f(x-h)}\over{h}}
         \]
-        Write a code that approximates the second derivative of the function
+        via Taylor series expansions. Write a code that approximates the second
+        derivative of the function
         \[
           f(x) = cos(x)
         \] 
-        at the point, \(x=2.0\).
+        at the point, \(x=2.0\). Create a table of difference values between the
+        \lq\lq exact\rq\rq\ value of the second derivative. Use,
+        \(h=1.0,0.5,0.1,0.01,0.001,\ldots,10^{-16}\). 
 \vskip0.1in\hrule\vskip0.1in \noindent
   \item[\bf Task 6:] Search the internet for information regarding finite
         difference approximations of derivatives of different orders. Give
