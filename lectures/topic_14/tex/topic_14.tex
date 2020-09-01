@@ -1,0 +1,243 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 14.}
+\vskip0.1in\hrule\vskip0.1in \noindent
+In this section we will analyze approximation of derivatives using various
+difference quotients. Recall that the derivative of a function \(f(x)\) exists
+if the following limit exists.
+\[
+  f'(a) = {{df}\over{dx}}(a) = \lim_{h\rightarrow 0}\ {{f(a+h)-f(a)}\over{h}}
+\]
+We then turn around and use the approximation
+\[
+  f'(a) \approx {{f(a+h)-f(a)}\over{h}}
+\]
+There are at least a couple of questions that we should want the answers to.
+First, how accurate is the approximation? Another question to answer might be
+are there better approximations we can come up with?
+
+To complete the analysis in this section we won't need a computer. Instead we
+will resort to Taylor series expansions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Some Useful Taylor Series Expansions:}
+\vskip0.1in\hrule\vskip0.1in \noindent
+In this section several expansions will be computed.
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Approximation To the Left Side:}
+\vskip0.1in\hrule\vskip0.1in \noindent
+If we need to approximate using \(f(a+h)\) we can write an expansion about \(a\)
+as follows.
+\[
+  f(a+h) = f(a) + h\ f'(a) + {1\over 2}\ h^2 f''(a) + {1\over 6}] h^3 f'''(a)
+               + \cdots
+\]
+For the other side we can write
+\[
+  f(a-h) = f(a) - h\ f'(a) + {1\over 2}\ h^2 f''(a) - {1\over 6}] h^3 f'''(a)
+               + \cdots
+\]
+Note that the expansion of \(f(a)=f(a)\). Typically, we will look to expand any
+terms about the same point, say \(a\).
+
+We can continue in this manner to write
+\[
+  f(a+2h) = f(a) + 2h\ f'(a) + 2h^2 f''(a) + {4\over 3}] h^3 f'''(a) + \cdots
+\]
+and
+\[
+  f(a-2h) = f(a) - 2h\ f'(a) + 2h^2 f''(a) - {4\over 3}] h^3 f'''(a) + \cdots
+\]
+to expand the function at a point a distance of \(2h\) away. It is not hard to
+imageine using more and more values.
+
+As a simple example, consider the approximation of \(f'(a)\) in the following
+manner.
+\[
+  f'(a) \approx {{f(a)-f(a-h)}\over{h}}
+\]
+The goal is to expand everything in the expression on the right hand side of the
+approximation at the point, \(a\). Using the expansions above we can write
+\begin{eqnarray*}
+  {{f(a)-f(a-h)}\over{h}} & = & {1\over h} \left( f(a)-f(a-h) \right) \\
+       & = & {1\over h}
+        \left( f(a)-( f(a) - h f'(a)
+               + {1\over 2} h^2 f''(a) - \cdots ) \right) \\
+       & = & {1\over h}
+        \left( h f'(a) - {1\over 2} h^2 f''(a) + \cdots ) \right) \\
+       & = & f'(a) - {1\over 2} h f''(a) + \cdots ) 
+\end{eqnarray*}
+As mentioned in the last topic, this can be interpretted as follows. The
+one-sided difference quotient used in this example is equal to \(f'(a)\) plus
+an infinite number of terms from the Taylor series expansion about \(a\).
+
+We can actually be a bit more precise in the estimation of these quantities. The
+Taylor series with remainder will do the trick.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Using the Taylor Series with Remainder}
+\vskip0.1in\hrule\vskip0.1in \noindent
+Using the Taylor series with remainder we can write
+\[
+  f(a-h) = f(a) - h\ f'(a) + {1\over 2}\ h^2 f''(\xi)
+\]
+where \(\xi\) is between \(a\) and \(a+h\). The difference is that the expansion
+now has a finite number of terms. We can perform the same analysis as above we
+can write
+\[
+  {{f(a)-f(a-h)}\over{h}} = f'(a) - {1\over 2} h f''(\xi)
+\]
+As long as the function, \(f(x)\), has two continuous derivatives, we can bound
+the remainder term and as \(h\rightarrow 0\) the remainder term will approach
+zero. Now, the statement is that the difference quotient is equal to \(f'(a)\)
+plus an error term that goes to zero as \(h\) goes to zero.
+
+Note that all of this agrees with what students are taught in a calculus course.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Writing The Expansions As An Error:}
+\vskip0.1in\hrule\vskip0.1in \noindent
+Another way to write the expansions and such is to use an error form for the
+equation. For the example in the last section, we can write
+\[
+  | {{f(a)-f(a-h)}\over{h}} - f'(a) | = | {1\over 2} h f''(\xi) |
+\]
+This is a more accurate statement of what we are after. That is, what is the
+error in using the difference quotient as an approximation of the derivative?
+
+If \(|f(x)|\) is continuous in an interval around \(a\), then there is a
+positive constant, \(B>0\), such that
+\[
+  |f''(\xi)| \leq B
+\]
+and thus we can write the error as
+\[
+  | {{f(a)-f(a-h)}\over{h}} - f'(a) | = | {1\over 2} h f''(\xi) |
+         \leq {B\over 2} h \leq Ch
+\]
+where \(C=B/2\). For this sort of result, we would say that the approximation
+linearly converges to zero as \(h\) approaches zero.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Order of Accuracy in an Approximation:} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+In the previous section, the error in the difference quotient approximation
+satisfied the bound
+\[
+  E = | {{f(a)-f(a-h)}\over{h}} - f'(a) | \leq C h 
+\]
+In general, we can write this approximation in the form
+\[
+  E \leq C h^r
+\]
+where \(r>0\). For the approximation in the previous section, \(r=1\). For the
+general formula above, \(r\), is called the order of convergence or the order of
+the approximation. If \(r=1\) the approximation is said to be linear or give
+linear convergence and if \(r=1\), the approximation is said to converge
+quadratically.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf A Better Approximation Using a Centered Difference Quotient:} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+The derivative can also be approximated by a centeral difference,
+\[
+  f'(a) \approx {{f(a+h)-f(a-h)}\over{2h}}
+\]
+To determine the error in this approximation we will expand the function values
+in the numerator of the difference quotient. Using the expanstions above, the
+difference quotient becomes
+\begin{eqnarray*}
+  {{f(a+h)-f(a-h)}\over{2h}}
+     & = & {1\over{2h}} \left( f(a+h) - f(a-h) \right) \\
+     & = & {1\over{2h}}
+       \left(
+         f(a) + h f'(a) + {1\over 2} h^2 f''(a) + {1\over 6} h^3 f'''(\xi)
+        - ( f(a) - h f'(a) + {1\over 2} h^2 f''(a) - {1\over 6} h^3 f'''(\eta))
+       \right) \\
+     & = & {1\over{2h}}
+       \left(
+         h f'(a) + {1\over 6} h^3 f'''(\xi)
+       + h f'(a) + {1\over 6} h^3 f'''(\eta))
+       \right) \\
+     & = & {1\over{2h}}
+       \left(
+         2 h f'(a) + {1\over 6} h^3 ( f'''(\xi) + f'''(\eta) )
+       \right) \\
+     & = & f'(a) + {1\over 3} h^3 ( f'''(\xi) + f'''(\eta) )
+\end{eqnarray*}
+Notice the two different points, \(\xi\), that resides somewhere between \(a\)
+and \(a+h\) and, \(eta\), that resides between \(a\) and \(a-h\). Now, using an
+application of the mean value theorem for derivatives, we can write
+\[
+  {{f(a+h)-f(a-h)}\over{2h}} = f'(a) + {1\over 3} h^2 f'''(\gamma)
+\]
+So, if the function has three continous derivatives near the point \(a\) then
+we can write an error formula as follows.
+\[
+  E = | {{f(a)-f(a-h)}\over{h}} - f'(a) | \leq C h^2 
+\]
+where the constant \(C\) depends on \(f'''(x)\). This method is a quadratic
+method of approximating the derivative of a function since \(r=2\).
+
+Now to a comparison: If \(h=0.01=10^{-2}\), then
+\[
+  E \leq C 10^{-2}
+\]
+for the first approximation and for the central difference
+\[
+  E \leq C (10^{-2})^2 = C 10^{-4}
+\]
+Comparing these expressions, it is clear that the central difference
+approximation is much better for the same value of the increment, \(h\). So,
+there is at least one approximation that is better than the first approximation
+we tried.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in\noindent
+{\bf Using Linear Combinations to Compute Higher Order Approximations:} 
+\vskip0.1in\hrule\vskip0.1in\noindent
+The last question is can we increase the order of accuracy to whatever level we
+would like - at least theoretically. The answer is yes. If we consider the forms
+for the difference quotients, we can treat the difference quotients as linear
+combinations of function values near the point of interest, \(a\). The central
+difference approximation can be written as
+\[
+  f'(a) = {1\over{2h}} f(a+h) - {1\over{2h}} f(a-h)
+          = a_1 f(a+h) + a_{-1} f(a-h)
+\]
+where \(a_1=1/2h\) and \(a_{-1}=-1/2h\).
+
+Maybe we can do better. Let's try a more general lienar combination. That is,
+\[
+  f'(a) \approx a_{-2} f(a-2h) + a_{-1} f(a-h) + a_0 f(a) + a_1 f(a+h)
+              + a_2 f(a+2h)
+\]
+This leaves us with five unknowns to determine.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

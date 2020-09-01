@@ -1,27 +1,28 @@
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-\usepackage{graphicx}
 
+<!DOCTYPE html>
+<html>
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
 
-\nofiles
+<hr>
 
-\pagestyle{empty}
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 13. </h1>
 
-\setlength{\parindent}{0in}
+<hr>
 
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 13.}
-\vskip0.1in\hrule\vskip0.1in \noindent
 In the previous section of these topics, a need for Taylor series expansions
 was identified in the evaluation of a natural exponential function. In this
 section of the notes, some examples of Taylor series expansions will be computed
@@ -43,12 +44,14 @@ need to expand everything in an expression about a center, \(x_0\) and look at
 the distance, \(h\), from that point.
 
 So, on to some examples.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Examples With Some Details:}
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf The Natural Exponential Function}
+
+<hr>
+
+<h2> Examples With Some Details: </h2>
+
+<hr>
+
+<h2> The Natural Exponential Function: </h2>
 \vskip0.1in\noindent
 The first and maybe most important example is the natural exponential function.
 If \(f(x)=e^x\), then the derivatives we need are simply
@@ -81,11 +84,13 @@ the center of the series is \(x_0=0\). Since \(e^0=1\) the series becomes
 \]
 This series is used in many examples in calculus and as a basis for modeling
 population problems and exponential growth and decay.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf The Cosine Function}
-\vskip0.1in\noindent
+
+<hr>
+
+<h2> The Cosine Function: </h2>
+
+<hr>
+
 This example is a bit more difficult, but can be done with a little effort. We
 will determine the Taylor expansion of \(f(x)=cos(x)\). The derivatives we need
 in this case are
@@ -110,11 +115,13 @@ commonly used series
   cos(x) = 1 - {{x^2}\over{2!}} + {{x^4}\over{4!}} - \cdots
          = \sum_{k=0}^\infty\ {{(-1)^k x^{2k}}\over{(2k)!}}
 \]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf The Sine Function}
-\vskip0.1in\noindent
+
+<hr>
+
+<h2> The Sine Function: </h2>
+
+<hr>
+
 In this section, the Maclarin series for \(f(x)=sin(x)\) will be given without
 any details. The series is
 \[
@@ -123,11 +130,13 @@ any details. The series is
 \]
 It is not too hard to change the center of the series in these cases. It is not
 that commonly done in mathematics courses.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Taylor Series For A Logarithm Function:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+< h2> Taylor Series For A Logarithm Function: </h2>
+
+<hr>
+
 In this example, consider
 \[
   f(x) = ln(1+x)
@@ -147,11 +156,13 @@ Substituting these derivatives in gives
   ln(1+x) = x - {1\over 2} x^2 + {1\over 3} x^3 - \cdots
           = \sum_{k=0}^\infty\ (-1)^{k+1} {{x^k}\over{k}}
 \]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Taylor Series Applied to Finite Difference Approximations:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Taylor Series Applied to Finite Difference Approximations: </h2> 
+
+<hr>
+
 In a couple of topics we have seen approximations of derivatives of functions
 using difference quotients. This can be stated as
 \[
@@ -173,6 +184,6 @@ quotient is equal to the derivative of the function plus extra terms from the
 Taylor series expansion.
 
 We will take up this idea in the next topic in our list.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
+
+</body>
+</html>

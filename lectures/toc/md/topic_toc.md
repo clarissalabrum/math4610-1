@@ -85,9 +85,18 @@ the beginning.
         of the solution process. For example, the solution of the simple
         ordinary differential equation
 
-  * **Topic 13.** [Review of Taylor Series: Some Examples](../../topic_13/md/topic_13.md)
+  * **Topic 13.** [Review of Taylor Series: Some Examples](../../topic_13/html/topic_13.html)
+
+        In the previous section of these topics, a need for Taylor series
+        expansions was identified in the evaluation of a natural exponential
+        function. In this section of the notes, some examples of Taylor series
+        expansions will be computed and/or stated for completeness.
 
   * **Topic 14.** [Error Analysis of Derivative Approximations:](../../topic_14/md/topic_14.md)
+
+        In this section we will analyze approximation of derivatives using
+        various difference quotients. Recall that the derivative of a function
+        \(f(x)\) exists if the following limit exists.
 
   * **Topic 15.** [A Brief Introduction to Markdown](../../topic_15/md/topic_15.md)
 
