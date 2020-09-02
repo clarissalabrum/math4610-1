@@ -92,17 +92,17 @@ the beginning.
         function. In this section of the notes, some examples of Taylor series
         expansions will be computed and/or stated for completeness.
 
-  * **Topic 14.** [Error Analysis of Derivative Approximations:](../../topic_14/md/topic_14.md)
+  * **Topic 14.** [Error Analysis of Derivative Approximations:](../../topic_14/html/topic_14.html)
 
         In this section we will analyze approximation of derivatives using
         various difference quotients. Recall that the derivative of a function
-        \(f(x)\) exists if the following limit exists.
+        f(x) exists if the following limit exists.
 
   * **Topic 15.** [A Brief Introduction to Markdown](../../topic_15/md/topic_15.md)
 
   * **Topic 16.** [Differences Between HTML and Markdown](../../topic_16/md/topic_16.md)
 
-  * **Topic 17.** [Computational Accuracy: Machine Precision](../../topic_17/md/topic_17.md)
+  * **Topic 17.** [Computational Accuracy: Machine Precision](../../topic_17/html/topic_17.html)
 
   * **Topic 18.** [Absolute and Relative Error:](../../topic_18/md/topic_18.md)
 
