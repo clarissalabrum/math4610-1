@@ -1,27 +1,27 @@
-\documentclass[10pt,fleqn]{article}
-\usepackage{hyperref}
-\usepackage{graphicx}
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
+  <link href="homework.css" rel="stylesheet" type="text/css" />
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+    src="https://example.com/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
 
-\setlength{\topmargin}{-.75in}
-\addtolength{\textheight}{2.00in}
-\setlength{\oddsidemargin}{.00in}
-\addtolength{\textwidth}{.75in}
+<hr>
 
-\nofiles
+<h1> Math 4610 Fundamentals of Computational Mathematics  - Topic 14.  </h1>
 
-\pagestyle{empty}
+<hr>
 
-\setlength{\parindent}{0in}
-
-\input{/cygdrive/m/tex/commands/commands}
-
-\begin{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 14.}
-\vskip0.1in\hrule\vskip0.1in \noindent
 In this section we will analyze approximations of derivatives using various
 difference quotients. Recall that the derivative of a function \(f(x)\) exists
 if the following limit exists.
@@ -38,16 +38,22 @@ are there better approximations we can be developed?
 
 To complete the analysis in this section we won't need a computer. Instead we
 will resort to the standard tool of Taylor series expansions.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Some Useful Taylor Series Expansions:}
-\vskip0.1in\hrule\vskip0.1in \noindent
+
+<hr>
+
+<h2> Some Useful Taylor Series Expansions: </h2>
+
+<hr>
+
 In this section several expansions will be determined that will be used below in
 the development of various difference quotients.
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Approximation To the Left Side:}
-\vskip0.1in\hrule\vskip0.1in \noindent
+
+<hr>
+
+<h2> Approximation To the Left Side: </h2>
+
+<hr>
+
 If \(f(a+h)\) is a part of any difference quotient, we can write an expansion
 for \(f\) at \(a\) as follows.
 \[
@@ -97,11 +103,13 @@ an infinite number of terms from the Taylor series expansion about \(a\).
 
 We can actually be a bit more precise in the estimation of these quantities. The
 Taylor series with remainder will do the trick.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Using the Taylor Series with Remainder}
-\vskip0.1in\hrule\vskip0.1in \noindent
+
+<hr>
+
+<h2> Using the Taylor Series with Remainder </h2>
+
+<hr>
+
 Using the Taylor series with remainder we can write
 \[
   f(a-h) = f(a) - h\ f'(a) + {1\over 2}\ h^2 f''(\xi)
@@ -118,11 +126,13 @@ zero. Now, the statement is that the difference quotient is equal to \(f'(a)\)
 plus an error term that goes to zero as \(h\) goes to zero.
 
 Note that all of this agrees with what students are taught in a calculus course.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Writing The Expansions As An Error:}
-\vskip0.1in\hrule\vskip0.1in \noindent
+
+<hr>
+
+<h2> Writing The Expansions As An Error: </h2>
+
+<hr>
+
 Another way to write the expansions and such is to use an error form for the
 equation. For the example in the last section, we can write
 \[
@@ -143,11 +153,13 @@ and thus we can write the error as
 \]
 where \(C=B/2\). For this sort of result, we would say that the approximation
 linearly converges to the derivative, \(f'(a)\) as \(h\) approaches zero.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Order of Accuracy in an Approximation:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Order of Accuracy in an Approximation: </h2>
+
+<hr>
+
 In the previous section, the error in the difference quotient approximation
 satisfied the bound
 \[
@@ -162,11 +174,13 @@ general formula above, \(r\), is called the order of convergence or the order of
 the approximation. If \(r=1\) the approximation is said to be linear or give
 linear convergence and if \(r=2\), the approximation is said to converge
 quadratically.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf A Better Approximation Using a Centered Difference Quotient:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> A Better Approximation Using a Centered Difference Quotient: </h2>
+
+<hr>
+
 The derivative can also be approximated by a central difference,
 \[
   f'(a) \approx {{f(a+h)-f(a-h)}\over{2h}}
@@ -219,11 +233,13 @@ Comparing these expressions, it is clear that the central difference
 approximation is much better for the same value of the increment, \(h\). So,
 there is at least one approximation that is better than the first approximation
 we tried.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in\noindent
-{\bf Using Linear Combinations to Compute Higher Order Approximations:} 
-\vskip0.1in\hrule\vskip0.1in\noindent
+
+<hr>
+
+<h2> Using Linear Combinations to Compute Higher Order Approximations: </h2>
+
+<hr>
+
 The last question is can we increase the order of accuracy to whatever level we
 would like - at least theoretically. The answer is yes. If we consider the forms
 for the difference quotients, we can treat the difference quotients as linear
@@ -270,7 +286,7 @@ following expression.
         & & + h^4\ \left( {2\over 3} a_{-2} + {1\over 24} a_{-1}
                   + {1\over 24} a_1 + {2\over 3} a_2 \right) f^{iv}) + \cdots
 \end{eqnarray*}
-Note that we have not accounted for the continuation \(\cdots\) in the
+Note that we have not accounted for the continuation "\(\cdots\)" in the
 expression above. With some work (maybe in a homework problem) one will find
 that smallest possible error for this finite difference approximation is
 defined by
@@ -322,7 +338,9 @@ to take care of systems like this.
 
 Instead, we can go grab the solution off the internet. One source for the
 solution is
-\href{https://en.wikipedia.org/wiki/Finite_difference_coefficient}{Wikipedia}
+<a href="https://en.wikipedia.org/wiki/Finite_difference_coefficient">
+  Wikipedia
+</a>
 Near the top of this page there is a table of coefficients for central
 difference approximations of various derivatives. The coefficients we will need
 are in the first section with accuracy of 4. We can read these off as
@@ -332,7 +350,9 @@ are in the first section with accuracy of 4. We can read these off as
 \]
 Note that the values in the table do not include the increment. The division by
 \(h\) is needed to justify the solution on
-\href{https://en.wikipedia.org/wiki/Finite_difference_coefficient}{Wikipedia}
+<a href="https://en.wikipedia.org/wiki/Finite_difference_coefficient">
+  Wikipedia
+</a>
 and the work we have done in this section.
 
 What we can say is the approximation
@@ -342,12 +362,22 @@ What we can say is the approximation
        {1\over{12}} f(a-2h) - {2\over 3} f(a-h) + {2\over 3} f(a+h)
               - {1\over{12}} f(a+2h)
                 \right) \\
-        & = &
+        & = & 
      {1\over{3h}} \left(
        {1\over 4} f(a-2h) - 2 f(a-h) + 2 f(a+h) - {1\over 4} f(a+2h)
                 \right)
 \end{eqnarray*}
 provides a \(4^{th}\)-order approximation of the first derivative.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{document}
+
+<hr>
+
+  <a href="../../topic_13/html/topic_13.html"> Previous </a>
+   &nbsp;&nbsp; | &nbsp;&nbsp;
+  <a href="../../toc/md/topic_toc.md"> Table of Contents  </a>
+   &nbsp;&nbsp; | &nbsp;&nbsp;
+  <a href="../../topic_15/html/topic_15.html"> Next </a>
+
+<hr>
+
+</body>
+</html>
