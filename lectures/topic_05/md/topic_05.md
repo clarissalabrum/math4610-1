@@ -193,7 +193,7 @@ The name of the file being edited is hello.c.
 
 <hr>
 
-## First View of the vim Editor}
+## First View of the vim Editor
 
 <hr>
 
@@ -289,7 +289,7 @@ bin for the binary/executable files.
 
 <hr>
 
-![Some commands to reorganize files. Screenshot taken using Snip & Sketch}.
+![Some commands to reorganize files. Screenshot taken using Snip & Sketch.
 This is an app on my Windows 10 box](../images/cygwin_09.png)
 
 <hr>

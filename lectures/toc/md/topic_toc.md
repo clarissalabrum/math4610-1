@@ -100,7 +100,17 @@ the beginning.
 
   * **Topic 15.** [A Brief Introduction to Markdown](../../topic_15/md/topic_15.md)
 
+        In this section a brief introduction to Markdown will be presented.
+        Since most of the work we will do in the course will be appear on Github
+        and Github likes Markdown as a web page formatting tool it makes some
+        sense to be familiar with at least a few basics.
+
   * **Topic 16.** [Differences Between HTML and Markdown](../../topic_16/md/topic_16.md)
+
+        In this section we will present a couple of examples of Markdown and
+        HTML for displaying web content. We will start with an example of two
+        web pages, one in HTML and one in Markdown to compare how Markdown and
+        HTML choose to format items on a web page.
 
   * **Topic 17.** [Computational Accuracy: Machine Precision](../../topic_17/html/topic_17.html)
 
