@@ -1,9 +1,13 @@
 
 # Math 4610 Table of Contents for Lectures by Topic:
 
+<hr>
+
 The following list includes links to the lectures in Math 4610. You can go back
 to the [Introduction to Math 4610](../../../README.md) if needed to restart from
 the beginning.
+
+<hr>
 
   * **Topic 1.** [Introductory Comments:](../../topic_01/md/topic_01.md)
 
@@ -154,5 +158,5 @@ the beginning.
 
   * **Topic 37.** [Matrices and Matrix Operations:](../../topic_37/md/topic_37.md)
 
-<ht>
+<hr>
 

@@ -1,0 +1,103 @@
+\documentclass[10pt,fleqn]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+\setlength{\topmargin}{-.75in}
+\addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in}
+\addtolength{\textwidth}{.75in}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+\input{/cygdrive/m/tex/commands/commands}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 17.}
+\vskip0.1in\hrule\vskip0.1in \noindent
+Computers are essential tools in science and engineering as well as in
+entertainment in video streaming and gaming. Over time, the capabilities of
+computers have grown due to computer engineering advances. However, the
+resources will always be limited to finite storage and memory capacities. 
+
+With all of these advancements, one might think that issues related to numerical
+precision would be taken care of. However, this is not the case. There are a
+couple of sites on the internet that document catastrophic failures of real
+systems that can be atrributed to errors in numerical values due to finite
+precision of arithmetic. The sites are:
+\begin{verbatim}
+
+       1. http://www.ima.umn.edu/~arnold/disasters/patriot.html
+
+       2. https://www5.in.tum.de/persons/huckle/bugse.html
+
+\end{verbatim}
+Each link associates some failure or loss of large sums of money due to the
+inaccuracy of computed results. Examples like the Arian 5 rocket that self
+destructed after launch due to register overflow that indicated the rocket was
+off course. The rocket was actually on course with all systems functioning.
+
+Scientists and engineers use continuos models that are defined for all real
+numbers including irrational numbers. Irrational numbers cannot be represented
+with a finite amount of information. These numbers can only be approximated on
+computers.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Standardizing Number Representation:}
+\vskip0.1in\hrule\vskip0.1in \noindent
+If we represent a real number, \(x\), by an approximate number, \(fl(x)\), then
+the difference between the two numbers is
+\[
+  E = \left\vert
+         x - fl(x)
+      \right\vert
+\]
+We will see a more precise definition of error in the next topic when we cover
+absolute and relative errors.
+
+In this section we will focus on the limitations of number representation on
+computers. As mentioned above, the capabilities of computers have advanced
+rapidly. Over the years computer
+archetecture has increased resolution by using more bits to account for smaller
+and larger numbers. Starting with 8-bit, 16-bit, and then onto 32-bit and 64-bit
+numbers, the resolution has gotten better, but will never be able to represent
+an infinite number of digits needed to store irrational numbers.
+
+Even a number like \(1/3\) must be truncated after a finite number of digits due
+to the way computers store numbers using bits. Data is stored in a binary format
+on all computers. So, the number \(1/3\) becomes
+\[
+  {1\over 3} = 0.10101010101010\ldots
+\]
+The representation repeats, but it is necessary to use an infinite number of
+digits to exactly represent the number.
+
+As an example, consider a 64 bit representation of a number. The 64 bits are
+split into three chunks. The bits are used to represent the mantissa or 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Displaying Mathematics in HTML:}
+\vskip0.1in\hrule\vskip0.1in \noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in \noindent
+{\bf Github Pages and Markdown:}
+\vskip0.1in\hrule\vskip0.1in \noindent
+Talk about accessing html pages through github pages ... usually not a problem.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
