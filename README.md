@@ -39,7 +39,7 @@ materials.
 
 ## Course Syllabus
 
-[Course Syllabus](./syllabus/md/syllabus.md):
+[Course Syllabus](./syllabus/pdf/embed_syllabus.md):
 This link provides access to a pdf file that contains a current of the syllabus
 for the course as taught at Utah State University. This should give the reader
 some idea of how the materials are covered at USU.

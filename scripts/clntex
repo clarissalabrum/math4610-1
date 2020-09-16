@@ -1,0 +1,21 @@
+#
+# a script to get rid of tex or latex working files
+
+alias rm rm
+
+foreach filename (*.tex)
+  set texnam = `basename $filename .tex`
+  echo '..... cleaning up on aisle: ' $texnam '.....'
+  if(-e $texnam.dvi) rm $texnam.dvi
+  if(-e $texnam.aux) rm $texnam.aux
+  if(-e $texnam.lof) rm $texnam.lof
+  if(-e $texnam.log) rm $texnam.log
+  if(-e $texnam.lot) rm $texnam.lot
+  if(-e $texnam.dlog) rm $texnam.dlog
+  if(-e $texnam.toc) rm $texnam.toc
+  if(-e $texnam.idx) rm $texnam.idx
+  if(-e $texnam.out) rm $texnam.out
+end
+if(-e texput.log) rm texout.log
+
+exit(1)
