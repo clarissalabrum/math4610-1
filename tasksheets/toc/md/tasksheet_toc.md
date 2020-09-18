@@ -9,15 +9,15 @@ course.
   | Tasksheets/Homework | Link to Tasksheet | Due Date |
   | ------------------- | :---------------: | :------- |
   | **Homework 1.** | [tasksheet link](../../tasksheet_01/html/tasksheet_01.html) | Friday September 18, 2020, 5:00pm |
-  | **Homework 2.** | [tasksheet link](../../tasksheet_02/html/tasksheet_02.html) | Monday Septembe 21, 2020, 5:00pm
-  | **Homework 3.** | [tasksheet link](../../tasksheet_03a/html/tasksheet_03.html) | Friday, TBA, 5:00pm
-  | **Homework 4.** | [tasksheet link](../../tasksheet_04a/html/tasksheet_04.html) | Friday, TBA, 5:00pm
-  | **Homework 5.** | [tasksheet link](../../tasksheet_05a/html/tasksheet_05.html) | Friday, TBA, 2020, 5:00pm
-  | **Homework 6.** | [tasksheet link](../../tasksheet_06a/html/tasksheet_06.html) | Monday, TBA 2020, 5:00pm
-  | **Homework 7.** | [tasksheet link](../../tasksheet_07a/html/tasksheet_07.html) | Monday, TBA, 5:00pm
-  | **Homework 8.** | [tasksheet link](../../tasksheet_08a/html/tasksheet_08.html) | Monday, TBA, 5:00pm
-  | **Homework 9.** | [tasksheet link](../../tasksheet_09a/html/tasksheet_09.html) |
-  | **Homework 10.** | [tasksheet link](../../tasksheet_10a/html/tasksheet_10.html) |
+  | **Homework 2.** | [tasksheet link](../../tasksheet_02/html/tasksheet_02.html) | Wednesday September 23, 2020, 5:00pm
+  | **Homework 3.** | [tasksheet link](../../tasksheet_03a/html/tasksheet_03.html) | TBA
+  | **Homework 4.** | [tasksheet link](../../tasksheet_04a/html/tasksheet_04.html) | TBA
+  | **Homework 5.** | [tasksheet link](../../tasksheet_05a/html/tasksheet_05.html) | TBA
+  | **Homework 6.** | [tasksheet link](../../tasksheet_06a/html/tasksheet_06.html) | TBA
+  | **Homework 7.** | [tasksheet link](../../tasksheet_07a/html/tasksheet_07.html) | TBA
+  | **Homework 8.** | [tasksheet link](../../tasksheet_08a/html/tasksheet_08.html) | TBA
+  | **Homework 9.** | [tasksheet link](../../tasksheet_09a/html/tasksheet_09.html) | TBA
+  | **Homework 10.** | [tasksheet link](../../tasksheet_10a/html/tasksheet_10.html) | TBA
 
 Using git, completed task sheets will be pulled to the instructors computer for
 grading. This means a pull request will be made for the contents in the
