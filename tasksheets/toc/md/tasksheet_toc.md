@@ -9,8 +9,8 @@ course.
   | Tasksheets/Homework | Link to Tasksheet | Due Date |
   | ------------------- | :---------------: | :------- |
   | **Homework 1.** | [tasksheet link](../../tasksheet_01/html/tasksheet_01.html) | Friday September 18, 2020, 5:00pm |
-  | **Homework 2.** | [tasksheet link](../../tasksheet_02/html/tasksheet_02.html) | Wednesday September 23, 2020, 5:00pm
-  | **Homework 3.** | [tasksheet link](../../tasksheet_03a/html/tasksheet_03.html) | TBA
+  | **Homework 2.** | [tasksheet link](../../tasksheet_02/html/tasksheet_02.html) | Friday September 25, 2020, 5:00pm
+  | **Homework 3.** | [tasksheet link](../../tasksheet_03/html/tasksheet_03.html) | Friday October 2, 2020, 5:00pm
   | **Homework 4.** | [tasksheet link](../../tasksheet_04a/html/tasksheet_04.html) | TBA
   | **Homework 5.** | [tasksheet link](../../tasksheet_05a/html/tasksheet_05.html) | TBA
   | **Homework 6.** | [tasksheet link](../../tasksheet_06a/html/tasksheet_06.html) | TBA

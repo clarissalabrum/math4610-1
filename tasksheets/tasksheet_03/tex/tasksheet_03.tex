@@ -29,56 +29,148 @@ constructed that will be used as a place to store your work.
 {\bf{\large Tasks}}
 \vskip0.1in\hrule\vskip0.1in \noindent
 \begin{trivlist}
-  \item[\bf Task 1:] After deciding which programming language you will use,
-        write a program that provides a response to the "Hello World!" output.
-        Provide details of the compilation and execution of the code you write.
-        You can choose a suitable response - say something like "...it's only a
-        bunny..."
+  \item[\bf Task 1:] Computationally verify that the central difference
+        approximation for the second derivative approximation defined in Task
+        Sheet 2, Task 5 is actually second order accurate. Using values of
+        \(h\neq 0\), compute the approximation and the difference between the
+        exact value and the approximation. Print out the data in columns like
+        those presented in the notes for the first order approximation of the
+        the first derivative.
 \vskip0.1in\hrule\vskip0.1in \noindent
-  \item[\bf Task 2:] Edit the main README.md file in your Math 4610 repository
-        on Github using your favorite browser. In the README.md file, create an
-        introduction that describes what the repository is being created for and
-        put in a link to the table of contents for the homework problems and a
-        link to the software manual you will create. Do this in Markdown - not
-        html.
+  \item[\bf Task 2:] Produce a log-log plot of the error from the data in Task
+        1. Discuss how the results show that the approximation is second order
+        accurate over a range of value where \(h>0\). Also, determine when the
+        approximation begins to fail due to finite precision in the number
+        representation and/or finite precision of arithmetic. You will need to
+        write a code that produces the plot. If needed, you can use the Python
+        code in the notes. 
 \vskip0.1in\hrule\vskip0.1in \noindent
-  \item[\bf Task 3:] Create the table of contents in a file with a name like
-        \begin{verbatim}
+  \item[\bf Task 3:] Write routines that will produce the machine epsilon as
+        discussed in class. Write two separate routines, one for the single
+        precision setting on your computer and one for double precision. Compile
+        and test each of of these routines separately. This means writing a
+        main() program in separate files. 
+\vskip0.1in\hrule\vskip0.1in \noindent
+  \item[\bf Task 4:] In this task you will be asked to begin a software manual
+        for the various routines that you will be creating over the semester.
+        The software manual will span the entire semester and should include a
+        lot of your work. The following steps should help organize your work.
+        \begin{trivlist}
+           \item Within your terminal, create folders to include the software
+                 pages in the math4610 repository. Create a folder using
+                 something like
+                 \begin{verbatim}
 
-          task_toc.md
+                     koebbe% mkdir software_manual
 
-        \end{verbatim}
-        or something like this. After completing the tasks to this point, clone
-        the repository to a local directory on a local computer using git. If
-        you have already cloned the repository, use a
-        \begin{verbatim}
+                 \end{verbatim}
+                 Then create a file that will contain a table of contents for
+                 pages that are created for individual routines. Maybe something
+                 like
+                 \begin{verbatim}
 
-           koebbe% git pull
+                     koebbe% cd software_manual
+                     koebbe% vim software_manual_toc.md
 
-        \end{verbatim}
-        command to do this. You will need to put a link from the README.md file
-        to your table of contents file.
+                 \end{verbatim}
+                 When you edit the file, create a unique link for each new
+                 software page added. There is a
+                 \href{../../../softwareManual/softwareManualTemplate.md}
+                 {Markdown template} that provides an example of what is
+                 \href{../audio/tps_cover.wav}{expected}. You can make a copy of
+                 the templacte file in the folder created above. Then edit the
+                 file to create a page for your code.
+ 
+                 For example, create a page for the single precison
+                 version of the code from Task 3.
+                 \begin{verbatim}
+
+                     koebbe% cp softwareManual/softwareManualTemplate.md smaceps.md
+
+                 \end{verbatim}
+                 or
+                 \begin{verbatim}
+
+                     koebbe% cp softwareManual/softwareManualTemplate.md smaceps.html
+                     koebbe% vim smaceps.html
+
+                 \end{verbatim}
+                 depending on whether or not you want to use MathJax for math
+                 notation.
+          \item Build the links to the individual pages in the table of contents
+                file by adding an entry to the table for each routine.
+          \item Build the link from your README.md repository file at the top
+                level. That is, add a line like
+                \begin{verbatim}
+
+  [Software Manual Table of Contents:](./software_manual/software_manual_toc.md)
+
+                \end{verbatim}
+                
+        \end{trivlist}
+        There are a lot of ways to do this. The steps above  should provide the
+        structure you need. You might consider building a template for the pages
+        from the page you can download and make copies from the template.
 \vskip0.1in\hrule\vskip0.1in \noindent
-  \item[\bf Task 4:] Write out the analysis for the centered difference
-        approximation in a Taylor series expansions. Show that the approximation
-        is second order.
+  \item[\bf Task 5:] This task will walk you through the development of a shared
+        library for your routines from the two routines written and tested in
+        this tasksheet. Suppose that the two routines are named, smaceps() and
+        dmaceps().
+        \begin{trivlist}
+          \item Create two files that contain only the code for the routines for
+                the machine epsilon computation. No main() method is needed.
+          \item Compile each of the files using an object name. For example
+                \begin{verbatim}
+
+                  koebbe% gcc -o smaceps smaceps.c
+                  koebbe% gcc -o dmaceps dmaceps.c
+
+                \end{verbatim}
+                or
+                \begin{verbatim}
+
+                  koebbe% gcc -o *.c
+
+                \end{verbatim}
+                This will produce two files:
+                \begin{verbatim}
+
+                  koebbe% ls *.o
+                  dmaceps.o  smaceps.o
+                  koebbe%
+
+                \end{verbatim}
+          \item Created a shared library,
+                \begin{verbatim}
+
+                  koebbe% ar cvf mylib dmaceps.o smaceps.o
+
+                \end{verbatim}
+                This is the archive command in Unix and the \lq\lq\ cvf\rq\rq\
+                informs the archive command to create, be verbose, and use the
+                file name specified for the library. The output will be a file
+                of the form
+                \begin{verbatim}
+
+                  koebbe% ls mylib.a
+                  mylib.a
+                
+                \end{verbatim}
+          \item Make the library a random access library.
+                \begin{verbatim}
+
+                  koebbe% ranlib mylib.a
+                
+                \end{verbatim}
+                This last step allows a link/load command to access the routines
+                in any order.
+        \end{trivlist}
 \vskip0.1in\hrule\vskip0.1in \noindent
-  \item[\bf Task 5:] Determine the order of accuracy of the central difference
-        approximation of the second derivative. That is, analyze
-        \[
-          f''(x) \approx {{f(x+h) - 2 f(x) + f(x-h)}\over{h}}
-        \]
-        Write a code that approximates the second derivative of the function
-        \[
-          f(x) = cos(x)
-        \] 
-        at the point, \(x=2.0\).
-\vskip0.1in\hrule\vskip0.1in \noindent
-  \item[\bf Task 6:] Search the internet for information regarding finite
-        difference approximations of derivatives of different orders. Give
-        examples of these types of approximations. You should be able to find
-        many such examples. Write a brief paragraph (3 or 4 sentences) that
-        describe your findings. Include links to the sites you cite.
+  \item[\bf Task 6:] Search the internet for discussions of shared libraries.
+        Write a brief summary of what you find including the pros and cons of
+        shared libraries. Your write up should be a brief paragraph (3 or 4
+        sentences) that describe your findings. Include links to the sites you
+        cite.
 \end{trivlist}
 \vskip0.1in\hrule\vskip0.1in \noindent
   \href{../../tasksheet_02/html/tasksheet_02.html}{Previous}

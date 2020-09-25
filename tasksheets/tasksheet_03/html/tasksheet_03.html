@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
   <link href="homework.css" rel="stylesheet" type="text/css" />
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -14,67 +15,202 @@
   </script>
 </head>
 <body>
-  <hr>
-  <h1>
-    Math 4610 Fundamentals of Computational Mathematics:
-                         Tasksheet 3 Problem/Questions
-  </h1>
-  <hr>
-  <ul>
-    <hr>
-    <li> Task 1: Implement a version of Newton's method for finding the roots of
-         a function of one variable. Document the code in your software manual.
-    </li>
-    <hr>
-    <li> Task 2: Implement a version of the secant method for finding the roots
-         of a function of one variable. Create a page in your software manual
-         to document the code.
-    </li>
-    <hr>
-    <li> Task 3: Compare the 4 methods for root finding (functional iteration,
-         bisection, Newton's method, and the secant method using the problems
-         defined in the first two tasks of Task sheet #2. 
-    </li>
-    <hr>
-    <li> Task 4: Develop and implement a hybrid method for approximate solution
-         of root finding problems in one variable. Use the bisection method to
-         start the algorithm and switch to Newton's method when the iterates
-         are close enough. Create a page in your software manual for this code.
-    </li>
-    <hr>
-    <li> Task 5: Repeat the development in Task 4, but replace Newton's method
-         with the secant method. Create a page in your software manual for this
-         code.
-    </li>
-    <hr>
-    <li> Task 6: Add the routines created thus far to your shared library. There
-         should be 8 to 10 routines so far in the course.
-    </li>
-    <hr>
-    <li> Task 7: In some cases it is necessary to find a number of roots for a
-         function of one variable. Suppose that we know there are several roots
-         in a given interval. Develop code that will break the interval into
-         subintervals and apply the Bisection method to each subinterval. Apply
-         this to the following function
-         $$
-           f(x) = sin(\pi x^2+3.7)
-         $$
-         Use the interval $[1.1, 68.3]$.
-         It might pay to identify where the zeros are in this problem. 
-    </li>
-    <hr>
-    <li> Task 8: Repeat the work from Task 7 using Newton's method.
-    </li>
-    <hr>
-    <li> Task 9: Repeat the work from Task 7. using the secant method.
-    </li>
-    <hr>
-    <li> Task 10: Search the internet for sites that identify real problems
-         where some root finding problem is used to compute approximate
-         solutions. Write a brief paragraph (3 or 4 sentences) that describe
-         your findings. Include links to the sites you cite.
-    </li>
-    <hr>
-  </ul>
+
+<hr>
+
+<h1> Math 4610 Fundamentals of Numerical Analysis Tasksheet 3 </h1>
+
+<hr>
+
+The problems for the Tasksheet 03 are included below. The deadline for turning
+in your work on these problems will be posted on the repository. In addition,
+you will turn in your work through the math4610 repository. A directory will be
+constructed that will be used as a place to store your work.
+
+<hr>
+
+<h2> Tasks </h2>
+
+<hr>
+
+<ul>
+  <li> <b> Task 1: </b> Computationally verify that the central difference
+        approximation for the second derivative approximation defined in Task
+        Sheet 2, Task 5 is actually second order accurate. Using values of
+        \(h\neq 0\), compute the approximation and the difference between the
+        exact value and the approximation. Print out the data in columns like
+        those presented in the notes for the first order approximation of the
+        the first derivative.
+  </li>
+
+<hr>
+
+  <li> <b> Task 2:</b> Produce a log-log plot of the error from the data in
+        Task 1. Discuss how the results show that the approximation is second
+        order accurate over a range of value where \(h>0\). Also, determine when
+        the approximation begins to fail due to finite precision in the number
+        representation and/or finite precision of arithmetic. You will need to
+        write a code that produces the plot. If needed, you can use the Python
+        code in the notes. 
+  </li>
+
+<hr>
+
+  <li> <b>Task 3:</b> Write routines that will produce the machine epsilon as
+        discussed in class. Write two separate routines, one for the single
+        precision setting on your computer and one for double precision. Compile
+        and test each of of these routines separately. This means writing a
+        main() program in separate files. 
+  </li>
+
+<hr>
+
+  <li> <b>Task 4:</b> In this task you will be asked to begin a software manual
+        for the various routines that you will be creating over the semester.
+        The software manual will span the entire semester and should include a
+        lot of your work. The following steps should help organize your work.
+        <ul>
+           <li> Within your terminal, create folders to include the software
+                pages in the math4610 repository. Create a folder using
+                something like
+                <pre>
+
+                  koebbe% mkdir software_manual
+
+                </pre>
+                Then create a file that will contain a table of contents for
+                pages that are created for individual routines. Maybe something
+                like
+                <pre>
+
+                  koebbe% cd software_manual
+                  koebbe% vim software_manual_toc.md
+
+                 </pre>
+                 When you edit the file, create a unique link for each new
+                 software page added. There is a
+                 <a href="../../../softwareManual/softwareManualTemplate.md">
+                   Markdown template </a>
+                 that provides an example of what is
+                 <a href="../audio/tps_coversheet.mp3"> expected </a>.
+                 You can make a copy of the templacte file in the folder created
+                 above. Then edit the file to create a page for your code.
+ 
+                 For example, create a page for the single precison
+                 version of the code from Task 3.
+                 <pre>
+
+                  koebbe% cp softwareManual/softwareManualTemplate.md smaceps.md
+
+                 </pre>
+                 or
+                 <pre>
+
+                   koebbe% cp softwareManual/softwareManualTemplate.md smaceps.html
+                   koebbe% vim smaceps.html
+
+                 </pre>
+                 depending on whether or not you want to use MathJax for math
+                 notation.
+           </li>
+           <li> Build the links to the individual pages in the table of contents
+                file by adding an entry to the table for each routine.
+           </li>
+           <li> Build the link from your README.md repository file at the top
+                level. That is, add a line like
+                <pre>
+
+                  [Software Manual Table of Contents:](./software_manual/software_manual_toc.md)
+
+                </pre>
+           </li>
+        </ul>
+        There are a lot of ways to do this. The steps above  should provide the
+        structure you need. You might consider building a template for the pages
+        from the page you can download and make copies from the template.
+
+<hr>
+
+  <li> <b>Task 5:</b> This task will walk you through the development of a
+        shared library for your routines from the two routines written and
+        tested in this tasksheet. Suppose that the two routines are named,
+        smaceps() and dmaceps().
+        <ul>
+          <li> Create two files that contain only the code for the routines for
+               the machine epsilon computation. No main() method is needed.
+          </li>
+          <li> Compile each of the files using an object name. For example
+                <pre>
+
+                  koebbe% gcc -o smaceps smaceps.c
+                  koebbe% gcc -o dmaceps dmaceps.c
+
+                </pre>
+                or
+                <pre>
+
+                  koebbe% gcc -o *.c
+
+                </pre>
+                This will produce two files:
+                <pre>
+
+                  koebbe% ls *.o
+                  dmaceps.o  smaceps.o
+                  koebbe%
+
+                </pre>
+          </li>
+          <li> Created a shared library,
+                <pre>
+
+                  koebbe% ar cvf mylib dmaceps.o smaceps.o
+
+                </pre>
+                This is the archive command in Unix and the "cvf"
+                informs the archive command to create, be verbose, and use the
+                file name specified for the library. The output will be a file
+                of the form
+                <pre>
+
+                  koebbe% ls mylib.a
+                  mylib.a
+                
+                </pre>
+          </li>
+          <li> Make the library a random access library.
+                <pre>
+
+                  koebbe% ranlib mylib.a
+                
+                </pre>
+                This last step allows a link/load command to access the routines
+                in any order.
+          </li>
+        </ul>
+
+<hr>
+
+  <li> <b>Task 6:</b> Search the internet for discussions of shared libraries.
+        Write a brief summary of what you find including the pros and cons of
+        shared libraries. Your write up should be a brief paragraph (3 or 4
+        sentences) that describe your findings. Include links to the sites you
+        cite.
+  </li>
+
+<hr>
+
+</ul>
+
+<hr>
+
+<a href="../../tasksheet_02/html/tasksheet_02.html"> Previous </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../toc/md/tasksheet_toc.md"> Table of Contents  </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+<a href="../../tasksheet_05/html/tasksheet_05.html"> Next </a>
+
+<hr>
+
 </body>
 </html>
