@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
   <link href="homework.css" rel="stylesheet" type="text/css" />
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -14,66 +15,72 @@
   </script>
 </head>
 <body>
-  <hr>
-  <h1>
-    Math 4610 Fundamentals of Computational Mathematics:
-                         Tasksheet 5 Problem/Questions
-  </h1>
-  <hr>
-  <ul>
-    <hr>
-    <li> Task 1: Write a method/routine that will compute the solution of a
-         square linear systems of equations where the coefficient matrix is
-         diagonal. Put an entry in your software manual that documents the
-         method for diagonal systems.
-    </li>
-    <hr>
-    <li> Task 2: Write a method/routine that will compute the solution of an
-         upper triangular system (the coefficient matrix is upper triangular)
-         and put an entry in your software manual to document the routine.
-    </li>
-    <hr>
-    <li> Task 3: Repeat the previous task, but in the case of a lower triangular
-         coefficient matrix.
-    </li>
-    <hr>
-    <li> Task 4: Write a routine that will row reduce a square matrix into row
-         echelon form. Include a page in your software manual.
-    </li>
-    <hr>
-    <li> Task 5: Write a code that will solve a square linaer system of
-         equations using Gaussian elimination (elementary row operations). Use
-         your backsubstitution method to compute the solution. Note that the
-         first part will result in an upper triangular system. Document the code
-         in your software manual.
-    </li>
-    <hr>
-    <li> Task 6: Write a routine that will compute the LU-factorization of a
-         square matrix. Put an entry in your software manual to document the
-         code.
-    </li>
-    <hr>
-    <li> Task 7: Create a routine that will solve a linear system of equations
-         using the LU-factorization. Make sure you include a page in your
-         software manual.
-    </li>
-    <hr>
-    <li> Task 8: Using OpenMP, see if you can speed up the LU-factorization 
-         solution method from the previous task.
-    </li>
-    <hr>
-    <li> Task 9: Embed scaled partial pivoting in a new version of the
-         LU-factorization linear solution method. using more than one processor.
-         Do this without interchanging rows - use an index vector to improve
-         efficiency.
-    </li>
-    <hr>
-    <li> Task 10: Search the internet for sites that document pivoting
-         strategies in numerical solution of linear equations.  Write a brief
-         paragraph (3 or 4 sentences) that describe your findings. Include links
-         to the sites you cite.
-    </li>
-    <hr>
-  </ul>
+
+<hr>
+
+<h1> Math 4610 Fundamentals of Numerical Analysis Tasksheet 5 </h1>
+
+<hr>
+
+The problems for the Tasksheet 03 are included below. The deadline for turning
+in your work on these problems will be posted on the repository. In addition,
+you will turn in your work through the math4610 repository. A directory will be
+constructed that will be used as a place to store your work.
+
+<hr>
+
+<h2> Tasks </h2>
+
+<hr>
+
+<ul>
+
+  <b> Task 1: </b>
+    Create a code that will search for a root of a function, \(f(x)\), using
+    Newton's method. Use the problem defined in Tasksheet 4, Task 4 to test the
+    code you write. Create a software manual entry and shared library addition
+    for your Newton method routine. Include the example problem results in your
+    software manual entry.
+
+<hr>
+
+  <b> Task 2: </b>  Repeat Task 1 for the secant method. It should be easy to
+    modify a Newton method code to implement the secant method.
+
+<hr>
+
+  <b> Task 3: </b>  Do a computational convergence analysis on Newton's method
+    to verify quadratic convergence. Use the example defined in Tasksheet 4 to
+    illustrate the work. 
+
+<hr>
+
+  <b> Task 4: </b>  Repeat Task 3 for the secant method.
+
+<hr>
+
+  <b> Task 5: </b>  Create a hybrid method that will search for roots by
+    combining the Bisection method when the approximations are too far from a
+    root and then switches over to Newton's method when the approximations are
+    close enough.
+
+<hr>
+
+  <b> Task 6: </b>  Search the internet for sites that detail differences
+    between the Bisection method, Newton's method, and the Secant method. Write
+    a brief summary of what you find including the pros and cons of the methods.
+    Your write up should be a brief paragraph (3 or 4 sentences) that describe
+    your findings. Include links to the sites you cite.
+
+</ul>
+
+<hr>
+
+  <a href="../../tasksheet_04/html/tasksheet_04.html"> Previous </a> |
+  <a href="../../toc/md/tasksheet_toc.md"> Table of Contents </a> |
+  <a href="../../tasksheet_06/html/tasksheet_06.html"> Next </a>
+
+<hr>
+
 </body>
 </html>

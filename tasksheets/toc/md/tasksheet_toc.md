@@ -12,7 +12,7 @@ course.
   | **Homework 2.** | [tasksheet link](../../tasksheet_02/html/tasksheet_02.html) | Friday October 9, 2020, 5:00pm
   | **Homework 3.** | [tasksheet link](../../tasksheet_03/html/tasksheet_03.html) | Monday October 12, 2020, 5:00pm
   | **Homework 4.** | [tasksheet link](../../tasksheet_04/html/tasksheet_04.html) | Monday October 19, 2020, 5:00pm
-  | **Homework 5.** | [tasksheet link](../../tasksheet_05a/html/tasksheet_05.html) | TBA
+  | **Homework 5.** | [tasksheet link](../../tasksheet_05/html/tasksheet_05.html) | Friday October 23, 2020, 5:00pm
   | **Homework 6.** | [tasksheet link](../../tasksheet_06a/html/tasksheet_06.html) | TBA
   | **Homework 7.** | [tasksheet link](../../tasksheet_07a/html/tasksheet_07.html) | TBA
   | **Homework 8.** | [tasksheet link](../../tasksheet_08a/html/tasksheet_08.html) | TBA
