@@ -122,14 +122,14 @@ constructed that will be used as a place to store your work.
           \item Compile each of the files using an object name. For example
                 \begin{verbatim}
 
-                  koebbe% gcc -o smaceps smaceps.c
-                  koebbe% gcc -o dmaceps dmaceps.c
+                  koebbe% gcc -c smaceps.c
+                  koebbe% gcc -c dmaceps.c
 
                 \end{verbatim}
                 or
                 \begin{verbatim}
 
-                  koebbe% gcc -o *.c
+                  koebbe% gcc -c *.c
 
                 \end{verbatim}
                 This will produce two files:
@@ -143,7 +143,7 @@ constructed that will be used as a place to store your work.
           \item Created a shared library,
                 \begin{verbatim}
 
-                  koebbe% ar cvf mylib dmaceps.o smaceps.o
+                  koebbe% ar rcv mylib.a dmaceps.o smaceps.o
 
                 \end{verbatim}
                 This is the archive command in Unix and the \lq\lq\ cvf\rq\rq\
@@ -163,7 +163,14 @@ constructed that will be used as a place to store your work.
                 
                 \end{verbatim}
                 This last step allows a link/load command to access the routines
-                in any order.
+                in any order. You can check the result using the following
+                command.
+                \begin{verbatim}
+
+                  koebbe% ar tv mylib.a
+                
+                \end{verbatim}
+                This gives a table of contents for the archive/shared library.
         \end{trivlist}
 \vskip0.1in\hrule\vskip0.1in \noindent
   \item[\bf Task 6:] Search the internet for discussions of shared libraries.

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title> Math 4610 Fundamentals of Computational Mathematics Tasksheet</title>
+  <title> Math 4610 Fundamentals of Computational Mathematics Homework </title>
   <link href="homework.css" rel="stylesheet" type="text/css" />
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -14,71 +15,122 @@
   </script>
 </head>
 <body>
-  <hr>
-  <h1>
-    Math 4610 Fundamentals of Computational Mathematics:
-                         Tasksheet 4 Problem/Questions
-  </h1>
-  <hr>
-  <ul>
-    <hr>
-    <li> Task 1: Determine if there might be an advantage to using one of the
-         hybrid methods for root finding for the problem defined in Task 7 on
-         Tasksheet 3. Justify your answer with results from your codes.
-    </li>
-    <hr>
-    <li> Task 2: Develop codes to compute the length of a vector of arbitrary
-         length using the 1-norm, 2-norm, and infinity norm. Add the object
-         modules to your shared library and create three pages to put in your
-         software manual.
-    </li>
-    <hr>
-    <li> Task 3: Develop codes that compute the absolute and relative error
-         in using one vector ${\bf x}$ as an approximation of another vector,
-         ${\bf x^*}$. Create these routines for the 1-norm, 2-norm, and infinity
-         norm. Make sure you add these routines to your shared library and 
-         create software manual pages for all 6 codes.
-    </li>
-    <hr>
-    <li> Task 4: Write codes that return (1) the sum of two vectore, (2)
-         difference of two vectors, and (3) a scalar multiple of a vector.
-    </li>
-    <hr>
-    <li> Task 5: Wrte a code that implements a "SAXPY" operation involing input
-         of a couple of vectors and a scalar. Do an internet search to find out
-         what a SAXPY operation. Add the routine to your shared library and the
-         software manual.
-    </li>
-    <hr>
-    <li> Task 6: Write codes to implement (1) the dot product of two vectors
-         and (2) the cross product of two vectors. As usual, add these to your
-         shared library and software manual.
-    </li>
-    <hr>
-    <li> Task 7: Create a routine that will return the output from multiplying
-         a matrix into a vector from the left. Do this for a general rectangular
-         matrix, $A$. That is,
-         $$
-           {\bf y} = A\ {\bf x}
-         $$
-    </li>
-    <hr>
-    <li> Task 8: Download and use the "Hello World" handout that uses OpenMP to
-         do a single print of a string for each processor your computer has.
-         Report how many processors your laptop or desktop has.
-    </li>
-    <hr>
-    <li> Task 9: Use OpenMP to try to speed up the matrix-vector multiplication
-         using more than one processor.
-    </li>
-    <hr>
-    <li> Task 10: Search the internet for sites that document optimization flags
-         on compilers that you might use. For example, look for pages that
-         talk about optimization flags on gcc or gfortran. Write a brief
-         paragraph (3 or 4 sentences) that describe your findings. Include links
-         to the sites you cite.
-    </li>
-    <hr>
-  </ul>
-</body>
-</html>
+
+<hr>
+
+<h1> Large Math 4610 Fundamentals of Numerical Analysis Tasksheet 4 </h1>
+
+<hr>
+
+The problems for the Tasksheet 03 are included below. The deadline for turning
+in your work on these problems will be posted on the repository. In addition,
+you will turn in your work through the math4610 repository. A directory will be
+constructed that will be used as a place to store your work.
+
+<hr>
+
+<h2> Tasks </h2>
+
+<hr>
+
+<ul>
+  <li> <b> Task 1: </b>
+    Create routines that compute the absolute error and relative error in
+    approximating a number, \(x\), with another number, \(y\). Write two
+    separate routines. The routines should be documented in your software manual
+    and also include the production version of the code in your archive file.
+
+<hr>
+
+  <li> <b> Task 2: </b> Create a graphics routine that will create a 2D plot of 
+    data that includes the following.
+    <ul>
+      <li>
+        Graph string expressions in a Python module. 
+      </li>
+      <li>
+        Include a loop to graph multiple expressions for comparison.
+      </li>
+      <li>
+        Use different colors for the graphs of the functions.
+      </li>
+      <li>
+        Hardcode axes labels.
+      </li>
+      <li>
+        Do note include a title for the graph.
+      </li>
+      <li>
+        Include a legend for the curves.
+      </li>
+    </ul>
+    If you are working mostly in Python you can choose to include the module in
+    your archive. If you are not coding primarily in Python, you should make
+    sure you document this in your software manual as an extra code.
+
+<hr>
+
+  <li> <b> Task 3: </b>
+    Write a routine that will approximate the location of a root using fixed
+    point iteration or functional iteration using the fixed point algorithm.
+    That is, if \(x^*\) is a root of the function, \(f(x)\), then set
+    \[
+      x = x - f(x)
+    \]
+    and given an initial approximation, \(x_0\), define the sequence, \(x_k\),
+    by
+    \[
+      x_{k+1} = x_k - f(x_k)
+    \]
+    for \(k=0,1,2\ldots\). Make sure you put in an appropriate stopping
+    criteria. Include documentation for the code in your software manual and add
+    the routine to your shared archive.
+  </li>
+
+<hr>
+
+  <b> Task 4:</b>  Apply a fixed point iteration to finding the closest root
+    to zero of the following function.
+    \[
+      f(x) = x\ e^{3x^2} - 7\ x
+    \]
+    Use the fixed point iteration
+    \[
+      x = x - f(x)
+    \]
+    to test the idea. Then try
+    \[
+      x = x - \epsilon\ f(x)
+    \]
+    where \(\epsilon\) is chosen to get convergence of the sequence of
+    approximations. You can to this by applying the convergence criterion for
+    fixed point iteration.
+  </li>
+
+<hr>
+
+  <li> <b> Task 5:</b> Write a routine/code to implement the Bisection method
+    for approximating the location of a root of a function of one variable.
+    Write the code to incorporate the computation of the number of steps to meet
+    a given tolerance instead of the while loop version described in class. Test
+    your code on the problem defined in Task 4.
+  </li>
+
+<hr>
+
+  <li> <b> Task 6:</b>  Search the internet for sites that discuss root finding
+        problems in practice. Write a brief summary of what you find including
+        the pros and cons of shared libraries. Your write up should be a brief
+        paragraph (3 or 4 sentences) that describe your findings. Include links
+        to the sites you cite.
+  </li>
+
+</ul>
+
+<hr>
+
+  <a href="../../tasksheet_03/html/tasksheet_03.html"> Previous </a> |
+  <a href="../../toc/md/tasksheet_toc.md"> Table of Contents </a> |
+  <a href="../../tasksheet_05/html/tasksheet_05.html"> Next </a>
+
+<hr>
