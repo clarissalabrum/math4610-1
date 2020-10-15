@@ -22,47 +22,9 @@
 \vskip0.1in\hrule\vskip0.1in \noindent
 {\bf Math 4610 Fundamentals of Computational Mathematics  - Topic 17.}
 \vskip0.1in\hrule\vskip0.1in \noindent
-Computers are essential tools in science and engineering as well as in
-entertainment in video streaming and gaming. Over time, the capabilities of
-computers have grown due to computer engineering advances. However, the
-resources will always be limited to finite storage and memory capacities. 
-
-With all of these advancements, one might think that issues related to numerical
-precision would be taken care of. However, this is not the case. There are a
-couple of sites on the internet that document catastrophic failures of real
-systems that can be atrributed to errors in numerical values due to finite
-precision of arithmetic. The sites are:
-\begin{verbatim}
-
-       1. http://www.ima.umn.edu/~arnold/disasters/patriot.html
-
-       2. https://www5.in.tum.de/persons/huckle/bugse.html
-
-\end{verbatim}
-Each link associates some failure or loss of large sums of money due to the
-inaccuracy of computed results. Examples like the Arian 5 rocket that self
-destructed after launch due to register overflow that indicated the rocket was
-off course. The rocket was actually on course with all systems functioning.
-
-Scientists and engineers use continuos models that are defined for all real
-numbers including irrational numbers. Irrational numbers cannot be represented
-with a finite amount of information. These numbers can only be approximated on
-computers.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Standardizing Number Representation:}
-\vskip0.1in\hrule\vskip0.1in \noindent
-If we represent a real number, \(x\), by an approximate number, \(fl(x)\), then
-the difference between the two numbers is
-\[
-  E = \left\vert
-         x - fl(x)
-      \right\vert
-\]
-We will see a more precise definition of error in the next topic when we cover
-absolute and relative errors.
+In this section we will talk about inevitable errors in number representations
+on computers. The finite limitations of computers and other devices mean that we
+cannot exactly represent most numbers on the real line. 
 
 In this section we will focus on the limitations of number representation on
 computers. As mentioned above, the capabilities of computers have advanced
@@ -81,23 +43,126 @@ on all computers. So, the number \(1/3\) becomes
 The representation repeats, but it is necessary to use an infinite number of
 digits to exactly represent the number.
 
-As an example, consider a 64 bit representation of a number. The 64 bits are
-split into three chunks. The bits are used to represent the mantissa or 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Absolute and Relative Error: Introduction.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+In most cases, the solution of a mathematical problem can only be approximated.
+So, it would be a good idea to have a way to measure the error between the exact
+solution and the approximation of that solution. We will define two types of
+error. These are absolute error and relative error. The {\bf absolute error} is
+the absolute value of the difference between the approximation and the exact
+value for the solution. That is, if $x^*$ is the exact value approximated by
+$x$, then
+$$ e_{abs} = | x - x^{*} | $$
+defines the absolute error. The {\bf relative error} is a scaled error defined
+by
+$$ e_{rel} = {{| x - x^{*} |}\over{|x^*|}} $$
+So, the relative error is a scaled or percent error based on the magnitude of
+the exact value.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Absolute and Relative Error: Examples.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+If we are trying to find the roots of the polynomial
+$$
+  p(x) = x^5 + x^3 - 2\ x^2 + 5\ x
+$$
+we can see that $x=0$ is one solution. To find other roots we can use Newton's
+method to generate a sequence of approximations given a starting point. That is,
+we will generate a sequence
+$$
+   S = \left\lbrace x_k \right\rbrace_{k=0}^{\infty}
+$$
+Newton's method will be covered a bit later in this course. However, what we
+will want is for the sequence to converge to a root, say $x^*$. This can be
+rephrased as
+$$ | x_k - x^* | \rightarrow 0 $$
+which implies the absolute error will tend to zero as $k$ tends to $\infty$.
+Using the relative error we want
+$$ {{ | x_k - x^* | }\over{ | x^* | }} \rightarrow 0 $$
+For the polynomial define in this example, there will be problems in using the
+relative error near the zero roots. So, if the sequence starts to converg to the
+zero root, we would need to use the absolute error as a measure.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+{\bf Absolute and Relative Error: A Numerical Example.} 
+\vskip0.1in\hrule\vskip0.1in
+\noindent
+As an illustration of how absolute and relative errors compare, we can consider
+some numerical examples. The following table gives a pair of numbers along with
+both the absolute and relative errors.
+
+\begin{table}[h!]
+   \caption{Absolute and Relative Error Values}
+   \begin{center}
+   \begin{tabular}{c|c|c|c}
+     \hline
+     \textbf{$x$} & \textbf{$x^*$} & \textbf{abs. err.} & \textbf{rel. err.} \\
+     \hline
+     0.01 & 0.1 & 0.09 & 0.9 \\
+     \hline
+     1.01 & 1.0 & 0.01 & 0.01 \\
+     \hline
+     2.0   & 3.0  & 1.0 & 0.5 \\
+     \hline
+     10.0  & 9.0  & 1.0 & 0.1 \\
+     \hline
+     100.0 & 99.0 & 1.0 & 0.01 \\
+     \hline
+   \end{tabular}
+   \end{center}
+\end{table}
+
+Note that when both the approximation and exact value are close to zero, the
+absolute error becomes a better measure of error than the relative error and
+for large values (at least greater than one) one should expect that the better
+measure of the error is the relative error. We will use both in the development
+of algorithms to numerically solve mathematical problems.
 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Displaying Mathematics in HTML:}
-\vskip0.1in\hrule\vskip0.1in \noindent
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vskip0.1in\hrule\vskip0.1in \noindent
-{\bf Github Pages and Markdown:}
-\vskip0.1in\hrule\vskip0.1in \noindent
-Talk about accessing html pages through github pages ... usually not a problem.
+
+
+The following is a list of sources for error that need to be taken into account
+by compoutational scientists.
+\begin{enumerate}
+  \item {\bf Modeling Errors} These errors can occur when assumptions are made
+        about the phenomena being studied. For example, one may consider a model
+        of the solar system where the planets are assumed to be spheres, which
+        is not the case.
+  \item {\bf Measurement Errors:} These errors occur when instruments are used
+        to measure physical quantities. For example, the temperature of molten
+        lava might be measured to within one or two degrees based on the
+        magnitude of the exact temperature. The fractional part of the 
+        measurement would characterize the error.
+  \item {\bf Discretization Error:} In order to computer solutions to
+        mathematical problems using computers, it necessary that the model be
+        finite and discrete. For example, weather models based on systems of
+        partial differential equations require a discretization of the continuous model to fit in the
+        discrete framework of a computer simulation.
+\end{enumerate}
+Note that Github will not allow you the luxury of creating empty folders. This
+is an advantage in using \lq\lq git\rq\rq\ on a local machine. When changes are
+\lq\lq pushed\rq\rq\ to Github, empty folders are ignored. So, let's get started
+on the formatting the homework solutions portion of the repository for the
+class.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
